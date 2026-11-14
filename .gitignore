@@ -1,0 +1,22 @@
+# dependências e build
+node_modules
+.next
+out
+.vercel
+
+# chaves (nunca vão para o GitHub — ver .env.example)
+.env
+.env.local
+.env.*.local
+
+# dados brutos grandes e logs locais
+data/raw
+*.kmz
+logs
+*.log
+
+# sistema e arquivos temporários do Office
+~$*
+.DS_Store
+Thumbs.db
+desktop.ini

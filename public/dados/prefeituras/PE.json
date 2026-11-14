@@ -1,0 +1,1047 @@
+{
+ "Afogados Da Ingazeira": {
+  "titulo": "Afogados da Ingazeira",
+  "prefeito": "Alesandro Palmeira de Vasconcelos Leite",
+  "inicio": "2021",
+  "fim": "2024",
+  "site": "http://www.afogadosdaingazeira.pe.gov.br",
+  "telefone": "(87) 3838-1235",
+  "oficial": {
+   "nome": "Alesandro Palmeira de Vasconcelos Leite",
+   "partido": "PSB",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Afrânio": {
+  "titulo": "Afrânio",
+  "prefeito": "Cloves Ramos de Macedo",
+  "inicio": null,
+  "fim": "2025",
+  "site": "https://afranio.pe.gov.br/",
+  "telefone": "(87) 3868-1054",
+  "oficial": {
+   "nome": "Cloves Ramos de Macedo",
+   "partido": "MDB",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Araripina": {
+  "titulo": "Araripina",
+  "prefeito": "Evilásio Mateus",
+  "inicio": null,
+  "fim": "2028",
+  "site": "https://araripina.pe.gov.br/",
+  "telefone": "(87) 98132-4208",
+  "oficial": {
+   "nome": "Evilásio Mateus da Silva Cardoso",
+   "partido": "PDT",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Belo Jardim": {
+  "titulo": "Belo Jardim",
+  "prefeito": "Gilvandro Estrela de Oliveira",
+  "inicio": "2025",
+  "fim": "2028",
+  "site": "https://belojardim.pe.gov.br/",
+  "telefone": "(81) 3726-6370",
+  "oficial": {
+   "nome": "Gilvandro Estrela de Oliveira",
+   "partido": "UNIÃO",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Belém Do São Francisco": {
+  "titulo": "Belém do São Francisco",
+  "prefeito": "Calby de Carvalho Cruz",
+  "inicio": "2025",
+  "fim": "2028",
+  "site": "http://www.belemdosaofrancisco.pe.gov.br",
+  "telefone": null,
+  "oficial": {
+   "nome": "Calby de Carvalho Cruz",
+   "partido": "REPUBLICANOS",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Betânia": {
+  "titulo": "Betânia (Pernambuco)",
+  "prefeito": "Mário Gomes Flôr Filho",
+  "inicio": null,
+  "fim": "2024",
+  "site": "https://betania.pe.gov.br/",
+  "telefone": "(87) 98108-9143",
+  "oficial": {
+   "nome": "Erivaldo Severino Bezerra",
+   "partido": "PSB",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Bezerros": {
+  "titulo": "Bezerros",
+  "prefeito": "Maria Lucielle Silva Laurentino",
+  "inicio": "2021",
+  "fim": "2024",
+  "site": "http://www.bezerros.pe.gov.br/",
+  "telefone": "(81) 3728-6700",
+  "oficial": {
+   "nome": "Maria Lucielle Silva Laurentino",
+   "partido": "UNIÃO",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Bom Conselho": {
+  "titulo": "Bom Conselho",
+  "prefeito": "Edézio Ferreira Dos Santos Filho",
+  "inicio": "2025",
+  "fim": "2028",
+  "site": "https://www.bomconselho.pe.gov.br/",
+  "telefone": null,
+  "oficial": {
+   "nome": "Edezio Ferreira dos Santos Filho",
+   "partido": "PV",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Brejo Da Madre De Deus": {
+  "titulo": "Brejo da Madre de Deus",
+  "prefeito": "Roberto Abraham Abrahamian Asfora",
+  "inicio": "2025",
+  "fim": "2028",
+  "site": "http://www.brejomdeus.pe.gov.br",
+  "telefone": null,
+  "oficial": {
+   "nome": "Roberto Abraham Abrahamian Asfora",
+   "partido": "PP",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Buíque": {
+  "titulo": "Buíque",
+  "prefeito": "Arquimedes Guedes Valença",
+  "inicio": null,
+  "fim": "2024",
+  "site": "https://buique.pe.gov.br/",
+  "telefone": null,
+  "oficial": {
+   "nome": "Túlio Henrique Araújo Cavalcanti",
+   "partido": "MDB",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Cabrobó": {
+  "titulo": "Cabrobó",
+  "prefeito": "Elioenai Dias Santos Filho",
+  "inicio": "2025",
+  "fim": null,
+  "site": "http://cabrobo.pe.gov.br/",
+  "telefone": "(87) 3875-1632",
+  "brasao": "Coat of Arms of Cabrobó - PE - Brazil.png",
+  "oficial": {
+   "nome": "Elioenai Dias Santos Filho",
+   "partido": "AVANTE",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Calumbi": {
+  "titulo": "Calumbi",
+  "prefeito": "Erivaldo José da Silva",
+  "inicio": null,
+  "fim": "2024",
+  "site": "http://calumbi.pe.gov.br/",
+  "telefone": "(87) 99204-9048",
+  "oficial": {
+   "nome": "Erivaldo Jose da Silva",
+   "partido": "AVANTE",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Capoeiras": {
+  "titulo": "Capoeiras",
+  "prefeito": "Joaquim Costa Teixeira",
+  "inicio": null,
+  "fim": "2028",
+  "site": "http://capoeiras.pe.gov.br/",
+  "telefone": "(87) 3796-1098",
+  "oficial": {
+   "nome": "Joaquim Costa Teixeira",
+   "partido": "PSB",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Carnaubeira Da Penha": {
+  "titulo": "Carnaubeira da Penha",
+  "prefeito": "Elizio Soares Filho",
+  "inicio": "2021",
+  "fim": "2024",
+  "site": "https://www.carnaubeiradapenha.pe.gov.br/",
+  "telefone": "(87) 3142-0032",
+  "brasao": "Brasão oficial de Carnaubeira da Penha - PE.png",
+  "oficial": {
+   "nome": "Elizio Soares Filho",
+   "partido": "PSDB",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Carnaíba": {
+  "titulo": "Carnaíba",
+  "prefeito": "Wamberg Antonio Gomes Amaral",
+  "inicio": null,
+  "fim": "2028",
+  "site": "https://carnaiba.pe.gov.br",
+  "telefone": "(87) 97400-2320",
+  "oficial": {
+   "nome": "Wamberg Antonio Gomes Amaral",
+   "partido": "PSB",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Catende": {
+  "titulo": "Catende",
+  "prefeito": "Gracina Maria Ramos Braz da Silva",
+  "inicio": null,
+  "fim": "2028",
+  "site": "https://catende.pe.gov.br/",
+  "telefone": "(81) 3673-1402",
+  "oficial": {
+   "nome": "Gracina Maria Ramos Braz da Silva",
+   "partido": "PSDB",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Cortês": {
+  "titulo": "Cortês",
+  "prefeito": "Maria de Fátima Cysneiros Sampaio Borba",
+  "inicio": null,
+  "fim": "2028",
+  "site": "http://www.cortes.pe.gov.br",
+  "telefone": "(81) 98202-5471",
+  "oficial": {
+   "nome": "Maria de Fatima Cysneiros Sampaio Borba",
+   "partido": "PSDB",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Custódia": {
+  "titulo": "Custódia",
+  "prefeito": "Manuel Messias",
+  "inicio": null,
+  "fim": "2028",
+  "site": "http://www.custodia.pe.gov.br",
+  "telefone": "(87) 3848-1122",
+  "oficial": {
+   "nome": "Manuel Messias",
+   "partido": null,
+   "fonte": "Wikipédia",
+   "obs": "mandato até 2028"
+  }
+ },
+ "Dormentes": {
+  "titulo": "Dormentes",
+  "prefeito": "Corrinha de Geomarco",
+  "inicio": "2025",
+  "fim": null,
+  "site": "https://dormentes.pe.gov.br/",
+  "telefone": "(87) 3865-1550",
+  "oficial": {
+   "nome": "Maria do Socorro Coelho de Sousa",
+   "partido": "PSB",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Exu": {
+  "titulo": "Exu (Pernambuco)",
+  "prefeito": "Júnior Pinto",
+  "inicio": null,
+  "fim": "2028",
+  "site": "http://www.exu.pe.gov.br",
+  "telefone": "(87) 3879-1156",
+  "oficial": {
+   "nome": "José Pinto Saraiva Júnior",
+   "partido": "PSDB",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Flores": {
+  "titulo": "Flores (Pernambuco)",
+  "prefeito": "Cícero GILBERTO Cavalcanti RIBEIRO",
+  "inicio": null,
+  "fim": "2028",
+  "site": "https://flores.pe.gov.br/",
+  "telefone": "(87) 99947-4684",
+  "oficial": {
+   "nome": "Cicero Gilberto Cavalcanti Ribeiro",
+   "partido": "PSB",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Floresta": {
+  "titulo": "Floresta (Pernambuco)",
+  "prefeito": "Rosângela de Moura Maniçoba Novaes Ferraz (Rorró Maniçoba)",
+  "inicio": "2025",
+  "fim": "2028",
+  "site": "https://www.floresta.pe.gov.br/",
+  "telefone": "(87) 3877-1833",
+  "oficial": {
+   "nome": "Rosangela de Moura Maniçoba Novaes Ferraz",
+   "partido": "PP",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Garanhuns": {
+  "titulo": "Garanhuns",
+  "prefeito": "Sivaldo Rodrigues Albino",
+  "inicio": null,
+  "fim": "2028",
+  "site": "http://www.garanhuns.pe.gov.br/",
+  "telefone": "(87) 3762-7000",
+  "oficial": {
+   "nome": "Sivaldo Rodrigues Albino",
+   "partido": "PSB",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Granito": {
+  "titulo": "Granito (Pernambuco)",
+  "prefeito": "George Washington Pereira Alencar",
+  "inicio": "2025",
+  "fim": "2028",
+  "site": "http://www.granito.pe.gov.br/",
+  "telefone": "(87) 3880-1156",
+  "oficial": {
+   "nome": "George Washington Pereira Alencar",
+   "partido": "PT",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Iati": {
+  "titulo": "Iati",
+  "prefeito": "Camila Sousa",
+  "inicio": null,
+  "fim": "2028",
+  "site": "http://www.iati.pe.gov.br/",
+  "telefone": "(87) 3786-1096",
+  "oficial": {
+   "nome": "Camila Sousa",
+   "partido": null,
+   "fonte": "Wikipédia",
+   "obs": "mandato até 2028"
+  }
+ },
+ "Ibimirim": {
+  "titulo": "Ibimirim",
+  "prefeito": "José Welliton de Melo Siqueira",
+  "inicio": "2021",
+  "fim": "2024",
+  "site": "https://ibimirim.pe.gov.br/",
+  "telefone": "(87) 99820-4199",
+  "oficial": {
+   "nome": "José Welliton de Melo Siqueira",
+   "partido": "PSDB",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Ibirajuba": {
+  "titulo": "Ibirajuba",
+  "prefeito": "Maria Izalta Silva Lopes Gama",
+  "inicio": null,
+  "fim": "2024",
+  "site": "http://ibirajuba.pe.gov.br/",
+  "telefone": "(87) 3794-1130",
+  "oficial": {
+   "nome": "Maria Izalta Silva Lopes Gama",
+   "partido": "PSDB",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Inajá": {
+  "titulo": "Inajá (Pernambuco)",
+  "prefeito": "Marcelo de Alberto",
+  "inicio": null,
+  "fim": "2028",
+  "site": "http://inaja.pe.gov.br/",
+  "telefone": "(87) 3840-1267",
+  "brasao": "Escudo de Inajá, corrigido.jpg",
+  "oficial": {
+   "nome": "Marcelo Machado Freire",
+   "partido": "REPUBLICANOS",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Itaíba": {
+  "titulo": "Itaíba",
+  "prefeito": "Maria Regina da Cunha",
+  "inicio": null,
+  "fim": "2024",
+  "site": "https://itaiba.pe.gov.br/",
+  "telefone": "(87) 3849-1137",
+  "oficial": {
+   "nome": "Pedro Teotônio da Silva Neto",
+   "partido": "REPUBLICANOS",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Jataúba": {
+  "titulo": "Jataúba",
+  "prefeito": "Cátia Junsara Rodrigues Aquilino",
+  "inicio": "2021",
+  "fim": "Atualmente",
+  "site": "https://www.jatauba.pe.gov.br/",
+  "telefone": "(81) 98196-9970",
+  "oficial": {
+   "nome": "Cátia Junsara Rodrigues Aquilino",
+   "partido": "PP",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Lagoa Grande": {
+  "titulo": "Lagoa Grande (Pernambuco)",
+  "prefeito": "Ana Catharina Garziera Moreno",
+  "inicio": "2025",
+  "fim": null,
+  "site": "http://www.lagoagrande.pe.gov.br/",
+  "telefone": "(87) 3869-9447",
+  "oficial": {
+   "nome": "Ana Catharina Garziera Moreno",
+   "partido": "PSB",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Lajedo": {
+  "titulo": "Lajedo (Pernambuco)",
+  "prefeito": "Erivaldo Rodrigues Amorim",
+  "inicio": "2025",
+  "fim": "2028",
+  "site": "https://www.lajedo.pe.gov.br/",
+  "telefone": "(87) 3773-4706",
+  "oficial": {
+   "nome": "Erivaldo Rodrigues Amorim",
+   "partido": "REPUBLICANOS",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Macaparana": {
+  "titulo": "Macaparana",
+  "prefeito": "Paulo Barbosa da Silva",
+  "inicio": null,
+  "fim": "2024",
+  "site": "http://www.bb.com.br",
+  "telefone": null,
+  "oficial": {
+   "nome": "Paulo Barbosa da Silva",
+   "partido": "PP",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Manari": {
+  "titulo": "Manari",
+  "prefeito": "Audalio Martins da Silva Júnior",
+  "inicio": null,
+  "fim": "2024",
+  "site": "http://manari.pe.gov.br/",
+  "telefone": null,
+  "oficial": {
+   "nome": "Audalio Martins da Silva Junior",
+   "partido": "PP",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Mirandiba": {
+  "titulo": "Mirandiba",
+  "prefeito": "Evaldo Bezerra",
+  "inicio": "2021",
+  "fim": null,
+  "site": "http://www.mirandiba.pe.gov.br/",
+  "telefone": "(87) 3885-1025",
+  "oficial": {
+   "nome": "Evaldo Bezerra de Carvalho",
+   "partido": "PSB",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Moreilândia": {
+  "titulo": "Moreilândia",
+  "prefeito": "Vicente Teixeira Sampaio Neto",
+  "inicio": null,
+  "fim": "2024",
+  "site": "https://moreilandia.pe.gov.br/",
+  "telefone": "(87) 3891-1156",
+  "oficial": {
+   "nome": "Vicente Teixeira Sampaio Neto",
+   "partido": "PSDB",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Moreno": {
+  "titulo": "Moreno",
+  "prefeito": "Edmílson Cupertino de Almeida",
+  "inicio": "2021",
+  "fim": "2024",
+  "site": "http://www.moreno.pe.gov.br",
+  "telefone": "(81) 3535-2537",
+  "oficial": {
+   "nome": "Edmilson Cupertino de Almeida",
+   "partido": "PP",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Orocó": {
+  "titulo": "Orocó",
+  "prefeito": "Ismael Fernandes Bione Lira",
+  "inicio": null,
+  "fim": "2028",
+  "site": "https://oroco.pe.gov.br/",
+  "telefone": "(87) 3887-1156",
+  "oficial": {
+   "nome": "Ismael Fernandes Bione Lira",
+   "partido": "PSD",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Palmares": {
+  "titulo": "Palmares",
+  "prefeito": "José Bartolomeu de Almeida Melo Júnior",
+  "inicio": null,
+  "fim": "2028",
+  "site": "https://palmares.pe.gov.br/",
+  "telefone": "(81) 3662-2222",
+  "oficial": {
+   "nome": "José Bartolomeu de Almeida Melo Junior",
+   "partido": "PP",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Paranatama": {
+  "titulo": "Paranatama",
+  "prefeito": "José Valmir Pimentel de Gois",
+  "inicio": null,
+  "fim": "2024",
+  "site": "http://paranatama.pe.gov.br/",
+  "telefone": "(87) 3787-1218",
+  "oficial": {
+   "nome": "Henrique de Oliveira Gois",
+   "partido": "MDB",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Parnamirim": {
+  "titulo": "Parnamirim (Pernambuco)",
+  "prefeito": "Lucélio Múcio Moura Angelim",
+  "inicio": null,
+  "fim": "2028",
+  "site": "http://www.parnamirim.pe.gov.br",
+  "telefone": "(87) 3883-1018",
+  "oficial": {
+   "nome": "Lucelio Mucio Moura Angelim",
+   "partido": "PP",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Passira": {
+  "titulo": "Passira",
+  "prefeito": "Severino Silvestre",
+  "inicio": null,
+  "fim": "2028",
+  "site": "https://www.passira.pe.gov.br/",
+  "telefone": null,
+  "oficial": {
+   "nome": "Severino Silvestre de Albuquerque",
+   "partido": "PSD",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Pedra": {
+  "titulo": "Pedra (Pernambuco)",
+  "prefeito": "Gilberto Júnior Wanderley Vaz",
+  "inicio": null,
+  "fim": "2024",
+  "site": "http://pedra.pe.gov.br/",
+  "telefone": "(87) 3858-1184",
+  "brasaoLocal": "/brasoes/PE/pedra.png",
+  "oficial": {
+   "nome": "Gilberto Júnior Wanderley Vaz",
+   "partido": "PV",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Pesqueira": {
+  "titulo": "Pesqueira",
+  "prefeito": "Marcos Luidson de Araújo - (Cacique Marcos)",
+  "inicio": "2025",
+  "fim": "2028",
+  "site": "http://www.pesqueira.pe.gov.br/",
+  "telefone": "(87) 3835-8700",
+  "oficial": {
+   "nome": "Marcos Luidson de Araújo",
+   "partido": "REPUBLICANOS",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Petrolina": {
+  "titulo": "Petrolina",
+  "prefeito": "Simão Durando",
+  "inicio": null,
+  "fim": "2028",
+  "site": "https://petrolina.pe.gov.br/",
+  "telefone": "(87) 3983-6577",
+  "oficial": {
+   "nome": "Simão Amorim Durando Filho",
+   "partido": "UNIÃO",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Petrolândia": {
+  "titulo": "Petrolândia (Pernambuco)",
+  "prefeito": "Fabiano Jaques Marques",
+  "inicio": null,
+  "fim": "2028",
+  "site": "http://www.petrolandia.pe.gov.br/",
+  "telefone": "(87) 99112-3385",
+  "oficial": {
+   "nome": "Fabiano Jaques Marques",
+   "partido": "REPUBLICANOS",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Poção": {
+  "titulo": "Poção (Pernambuco)",
+  "prefeito": "Emerson Cordeiro Vasconcelos",
+  "inicio": null,
+  "fim": "2024",
+  "site": "https://www.pocao.pe.gov.br/",
+  "telefone": null,
+  "oficial": {
+   "nome": "Joao Guilherme Vasconcelos de Sousa",
+   "partido": "MDB",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Rio Formoso": {
+  "titulo": "Rio Formoso",
+  "prefeito": "Gutemberg Alexandre Rodrigues da Silva",
+  "inicio": null,
+  "fim": "2028",
+  "site": "http://www.rioformoso.pe.gov.br/",
+  "telefone": "(81) 3678-1173",
+  "oficial": {
+   "nome": "Gutemberg Alexandre Rodrigues da Silva",
+   "partido": "PSDB",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Salgueiro": {
+  "titulo": "Salgueiro (Pernambuco)",
+  "prefeito": "Fabinho Lisandro",
+  "inicio": null,
+  "fim": "2028",
+  "site": "http://www.salgueiro.pe.gov.br/",
+  "telefone": "(87) 98172-1930",
+  "oficial": {
+   "nome": "Fábio Lisandro de Lima Barros",
+   "partido": "PRD",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Saloá": {
+  "titulo": "Saloá",
+  "prefeito": "Rivaldo Alves de Souza Júnior",
+  "inicio": null,
+  "fim": "2024",
+  "site": "http://saloa.pe.gov.br/",
+  "telefone": "(87) 99651-0139",
+  "oficial": {
+   "nome": "Rivaldo Alves de Souza Junior",
+   "partido": "PSDB",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Santa Cruz": {
+  "titulo": "Santa Cruz (Pernambuco)",
+  "prefeito": "Adegildo Guimaraes Soares",
+  "inicio": "2025",
+  "fim": "2028",
+  "site": "https://santacruz.pe.gov.br/",
+  "telefone": "(87) 9200-1830",
+  "brasaoLocal": "/brasoes/PE/santa-cruz.png",
+  "oficial": {
+   "nome": "Adegildo Guimaraes Soares",
+   "partido": "AVANTE",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Santa Filomena": {
+  "titulo": "Santa Filomena (Pernambuco)",
+  "prefeito": "Pedro Gildevan Coelho Melo",
+  "inicio": "2025",
+  "fim": "2028",
+  "site": "http://www.santafilomena.pe.gov.br/",
+  "telefone": "(87) 3874-7156",
+  "brasaoLocal": "/brasoes/PE/santa-filomena.png",
+  "oficial": {
+   "nome": "Pedro Gildevan Coelho Melo",
+   "partido": "PSD",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Santa Maria Da Boa Vista": {
+  "titulo": "Santa Maria da Boa Vista",
+  "prefeito": "George Duarte",
+  "inicio": null,
+  "fim": "2028",
+  "site": "http://www.santamariadaboavista.pe.gov.br",
+  "telefone": "(87) 3869-4141",
+  "oficial": {
+   "nome": "George Rodrigues Duarte",
+   "partido": "PP",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Santa Terezinha": {
+  "titulo": "Santa Terezinha (Pernambuco)",
+  "prefeito": "Adeilson Lustosa da Silva",
+  "inicio": null,
+  "fim": "2028",
+  "site": "http://www.santaterezinha.pe.gov.br/",
+  "telefone": "(87) 3859-1140",
+  "oficial": {
+   "nome": "Adeilson Lustosa da Silva",
+   "partido": "PODE",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Serra Talhada": {
+  "titulo": "Serra Talhada",
+  "prefeito": "Márcia Conrado de Lorena e Sá",
+  "inicio": "2021",
+  "fim": "2029",
+  "site": "http://www.serratalhada.pe.gov.br",
+  "telefone": "(87) 3831-3150",
+  "oficial": {
+   "nome": "Marcia Conrado de Lorena e Sa Araujo",
+   "partido": "PT",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Serrita": {
+  "titulo": "Serrita",
+  "prefeito": "Sebastião Benedito dos Santos",
+  "inicio": null,
+  "fim": "2024",
+  "site": "https://www.serrita.pe.gov.br/",
+  "telefone": "(87) 3882-1156",
+  "oficial": {
+   "nome": "Sebastião Benedito dos Santos",
+   "partido": "MDB",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "São Bento Do Una": {
+  "titulo": "São Bento do Una",
+  "prefeito": "Pedro Alexandre Medeiros de Souza",
+  "inicio": "2021",
+  "fim": "2024",
+  "site": "http://www.saobentodouna.pe.gov.br",
+  "telefone": "(81) 3735-1770",
+  "oficial": {
+   "nome": "Pedro Alexandre Medeiros de Souza",
+   "partido": "MDB",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "São Caitano": {
+  "titulo": "São Caetano (Pernambuco)",
+  "prefeito": "Josafá Almeida Lima",
+  "inicio": "2025",
+  "fim": "2028",
+  "site": "http://www.saocaetano.pe.gov.br",
+  "telefone": "(81) 3736-1156",
+  "oficial": {
+   "nome": "Josafa Almeida Lima",
+   "partido": "UNIÃO",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "São José Da Coroa Grande": {
+  "titulo": "São José da Coroa Grande",
+  "prefeito": "José Barbosa de Andrade",
+  "inicio": null,
+  "fim": "2028",
+  "site": "http://www.saojosedacoroagrande.pe.gov.br/",
+  "telefone": "(81) 2011-8460",
+  "brasao": "Brasão de Armas de São José da Coroa Grande.png",
+  "oficial": {
+   "nome": "José Barbosa de Andrade",
+   "partido": "PSD",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "São José Do Belmonte": {
+  "titulo": "São José do Belmonte",
+  "prefeito": "Vinícius Marques Alves",
+  "inicio": null,
+  "fim": "2028",
+  "site": "https://saojosedobelmonte.pe.gov.br/",
+  "telefone": "(87) 3884-1156",
+  "oficial": {
+   "nome": "Vinicius Marques Alves",
+   "partido": "PSB",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "São José Do Egito": {
+  "titulo": "São José do Egito",
+  "prefeito": "Fredson Henrique De Oliveira Brito",
+  "inicio": null,
+  "fim": "2028",
+  "site": "http://saojosedoegito.pe.gov.br",
+  "telefone": "(87) 93300-3657",
+  "oficial": {
+   "nome": "Fredson Henrique de Oliveira Brito",
+   "partido": "REPUBLICANOS",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "São João": {
+  "titulo": "São João (Pernambuco)",
+  "prefeito": "José Wilson Ferreira de Lima",
+  "inicio": null,
+  "fim": "2024",
+  "site": "https://saojoao.pe.gov.br",
+  "telefone": "(87) 3784-1154",
+  "oficial": {
+   "nome": "Jose Wilson Ferreira de Lima",
+   "partido": "PP",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Tacaimbó": {
+  "titulo": "Tacaimbó",
+  "prefeito": "Joelda Lima da Silva Pereira",
+  "inicio": null,
+  "fim": "2028",
+  "site": "https://www.tacaimbo.pe.gov.br/",
+  "telefone": "(81) 3755-1257",
+  "oficial": {
+   "nome": "Joelda Lima da Silva Pereira",
+   "partido": "PSDB",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Tacaratu": {
+  "titulo": "Tacaratu",
+  "prefeito": "Washington Angelo de Araújo",
+  "inicio": null,
+  "fim": "2024",
+  "site": "http://www.tacaratu.pe.gov.br",
+  "telefone": "(87) 3843-1156",
+  "oficial": {
+   "nome": "Washington Angelo de Araújo",
+   "partido": "MDB",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Taquaritinga Do Norte": {
+  "titulo": "Taquaritinga do Norte",
+  "prefeito": "Genivaldo Ferreira Lins",
+  "inicio": null,
+  "fim": "2028",
+  "site": "http://www.taquaritingadonorte.pe.gov.br",
+  "telefone": "(81) 3733-2173",
+  "oficial": {
+   "nome": "Genivaldo Ferreira Lins",
+   "partido": "PP",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Terra Nova": {
+  "titulo": "Terra Nova (Pernambuco)",
+  "prefeito": "Esdras Enildo Pires de Carvalho Coelho Mororó",
+  "inicio": null,
+  "fim": "2028",
+  "site": "http://www.terranova.pe.gov.br/",
+  "telefone": null,
+  "brasaoLocal": "/brasoes/PE/terra-nova.png",
+  "oficial": {
+   "nome": "Esdras Enildo Pires de Carvalho Coelho Mororó",
+   "partido": "AVANTE",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Tupanatinga": {
+  "titulo": "Tupanatinga",
+  "prefeito": "Professor Ronaldo",
+  "inicio": null,
+  "fim": "2028",
+  "site": "https://www.tupanatinga.pe.gov.br/",
+  "telefone": "(87) 3856-1156",
+  "oficial": {
+   "nome": "José Ronaldo da Silva",
+   "partido": "PP",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Tuparetama": {
+  "titulo": "Tuparetama",
+  "prefeito": "Domingos Sávio da Costa Torres",
+  "inicio": "2021",
+  "fim": "2024",
+  "site": "http://www.tuparetama.pe.gov.br",
+  "telefone": "(87) 3828-1156",
+  "oficial": {
+   "nome": "Diógenes Torres da Costa Patriota",
+   "partido": "PSDB",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Venturosa": {
+  "titulo": "Venturosa",
+  "prefeito": "Kelvin Douglas Cavalcanti Almeida",
+  "inicio": null,
+  "fim": "2028",
+  "site": "https://venturosa.pe.gov.br/",
+  "telefone": "(87) 3833-1138",
+  "oficial": {
+   "nome": "Kelvin Douglas Cavalcanti Almeida",
+   "partido": "PSD",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Verdejante": {
+  "titulo": "Verdejante",
+  "prefeito": "Haroldo Silva Tavares",
+  "inicio": null,
+  "fim": "2024",
+  "site": "https://www.verdejante.pe.gov.br/",
+  "telefone": null,
+  "oficial": {
+   "nome": "Francisco de Assis Tavares Filho",
+   "partido": "PSDB",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Vitória De Santo Antão": {
+  "titulo": "Vitória de Santo Antão",
+  "prefeito": "Paulo Roberto Leite de Arruda",
+  "inicio": "2025",
+  "fim": "2028",
+  "site": "https://www.prefeituradavitoria.pe.gov.br/site/",
+  "telefone": "(81) 3145-0553",
+  "oficial": {
+   "nome": "Paulo Roberto Leite de Arruda",
+   "partido": "MDB",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Xexéu": {
+  "titulo": "Xexéu",
+  "prefeito": "Thiago Gonçalves de Lima",
+  "inicio": null,
+  "fim": "2028",
+  "site": "https://site.xexeu.pe.gov.br/",
+  "telefone": "(81) 3681-8156",
+  "oficial": {
+   "nome": "Thiago Gonçalves de Lima",
+   "partido": "PSD",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Água Preta": {
+  "titulo": "Água Preta",
+  "prefeito": "Antonio Manoel - Miruca (2024-2024)",
+  "inicio": null,
+  "fim": null,
+  "site": "https://www.aguapreta.pe.gov.br/",
+  "telefone": null,
+  "brasao": "Agua-preta.svg",
+  "oficial": {
+   "nome": "Antonio Manoel da Silva",
+   "partido": "PSB",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Águas Belas": {
+  "titulo": "Águas Belas (Pernambuco)",
+  "prefeito": "Elton Martins",
+  "inicio": null,
+  "fim": "2028",
+  "site": "https://aguasbelas.pe.gov.br/",
+  "telefone": "(87) 3830-1140",
+  "oficial": {
+   "nome": "José Elton Martins de Souza",
+   "partido": "REPUBLICANOS",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ }
+}

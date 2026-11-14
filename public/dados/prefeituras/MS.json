@@ -1,0 +1,456 @@
+{
+ "Amambai": {
+  "titulo": "Amambai",
+  "prefeito": "Sergio Diozebio Barbosa",
+  "inicio": "2025",
+  "fim": "2028",
+  "site": "http://www.amambai.ms.gov.br/",
+  "telefone": "(67) 3481-7400",
+  "oficial": {
+   "nome": "Sergio Diozebio Barbosa",
+   "partido": "MDB",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Anastácio": {
+  "titulo": "Anastácio (Mato Grosso do Sul)",
+  "prefeito": "Manoel Aparecido da Silva",
+  "inicio": null,
+  "fim": "2028",
+  "site": "http://www.anastacio.ms.gov.br",
+  "telefone": null,
+  "brasaoLocal": "/brasoes/MS/anastacio.png",
+  "oficial": {
+   "nome": "Manoel Aparecido da Silva",
+   "partido": "PSDB",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Aquidauana": {
+  "titulo": "Aquidauana",
+  "prefeito": "Mauro Luiz Batista",
+  "inicio": null,
+  "fim": "2028",
+  "site": "http://www.coxim.ms.gov.br/",
+  "telefone": "(67) 2046-0240",
+  "oficial": {
+   "nome": "Mauro Luiz Batista",
+   "partido": "PSDB",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Aral Moreira": {
+  "titulo": "Aral Moreira",
+  "prefeito": "Dra Elaine Soligo",
+  "inicio": null,
+  "fim": "2028",
+  "site": "http://www.aralmoreira.ms.gov.br/",
+  "telefone": "(67) 3488-1100",
+  "oficial": {
+   "nome": "Elaine Aparecida Soligo",
+   "partido": "MDB",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Bela Vista": {
+  "titulo": "Bela Vista",
+  "prefeito": "Gabriel Boccia",
+  "inicio": "2025",
+  "fim": "2028",
+  "site": "http://www.Belavista.ms.gov.br",
+  "telefone": null,
+  "oficial": {
+   "nome": "Gerardo Gabriel Nunes Boccia",
+   "partido": "PP",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Bonito": {
+  "titulo": "Bonito (Mato Grosso do Sul)",
+  "prefeito": "Josmail Rodrigues",
+  "inicio": null,
+  "fim": "2028",
+  "site": "http://www.bonito.ms.gov.br/",
+  "telefone": "(67) 3255-2155",
+  "oficial": {
+   "nome": "Josmail Rodrigues",
+   "partido": "PSDB",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Brasilândia": {
+  "titulo": "Brasilândia",
+  "prefeito": "Márcia Regina do Amaral Schio",
+  "inicio": null,
+  "fim": "2028",
+  "site": "https://www.brasilandia.ms.gov.br/",
+  "telefone": null,
+  "oficial": {
+   "nome": "Marcia Regina do Amaral Schio",
+   "partido": "PSDB",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Caarapó": {
+  "titulo": "Caarapó",
+  "prefeito": "Maria Lurdes Portugal",
+  "inicio": "2025",
+  "fim": "2028",
+  "site": "http://www.caarapo.ms.gov.br",
+  "telefone": "(67) 3278-1323",
+  "brasao": "Brasao Caarapo MatoGrossodoSul Brasil.svg",
+  "oficial": {
+   "nome": "Maria Lurdes Portugal",
+   "partido": "PL",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Caracol": {
+  "titulo": "Caracol (Mato Grosso do Sul)",
+  "prefeito": "Neco Pagliosa",
+  "inicio": null,
+  "fim": "2028",
+  "site": "http://ww2.pmcaracol.ms.gov.br",
+  "telefone": "(67) 3495-1107",
+  "oficial": {
+   "nome": "Carlos Humberto Pagliosa",
+   "partido": "PSDB",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Corguinho": {
+  "titulo": "Corguinho",
+  "prefeito": "Barrinha",
+  "inicio": null,
+  "fim": "2028",
+  "site": "http://www.prefeituracorguinho.ms.gov.br",
+  "telefone": null,
+  "oficial": {
+   "nome": "Márcio Novaes Pereira",
+   "partido": "MDB",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Corumbá": {
+  "titulo": "Corumbá",
+  "prefeito": "Gabriel Alves de Oliveira",
+  "inicio": "2025",
+  "fim": "2028",
+  "site": "http://www.corumba.ms.gov.br/",
+  "telefone": null,
+  "oficial": {
+   "nome": "Gabriel Alves de Oliveira",
+   "partido": "PSB",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Costa Rica": {
+  "titulo": "Costa Rica (Mato Grosso do Sul)",
+  "prefeito": "Cleverson Alves dos Santos",
+  "inicio": null,
+  "fim": "2028",
+  "site": "http://www.costarica.ms.gov.br",
+  "telefone": "(67) 3247-7000",
+  "oficial": {
+   "nome": "Cleverson Alves dos Santos",
+   "partido": "PP",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Dois Irmãos Do Buriti": {
+  "titulo": "Dois Irmãos do Buriti",
+  "prefeito": "Wlademir de Souza Volk",
+  "inicio": null,
+  "fim": "2028",
+  "site": "http://www.doisirmaosdoburiti.ms.gov.br",
+  "telefone": "(67) 3243-2500",
+  "oficial": {
+   "nome": "Wlademir de Souza Volk",
+   "partido": "MDB",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Figueirão": {
+  "titulo": "Figueirão",
+  "prefeito": "Juvenal Consolaro",
+  "inicio": null,
+  "fim": "2028",
+  "site": "https://www.figueirao.ms.gov.br/",
+  "telefone": "(67) 3274-1126",
+  "oficial": {
+   "nome": "Juvenal Consolaro",
+   "partido": "PSDB",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Fátima Do Sul": {
+  "titulo": "Fátima do Sul",
+  "prefeito": "Wagner Roberto Ponsiano",
+  "inicio": null,
+  "fim": "2028",
+  "site": "http://www.fatimadosul.ms.gov.br",
+  "telefone": "(67) 3467-7500",
+  "oficial": {
+   "nome": "Wagner Roberto Ponsiano",
+   "partido": "PSDB",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Iguatemi": {
+  "titulo": "Iguatemi (Mato Grosso do Sul)",
+  "prefeito": "Lídio Ledesma",
+  "inicio": null,
+  "fim": "2028",
+  "site": "http://www.iguatemi.ms.gov.br",
+  "telefone": "(67) 3471-1130",
+  "oficial": {
+   "nome": "Lidio Ledesma",
+   "partido": "PSDB",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Itaquiraí": {
+  "titulo": "Itaquiraí",
+  "prefeito": "Thalles Henrique Tomazelli",
+  "inicio": null,
+  "fim": "2028",
+  "site": null,
+  "telefone": null,
+  "oficial": {
+   "nome": "Thalles Henrique Tomazelli",
+   "partido": "PSDB",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Jaraguari": {
+  "titulo": "Jaraguari",
+  "prefeito": "Claudião",
+  "inicio": null,
+  "fim": "2028",
+  "site": null,
+  "telefone": null,
+  "oficial": {
+   "nome": "Claudio Ferreira da Silva",
+   "partido": "PSDB",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Laguna Carapã": {
+  "titulo": "Laguna Carapã",
+  "prefeito": "Itamar Bilibio",
+  "inicio": null,
+  "fim": "2028",
+  "site": "http://www.lagunacarapa.ms.gov.br/",
+  "telefone": "(67) 3438-1202",
+  "brasao": "Brasão de Laguna Carapã D5eb74205aad313dd6361a1089c4e424 Slide.jpg",
+  "oficial": {
+   "nome": "Itamar Bilibio",
+   "partido": "MDB",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Miranda": {
+  "titulo": "Miranda (Mato Grosso do Sul)",
+  "prefeito": "Fábio Santos Florença",
+  "inicio": null,
+  "fim": "2028",
+  "site": "https://www.miranda.ms.gov.br/",
+  "telefone": "(67) 3242-1508",
+  "brasao": "Brasao miranda.jpg",
+  "oficial": {
+   "nome": "Fabio Santos Florença",
+   "partido": "PSDB",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Naviraí": {
+  "titulo": "Naviraí",
+  "prefeito": "Rodrigo Sacuno",
+  "inicio": null,
+  "fim": "2028",
+  "site": "http://www.navirai.ms.gov.br",
+  "telefone": "(67) 3409-1500",
+  "oficial": {
+   "nome": "Rodrigo Massuo Sacuno",
+   "partido": "PL",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Nova Alvorada Do Sul": {
+  "titulo": "Nova Alvorada do Sul",
+  "prefeito": "José Paulo Paleari",
+  "inicio": "2025",
+  "fim": "2028",
+  "site": "http://www.novaalvoradadosul.ms.gov.br/",
+  "telefone": null,
+  "oficial": {
+   "nome": "José Paulo Paleari",
+   "partido": "PP",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Nova Andradina": {
+  "titulo": "Nova Andradina",
+  "prefeito": "Leandro Fedossi",
+  "inicio": null,
+  "fim": "2028",
+  "site": "http://www.novaandradina.ms.gov.br",
+  "telefone": null,
+  "brasao": "Brasão Nova Andradina, Brasil.jpg",
+  "oficial": {
+   "nome": "Leandro Ferreira Luiz Fedossi",
+   "partido": "PSDB",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Paranhos": {
+  "titulo": "Paranhos (Mato Grosso do Sul)",
+  "prefeito": "Heliomar Klabunde",
+  "inicio": null,
+  "fim": "2028",
+  "site": "http://www.paranhos.ms.gov.br",
+  "telefone": "(67) 3480-1225",
+  "brasaoLocal": "/brasoes/MS/paranhos.png",
+  "oficial": {
+   "nome": "Heliomar Klabunde",
+   "partido": null,
+   "fonte": "Wikipédia",
+   "obs": "mandato até 2028"
+  }
+ },
+ "Ribas Do Rio Pardo": {
+  "titulo": "Ribas do Rio Pardo",
+  "prefeito": "Roberson Luiz Moreira",
+  "inicio": null,
+  "fim": "2028",
+  "site": "http://www.ribasdoriopardo.ms.gov.br",
+  "telefone": null,
+  "oficial": {
+   "nome": "Roberson Luiz Moureira",
+   "partido": "PSDB",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Rio Brilhante": {
+  "titulo": "Rio Brilhante",
+  "prefeito": "Lucas Centenaro Foroni",
+  "inicio": "2025",
+  "fim": "2028",
+  "site": "http://www.riobrilhante.ms.gov.br/",
+  "telefone": "(67) 99687-1038",
+  "oficial": {
+   "nome": "Lucas Centenaro Foroni",
+   "partido": "MDB",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Santa Rita Do Pardo": {
+  "titulo": "Santa Rita do Pardo",
+  "prefeito": "Dr. Lúcio Costa",
+  "inicio": null,
+  "fim": "2028",
+  "site": "http://www.santaritadopardo.ms.gov.br",
+  "telefone": null,
+  "oficial": {
+   "nome": "Lucio Roberto Calixto Costa",
+   "partido": "PSDB",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Sidrolândia": {
+  "titulo": "Sidrolândia",
+  "prefeito": "Rodrigo Basso",
+  "inicio": null,
+  "fim": "2028",
+  "site": "https://www.sidrolandia.ms.gov.br/",
+  "telefone": "(67) 3272-8745",
+  "oficial": {
+   "nome": "Rodrigo Borges Basso",
+   "partido": "PL",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "São Gabriel Do Oeste": {
+  "titulo": "São Gabriel do Oeste",
+  "prefeito": "Leocir Montagna",
+  "inicio": null,
+  "fim": "2028",
+  "site": null,
+  "telefone": null,
+  "oficial": {
+   "nome": "Leocir Paulo Montagna",
+   "partido": "PSD",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Taquarussu": {
+  "titulo": "Taquarussu",
+  "prefeito": "Clóvis do Banco",
+  "inicio": null,
+  "fim": "2028",
+  "site": "http://www.taquarussu.ms.gov.br",
+  "telefone": "(67) 3444-1558",
+  "oficial": {
+   "nome": "Clovis Jose do Nascimento",
+   "partido": "PSDB",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Terenos": {
+  "titulo": "Terenos",
+  "prefeito": "Henrique Wancura Budke",
+  "inicio": "2025",
+  "fim": "2028",
+  "site": "https://www.terenos.ms.gov.br/",
+  "telefone": "(67) 3246-8200",
+  "oficial": {
+   "nome": "Henrique Wancura Budke",
+   "partido": "PSDB",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Três Lagoas": {
+  "titulo": "Três Lagoas",
+  "prefeito": "Cassiano Rojas Maia",
+  "inicio": null,
+  "fim": "2028",
+  "site": "https://www.treslagoas.ms.gov.br/",
+  "telefone": "(67) 9657-7612",
+  "oficial": {
+   "nome": "Cassiano Rojas Maia",
+   "partido": "PSDB",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ }
+}

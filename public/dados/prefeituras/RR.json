@@ -1,0 +1,170 @@
+{
+ "Alto Alegre": {
+  "titulo": "Alto Alegre (Roraima)",
+  "prefeito": "Wagner de Oliveira Nunes",
+  "inicio": "2024",
+  "fim": "2024",
+  "site": "http://www.altoalegre.rr.gov.br",
+  "telefone": "(95) 98418-7919",
+  "oficial": {
+   "nome": "Wagner de Oliveira Nunes",
+   "partido": "REPUBLICANOS",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Amajari": {
+  "titulo": "Amajari",
+  "prefeito": "Núbia Costa Lima",
+  "inicio": "2025",
+  "fim": "2024",
+  "site": "https://portal.amajari.rr.gov.br/",
+  "telefone": null,
+  "oficial": {
+   "nome": "Núbia Costa Lima",
+   "partido": "PP",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Boa Vista": {
+  "titulo": "Boa Vista (Roraima)",
+  "prefeito": "Marcelo Zeitoune",
+  "inicio": "2026",
+  "fim": "2028",
+  "site": "http://www.boavista.rr.gov.br",
+  "telefone": null,
+  "oficial": {
+   "nome": "Marcelo Zeitoune",
+   "partido": null,
+   "fonte": "Wikipédia",
+   "obs": "mandato até 2028"
+  }
+ },
+ "Bonfim": {
+  "titulo": "Bonfim (Roraima)",
+  "prefeito": "Romualdo Feitosa Silva",
+  "inicio": "2025",
+  "fim": "2024",
+  "site": "http://www.bonfim.rr.gov.br/",
+  "telefone": "(95) 99423-7119",
+  "oficial": {
+   "nome": "Romualdo Feitosa Silva",
+   "partido": "REPUBLICANOS",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Cantá": {
+  "titulo": "Cantá",
+  "prefeito": "André Luis Costa de Castro",
+  "inicio": "2025",
+  "fim": "2025",
+  "site": null,
+  "telefone": null,
+  "oficial": {
+   "nome": "Andre Luis Costa de Castro",
+   "partido": "PP",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Caracaraí": {
+  "titulo": "Caracaraí",
+  "prefeito": "Dianiery de Souza Coelho",
+  "inicio": "2025",
+  "fim": "2028",
+  "site": "http://www.caracarai.rr.gov.br/",
+  "telefone": null,
+  "oficial": {
+   "nome": "Dianiery de Souza Coelho",
+   "partido": "PP",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Iracema": {
+  "titulo": "Iracema (Roraima)",
+  "prefeito": "Marlene Saraiva Araujo",
+  "inicio": "2025",
+  "fim": "2028",
+  "site": "http://www.iracema.rr.gov.br/",
+  "telefone": null,
+  "oficial": {
+   "nome": "Marlene Saraiva Araujo",
+   "partido": "REPUBLICANOS",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Mucajaí": {
+  "titulo": "Mucajaí",
+  "prefeito": "Francisco Rufino de Souza",
+  "inicio": "2025",
+  "fim": "2024",
+  "site": "https://mucajai.rr.gov.br/",
+  "telefone": "(95) 98408-9347",
+  "oficial": {
+   "nome": "Francisco Rufino de Souza",
+   "partido": "REPUBLICANOS",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Normandia": {
+  "titulo": "Normandia (Roraima)",
+  "prefeito": "Wenston Paulino Berto Raposo",
+  "inicio": "2025",
+  "fim": "2024",
+  "site": "http://www.normandia.rr.gov.br/",
+  "telefone": "(95) 3623-3164",
+  "oficial": {
+   "nome": "Wenston Paulino Berto Raposo",
+   "partido": "PP",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Pacaraima": {
+  "titulo": "Pacaraima",
+  "prefeito": "Walderi D'Avila Sampaio",
+  "inicio": "2025",
+  "fim": "2028",
+  "site": "http://www.pacaraima.rr.gov.br/",
+  "telefone": "(95) 99161-5602",
+  "oficial": {
+   "nome": "Walderi D Avila Sampaio",
+   "partido": "PP",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "São Luiz": {
+  "titulo": "São Luiz do Anauá",
+  "prefeito": "Elias Beschorner da Silva",
+  "inicio": "2025",
+  "fim": "2024",
+  "site": null,
+  "telefone": null,
+  "oficial": {
+   "nome": "Elias Beschorner da Silva",
+   "partido": "PP",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Uiramutã": {
+  "titulo": "Uiramutã",
+  "prefeito": "Benísio Roberto de Souza",
+  "inicio": "2025",
+  "fim": "2028",
+  "site": "http://www.uiramuta.rr.gov.br/",
+  "telefone": "(95) 3592-1027",
+  "oficial": {
+   "nome": "Benísio Roberto de Souza",
+   "partido": "REDE",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ }
+}

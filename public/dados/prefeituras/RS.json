@@ -1,0 +1,1132 @@
+{
+ "Alpestre": {
+  "titulo": "Alpestre",
+  "prefeito": "Rudimar Argenton",
+  "inicio": null,
+  "fim": "2028",
+  "site": "http://www.alpestre.rs.gov.br",
+  "telefone": "(55) 3796-1166",
+  "oficial": {
+   "nome": "Rudimar Argenton",
+   "partido": "PP",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Arambaré": {
+  "titulo": "Arambaré",
+  "prefeito": "Iago Kielermann",
+  "inicio": null,
+  "fim": "2028",
+  "site": "http://www.arambare.rs.gov.br",
+  "telefone": "(51) 3676-2521",
+  "oficial": {
+   "nome": "Iago dos Santos Kielermann",
+   "partido": "PDT",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Barracão": {
+  "titulo": "Barracão (Rio Grande do Sul)",
+  "prefeito": "Luiz Carlos da Silva",
+  "inicio": null,
+  "fim": "2028",
+  "site": "http://www.barracao.rs.gov.br/",
+  "telefone": "(54) 3356-1244",
+  "oficial": {
+   "nome": "Luiz Carlos da Silva",
+   "partido": "MDB",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Bom Jesus": {
+  "titulo": "Bom Jesus (Rio Grande do Sul)",
+  "prefeito": "Lico",
+  "inicio": null,
+  "fim": "2028",
+  "site": "http://www.bomjesus.rs.gov.br",
+  "telefone": "(54) 3084-0005",
+  "brasao": "Brasão Bom Jesus.jpg",
+  "oficial": {
+   "nome": "Frederico Arcari Becker",
+   "partido": "PP",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Camaquã": {
+  "titulo": "Camaquã",
+  "prefeito": "Abner dos Santos Dillmann",
+  "inicio": null,
+  "fim": "2028",
+  "site": "http://www.camaqua.rs.gov.br",
+  "telefone": "(51) 3671-7200",
+  "oficial": {
+   "nome": "Abner dos Santos Dillmann",
+   "partido": "PSDB",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Campina Das Missões": {
+  "titulo": "Campina das Missões",
+  "prefeito": "Carlos Justen",
+  "inicio": null,
+  "fim": "2028",
+  "site": "https://www.campinadasmissoes.rs.gov.br",
+  "telefone": "(55) 9988-2478",
+  "oficial": {
+   "nome": "Carlos Justen",
+   "partido": "PL",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Campo Novo": {
+  "titulo": "Campo Novo",
+  "prefeito": "Pedro dos Santos",
+  "inicio": null,
+  "fim": "2028",
+  "site": "http://www.camponovo.rs.gov.br",
+  "telefone": "(55) 2013-0080",
+  "oficial": {
+   "nome": "Pedro dos Santos",
+   "partido": "REPUBLICANOS",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Canguçu": {
+  "titulo": "Canguçu",
+  "prefeito": "Arion Braga",
+  "inicio": null,
+  "fim": "2028",
+  "site": "http://www.cangucu.rs.gov.br/",
+  "telefone": null,
+  "oficial": {
+   "nome": "Arion Luiz Borges Braga",
+   "partido": "PP",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Capão Do Cipó": {
+  "titulo": "Capão do Cipó",
+  "prefeito": "Adair Fracaro Cardoso",
+  "inicio": null,
+  "fim": "2028",
+  "site": "http://www.capaodocipo.rs.gov.br",
+  "telefone": "(55) 3249-7700",
+  "oficial": {
+   "nome": "Adair Fracaro Cardoso",
+   "partido": "PDT",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Capão Do Leão": {
+  "titulo": "Capão do Leão",
+  "prefeito": "Vilmar Schmitt (Schmitt)",
+  "inicio": null,
+  "fim": "2028",
+  "site": "http://www.prefeitura.capaodoleao.com.br",
+  "telefone": null,
+  "oficial": {
+   "nome": "Vilmar Motta Schmitt",
+   "partido": "PP",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Caraá": {
+  "titulo": "Caraá",
+  "prefeito": "Bolívar Gomes",
+  "inicio": "2025",
+  "fim": "2028",
+  "site": "https://www.caraa.rs.gov.br/",
+  "telefone": "(51) 9992-4567",
+  "oficial": {
+   "nome": "Bolivar Antonio de Souza Rabelo Gomes",
+   "partido": "PSDB",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Catuípe": {
+  "titulo": "Catuípe",
+  "prefeito": "Paulo Roberto dalla Corte",
+  "inicio": null,
+  "fim": "2028",
+  "site": "http://www.catuipe.rs.gov.br",
+  "telefone": "(55) 3336-0000",
+  "oficial": {
+   "nome": "Paulo Roberto Dalla Corte",
+   "partido": "PP",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Caxias Do Sul": {
+  "titulo": "Caxias do Sul",
+  "prefeito": "Adiló Didomenico",
+  "inicio": "2025",
+  "fim": "2028",
+  "site": "http://www.caxias.rs.gov.br",
+  "telefone": "(54) 3218-6000",
+  "oficial": {
+   "nome": "Adilo Angelo Didomenico",
+   "partido": "PSDB",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Caçapava Do Sul": {
+  "titulo": "Caçapava do Sul",
+  "prefeito": "Marcelo Spode",
+  "inicio": null,
+  "fim": "2028",
+  "site": "http://www.cacapava.rs.gov.br/",
+  "telefone": null,
+  "oficial": {
+   "nome": "Marcelo Cordero Spode",
+   "partido": "PP",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Cerrito": {
+  "titulo": "Cerrito",
+  "prefeito": "José Flávio Vieira de Vieira",
+  "inicio": null,
+  "fim": "2028",
+  "site": "https://www.cerrito.rs.gov.br/",
+  "telefone": "(53) 3254-1190",
+  "brasao": "Brasao Cerrito.png",
+  "oficial": {
+   "nome": "José Flavio Vieira de Vieira",
+   "partido": "PP",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Ciríaco": {
+  "titulo": "Ciríaco (Rio Grande do Sul)",
+  "prefeito": "Odacir Boaventura Manhabosco de Mello",
+  "inicio": null,
+  "fim": "2028",
+  "site": "https://www.ciriaco.rs.gov.br/",
+  "telefone": "(54) 3557-0001",
+  "oficial": {
+   "nome": "Odacir Boaventura Manhabosco de Mello",
+   "partido": "PT",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Colorado": {
+  "titulo": "Colorado (Rio Grande do Sul)",
+  "prefeito": "Rodrigo Sartori",
+  "inicio": null,
+  "fim": "2028",
+  "site": "http://www.colorado.rs.gov.br",
+  "telefone": "(54) 3191-0001",
+  "oficial": {
+   "nome": "Rodrigo Sartori",
+   "partido": "MDB",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Constantina": {
+  "titulo": "Constantina (Rio Grande do Sul)",
+  "prefeito": "Cristian Bratz",
+  "inicio": null,
+  "fim": "2028",
+  "site": "http://www.constantina.rs.gov.br",
+  "telefone": null,
+  "oficial": {
+   "nome": "Cristian Riboli Bratz",
+   "partido": "PP",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Coqueiros Do Sul": {
+  "titulo": "Coqueiros do Sul",
+  "prefeito": "Rafael Kochenborger",
+  "inicio": null,
+  "fim": "2028",
+  "site": "http://www.coqueirosul.com.br",
+  "telefone": null,
+  "oficial": {
+   "nome": "Rafael Kochenborger",
+   "partido": "PSDB",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Entre-Ijuís": {
+  "titulo": "Entre-Ijuís",
+  "prefeito": "Brasil Antonio Sartori",
+  "inicio": null,
+  "fim": "2028",
+  "site": "http://www.entreijuis.rs.gov.br",
+  "telefone": "(55) 2120-2750",
+  "oficial": {
+   "nome": "Brasil Antonio Sartori",
+   "partido": "UNIÃO",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Esmeralda": {
+  "titulo": "Esmeralda (Rio Grande do Sul)",
+  "prefeito": "Ailton de Sá Rosa",
+  "inicio": null,
+  "fim": "2028",
+  "site": "http://www.esmeralda.rs.gov.br",
+  "telefone": "(54) 3252-0830",
+  "oficial": {
+   "nome": "Ailton de Sá Rosa",
+   "partido": "MDB",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Espumoso": {
+  "titulo": "Espumoso",
+  "prefeito": "Dr. Gerson Lopes Rodrigues Machado",
+  "inicio": null,
+  "fim": "2028",
+  "site": "http://www.espumoso.rs.gov.br",
+  "telefone": "(54) 3383-4450",
+  "oficial": {
+   "nome": "Gerson Lopes Rodrigues Machado",
+   "partido": "PP",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Faxinal Do Soturno": {
+  "titulo": "Faxinal do Soturno",
+  "prefeito": "Lourenço Domingos Moro",
+  "inicio": null,
+  "fim": "2028",
+  "site": "http://www.faxinaldosoturno.rs.gov.br/home",
+  "telefone": null,
+  "oficial": {
+   "nome": "Lourenço Domingos Moro",
+   "partido": "MDB",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Formigueiro": {
+  "titulo": "Formigueiro (Rio Grande do Sul)",
+  "prefeito": "Cristiano Cassol",
+  "inicio": null,
+  "fim": "2028",
+  "site": "https://formigueiro.rs.gov.br/",
+  "telefone": null,
+  "oficial": {
+   "nome": "Cristiano Cezar Cassol Rubert",
+   "partido": "MDB",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Fortaleza Dos Valos": {
+  "titulo": "Fortaleza dos Valos",
+  "prefeito": "Paulo Cezar Marangon",
+  "inicio": null,
+  "fim": "2028",
+  "site": "http://www.pmfv.rs.gov.br",
+  "telefone": "(55) 3328-1133",
+  "oficial": {
+   "nome": "Paulo Cezar Marangon",
+   "partido": "PP",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Frederico Westphalen": {
+  "titulo": "Frederico Westphalen (Rio Grande do Sul)",
+  "prefeito": "Orlando Girardi",
+  "inicio": null,
+  "fim": "2028",
+  "site": "http://www.fredericowestphalen.rs.gov.br",
+  "telefone": "(55) 3744-4950",
+  "oficial": {
+   "nome": "Orlando Girardi",
+   "partido": "PP",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Garruchos": {
+  "titulo": "Garruchos",
+  "prefeito": "Roland Schatz",
+  "inicio": null,
+  "fim": "2028",
+  "site": "https://www.garruchos.rs.gov.br/",
+  "telefone": "(55) 3613-7277",
+  "oficial": {
+   "nome": "Roland Schatz",
+   "partido": "PDT",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Gramado": {
+  "titulo": "Gramado",
+  "prefeito": "Nestor Tissot",
+  "inicio": null,
+  "fim": "2028",
+  "site": "http://www.gramado.rs.gov.br/",
+  "telefone": null,
+  "oficial": {
+   "nome": "Nestor Tissot",
+   "partido": "PP",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Gramado Dos Loureiros": {
+  "titulo": "Gramado dos Loureiros",
+  "prefeito": "Artur Cereza",
+  "inicio": null,
+  "fim": "2028",
+  "site": "https://www.gramadodosloureiros.rs.gov.br/",
+  "telefone": "(54) 99337-6907",
+  "oficial": {
+   "nome": "Artur Cereza",
+   "partido": "UNIÃO",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Horizontina": {
+  "titulo": "Horizontina",
+  "prefeito": "Jones Jehn da Cunha",
+  "inicio": null,
+  "fim": "2028",
+  "site": "http://www.horizontina.rs.gov.br",
+  "telefone": null,
+  "oficial": {
+   "nome": "Jones Jehn da Cunha",
+   "partido": "PDT",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Ibirubá": {
+  "titulo": "Ibirubá",
+  "prefeito": "Jaqueline Brignoni Winsch",
+  "inicio": null,
+  "fim": "2028",
+  "site": "http://www.ibiruba.rs.gov.br",
+  "telefone": "(54) 3324-8515",
+  "oficial": {
+   "nome": "Jaqueline Brignoni Winsch",
+   "partido": "PL",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Ipê": {
+  "titulo": "Ipê (Rio Grande do Sul)",
+  "prefeito": "José Mário Grazziotin",
+  "inicio": "2025",
+  "fim": "2028",
+  "site": "http://www.ipe-rs.com.br",
+  "telefone": null,
+  "oficial": {
+   "nome": "José Mário Grazziotin",
+   "partido": "MDB",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Itacurubi": {
+  "titulo": "Itacurubi",
+  "prefeito": "Gelso dos Santos Soares",
+  "inicio": null,
+  "fim": "2028",
+  "site": "http://www.itacurubi.rs.gov.br/Home.aspx",
+  "telefone": null,
+  "oficial": {
+   "nome": "Gelso dos Santos Soares",
+   "partido": "PDT",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Jaguari": {
+  "titulo": "Jaguari",
+  "prefeito": "Igor Tambara",
+  "inicio": null,
+  "fim": "2028",
+  "site": "http://www.jaguari.rs.gov.br",
+  "telefone": "(55) 3255-1559",
+  "oficial": {
+   "nome": "Igor Rosa Tambara",
+   "partido": "MDB",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Jóia": {
+  "titulo": "Jóia",
+  "prefeito": "Dionei Lewandowski",
+  "inicio": null,
+  "fim": "2028",
+  "site": "http://joia.rs.gov.br/",
+  "telefone": "(55) 3318-1300",
+  "oficial": {
+   "nome": "Dionei de Matos Lewandowski",
+   "partido": "PP",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Júlio De Castilhos": {
+  "titulo": "Júlio de Castilhos (Rio Grande do Sul)",
+  "prefeito": "Bernardo Dalla Corte",
+  "inicio": null,
+  "fim": "2028",
+  "site": "http://www.juliodecastilhos.rs.gov.br",
+  "telefone": null,
+  "oficial": {
+   "nome": "Bernardo Quatrin Dalla Corte",
+   "partido": "PSDB",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Liberato Salzano": {
+  "titulo": "Liberato Salzano",
+  "prefeito": "Gilson de Carli",
+  "inicio": null,
+  "fim": "2028",
+  "site": "http://www.liberatosalzano.rs.gov.br",
+  "telefone": null,
+  "brasao": "Liberato Salzanorsbrasonbr.jpg",
+  "oficial": {
+   "nome": "Gilson de Carli",
+   "partido": "MDB",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Manoel Viana": {
+  "titulo": "Manoel Viana",
+  "prefeito": "Antônio Flávio Busnelo \"Careca\"",
+  "inicio": null,
+  "fim": "2028",
+  "site": "http://www.manoelviana.rs.gov.br/novoportal/",
+  "telefone": "(55) 3256-2160",
+  "oficial": {
+   "nome": "Antonio Flavio Fernandes Busnelo",
+   "partido": "PDT",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Mariano Moro": {
+  "titulo": "Mariano Moro",
+  "prefeito": "Valdecir Mariano Pinto",
+  "inicio": null,
+  "fim": "2028",
+  "site": "http://www.pmmarianomoro.com.br",
+  "telefone": null,
+  "oficial": {
+   "nome": "Valdecir Mariano Pinto",
+   "partido": "PDT",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Mormaço": {
+  "titulo": "Mormaço",
+  "prefeito": "Alexandre Vieira",
+  "inicio": null,
+  "fim": "2028",
+  "site": "http://www.mormac.rs.gov.br",
+  "telefone": null,
+  "oficial": {
+   "nome": "Alexandre Antonio Vieira",
+   "partido": "PP",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Muitos Capões": {
+  "titulo": "Muitos Capões",
+  "prefeito": "Luciano Debona",
+  "inicio": null,
+  "fim": "2028",
+  "site": "http://www.muitoscapoes.rs.gov.br",
+  "telefone": "(54) 3773-0516",
+  "oficial": {
+   "nome": "Luciano Debona",
+   "partido": "PL",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Nova Araçá": {
+  "titulo": "Nova Araçá",
+  "prefeito": "Henrique Peretti",
+  "inicio": null,
+  "fim": "2028",
+  "site": "http://www.novaaraca.rs.gov.br",
+  "telefone": "(54) 3275-1333",
+  "oficial": {
+   "nome": "Henrique Occhi Peretti",
+   "partido": "PP",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Não-Me-Toque": {
+  "titulo": "Não-Me-Toque",
+  "prefeito": "Gilson dos Santos",
+  "inicio": "2025",
+  "fim": "2028",
+  "site": "https://naometoque.rs.gov.br/",
+  "telefone": "(54) 3332-2600",
+  "oficial": {
+   "nome": "Gilson dos Santos",
+   "partido": "PL",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Palmares Do Sul": {
+  "titulo": "Palmares do Sul",
+  "prefeito": "Régis da Netpal",
+  "inicio": null,
+  "fim": "2028",
+  "site": "http://www.palmaresdosul.rs.gov.br",
+  "telefone": "(51) 2160-8999",
+  "oficial": {
+   "nome": "Regis Bauermann",
+   "partido": "PP",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Pinheiro Machado": {
+  "titulo": "Pinheiro Machado (Rio Grande do Sul)",
+  "prefeito": "Ronaldo Costa Madruga",
+  "inicio": null,
+  "fim": "2028",
+  "site": "http://www.pinheiromachado.rs.gov.br",
+  "telefone": null,
+  "brasao": "Brasao Pinheiro Machado.gif",
+  "oficial": {
+   "nome": "Ronaldo Costa Madruga",
+   "partido": "PP",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Pontão": {
+  "titulo": "Pontão",
+  "prefeito": "Luis Fernando Pereira da Silva",
+  "inicio": null,
+  "fim": "2028",
+  "site": "http://www.pontao.rs.gov.br/",
+  "telefone": "(54) 2560-0131",
+  "brasao": "Pontãorsbrasões.png",
+  "oficial": {
+   "nome": "Luis Fernando Pereira da Silva",
+   "partido": "UNIÃO",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Porto Lucena": {
+  "titulo": "Porto Lucena",
+  "prefeito": "Iury Zabolotsky",
+  "inicio": null,
+  "fim": "2028",
+  "site": "http://www.portolucena.rs.gov.br",
+  "telefone": "(55) 2120-1400",
+  "brasao": "Porto Lucenarsbrasões.jpg",
+  "oficial": {
+   "nome": "Iury Sommer Zabolotsky",
+   "partido": "MDB",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Porto Xavier": {
+  "titulo": "Porto Xavier",
+  "prefeito": "Gilberto Domingos Menin",
+  "inicio": null,
+  "fim": "2028",
+  "site": "http://www.portoxavier.rs.gov.br",
+  "telefone": "(55) 3354-0700",
+  "oficial": {
+   "nome": "Gilberto Domingos Menin",
+   "partido": "REPUBLICANOS",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Quevedos": {
+  "titulo": "Quevedos",
+  "prefeito": "Taís Fabiane da Maia Flores Rosa",
+  "inicio": null,
+  "fim": "2028",
+  "site": "http://www.quevedos.rs.gov.br",
+  "telefone": null,
+  "oficial": {
+   "nome": "Taís Fabiane da Maia Flores Rosa",
+   "partido": "PP",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Restinga Seca": {
+  "titulo": "Restinga Sêca",
+  "prefeito": "Norton Soares",
+  "inicio": null,
+  "fim": "2028",
+  "site": "http://www.restingaseca.rs.gov.br",
+  "telefone": "(55) 3261-1164",
+  "oficial": {
+   "nome": "Norton Soares da Rosa",
+   "partido": "MDB",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Rio Dos Índios": {
+  "titulo": "Rio dos Índios",
+  "prefeito": "Flávio Golin",
+  "inicio": null,
+  "fim": "2028",
+  "site": "http://www.riodosindios.rs.gov.br",
+  "telefone": "(54) 3571-0000",
+  "brasao": "Rio dos Índiosrsbrasões.png",
+  "oficial": {
+   "nome": "Flavio Golin",
+   "partido": "PP",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Rio Grande": {
+  "titulo": "Rio Grande (Rio Grande do Sul)",
+  "prefeito": "Darlene Pereira",
+  "inicio": "2025",
+  "fim": "2028",
+  "site": "https://www.riogrande.rs.gov.br/",
+  "telefone": null,
+  "oficial": {
+   "nome": "Darlene Torrada Pereira",
+   "partido": "PT",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Rio Pardo": {
+  "titulo": "Rio Pardo",
+  "prefeito": "Rogério Monteiro",
+  "inicio": null,
+  "fim": "2028",
+  "site": "https://riopardo.rs.gov.br",
+  "telefone": null,
+  "oficial": {
+   "nome": "Rogerio Luiz Monteiro",
+   "partido": "MDB",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Roca Sales": {
+  "titulo": "Roca Sales",
+  "prefeito": "Jones Wunsch",
+  "inicio": null,
+  "fim": "2028",
+  "site": "http://www.rocasales-rs.com.br",
+  "telefone": null,
+  "oficial": {
+   "nome": "Jones Wunsch",
+   "partido": "PP",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Rolante": {
+  "titulo": "Rolante",
+  "prefeito": "Alceu Trevizani da Rosa",
+  "inicio": null,
+  "fim": "2028",
+  "site": "http://www.rolante.rs.gov.br",
+  "telefone": "(51) 3547-1188",
+  "oficial": {
+   "nome": "Alceu Trevizani da Rosa",
+   "partido": "PRD",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Salto Do Jacuí": {
+  "titulo": "Salto do Jacuí",
+  "prefeito": "Ronaldo Pereira de Morais",
+  "inicio": null,
+  "fim": "2028",
+  "site": "http://www.saltodojacui.rs.gov.br",
+  "telefone": "(55) 3327-1400",
+  "oficial": {
+   "nome": "Ronaldo Olimpio Pereira de Moraes",
+   "partido": "PP",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Santa Rosa": {
+  "titulo": "Santa Rosa (Rio Grande do Sul)",
+  "prefeito": "Anderson Mantei",
+  "inicio": null,
+  "fim": "2028",
+  "site": "https://www.santarosa.rs.gov.br/",
+  "telefone": null,
+  "oficial": {
+   "nome": "Anderson Mantei",
+   "partido": "PP",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Santa Vitória Do Palmar": {
+  "titulo": "Santa Vitória do Palmar",
+  "prefeito": "André Selayaran",
+  "inicio": null,
+  "fim": "2028",
+  "site": "http://www.santavitoriadopalmar.rs.gov.br/",
+  "telefone": "(53) 3263-8000",
+  "oficial": {
+   "nome": "André Selayaran Nicoletti",
+   "partido": "MDB",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Santiago": {
+  "titulo": "Santiago (Rio Grande do Sul)",
+  "prefeito": "Marcelo Pirú",
+  "inicio": null,
+  "fim": "2028",
+  "site": "https://www.santiago.rs.gov.br/",
+  "telefone": "(55) 3249-2000",
+  "oficial": {
+   "nome": "Marcelo Gorski de Matos",
+   "partido": "PP",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Santo Antônio Da Patrulha": {
+  "titulo": "Santo Antônio da Patrulha",
+  "prefeito": "Rodrigo Gomes Massulo",
+  "inicio": null,
+  "fim": "2028",
+  "site": "http://www.santoantoniodapatrulha.rs.gov.br",
+  "telefone": "(51) 3662-8400",
+  "oficial": {
+   "nome": "Rodrigo Gomes Massulo",
+   "partido": "PP",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Santo Antônio Das Missões": {
+  "titulo": "Santo Antônio das Missões",
+  "prefeito": "Felisberto Ferreira",
+  "inicio": null,
+  "fim": "2028",
+  "site": "http://www.santoantoniodasmissoes.rs.gov.br",
+  "telefone": "(55) 3367-2000",
+  "oficial": {
+   "nome": "Felisberto dos Santos Ferreira",
+   "partido": "PP",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Santo Augusto": {
+  "titulo": "Santo Augusto",
+  "prefeito": "Lillian Fontoura Depierre",
+  "inicio": null,
+  "fim": "2028",
+  "site": "http://www.santoaugusto.rs.gov.br",
+  "telefone": null,
+  "oficial": {
+   "nome": "Lillian Fontoura Depierre",
+   "partido": null,
+   "fonte": "Wikipédia",
+   "obs": "mandato até 2028"
+  }
+ },
+ "Santo Ângelo": {
+  "titulo": "Santo Ângelo",
+  "prefeito": "Nivio Boelter Braz",
+  "inicio": "2025",
+  "fim": "2024",
+  "site": "http://www.santoangelo.rs.gov.br/",
+  "telefone": "(55) 3312-0100",
+  "oficial": {
+   "nome": "Nivio Boelter Braz",
+   "partido": "PL",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Sentinela Do Sul": {
+  "titulo": "Sentinela do Sul",
+  "prefeito": "Julio Carvalho",
+  "inicio": null,
+  "fim": "2028",
+  "site": "https://www.sentineladosul.rs.gov.br/",
+  "telefone": "(51) 2349-0051",
+  "oficial": {
+   "nome": "Julio Cesar Carvalho",
+   "partido": "PP",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Sinimbu": {
+  "titulo": "Sinimbu",
+  "prefeito": "Wilson Molz",
+  "inicio": null,
+  "fim": "2028",
+  "site": "http://www.sinimbu.rs.gov.br",
+  "telefone": "(51) 99962-7885",
+  "brasao": "Sinimbursbrasoes.jpg",
+  "oficial": {
+   "nome": "Wilson Molz",
+   "partido": "PSB",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Soledade": {
+  "titulo": "Soledade (Rio Grande do Sul)",
+  "prefeito": "Paulo Cattaneo",
+  "inicio": null,
+  "fim": "2028",
+  "site": "https://www.soledade.rs.gov.br/",
+  "telefone": null,
+  "oficial": {
+   "nome": "Paulo Ricardo Cattaneo",
+   "partido": "MDB",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "São Borja": {
+  "titulo": "São Borja",
+  "prefeito": "José Luiz Machado",
+  "inicio": null,
+  "fim": "2028",
+  "site": "http://www.saoborja.rs.gov.br",
+  "telefone": "(55) 3431-4130",
+  "oficial": {
+   "nome": "José Luiz Rodrigues Machado",
+   "partido": "PP",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "São Francisco De Paula": {
+  "titulo": "São Francisco de Paula (Rio Grande do Sul)",
+  "prefeito": "Thiago Teixeira",
+  "inicio": null,
+  "fim": "2028",
+  "site": "http://www.saofranciscodepaula.rs.gov.br/",
+  "telefone": null,
+  "oficial": {
+   "nome": "Thiago Carniel Teixeira",
+   "partido": "PDT",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "São Gabriel": {
+  "titulo": "São Gabriel (Rio Grande do Sul)",
+  "prefeito": "Lucas Gonçalves Menezes",
+  "inicio": "2025",
+  "fim": "2028",
+  "site": "https://www.saogabriel.rs.gov.br/",
+  "telefone": "(55) 99179-2926",
+  "oficial": {
+   "nome": "Lucas Gonçalves Menezes",
+   "partido": "UNIÃO",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "São José Do Norte": {
+  "titulo": "São José do Norte",
+  "prefeito": "Neromar de Araújo Guimarães",
+  "inicio": null,
+  "fim": "2028",
+  "site": "https://www.saojosedonorte.rs.gov.br/",
+  "telefone": null,
+  "oficial": {
+   "nome": "Neromar de Araujo Guimarães",
+   "partido": "UNIÃO",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "São Luiz Gonzaga": {
+  "titulo": "São Luiz Gonzaga",
+  "prefeito": "José Antônio Flach Werle",
+  "inicio": null,
+  "fim": "2028",
+  "site": "http://www.saoluizgonzaga.rs.gov.br",
+  "telefone": null,
+  "oficial": {
+   "nome": "José Antônio Flach Werle",
+   "partido": "MDB",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "São Miguel Das Missões": {
+  "titulo": "São Miguel das Missões",
+  "prefeito": "Rodrigo Ribas",
+  "inicio": null,
+  "fim": "2028",
+  "site": "http://saomiguel.rs.gov.br",
+  "telefone": "(55) 2299-0001",
+  "oficial": {
+   "nome": "Luiz Rodrigo Ribas",
+   "partido": "PP",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "São Pedro Do Sul": {
+  "titulo": "São Pedro do Sul (Rio Grande do Sul)",
+  "prefeito": "Fernando Pillar Cezar",
+  "inicio": null,
+  "fim": "2028",
+  "site": "http://www.saopedrodosul.rs.gov.br",
+  "telefone": null,
+  "oficial": {
+   "nome": "Fernando Pilar Cezar",
+   "partido": "PP",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "São Valentim Do Sul": {
+  "titulo": "São Valentim do Sul",
+  "prefeito": "Moises Cavanus",
+  "inicio": null,
+  "fim": "2028",
+  "site": "http://www.saovalentimdosul.rs.gov.br",
+  "telefone": "(54) 3472-2000",
+  "brasao": "São Valentim do Sulrsbrasões.png",
+  "oficial": {
+   "nome": "Moises Cavanus",
+   "partido": "MDB",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Tiradentes Do Sul": {
+  "titulo": "Tiradentes do Sul",
+  "prefeito": "Elton Luis Pilger",
+  "inicio": null,
+  "fim": "2028",
+  "site": "http://www.tiradentesdosul.rs.gov.br",
+  "telefone": "(55) 2032-0041",
+  "brasao": "Tiradentes do Sulbrasoes.jpg",
+  "oficial": {
+   "nome": "Elton Luis Pilger",
+   "partido": "MDB",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Trindade Do Sul": {
+  "titulo": "Trindade do Sul",
+  "prefeito": "Odair Adilio Pelicioli",
+  "inicio": null,
+  "fim": "2028",
+  "site": "http://www.trindadedosul.rs.gov.br/",
+  "telefone": "(54) 3541-1025",
+  "oficial": {
+   "nome": "Odair Adilio Pelicioli",
+   "partido": "PDT",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Tupanciretã": {
+  "titulo": "Tupanciretã",
+  "prefeito": "Gustavo Herter Terra",
+  "inicio": null,
+  "fim": "2028",
+  "site": "http://www.tupancireta.rs.gov.br",
+  "telefone": null,
+  "oficial": {
+   "nome": "Gustavo Herter Terra",
+   "partido": "PP",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Uruguaiana": {
+  "titulo": "Uruguaiana",
+  "prefeito": "Carlos Delgado",
+  "inicio": null,
+  "fim": "2028",
+  "site": "http://www.uruguaiana.rs.gov.br",
+  "telefone": null,
+  "oficial": {
+   "nome": "Carlos Alberto Delgado de David",
+   "partido": "PP",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Venâncio Aires": {
+  "titulo": "Venâncio Aires",
+  "prefeito": "Jarbas Daniel da Rosa",
+  "inicio": null,
+  "fim": "2028",
+  "site": "http://www.venancioaires.rs.gov.br",
+  "telefone": "(51) 3983-1000",
+  "oficial": {
+   "nome": "Jarbas Daniel da Rosa",
+   "partido": "PDT",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Vila Nova Do Sul": {
+  "titulo": "Vila Nova do Sul",
+  "prefeito": "José Moura",
+  "inicio": null,
+  "fim": "2028",
+  "site": "http://www.vilanovadosul.rs.gov.br",
+  "telefone": "(55) 3234-1253",
+  "oficial": {
+   "nome": "José Luiz Camargo de Moura",
+   "partido": "MDB",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ }
+}

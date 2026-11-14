@@ -1,0 +1,170 @@
+{
+ "Acrelândia": {
+  "titulo": "Acrelândia",
+  "prefeito": "Olavo Francelino de Resende",
+  "inicio": null,
+  "fim": "2028",
+  "site": "http://www.acrelandia.ac.gov.br/",
+  "telefone": "(68) 3235-1332",
+  "oficial": {
+   "nome": "Olavo Francelino de Rezende",
+   "partido": "REPUBLICANOS",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Cruzeiro Do Sul": {
+  "titulo": "Cruzeiro do Sul (Acre)",
+  "prefeito": "José de Souza Lima",
+  "inicio": null,
+  "fim": "2028",
+  "site": "https://www.cruzeirodosul.ac.gov.br/",
+  "telefone": "(68) 3322-2169",
+  "oficial": {
+   "nome": "José de Souza Lima",
+   "partido": "PP",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Feijó": {
+  "titulo": "Feijó (Acre)",
+  "prefeito": "Railson Ferreira da Silva (Delegado Railson)(",
+  "inicio": "2025",
+  "fim": "2028",
+  "site": "http://www.feijo.ac.gov.br",
+  "telefone": "(68) 3463-2614",
+  "oficial": {
+   "nome": "Railson Ferreira da Silva",
+   "partido": "REPUBLICANOS",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Jordão": {
+  "titulo": "Jordão (Acre)",
+  "prefeito": "Francisco Naudino Ribeiro Souza",
+  "inicio": null,
+  "fim": "2028",
+  "site": "http://www.jordao.ac.gov.br",
+  "telefone": "(68) 99251-0013",
+  "oficial": {
+   "nome": "Francisco Naudino Ribeiro Souza",
+   "partido": "PP",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Marechal Thaumaturgo": {
+  "titulo": "Marechal Thaumaturgo",
+  "prefeito": "Valdélio José do Nascimento Furtado",
+  "inicio": null,
+  "fim": "2028",
+  "site": "http://www.marechalthaumaturgo.ac.gov.br",
+  "telefone": "(68) 3325-1092",
+  "oficial": {
+   "nome": "Valdelio Jose do Nascimento Furtado",
+   "partido": "PP",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Mâncio Lima": {
+  "titulo": "Mâncio Lima",
+  "prefeito": "José Luiz Gomes da Costa",
+  "inicio": null,
+  "fim": "2028",
+  "site": "http://www.manciolima.ac.gov.br",
+  "telefone": "(68) 3343-1445",
+  "oficial": {
+   "nome": "Jose Luiz Gomes da Costa",
+   "partido": "PP",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Porto Walter": {
+  "titulo": "Porto Walter",
+  "prefeito": "Cesar Andrade",
+  "inicio": null,
+  "fim": "2028",
+  "site": "http://www.portowalter.ac.gov.br",
+  "telefone": "(68) 3325-1092",
+  "oficial": {
+   "nome": "Sebastião Nogueira de Andrade",
+   "partido": "PP",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Rodrigues Alves": {
+  "titulo": "Rodrigues Alves (Acre)",
+  "prefeito": "Salatiel Pinheiro Magalhães",
+  "inicio": null,
+  "fim": "2028",
+  "site": "https://www.rodriguesalves.ac.gov.br",
+  "telefone": "(68) 3342-1176",
+  "oficial": {
+   "nome": "Salatiel Pinheiro Magalhaes",
+   "partido": "PSD",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Santa Rosa Do Purus": {
+  "titulo": "Santa Rosa do Purus",
+  "prefeito": "Tamir de Sá",
+  "inicio": "2025",
+  "fim": "2028",
+  "site": "https://www.santarosadopurus.ac.gov.br/",
+  "telefone": "(68) 3611-1314",
+  "oficial": {
+   "nome": "Jose Altamir Taumaturgo Sá",
+   "partido": "MDB",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Sena Madureira": {
+  "titulo": "Sena Madureira",
+  "prefeito": "Gerlen Diniz",
+  "inicio": null,
+  "fim": "2028",
+  "site": "http://www.senamadureira.ac.gov.br",
+  "telefone": "(68) 3612-2424",
+  "oficial": {
+   "nome": "Gehlen Diniz Andrade",
+   "partido": "PP",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Senador Guiomard": {
+  "titulo": "Senador Guiomard",
+  "prefeito": "Rosana Gomes",
+  "inicio": null,
+  "fim": "2028",
+  "site": "http://www.senadorguiomard.ac.gov.br",
+  "telefone": "(68) 98122-0970",
+  "oficial": {
+   "nome": "Rosana Pereira da Silva",
+   "partido": "PP",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Tarauacá": {
+  "titulo": "Tarauacá",
+  "prefeito": "Rodrigo Damasceno Catão",
+  "inicio": null,
+  "fim": "2028",
+  "site": "https://www.tarauaca.ac.gov.br/",
+  "telefone": "(68) 3325-1092",
+  "oficial": {
+   "nome": "Rodrigo Damasceno Catão",
+   "partido": "PP",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ }
+}

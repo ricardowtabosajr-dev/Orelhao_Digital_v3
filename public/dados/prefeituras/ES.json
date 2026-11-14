@@ -1,0 +1,130 @@
+{
+ "Alegre": {
+  "titulo": "Alegre (Espírito Santo)",
+  "prefeito": "Nemrod Emerick",
+  "inicio": null,
+  "fim": "2028",
+  "site": "https://www.alegre.es.gov.br/",
+  "telefone": "(28) 3300-0100",
+  "brasao": "Alegre.PNG",
+  "oficial": {
+   "nome": "Nemrod Emerick",
+   "partido": "PP",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Barra De São Francisco": {
+  "titulo": "Barra de São Francisco",
+  "prefeito": "Enivaldo Euzébio dos Anjos",
+  "inicio": null,
+  "fim": "2028",
+  "site": "https://www.pmbsf.es.gov.br/",
+  "telefone": "(27) 3756-8000",
+  "oficial": {
+   "nome": "Enivaldo Euzébio dos Anjos",
+   "partido": "PSB",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Ecoporanga": {
+  "titulo": "Ecoporanga",
+  "prefeito": "José Luiz Mendes",
+  "inicio": null,
+  "fim": "2028",
+  "site": "https://ecoporanga.es.gov.br/",
+  "telefone": "(27) 99733-8508",
+  "oficial": {
+   "nome": "José Luiz Mendes",
+   "partido": "PSB",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Laranja Da Terra": {
+  "titulo": "Laranja da Terra",
+  "prefeito": "Joadir Lourenço Marques",
+  "inicio": null,
+  "fim": "2028",
+  "site": "https://www.laranjadaterra.es.gov.br/",
+  "telefone": null,
+  "oficial": {
+   "nome": "Joadir Lourenço Marques",
+   "partido": "PSDB",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Linhares": {
+  "titulo": "Linhares (Espírito Santo)",
+  "prefeito": "Lucas Scaramussa",
+  "inicio": null,
+  "fim": "2028",
+  "site": "https://www.linhares.es.gov.br/",
+  "telefone": null,
+  "oficial": {
+   "nome": "Lucas Scaramussa",
+   "partido": "PODE",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Mucurici": {
+  "titulo": "Mucurici",
+  "prefeito": "Adilson Gonçalves Ferreira",
+  "inicio": null,
+  "fim": "2028",
+  "site": "https://mucurici.es.gov.br/",
+  "telefone": "(27) 93300-2620",
+  "oficial": {
+   "nome": "Adilson Gonçalves Ferreira",
+   "partido": "PSB",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Presidente Kennedy": {
+  "titulo": "Presidente Kennedy (Espírito Santo)",
+  "prefeito": "Fábio Feliciano de Oliveira",
+  "inicio": null,
+  "fim": "2028",
+  "site": "https://presidentekennedy.es.gov.br/",
+  "telefone": "(28) 3535-3600",
+  "oficial": {
+   "nome": "Fábio Feliciano de Oliveira",
+   "partido": null,
+   "fonte": "Wikipédia",
+   "obs": "mandato até 2028"
+  }
+ },
+ "São Gabriel Da Palha": {
+  "titulo": "São Gabriel da Palha",
+  "prefeito": "Tiago Rocha",
+  "inicio": null,
+  "fim": "2028",
+  "site": "https://saogabriel.es.gov.br/",
+  "telefone": null,
+  "oficial": {
+   "nome": "Tiago Rocha",
+   "partido": "PL",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "São Mateus": {
+  "titulo": "São Mateus (Espírito Santo)",
+  "prefeito": "Marcus Azevedo Batista",
+  "inicio": null,
+  "fim": "2028",
+  "site": "https://www.saomateus.es.gov.br/",
+  "telefone": "(27) 3195-0100",
+  "brasao": "São Mateus - correto.PNG",
+  "oficial": {
+   "nome": "Marcus Azevedo Batista",
+   "partido": "PODE",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ }
+}

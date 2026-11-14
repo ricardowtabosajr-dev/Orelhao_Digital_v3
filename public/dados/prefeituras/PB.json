@@ -1,0 +1,859 @@
+{
+ "Alagoa Grande": {
+  "titulo": "Alagoa Grande",
+  "prefeito": "João Bosco Carneiro Neto",
+  "inicio": null,
+  "fim": "2028",
+  "site": "https://www.alagoagrande.pb.gov.br/",
+  "telefone": "(83) 99112-9071",
+  "oficial": {
+   "nome": "Joao Bosco Carneiro Neto",
+   "partido": "REPUBLICANOS",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Alcantil": {
+  "titulo": "Alcantil",
+  "prefeito": "Cícero José Fernandes do Carmo",
+  "inicio": null,
+  "fim": "2024",
+  "site": null,
+  "telefone": null,
+  "oficial": {
+   "nome": "Cicero Jose Fernandes do Carmo",
+   "partido": "PSD",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Aparecida": {
+  "titulo": "Aparecida (Paraíba)",
+  "prefeito": "João Rabelo de Sá Neto",
+  "inicio": null,
+  "fim": "2024",
+  "site": "https://aparecida.pb.gov.br/",
+  "telefone": "(83) 98615-6305",
+  "oficial": {
+   "nome": "João Rabelo de Sá Neto",
+   "partido": "PSB",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Araruna": {
+  "titulo": "Araruna (Paraíba)",
+  "prefeito": "Availdo Azevedo",
+  "inicio": null,
+  "fim": "2024-2028",
+  "site": "https://www.araruna.pb.gov.br/",
+  "telefone": "(83) 3373-1010",
+  "oficial": {
+   "nome": "Availdo Luis de Alcântara Azevedo",
+   "partido": "PP",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Areia De Baraúnas": {
+  "titulo": "Areia de Baraúnas",
+  "prefeito": "Toinho Macedo",
+  "inicio": null,
+  "fim": "2024",
+  "site": "http://areiadebaraunas.pb.gov.br/",
+  "telefone": "(83) 99864-6506",
+  "oficial": {
+   "nome": "Antonio Geronimo Duarte Macedo",
+   "partido": "PSB",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Aroeiras": {
+  "titulo": "Aroeiras",
+  "prefeito": "Domingos Marques Barbosa Filho",
+  "inicio": "2025",
+  "fim": "2028",
+  "site": null,
+  "telefone": null,
+  "oficial": {
+   "nome": "Domingos Marques Barbosa Filho",
+   "partido": "PP",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Barra De Santana": {
+  "titulo": "Barra de Santana",
+  "prefeito": "CLEOCÉLIO NAZARENO BARRETO",
+  "inicio": null,
+  "fim": "2028",
+  "site": "https://barradesantana.pb.gov.br/",
+  "telefone": "(83) 3346-1066",
+  "oficial": {
+   "nome": "Cleocelio Nazareno Barreto",
+   "partido": "UNIÃO",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Barra De São Miguel": {
+  "titulo": "Barra de São Miguel (Paraíba)",
+  "prefeito": "João Paulo França",
+  "inicio": null,
+  "fim": "2028",
+  "site": null,
+  "telefone": null,
+  "brasaoLocal": "/brasoes/PB/barra-de-sao-miguel.png",
+  "oficial": {
+   "nome": "João Paulo França",
+   "partido": "PSD",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Boqueirão": {
+  "titulo": "Boqueirão",
+  "prefeito": "João Marcos de Freitas",
+  "inicio": null,
+  "fim": "2028",
+  "site": null,
+  "telefone": null,
+  "oficial": {
+   "nome": "João Marcos de Freitas",
+   "partido": "PSD",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Cachoeira Dos Índios": {
+  "titulo": "Cachoeira dos Índios",
+  "prefeito": "Alyson Francisco de Moura Sousa",
+  "inicio": null,
+  "fim": "2028",
+  "site": null,
+  "telefone": null,
+  "oficial": {
+   "nome": "Alyson Francisco de Moura Sousa",
+   "partido": "PP",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Cajazeiras": {
+  "titulo": "Cajazeiras",
+  "prefeito": "Maria do Socorro Delfino Pereira",
+  "inicio": "2025",
+  "fim": null,
+  "site": "http://www.cajazeiras.pb.gov.br/",
+  "telefone": "(83) 99185-3021",
+  "oficial": {
+   "nome": "Maria do Socorro Delfino Pereira",
+   "partido": "PP",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Camalaú": {
+  "titulo": "Camalaú",
+  "prefeito": "Ubirajara Antônio Pereira Mariano",
+  "inicio": null,
+  "fim": null,
+  "site": "http://camalau.pb.gov.br/",
+  "telefone": "(83) 3302-1013",
+  "oficial": {
+   "nome": "Ubirajara Antonio Pereira Mariano",
+   "partido": "PSB",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Campina Grande": {
+  "titulo": "Campina Grande",
+  "prefeito": "Bruno Cunha Lima",
+  "inicio": null,
+  "fim": "2028",
+  "site": "http://www.campinagrande.pb.gov.br",
+  "telefone": "(83) 3310-6216",
+  "oficial": {
+   "nome": "Bruno Cunha Lima Branco",
+   "partido": "UNIÃO",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Catingueira": {
+  "titulo": "Catingueira",
+  "prefeito": "Suélio Felix de Alencar",
+  "inicio": null,
+  "fim": "2028",
+  "site": "http://catingueira.pb.gov.br/",
+  "telefone": null,
+  "oficial": {
+   "nome": "Suelio Felix de Alencar",
+   "partido": "UNIÃO",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Conceição": {
+  "titulo": "Conceição (Paraíba)",
+  "prefeito": "Samuel Lacerda",
+  "inicio": "2021",
+  "fim": null,
+  "site": "http://conceicao.pb.gov.br/",
+  "telefone": null,
+  "oficial": {
+   "nome": "Samuel Soares Lavor de Lacerda",
+   "partido": "SOLIDARIEDADE",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Congo": {
+  "titulo": "Congo (Paraíba)",
+  "prefeito": "Romualdo Antônio Quirino Sousa",
+  "inicio": null,
+  "fim": "2024",
+  "site": "https://www.congo.pb.gov.br/",
+  "telefone": null,
+  "oficial": {
+   "nome": "Flavia Emanoela Sousa Pereira Quirino",
+   "partido": "MDB",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Diamante": {
+  "titulo": "Diamante (Paraíba)",
+  "prefeito": "Hermes Mangueira Diniz Filho",
+  "inicio": null,
+  "fim": "2024",
+  "site": null,
+  "telefone": null,
+  "oficial": {
+   "nome": "Hermes Mangueira Diniz Filho",
+   "partido": "MDB",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Fagundes": {
+  "titulo": "Fagundes",
+  "prefeito": "Wilmar Lemos Maranhão Júnior",
+  "inicio": null,
+  "fim": "2028",
+  "site": null,
+  "telefone": null,
+  "oficial": {
+   "nome": "Wilmar Lemos Maranhão Júnior",
+   "partido": "PSB",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Gado Bravo": {
+  "titulo": "Gado Bravo",
+  "prefeito": "Marcelo Paulino da Silva",
+  "inicio": null,
+  "fim": "2024",
+  "site": "http://www.gadobravo.pb.gov.br/",
+  "telefone": null,
+  "oficial": {
+   "nome": "Marcelo Paulino da Silva",
+   "partido": "PL",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Imaculada": {
+  "titulo": "Imaculada",
+  "prefeito": "Aldo Lustosa (Dada)",
+  "inicio": null,
+  "fim": "2028",
+  "site": "http://www.imaculada.pb.gov.br/",
+  "telefone": null,
+  "oficial": {
+   "nome": "Aldo Lustosa da Silva",
+   "partido": "PSD",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Jacaraú": {
+  "titulo": "Jacaraú",
+  "prefeito": "Márcio Aurélio",
+  "inicio": "2025",
+  "fim": "2028",
+  "site": null,
+  "telefone": null,
+  "oficial": {
+   "nome": "Márcio Aurelio Madruga Cruz",
+   "partido": "PSD",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Juarez Távora": {
+  "titulo": "Juarez Távora (Paraíba)",
+  "prefeito": "Wilson Evangelista Feitosa",
+  "inicio": "2021",
+  "fim": "2024",
+  "site": "https://www.juareztavora.pb.gov.br/",
+  "telefone": null,
+  "oficial": {
+   "nome": "Wilson Evangelista Feitosa",
+   "partido": "PSB",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Junco Do Seridó": {
+  "titulo": "Junco do Seridó",
+  "prefeito": "Paulo Neide Melo Fragoso",
+  "inicio": null,
+  "fim": "2024",
+  "site": "http://juncodoserido.pb.gov.br/",
+  "telefone": "(83) 3464-1069",
+  "oficial": {
+   "nome": "Paulo Neide Melo Fragoso",
+   "partido": "PSB",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Lagoa": {
+  "titulo": "Lagoa (Paraíba)",
+  "prefeito": "Maria Rodrigues Linhares de Lima",
+  "inicio": null,
+  "fim": "2024",
+  "site": null,
+  "telefone": null,
+  "oficial": {
+   "nome": "Maria Rodrigues Linhares de Lima",
+   "partido": "PDT",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Lucena": {
+  "titulo": "Lucena (Paraíba)",
+  "prefeito": "Leomax da Costa Bandeira",
+  "inicio": null,
+  "fim": "2024",
+  "site": "http://www.lucena.pb.gov.br/",
+  "telefone": null,
+  "oficial": {
+   "nome": "Leomax da Costa Bandeira",
+   "partido": "MDB",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Manaíra": {
+  "titulo": "Manaíra",
+  "prefeito": "Manoel Virgulino Simão (Dr. Messias Simão)",
+  "inicio": null,
+  "fim": "2024",
+  "site": null,
+  "telefone": null,
+  "oficial": {
+   "nome": "Manoel Virgulino Simão",
+   "partido": "PSDB",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Mari": {
+  "titulo": "Mari (Paraíba)",
+  "prefeito": "Lúcia de Fátima Santos da Silva",
+  "inicio": null,
+  "fim": "2028",
+  "site": "http://www.mari.pb.gov.br/",
+  "telefone": null,
+  "oficial": {
+   "nome": "Lucia de Fatima Santos da Silva",
+   "partido": "PSB",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Monte Horebe": {
+  "titulo": "Monte Horebe",
+  "prefeito": "Marcos Eron",
+  "inicio": null,
+  "fim": "2024",
+  "site": null,
+  "telefone": null,
+  "oficial": {
+   "nome": "Milena Karen Tavares Nogueira",
+   "partido": "MDB",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Monteiro": {
+  "titulo": "Monteiro",
+  "prefeito": "Ana Paula Barbosa Oliveira Morato",
+  "inicio": "2025",
+  "fim": "Presente",
+  "site": "http://www.monteiro.pb.gov.br/",
+  "telefone": "(83) 3351-1510",
+  "oficial": {
+   "nome": "Ana Paula Barbosa Oliveira Morato",
+   "partido": "PSB",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Natuba": {
+  "titulo": "Natuba",
+  "prefeito": "José Lins da Silva Filho",
+  "inicio": null,
+  "fim": "2024",
+  "site": null,
+  "telefone": null,
+  "oficial": {
+   "nome": "Jose Lins da Silva Filho",
+   "partido": "PSDB",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Nova Palmeira": {
+  "titulo": "Nova Palmeira",
+  "prefeito": "Antonio Orlando Pereira de Araújo",
+  "inicio": null,
+  "fim": "2028",
+  "site": "http://novapalmeira.pb.gov.br/",
+  "telefone": "(83) 92002-9703",
+  "oficial": {
+   "nome": "Antônio Orlando Pereira de Araújo",
+   "partido": "MDB",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Olho D'Água": {
+  "titulo": null,
+  "prefeito": null,
+  "inicio": null,
+  "fim": null,
+  "site": null,
+  "telefone": null,
+  "brasao": "Brasão Olho d'Água (PB).png",
+  "oficial": {
+   "nome": "Joana Sabino de Almeida Carvalho",
+   "partido": "PSB",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Parari": {
+  "titulo": "Parari",
+  "prefeito": "Genival Queiroz",
+  "inicio": "2021",
+  "fim": "2028",
+  "site": null,
+  "telefone": null,
+  "oficial": {
+   "nome": "Genival Aires de Queiroz Filho",
+   "partido": "PL",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Pedras De Fogo": {
+  "titulo": "Pedras de Fogo",
+  "prefeito": "José Carlos Ferreira Barros",
+  "inicio": "2025",
+  "fim": "2028",
+  "site": null,
+  "telefone": null,
+  "oficial": {
+   "nome": "José Carlos Ferreira Barros",
+   "partido": "MDB",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Picuí": {
+  "titulo": "Picuí",
+  "prefeito": "Ranieri Ferreira",
+  "inicio": null,
+  "fim": "2025",
+  "site": null,
+  "telefone": null,
+  "oficial": {
+   "nome": "José Ranieri Santos Ferreira",
+   "partido": "PT",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Pocinhos": {
+  "titulo": "Pocinhos",
+  "prefeito": "Eliane Moura dos Santos Galdino",
+  "inicio": "2021",
+  "fim": null,
+  "site": null,
+  "telefone": null,
+  "oficial": {
+   "nome": "Eliane Moura dos Santos Galdino",
+   "partido": "REPUBLICANOS",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Pombal": {
+  "titulo": "Pombal (Paraíba)",
+  "prefeito": "Claudenildo Alencar Nóbrega (Galego da Gavel)",
+  "inicio": null,
+  "fim": "2028",
+  "site": "http://www.pombal.pb.gov.br/",
+  "telefone": "(83) 99616-0566",
+  "oficial": {
+   "nome": "Claudenildo Alencar Nóbrega",
+   "partido": "REPUBLICANOS",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Prata": {
+  "titulo": "Prata (Paraíba)",
+  "prefeito": "Genivaldo Fernandes da Silva",
+  "inicio": null,
+  "fim": "2024",
+  "site": null,
+  "telefone": null,
+  "oficial": {
+   "nome": "Genivaldo Fernandes da Silva",
+   "partido": "REPUBLICANOS",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Princesa Isabel": {
+  "titulo": "Princesa Isabel (Paraíba)",
+  "prefeito": "Ednaldo de Melo",
+  "inicio": null,
+  "fim": "2028",
+  "site": "https://www.princesa.pb.gov.br/",
+  "telefone": null,
+  "oficial": {
+   "nome": "Ednaldo de Melo",
+   "partido": "PSB",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Queimadas": {
+  "titulo": "Queimadas (Paraíba)",
+  "prefeito": "Delúsia Barros Da Silva",
+  "inicio": "2025",
+  "fim": "2028",
+  "site": "https://www.queimadas.pb.gov.br/",
+  "telefone": null,
+  "oficial": {
+   "nome": "Delúsia Barros da Silva",
+   "partido": "REPUBLICANOS",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Riacho De Santo Antônio": {
+  "titulo": "Riacho de Santo Antônio",
+  "prefeito": "Marcelo Barbosa Ferreira",
+  "inicio": null,
+  "fim": "2028",
+  "site": null,
+  "telefone": null,
+  "oficial": {
+   "nome": "Marcelo Barbosa Ferreira",
+   "partido": "REPUBLICANOS",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Salgado De São Félix": {
+  "titulo": "Salgado de São Félix",
+  "prefeito": "Joni Marcos Souza de Oliveira",
+  "inicio": "2021",
+  "fim": "2024",
+  "site": null,
+  "telefone": null,
+  "oficial": {
+   "nome": "Joni Marcos Souza de Oliveira",
+   "partido": "REPUBLICANOS",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Santa Helena": {
+  "titulo": "Santa Helena (Paraíba)",
+  "prefeito": "João Cleber",
+  "inicio": null,
+  "fim": "2028",
+  "site": "https://www.santahelena.pb.gov.br/",
+  "telefone": null,
+  "brasaoLocal": "/brasoes/PB/santa-helena.png",
+  "oficial": {
+   "nome": "João Cleber Ferreira Lima",
+   "partido": "PSB",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Santa Teresinha": {
+  "titulo": "Santa Terezinha (Paraíba)",
+  "prefeito": "José de Arimatéia Nunes Camboim",
+  "inicio": null,
+  "fim": "2024",
+  "site": "http://www.santaterezinha.pb.gov.br/",
+  "telefone": "(83) 3419-1165",
+  "oficial": {
+   "nome": "Jose de Arimateia Nunes Camboim",
+   "partido": "REPUBLICANOS",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Santana De Mangueira": {
+  "titulo": "Santana de Mangueira",
+  "prefeito": "Nerival Inácio de Queiroz",
+  "inicio": null,
+  "fim": "2024",
+  "site": "http://santanademangueira.pb.gov.br/",
+  "telefone": null,
+  "oficial": {
+   "nome": "Marina Donária Alvarenga de Lacerda",
+   "partido": "MDB",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Santana Dos Garrotes": {
+  "titulo": "Santana dos Garrotes",
+  "prefeito": "José Paulo Filho (Dedé)",
+  "inicio": null,
+  "fim": "2024",
+  "site": "http://santanadosgarrotes.pb.gov.br/",
+  "telefone": "(83) 3485-1226",
+  "oficial": {
+   "nome": "Paloma Kenned Leite da Silva",
+   "partido": "REPUBLICANOS",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Sapé": {
+  "titulo": "Sapé",
+  "prefeito": "Sidnei Paiva de Freitas",
+  "inicio": null,
+  "fim": "2028",
+  "site": null,
+  "telefone": null,
+  "oficial": {
+   "nome": "Sidnei Paiva de Freitas",
+   "partido": "REPUBLICANOS",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Seridó": {
+  "titulo": "São Vicente do Seridó",
+  "prefeito": "Erivam dos Anjos Leonardo",
+  "inicio": null,
+  "fim": "2025",
+  "site": null,
+  "telefone": null,
+  "oficial": {
+   "nome": "Erivam dos Anjos Leonardo",
+   "partido": "PSB",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Serra Branca": {
+  "titulo": "Serra Branca",
+  "prefeito": "Michel Alexandre Pereira Marques",
+  "inicio": null,
+  "fim": "2028",
+  "site": null,
+  "telefone": null,
+  "oficial": {
+   "nome": "Michel Alexandre Pereira Marques",
+   "partido": "UNIÃO",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Sousa": {
+  "titulo": "Sousa (Paraíba)",
+  "prefeito": "Helder Moreira Abrantes De Carvalho",
+  "inicio": "2025",
+  "fim": "2028",
+  "site": "http://www.sousa.pb.gov.br/",
+  "telefone": "(83) 98116-0297",
+  "oficial": {
+   "nome": "Helder Moreira Abrantes de Carvalho",
+   "partido": "PSB",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Sumé": {
+  "titulo": "Sumé (Paraíba)",
+  "prefeito": "Manoel Lourenço Queiroz Duarte",
+  "inicio": null,
+  "fim": "2028",
+  "site": null,
+  "telefone": null,
+  "oficial": {
+   "nome": "Manoel Lourenço Queiroz Duarte",
+   "partido": "MDB",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "São Bentinho": {
+  "titulo": "São Bentinho",
+  "prefeito": "Giovana Olímpio",
+  "inicio": null,
+  "fim": "2028",
+  "site": null,
+  "telefone": null,
+  "oficial": {
+   "nome": "Giovana Leite Cavalcanti Olímpio",
+   "partido": "REPUBLICANOS",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "São José De Espinharas": {
+  "titulo": "São José de Espinharas",
+  "prefeito": "Thaise Gomes de Sousa",
+  "inicio": null,
+  "fim": "2029",
+  "site": "http://www.saojosedeespinharas.pb.gov.br/",
+  "telefone": null,
+  "oficial": {
+   "nome": "Thaise Gomes de Sousa",
+   "partido": "PP",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "São José De Piranhas": {
+  "titulo": "São José de Piranhas",
+  "prefeito": "Sandoval Vieira Lins",
+  "inicio": "2021",
+  "fim": null,
+  "site": null,
+  "telefone": null,
+  "oficial": {
+   "nome": "Sandoval Vieira Lins",
+   "partido": "PSB",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "São João Do Rio Do Peixe": {
+  "titulo": "São João do Rio do Peixe",
+  "prefeito": "Luiz Claudino",
+  "inicio": "2021",
+  "fim": null,
+  "site": null,
+  "telefone": null,
+  "oficial": {
+   "nome": "Luiz Claudino de Carvalho Florencio",
+   "partido": "PSB",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "São João Do Tigre": {
+  "titulo": "São João do Tigre",
+  "prefeito": "Márcio Alexandre Leite",
+  "inicio": null,
+  "fim": "2024",
+  "site": null,
+  "telefone": null,
+  "oficial": {
+   "nome": "Márcio Alexandre Leite",
+   "partido": "REPUBLICANOS",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Tacima": {
+  "titulo": "Tacima",
+  "prefeito": "Luis Rodrigues Sobrinho",
+  "inicio": "2021",
+  "fim": "2024",
+  "site": "https://www.pmtacima.pb.gov.br/",
+  "telefone": "(83) 3378-1029",
+  "oficial": {
+   "nome": "Luis Rodrigues Sobrinho",
+   "partido": "SOLIDARIEDADE",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Taperoá": {
+  "titulo": "Taperoá (Paraíba)",
+  "prefeito": "George Farias",
+  "inicio": null,
+  "fim": "2024",
+  "site": null,
+  "telefone": null,
+  "oficial": {
+   "nome": "George Ciro Monteiro de Farias",
+   "partido": "PSDB",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Triunfo": {
+  "titulo": "Triunfo (Paraíba)",
+  "prefeito": "Espedito Cezario De Freitas Filho",
+  "inicio": null,
+  "fim": "2028",
+  "site": null,
+  "telefone": null,
+  "oficial": {
+   "nome": "Espedito Cezario de Freitas Filho",
+   "partido": "PSB",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Várzea": {
+  "titulo": "Várzea (Paraíba)",
+  "prefeito": "Paulo Nóbrega de Medeiros",
+  "inicio": null,
+  "fim": "2025-2028",
+  "site": null,
+  "telefone": null,
+  "oficial": {
+   "nome": "Paulo Nobrega de Medeiros",
+   "partido": "REPUBLICANOS",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Água Branca": {
+  "titulo": "Água Branca (Paraíba)",
+  "prefeito": "Marluce Pereira Veras de Brito",
+  "inicio": null,
+  "fim": "2028",
+  "site": "https://www.aguabranca.pb.gov.br",
+  "telefone": "(83) 99868-3509",
+  "oficial": {
+   "nome": "Marluce Pereira Veras de Brito",
+   "partido": "REPUBLICANOS",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ }
+}

@@ -1,0 +1,653 @@
+{
+ "Atalaia": {
+  "titulo": "Atalaia (Alagoas)",
+  "prefeito": "Cecilia Lima Herrmann",
+  "inicio": "2025",
+  "fim": "2028",
+  "site": "https://www.atalaia.al.gov.br/",
+  "telefone": null,
+  "oficial": {
+   "nome": "Cecilia Lima Herrmann",
+   "partido": "MDB",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Batalha": {
+  "titulo": "Batalha (Alagoas)",
+  "prefeito": "Wagney Dantas",
+  "inicio": "2025",
+  "fim": "2028",
+  "site": "https://www.batalha.al.gov.br/",
+  "telefone": null,
+  "oficial": {
+   "nome": "Wagney Dantas Correia Caje",
+   "partido": "MDB",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Belo Monte": {
+  "titulo": "Belo Monte",
+  "prefeito": "Dalminho",
+  "inicio": null,
+  "fim": "2028",
+  "site": "http://www.belomonte.al.gov.br/",
+  "telefone": "(82) 3532-0009",
+  "oficial": {
+   "nome": "Dalmo Augusto de Almeida Júnior",
+   "partido": "MDB",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Cacimbinhas": {
+  "titulo": "Cacimbinhas",
+  "prefeito": "Vaval Wanderley",
+  "inicio": null,
+  "fim": "2028",
+  "site": null,
+  "telefone": null,
+  "oficial": {
+   "nome": "Wladimir Araújo Wanderley",
+   "partido": "MDB",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Capela": {
+  "titulo": "Capela (Alagoas)",
+  "prefeito": "Thiago de Medeiros Moura",
+  "inicio": null,
+  "fim": "2028",
+  "site": null,
+  "telefone": null,
+  "oficial": {
+   "nome": "Thiago de Medeiros Moura",
+   "partido": "MDB",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Colônia Leopoldina": {
+  "titulo": "Colônia Leopoldina",
+  "prefeito": "Alexandre Gilberto Sobreira",
+  "inicio": null,
+  "fim": "2028",
+  "site": null,
+  "telefone": null,
+  "oficial": {
+   "nome": "Alexandre Gilberto Sobreira",
+   "partido": "MDB",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Coruripe": {
+  "titulo": "Coruripe",
+  "prefeito": "Marcelo Beltrão",
+  "inicio": null,
+  "fim": "2024",
+  "site": "http://www.coruripe.al.gov.br",
+  "telefone": null,
+  "oficial": {
+   "nome": "Marcelo Beltrão Siqueira",
+   "partido": "PP",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Delmiro Gouveia": {
+  "titulo": "Delmiro Gouveia (Alagoas)",
+  "prefeito": "Eliziane Ferreira Costa",
+  "inicio": null,
+  "fim": "2024",
+  "site": "http://www.delmirogouveia.al.gov.br/",
+  "telefone": null,
+  "oficial": {
+   "nome": "Eliziane Ferreira Costa Lima",
+   "partido": "MDB",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Dois Riachos": {
+  "titulo": "Dois Riachos",
+  "prefeito": "Ramon Camilo Silva",
+  "inicio": null,
+  "fim": "2024",
+  "site": "http://www.doisriachos.al.gov.br/",
+  "telefone": "(82) 3620-1486",
+  "brasao": "Coat of Arms of Dois Riachos - AL - Brazil.png",
+  "oficial": {
+   "nome": "Rozineide Barbosa de Araújo Camilo",
+   "partido": "MDB",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Estrela De Alagoas": {
+  "titulo": "Estrela de Alagoas",
+  "prefeito": "Aldo Lira de Jesus",
+  "inicio": null,
+  "fim": "2024",
+  "site": null,
+  "telefone": null,
+  "oficial": {
+   "nome": "Roberto Ferreira Wanderley",
+   "partido": "MDB",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Feliz Deserto": {
+  "titulo": "Feliz Deserto",
+  "prefeito": "Jorge Luiz Silva Nunes",
+  "inicio": null,
+  "fim": "2028",
+  "site": null,
+  "telefone": null,
+  "oficial": {
+   "nome": "Jorge Luis Silva Nunes",
+   "partido": "PP",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Girau Do Ponciano": {
+  "titulo": "Girau do Ponciano",
+  "prefeito": "Gilberto Bezerra Barros",
+  "inicio": null,
+  "fim": "2028",
+  "site": "https://www.giraudoponciano.al.gov.br/",
+  "telefone": "(82) 3520-1680",
+  "oficial": {
+   "nome": "Gilberto Bezerra Barros",
+   "partido": "PP",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Ibateguara": {
+  "titulo": "Ibateguara",
+  "prefeito": "Manoel Geraertes Alves Cruz",
+  "inicio": null,
+  "fim": "2028",
+  "site": null,
+  "telefone": null,
+  "brasaoLocal": "/brasoes/AL/ibateguara.png",
+  "oficial": {
+   "nome": "Manoel Geraertes Alves Cruz",
+   "partido": "MDB",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Igaci": {
+  "titulo": "Igaci",
+  "prefeito": "José Petrúcio Oliveira",
+  "inicio": "2021",
+  "fim": "2024",
+  "site": "https://www.igaci.al.gov.br/",
+  "telefone": "(82) 9181-8599",
+  "oficial": {
+   "nome": "Jose Petrucio Oliveira Barbosa",
+   "partido": "MDB",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Igreja Nova": {
+  "titulo": "Igreja Nova (Alagoas)",
+  "prefeito": "Verônica Dantas Lima e Silva",
+  "inicio": null,
+  "fim": "2024",
+  "site": "https://www.igrejanova.al.gov.br",
+  "telefone": "(82) 3418-0000",
+  "oficial": {
+   "nome": "Tiago Gomes dos Santos",
+   "partido": "MDB",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Inhapi": {
+  "titulo": "Inhapi",
+  "prefeito": "Luiz Celso Malta Brandão Filho",
+  "inicio": null,
+  "fim": "2028",
+  "site": "https://inhapi.al.gov.br/",
+  "telefone": "(82) 3645-1450",
+  "oficial": {
+   "nome": "Luiz Celso Malta Brandão Filho",
+   "partido": "PP",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Jacaré Dos Homens": {
+  "titulo": "Jacaré dos Homens",
+  "prefeito": "José Floriano Bento de Melo",
+  "inicio": null,
+  "fim": "2024",
+  "site": null,
+  "telefone": null,
+  "oficial": {
+   "nome": "Maria do Socorro Melo da Silva",
+   "partido": "MDB",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Jacuípe": {
+  "titulo": "Jacuípe",
+  "prefeito": "Amaro Ferreira da Silva Júnior",
+  "inicio": null,
+  "fim": "2024",
+  "site": null,
+  "telefone": null,
+  "oficial": {
+   "nome": "Mayara Cristina Cavalcante de Freitas",
+   "partido": "MDB",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Joaquim Gomes": {
+  "titulo": "Joaquim Gomes",
+  "prefeito": "Rita de Cassia Cavalcante Andrade de Morais",
+  "inicio": null,
+  "fim": "2028",
+  "site": "http://www.joaquimgomes.al.gov.br/",
+  "telefone": "(82) 3252-1185",
+  "oficial": {
+   "nome": "Rita de Cassia Cavalcante Andrade de Morais",
+   "partido": "MDB",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Junqueiro": {
+  "titulo": "Junqueiro",
+  "prefeito": "Cícero Leandro Pereira da Silva",
+  "inicio": null,
+  "fim": "2028",
+  "site": "https://junqueiro.al.gov.br/",
+  "telefone": null,
+  "oficial": {
+   "nome": "Cicero Leandro Pereira da Silva",
+   "partido": "MDB",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Major Isidoro": {
+  "titulo": "Major Izidoro",
+  "prefeito": "Theobaldo Cavalcanti Lins Netto",
+  "inicio": null,
+  "fim": "2024",
+  "site": "https://www.majorizidoro.al.gov.br",
+  "telefone": null,
+  "oficial": {
+   "nome": "Theobaldo Cavalcanti Lins Netto",
+   "partido": "MDB",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Maragogi": {
+  "titulo": "Maragogi",
+  "prefeito": "Daniel Mendes (Dani) De Vasconcelos Ferreira",
+  "inicio": null,
+  "fim": "2028",
+  "site": "https://maragogi.al.gov.br/",
+  "telefone": "(82) 98164-3813",
+  "oficial": {
+   "nome": "Daniel Mendes de Vasconcelos Ferreira",
+   "partido": "PP",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Maravilha": {
+  "titulo": "Maravilha (Alagoas)",
+  "prefeito": "Maria da Conceição Ribeiro de Albuquerque",
+  "inicio": null,
+  "fim": "2024",
+  "site": null,
+  "telefone": null,
+  "brasaoLocal": "/brasoes/AL/maravilha.png",
+  "oficial": {
+   "nome": "Antônio Jorge Rodrigues",
+   "partido": "REPUBLICANOS",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Mata Grande": {
+  "titulo": "Mata Grande",
+  "prefeito": "Maria Fabiana Farias de Alencar",
+  "inicio": null,
+  "fim": null,
+  "site": "http://www.matagrande.al.cnm.org.br/",
+  "telefone": null,
+  "oficial": {
+   "nome": "Maria Fabiana Farias de Alencar",
+   "partido": "MDB",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Murici": {
+  "titulo": "Murici (Alagoas)",
+  "prefeito": "REMI VASCONCELOS CALHEIROS FILHO",
+  "inicio": null,
+  "fim": "2028",
+  "site": "https://www.murici.al.gov.br/",
+  "telefone": "(82) 3286-2015",
+  "brasao": "MURICI.svg",
+  "oficial": {
+   "nome": "Remi Vasconcelos Calheiros Filho",
+   "partido": "MDB",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Olho D'Água Do Casado": {
+  "titulo": null,
+  "prefeito": null,
+  "inicio": null,
+  "fim": null,
+  "site": null,
+  "telefone": null,
+  "oficial": {
+   "nome": "Carlos Alberto Bezerra da Silva",
+   "partido": "PT",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Palmeira Dos Índios": {
+  "titulo": "Palmeira dos Índios",
+  "prefeito": "Luisa Julia Duarte, \"Tia Júlia\"",
+  "inicio": null,
+  "fim": "2028",
+  "site": "http://palmeiradosindios.al.gov.br/",
+  "telefone": "(82) 93618-0719",
+  "oficial": {
+   "nome": "Luisa Julia Duarte",
+   "partido": "MDB",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Penedo": {
+  "titulo": "Penedo (Alagoas)",
+  "prefeito": "Ronaldo Pereira Lopes",
+  "inicio": null,
+  "fim": "2024",
+  "site": "http://www.penedo.al.gov.br",
+  "telefone": null,
+  "oficial": {
+   "nome": "Ronaldo Pereira Lopes",
+   "partido": "MDB",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Piranhas": {
+  "titulo": "Piranhas (Alagoas)",
+  "prefeito": "Tiago Freitas",
+  "inicio": null,
+  "fim": "2024",
+  "site": "http://piranhas.al.gov.br/",
+  "telefone": "(82) 3686-1669",
+  "oficial": {
+   "nome": "Tiago Torres Freitas",
+   "partido": "MDB",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Porto Calvo": {
+  "titulo": "Porto Calvo",
+  "prefeito": "Eronita Sposito Leão e Lima",
+  "inicio": null,
+  "fim": "2028",
+  "site": null,
+  "telefone": null,
+  "oficial": {
+   "nome": "Eronita Sposito Leao e Lima",
+   "partido": "MDB",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Porto De Pedras": {
+  "titulo": "Porto de Pedras",
+  "prefeito": "Allan de Jesus Silva",
+  "inicio": null,
+  "fim": "2028",
+  "site": "https://portodepedras.al.gov.br/",
+  "telefone": null,
+  "oficial": {
+   "nome": "Allan de Jesus Silva",
+   "partido": "MDB",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Poço Das Trincheiras": {
+  "titulo": "Poço das Trincheiras",
+  "prefeito": "José Valmiro Gomes da Costa",
+  "inicio": null,
+  "fim": "2024",
+  "site": null,
+  "telefone": null,
+  "brasao": "Coat of Arms of Poço das Trincheiras - AL - Brazil.png",
+  "oficial": {
+   "nome": "Jose Valmiro Gomes da Costa",
+   "partido": "MDB",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Pão De Açúcar": {
+  "titulo": "Pão de Açúcar (Alagoas)",
+  "prefeito": "Jorge Silva Dantas",
+  "inicio": null,
+  "fim": "2028",
+  "site": null,
+  "telefone": null,
+  "oficial": {
+   "nome": "Jorge Silva Dantas",
+   "partido": "MDB",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Santana Do Ipanema": {
+  "titulo": "Santana do Ipanema",
+  "prefeito": "João Eduardo Bulhões Portela de Melo",
+  "inicio": null,
+  "fim": "2028",
+  "site": "http://www.santanadoipanema.al.gov.br",
+  "telefone": "(82) 3621-3280",
+  "oficial": {
+   "nome": "Joao Eduardo Bulhoes Portela de Melo",
+   "partido": "MDB",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Santana Do Mundaú": {
+  "titulo": "Santana do Mundaú",
+  "prefeito": "Arthur Freitas",
+  "inicio": null,
+  "fim": "2024",
+  "site": "http://www.santanadomundau.al.gov.br/",
+  "telefone": "(82) 98120-1242",
+  "oficial": {
+   "nome": "André Luiz Goes Castro",
+   "partido": "MDB",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "São Brás": {
+  "titulo": "São Brás (Alagoas)",
+  "prefeito": "Klinger Quirino Santos",
+  "inicio": null,
+  "fim": "2024",
+  "site": "http://www.saobras.al.gov.br/",
+  "telefone": "(82) 3355-1162",
+  "brasao": "Brasão de São Brás.jpg",
+  "oficial": {
+   "nome": "Klinger Quirino Santos",
+   "partido": "MDB",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "São José Da Laje": {
+  "titulo": "São José da Laje",
+  "prefeito": "Angela Vanessa Rocha Pereira Bezerra",
+  "inicio": null,
+  "fim": "2024",
+  "site": "http://www.saojosedalaje.al.gov.br",
+  "telefone": "(82) 3285-1105",
+  "oficial": {
+   "nome": "Angela Vanessa Rocha Pereira Bezerra",
+   "partido": "MDB",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "São José Da Tapera": {
+  "titulo": "São José da Tapera",
+  "prefeito": "Jarbas Pereira Ricardo",
+  "inicio": null,
+  "fim": "2024",
+  "site": "https://site.saojosedatapera.al.gov.br",
+  "telefone": "(82) 3622-1208",
+  "oficial": {
+   "nome": "Jarbas Pereira Ricardo",
+   "partido": "MDB",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "São Luís Do Quitunde": {
+  "titulo": "São Luís do Quitunde",
+  "prefeito": "Marcia Rafaela Barros de Vasconcelos",
+  "inicio": null,
+  "fim": null,
+  "site": "https://saoluisdoquitunde.al.gov.br/",
+  "telefone": "(82) 3254-2032",
+  "oficial": {
+   "nome": "Marcia Rafaela Barros de Vasconcelos",
+   "partido": "MDB",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "São Sebastião": {
+  "titulo": "São Sebastião (Alagoas)",
+  "prefeito": "Charles Pacheco",
+  "inicio": null,
+  "fim": "2028",
+  "site": "https://www.saosebastiao.al.gov.br/",
+  "telefone": "(82) 3542-1339",
+  "brasaoLocal": "/brasoes/AL/sao-sebastiao.png",
+  "oficial": {
+   "nome": "Charles Nunes Regueira",
+   "partido": "PP",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Taquarana": {
+  "titulo": "Taquarana",
+  "prefeito": "Geraldo Cícero da Silva",
+  "inicio": null,
+  "fim": "2028",
+  "site": "http://www.taquarana.al.gov.br/",
+  "telefone": "(82) 3425-1281",
+  "oficial": {
+   "nome": "Geraldo Cicero da Silva",
+   "partido": "MDB",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Teotônio Vilela": {
+  "titulo": "Teotônio Vilela (Alagoas)",
+  "prefeito": "Pedro Henrique de Jesus Pereira",
+  "inicio": null,
+  "fim": "2024",
+  "site": "http://www.prefeiturateotonio.com.br/",
+  "telefone": null,
+  "oficial": {
+   "nome": "Pedro Henrique de Jesus Pereira",
+   "partido": "PP",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Traipu": {
+  "titulo": "Traipu",
+  "prefeito": "Manuel Lucas Kummer Freitas dos Santos",
+  "inicio": "2021",
+  "fim": "2024",
+  "site": "https://traipu.al.gov.br/",
+  "telefone": "(82) 3536-1132",
+  "oficial": {
+   "nome": "Manuel Lucas Kummer Freitas dos Santos",
+   "partido": "MDB",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "União Dos Palmares": {
+  "titulo": "União dos Palmares",
+  "prefeito": "José Iran Menezes da Silva Júnior",
+  "inicio": null,
+  "fim": "2024-2028",
+  "site": "http://www.uniaodospalmares.al.gov.br",
+  "telefone": null,
+  "oficial": {
+   "nome": "José Iran Menezes da Silva Junior",
+   "partido": "MDB",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Viçosa": {
+  "titulo": "Viçosa (Alagoas)",
+  "prefeito": "João Victor Calheiros Amorim Santos",
+  "inicio": null,
+  "fim": "2024",
+  "site": "https://www.vicosa.al.gov.br/",
+  "telefone": "(82) 3283-1375",
+  "oficial": {
+   "nome": "João Victor Calheiros Amorim Santos",
+   "partido": "MDB",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Água Branca": {
+  "titulo": "Água Branca (Alagoas)",
+  "prefeito": "Nayara",
+  "inicio": null,
+  "fim": "2028",
+  "site": "https://www.aguabranca.al.gov.br/",
+  "telefone": null,
+  "oficial": {
+   "nome": "Nayara Emmanuela Batista Feitosa",
+   "partido": "PP",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ }
+}

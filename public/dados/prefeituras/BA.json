@@ -1,0 +1,4374 @@
+{
+ "Abaré": {
+  "titulo": "Abaré",
+  "prefeito": "Fernando Jose Teixeira Tolentino",
+  "inicio": null,
+  "fim": "2024",
+  "site": "http://abare.ba.gov.br/",
+  "telefone": "(75) 3287-2222",
+  "oficial": {
+   "nome": "Emanoel Mescias Menezes de Andrade",
+   "partido": "PT",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Abaíra": {
+  "titulo": "Abaíra",
+  "prefeito": "Wellington Barbosa Silva",
+  "inicio": null,
+  "fim": "2028",
+  "site": "http://abaira.ba.gov.br/",
+  "telefone": "(77) 3476-2220",
+  "oficial": {
+   "nome": "Wellington Barbosa Silva",
+   "partido": "PSD",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Adustina": {
+  "titulo": "Adustina",
+  "prefeito": "Paulo Sérgio Oliveira dos Santos",
+  "inicio": null,
+  "fim": "2024",
+  "site": "http://www.adustina.ba.gov.br/",
+  "telefone": "(75) 3496-2148",
+  "oficial": {
+   "nome": "Jota Junior Gonçalves",
+   "partido": "PSD",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Alagoinhas": {
+  "titulo": "Alagoinhas",
+  "prefeito": "Gustavo Augusto de Souza Carmo",
+  "inicio": "2025",
+  "fim": null,
+  "site": "https://www.alagoinhas.ba.gov.br/",
+  "telefone": "(75) 3423-8306",
+  "oficial": {
+   "nome": "Gustavo Augusto de Souza Carmo",
+   "partido": "PSD",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Alcobaça": {
+  "titulo": "Alcobaça (Bahia)",
+  "prefeito": "Givaldo Muniz",
+  "inicio": null,
+  "fim": "2028",
+  "site": "https://pmalcobaca.ba.gov.br/",
+  "telefone": null,
+  "oficial": {
+   "nome": "Givaldo Muniz",
+   "partido": "PT",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "América Dourada": {
+  "titulo": "América Dourada",
+  "prefeito": "Joelson Cardoso do Rosario",
+  "inicio": null,
+  "fim": "2024",
+  "site": "https://www.americadourada.ba.gov.br/",
+  "telefone": "(74) 3692-2035",
+  "oficial": {
+   "nome": "Joelson Cardoso do Rosario",
+   "partido": "PSD",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Anagé": {
+  "titulo": "Anagé",
+  "prefeito": "Rogério Bonfim Soares",
+  "inicio": null,
+  "fim": "2028",
+  "site": "http://www.anage.ba.gov.br/",
+  "telefone": null,
+  "oficial": {
+   "nome": "Rogerio Bonfim Soares",
+   "partido": "PSD",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Andaraí": {
+  "titulo": "Andaraí",
+  "prefeito": "Wilson Paes Cardoso",
+  "inicio": "2020",
+  "fim": "2024",
+  "site": "https://www.andarai.ba.gov.br/",
+  "telefone": "(75) 3335-2119",
+  "oficial": {
+   "nome": "Wilson Paes Cardoso",
+   "partido": "PSB",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Angical": {
+  "titulo": "Angical",
+  "prefeito": "Monica Maria Rodrigues das Chagas Dias",
+  "inicio": "2025",
+  "fim": "2028",
+  "site": "http://angical.ba.gov.br/",
+  "telefone": null,
+  "oficial": {
+   "nome": "Monica Maria Rodrigues das Chagas Dias",
+   "partido": "AVANTE",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Anguera": {
+  "titulo": "Anguera",
+  "prefeito": "Mauro Selmo Oliveira Vieira",
+  "inicio": null,
+  "fim": "2024",
+  "site": "http://www.anguera.ba.gov.br/",
+  "telefone": "(75) 3239-6500",
+  "oficial": {
+   "nome": "Mauro Selmo Oliveira Vieira",
+   "partido": "PSD",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Antônio Gonçalves": {
+  "titulo": "Antônio Gonçalves",
+  "prefeito": "Djalma de Freitas Cardoso Neto",
+  "inicio": null,
+  "fim": "2024",
+  "site": "http://www.antoniogoncalves.ba.gov.br/",
+  "telefone": null,
+  "oficial": {
+   "nome": "Djalma de Freitas Cardoso Neto",
+   "partido": "PSD",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Aracatu": {
+  "titulo": "Aracatu",
+  "prefeito": "Braulina Lima Silva",
+  "inicio": null,
+  "fim": "2024",
+  "site": "https://aracatu.ba.gov.br/",
+  "telefone": "(77) 3465-2181",
+  "oficial": {
+   "nome": "Braulina Lima Silva",
+   "partido": "PV",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Araci": {
+  "titulo": "Araci",
+  "prefeito": "Maria Betivania Lima da Silva",
+  "inicio": null,
+  "fim": "2024",
+  "site": "http://araci.ba.gov.br/",
+  "telefone": "(75) 9708-2006",
+  "oficial": {
+   "nome": "Maria Betivania Lima da Silva",
+   "partido": "PDT",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Arataca": {
+  "titulo": "Arataca",
+  "prefeito": "Fernando Mansur Gonzaga (Ferlú)",
+  "inicio": "2021",
+  "fim": "2028",
+  "site": "http://arataca.ba.gov.br/",
+  "telefone": "(73) 3673-1337",
+  "oficial": {
+   "nome": "Fernando Mansur Gonzaga",
+   "partido": "PSD",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Araças": {
+  "titulo": "Araçás",
+  "prefeito": "Agamenon Oliveira Coelho",
+  "inicio": null,
+  "fim": "2028",
+  "site": "http://www.aracas.ba.gov.br/",
+  "telefone": "(75) 3451-2509",
+  "oficial": {
+   "nome": "Agamenon Oliveira Coelho",
+   "partido": "UNIÃO",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Baianópolis": {
+  "titulo": "Baianópolis",
+  "prefeito": "Weube Febronio Dos Santos",
+  "inicio": "2025",
+  "fim": "2028",
+  "site": "http://www.baianopolis.ba.gov.br/",
+  "telefone": "(77) 3617-2116",
+  "oficial": {
+   "nome": "Weube Febronio dos Santos",
+   "partido": "PP",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Baixa Grande": {
+  "titulo": "Baixa Grande",
+  "prefeito": "Gilvan Rios da Silva",
+  "inicio": "2021",
+  "fim": "2024",
+  "site": "https://www.baixagrande.ba.gov.br/",
+  "telefone": "(74) 3258-1125",
+  "oficial": {
+   "nome": "Adroaldo dos Santos Ribeiro",
+   "partido": "MDB",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Banzaê": {
+  "titulo": "Banzaê",
+  "prefeito": "Patrícia Nascimento Almeida",
+  "inicio": "2025",
+  "fim": "2028",
+  "site": "https://banzae.ba.gov.br/",
+  "telefone": "(75) 3213-2172",
+  "oficial": {
+   "nome": "Patrícia Nascimento Almeida",
+   "partido": "PT",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Barra": {
+  "titulo": "Barra (Bahia)",
+  "prefeito": "Romeu Júnior",
+  "inicio": "2024",
+  "fim": null,
+  "site": "https://barra.ba.gov.br/",
+  "telefone": "(74) 3662-2101",
+  "oficial": {
+   "nome": "Romeu Batista Pinto Junior",
+   "partido": "PT",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Barra Da Estiva": {
+  "titulo": "Barra da Estiva",
+  "prefeito": "Uilson Robson Silva Alves (Wilson do Café)",
+  "inicio": null,
+  "fim": "2028",
+  "site": "http://barradaestiva.ba.gov.br/",
+  "telefone": null,
+  "brasao": "Barra.da.estiva.ba.coat.of.arms.jpg",
+  "oficial": {
+   "nome": "Uilson Robson Silva Alves",
+   "partido": "PSD",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Barra Do Choça": {
+  "titulo": "Barra do Choça",
+  "prefeito": "Oberdam Rocha Dias (Oberdan Rocha)",
+  "inicio": "2025",
+  "fim": "2028",
+  "site": "https://www.barradochoca.ba.gov.br/",
+  "telefone": "(77) 3449-2021",
+  "brasaoLocal": "/brasoes/BA/barra-do-choca.png",
+  "oficial": {
+   "nome": "Oberdam Rocha Dias",
+   "partido": "PP",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Barra Do Mendes": {
+  "titulo": "Barra do Mendes",
+  "prefeito": "Manoel Gabriel dos Santos",
+  "inicio": "2025",
+  "fim": "2028",
+  "site": "https://www.barradomendes.ba.gov.br/",
+  "telefone": null,
+  "oficial": {
+   "nome": "Manoel Gabriel dos Santos",
+   "partido": "PP",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Barreiras": {
+  "titulo": "Barreiras",
+  "prefeito": "Otoniel Nascimento Teixeira",
+  "inicio": "2025",
+  "fim": "2028",
+  "site": "http://barreiras.ba.gov.br",
+  "telefone": null,
+  "oficial": {
+   "nome": "Otoniel Nascimento Teixeira",
+   "partido": "UNIÃO",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Barro Alto": {
+  "titulo": "Barro Alto (Bahia)",
+  "prefeito": "Orlando Amorim Santos",
+  "inicio": null,
+  "fim": "2024",
+  "site": "https://www.barroalto.ba.gov.br/",
+  "telefone": "(74) 3629-1114",
+  "oficial": {
+   "nome": "Evilazio Joaquim de Oliveira",
+   "partido": "AVANTE",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Barro Preto": {
+  "titulo": "Barro Preto",
+  "prefeito": "Juraci Dias de Jesus",
+  "inicio": null,
+  "fim": "2024",
+  "site": "http://www.barropreto.ba.gov.br/",
+  "telefone": null,
+  "oficial": {
+   "nome": "Juraci Dias de Jesus",
+   "partido": "AVANTE",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Belmonte": {
+  "titulo": "Belmonte (Bahia)",
+  "prefeito": "Iêdo José Menezes Elias",
+  "inicio": null,
+  "fim": "2028",
+  "site": "http://belmonte.ba.gov.br/",
+  "telefone": "(73) 3287-2840",
+  "oficial": {
+   "nome": "Iedo Jose Menezes Elias",
+   "partido": "PSD",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Belo Campo": {
+  "titulo": "Belo Campo",
+  "prefeito": "Fidelis Pereira Reis",
+  "inicio": "2025",
+  "fim": "2028",
+  "site": "https://www.belocampo.ba.gov.br/",
+  "telefone": "(77) 3437-2939",
+  "oficial": {
+   "nome": "Fidelis Pereira Reis",
+   "partido": "PSD",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Biritinga": {
+  "titulo": "Biritinga",
+  "prefeito": "Gilmario Souza de Oliveira",
+  "inicio": null,
+  "fim": "2028",
+  "site": "http://www.biritinga.ba.gov.br/",
+  "telefone": null,
+  "oficial": {
+   "nome": "Gilmário Souza de Oliveira",
+   "partido": "PSB",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Boa Nova": {
+  "titulo": "Boa Nova",
+  "prefeito": "Lucas Santos Meira",
+  "inicio": null,
+  "fim": "2028",
+  "site": "http://www.boanova.ba.gov.br/",
+  "telefone": "(77) 3433-2145",
+  "oficial": {
+   "nome": "Lucas Santos Meira",
+   "partido": "MDB",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Boa Vista Do Tupim": {
+  "titulo": "Boa Vista do Tupim",
+  "prefeito": "Sávio Bulcão dos Santos",
+  "inicio": null,
+  "fim": "2028",
+  "site": "https://www.boavistadotupim.ba.gov.br/",
+  "telefone": "(75) 3326-2211",
+  "oficial": {
+   "nome": "Savio Bulcao dos Santos",
+   "partido": "PSDB",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Bom Jesus Da Lapa": {
+  "titulo": "Bom Jesus da Lapa",
+  "prefeito": "Eures Ribeiro Pereira",
+  "inicio": null,
+  "fim": "2028",
+  "site": "http://www.bomjesusdalapa.ba.gov.br/",
+  "telefone": null,
+  "oficial": {
+   "nome": "Eures Ribeiro Pereira",
+   "partido": "PSD",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Bom Jesus Da Serra": {
+  "titulo": "Bom Jesus da Serra",
+  "prefeito": "Welton Silva Andrade",
+  "inicio": "2025",
+  "fim": "2028",
+  "site": "http://www.bomjesusdaserra.ba.gov.br/",
+  "telefone": "(77) 3461-1012",
+  "oficial": {
+   "nome": "Welton Silva Andrade",
+   "partido": "PSD",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Boninal": {
+  "titulo": "Boninal",
+  "prefeito": "Celeste Augusta Araujo Paiva",
+  "inicio": "2025",
+  "fim": null,
+  "site": "https://www.boninal.ba.gov.br/",
+  "telefone": "(75) 8703-5221",
+  "oficial": {
+   "nome": "Celeste Augusta Araujo Paiva",
+   "partido": "PT",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Bonito": {
+  "titulo": "Bonito (Bahia)",
+  "prefeito": "Edivam José Cedro De Souza",
+  "inicio": "2025",
+  "fim": "2028",
+  "site": "https://bonito.ba.gov.br/",
+  "telefone": "(75) 99996-7399",
+  "oficial": {
+   "nome": "Edivam Jose Cedro de Souza",
+   "partido": "PSD",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Boquira": {
+  "titulo": "Boquira",
+  "prefeito": "Alan Machado França",
+  "inicio": null,
+  "fim": "2028",
+  "site": "http://www.boquira.ba.gov.br/",
+  "telefone": "(77) 3645-2021",
+  "oficial": {
+   "nome": "Alan Machado França",
+   "partido": "PSB",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Botuporã": {
+  "titulo": "Botuporã",
+  "prefeito": "Edimilson Antônio Saraiva",
+  "inicio": null,
+  "fim": "2028",
+  "site": "http://botupora.ba.gov.br/",
+  "telefone": "(77) 3678-2119",
+  "oficial": {
+   "nome": "Edimilson Antonio Saraiva",
+   "partido": "PT",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Brejolândia": {
+  "titulo": "Brejolândia",
+  "prefeito": "Edezio Nunes Bastos",
+  "inicio": null,
+  "fim": "2028",
+  "site": "https://www.brejolandia.ba.gov.br/",
+  "telefone": null,
+  "oficial": {
+   "nome": "Edezio Nunes Bastos",
+   "partido": "UNIÃO",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Brejões": {
+  "titulo": "Brejões",
+  "prefeito": "Ricardo Castro Cerqueira",
+  "inicio": "1º de Janeiro de 2025",
+  "fim": null,
+  "site": "http://www.brejoes.ba.gov.br/",
+  "telefone": "(75) 3654-2158",
+  "oficial": {
+   "nome": "Ricardo Castro Cerqueira",
+   "partido": "AVANTE",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Brotas De Macaúbas": {
+  "titulo": "Brotas de Macaúbas",
+  "prefeito": "Antônio Kleber Ribeiro",
+  "inicio": null,
+  "fim": "2024",
+  "site": "http://brotasdemacaubas.ba.gov.br/",
+  "telefone": null,
+  "oficial": {
+   "nome": "Antonio Kleber Ribeiro",
+   "partido": "PSD",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Brumado": {
+  "titulo": "Brumado",
+  "prefeito": "[Fabrício Abrantes]",
+  "inicio": null,
+  "fim": "2028",
+  "site": "https://www.brumado.ba.gov.br",
+  "telefone": null,
+  "oficial": {
+   "nome": "Fabricio Abrantes Pires de Souza Oliveira",
+   "partido": "AVANTE",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Buritirama": {
+  "titulo": "Buritirama",
+  "prefeito": "Léo Miranda São Mateus",
+  "inicio": null,
+  "fim": "2028",
+  "site": "http://www.buritirama.ba.gov.br/",
+  "telefone": "(77) 99982-9624",
+  "oficial": {
+   "nome": "Léo Miranda São Mateus",
+   "partido": "MDB",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Caculé": {
+  "titulo": "Caculé",
+  "prefeito": "Pedro Dias da Silva (Pedrão)",
+  "inicio": "2021",
+  "fim": "2028",
+  "site": "http://www.governodecacule.ba.gov.br/",
+  "telefone": "(77) 3455-1412",
+  "oficial": {
+   "nome": "Pedro Dias da Silva",
+   "partido": "PSB",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Caetité": {
+  "titulo": "Caetité",
+  "prefeito": "Valtécio Neves Aguiar",
+  "inicio": "2021",
+  "fim": "2028",
+  "site": "http://www.caetite.ba.gov.br/",
+  "telefone": "(77) 3465-2181",
+  "oficial": {
+   "nome": "Valtécio Neves Aguiar",
+   "partido": "PDT",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Cafarnaum": {
+  "titulo": "Cafarnaum (Bahia)",
+  "prefeito": "Carlan Novais Sena Xavier",
+  "inicio": "2025",
+  "fim": "2028",
+  "site": "https://www.cafarnaum.ba.gov.br/",
+  "telefone": null,
+  "oficial": {
+   "nome": "Carlan Novais Sena Xavier",
+   "partido": "PSD",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Cairu": {
+  "titulo": "Cairu",
+  "prefeito": "Hildécio Antônio Meireles Filho",
+  "inicio": "2025",
+  "fim": "2028",
+  "site": "http://cairu.ba.gov.br/",
+  "telefone": "(75) 9838-8985",
+  "oficial": {
+   "nome": "Hildécio Antônio Meireles Filho",
+   "partido": "UNIÃO",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Caldeirão Grande": {
+  "titulo": "Caldeirão Grande",
+  "prefeito": "Cândido Pereira da Guirra Filho, Candinho",
+  "inicio": null,
+  "fim": "2024",
+  "site": "https://www.caldeiraogrande.ba.gov.br/",
+  "telefone": "(74) 3634-2263",
+  "oficial": {
+   "nome": "Pedro Henrique Araujo Bezerra",
+   "partido": "PP",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Camacan": {
+  "titulo": "Camacan",
+  "prefeito": "Paulo Cesar Bomfim de Oliveira (Paulo do Gás)",
+  "inicio": "2021",
+  "fim": "2028",
+  "site": "http://www.camacan.ba.gov.br/",
+  "telefone": null,
+  "oficial": {
+   "nome": "Paulo Cesar Bomfim de Oliveira",
+   "partido": "PSD",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Camamu": {
+  "titulo": "Camamu",
+  "prefeito": "Pastor Jairo Cruz",
+  "inicio": "2025",
+  "fim": "2029",
+  "site": "http://camamu.ba.gov.br/",
+  "telefone": "(73) 3255-1483",
+  "oficial": {
+   "nome": "Jairo Pereira Cruz",
+   "partido": "AVANTE",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Camaçari": {
+  "titulo": "Camaçari",
+  "prefeito": "Luiz Carlos Caetano (Caetano)",
+  "inicio": "2025",
+  "fim": "2028",
+  "site": "http://www.camacari.ba.gov.br/",
+  "telefone": null,
+  "oficial": {
+   "nome": "Luiz Carlos Caetano",
+   "partido": "PT",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Campo Alegre De Lourdes": {
+  "titulo": "Campo Alegre de Lourdes",
+  "prefeito": "Tadeu Dias",
+  "inicio": "2025",
+  "fim": "2028",
+  "site": "http://www.campoalegredelourdes.ba.gov.br/",
+  "telefone": "(74) 3533-2652",
+  "oficial": {
+   "nome": "Tadeu Dias dos Santos",
+   "partido": "PT",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Campo Formoso": {
+  "titulo": "Campo Formoso",
+  "prefeito": "Elmo Aluizio Vieira Nascimento",
+  "inicio": null,
+  "fim": "2024",
+  "site": "http://www.portalcampoformoso.com.br",
+  "telefone": null,
+  "oficial": {
+   "nome": "Elmo Aluizio Vieira Nascimento",
+   "partido": "UNIÃO",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Canarana": {
+  "titulo": "Canarana (Bahia)",
+  "prefeito": "Ezenivaldo Alves Dourado",
+  "inicio": null,
+  "fim": "2024",
+  "site": "https://canarana.ba.gov.br/",
+  "telefone": null,
+  "oficial": {
+   "nome": "Marleide Barbosa de Oliveira",
+   "partido": "PT",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Canavieiras": {
+  "titulo": "Canavieiras",
+  "prefeito": "Paulo Cezar Ramos Carvalho",
+  "inicio": "2025",
+  "fim": "2028",
+  "site": "http://www.canavieiras.ba.gov.br/",
+  "telefone": "(73) 3284-1105",
+  "oficial": {
+   "nome": "Paulo Cezar Ramos Carvalho",
+   "partido": "AVANTE",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Candeal": {
+  "titulo": "Candeal",
+  "prefeito": "Everton Pereira de Cerqueira",
+  "inicio": null,
+  "fim": "2024",
+  "site": "http://candeal.ba.gov.br/",
+  "telefone": "(75) 3235-2101",
+  "oficial": {
+   "nome": "Renato Pereira Lima Junior",
+   "partido": "AVANTE",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Candiba": {
+  "titulo": "Candiba",
+  "prefeito": "Reginaldo Martins Prado",
+  "inicio": "2021",
+  "fim": "2028",
+  "site": "https://www.candiba.ba.gov.br/",
+  "telefone": "(77) 3661-2029",
+  "oficial": {
+   "nome": "Reginaldo Martins Prado",
+   "partido": "PSD",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Cansanção": {
+  "titulo": "Cansanção",
+  "prefeito": "Vilma Rosa de Oliveira Gomes",
+  "inicio": null,
+  "fim": "2028",
+  "site": "https://www.cansancao.ba.gov.br/",
+  "telefone": null,
+  "oficial": {
+   "nome": "Vilma Rosa de Oliveira Gomes",
+   "partido": "MDB",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Canudos": {
+  "titulo": "Canudos",
+  "prefeito": "Jilson Cardoso de Macedo",
+  "inicio": null,
+  "fim": "2028",
+  "site": "http://www.canudos.ba.gov.br/",
+  "telefone": null,
+  "oficial": {
+   "nome": "Jilson Cardoso de Macedo",
+   "partido": "PSD",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Canápolis": {
+  "titulo": "Canápolis (Bahia)",
+  "prefeito": "Reginaldo de Souza Pereira (Dau)",
+  "inicio": null,
+  "fim": "2028",
+  "site": "http://www.canapolis.ba.gov.br/",
+  "telefone": "(77) 3687-2112",
+  "oficial": {
+   "nome": "Reginaldo de Souza Pereira",
+   "partido": "AVANTE",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Capela Do Alto Alegre": {
+  "titulo": "Capela do Alto Alegre",
+  "prefeito": "Luís Romeu Oliveira Mascarenhas",
+  "inicio": null,
+  "fim": "2025",
+  "site": "https://capeladoaltoalegre.ba.gov.br/",
+  "telefone": null,
+  "oficial": {
+   "nome": "Luis Romeu Oliveira Mascarenhas",
+   "partido": "PSD",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Caravelas": {
+  "titulo": "Caravelas (Bahia)",
+  "prefeito": "Adauto Ronaldo Azevedo da Costa (Doutor Adauto)",
+  "inicio": null,
+  "fim": "2028",
+  "site": "https://www.caravelas.ba.gov.br/",
+  "telefone": null,
+  "oficial": {
+   "nome": "Adauto Ronaldo Azevedo da Costa",
+   "partido": "PSD",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Carinhanha": {
+  "titulo": "Carinhanha",
+  "prefeito": "Francisca Alves Ribeiro",
+  "inicio": null,
+  "fim": "2024",
+  "site": "http://www.carinhanha.ba.gov.br/",
+  "telefone": "(77) 3485-2733",
+  "brasao": "Carinhanha.jpg",
+  "oficial": {
+   "nome": "Francisca Alves Ribeiro",
+   "partido": "PT",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Casa Nova": {
+  "titulo": "Casa Nova",
+  "prefeito": "Anísio Viana",
+  "inicio": "2025",
+  "fim": "2028",
+  "site": "https://www.casanova.ba.gov.br/",
+  "telefone": "(74) 3536-2263",
+  "brasao": "Brasão de Casa Nova.jpg",
+  "oficial": {
+   "nome": "Anisio Viana de Castro Neto",
+   "partido": "PSDB",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Castro Alves": {
+  "titulo": "Castro Alves (Bahia)",
+  "prefeito": "Jadson Souza Cunha Soares",
+  "inicio": null,
+  "fim": "2028",
+  "site": "https://www.castroalves.ba.gov.br/",
+  "telefone": "(75) 3522-3802",
+  "oficial": {
+   "nome": "Jadson Souza Cunha Soares",
+   "partido": "PSD",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Catolândia": {
+  "titulo": "Catolândia",
+  "prefeito": "Giovanni Moreira dos Santos",
+  "inicio": null,
+  "fim": "2024",
+  "site": null,
+  "telefone": null,
+  "oficial": {
+   "nome": "Giovanni Moreira dos Santos",
+   "partido": "AVANTE",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Central": {
+  "titulo": "Central (Bahia)",
+  "prefeito": "José Wilker Alencar Maciel",
+  "inicio": null,
+  "fim": "2028",
+  "site": "http://www.central.ba.gov.br/",
+  "telefone": null,
+  "oficial": {
+   "nome": "José Wilker Alencar Maciel",
+   "partido": "PT",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Chorrochó": {
+  "titulo": "Chorrochó",
+  "prefeito": "Uilde Irlã de Oliveira",
+  "inicio": "2025",
+  "fim": "2028",
+  "site": null,
+  "telefone": null,
+  "brasao": "Brasão de Chorrochó.jpg",
+  "oficial": {
+   "nome": "Uilde Irlã de Oliveira",
+   "partido": "PC do B",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Cipó": {
+  "titulo": "Cipó (Bahia)",
+  "prefeito": "José Marques dos Reis",
+  "inicio": null,
+  "fim": "2024",
+  "site": "https://www.cipo.ba.gov.br/",
+  "telefone": null,
+  "oficial": {
+   "nome": "Jose Marques dos Reis",
+   "partido": "PSD",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Coaraci": {
+  "titulo": "Coaraci",
+  "prefeito": "Miltinho Do Axe",
+  "inicio": null,
+  "fim": "2028",
+  "site": "https://coaraci.ba.gov.br/",
+  "telefone": null,
+  "oficial": {
+   "nome": "Milton Dias Cerqueira Micheli Santos",
+   "partido": "PSD",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Cocos": {
+  "titulo": "Cocos",
+  "prefeito": "Marcelo de Souza Emereciano",
+  "inicio": null,
+  "fim": "2024",
+  "site": "http://cocos.ba.gov.br/",
+  "telefone": "(77) 3489-1041",
+  "brasao": "Coat of Arms of Cocos - BA - Brazil.png",
+  "oficial": {
+   "nome": "Clewton Domingues de Souza",
+   "partido": "PT",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Conceição Do Coité": {
+  "titulo": "Conceição do Coité",
+  "prefeito": "Marcelo Passos de Araujo",
+  "inicio": "2025",
+  "fim": "2028",
+  "site": "http://www.conceicaodocoite.ba.gov.br/",
+  "telefone": null,
+  "oficial": {
+   "nome": "Marcelo Passos de Araujo",
+   "partido": "UNIÃO",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Conde": {
+  "titulo": "Conde (Bahia)",
+  "prefeito": "José Anísio Almeida de Oliveira (Anísio Madeirol)",
+  "inicio": null,
+  "fim": "2028",
+  "site": "http://www.conde.ba.gov.br/",
+  "telefone": "(75) 3429-1250",
+  "oficial": {
+   "nome": "José Anísio Almeida de Oliveira",
+   "partido": "UNIÃO",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Condeúba": {
+  "titulo": "Condeúba",
+  "prefeito": "Micael Batista Silveira (Micael de Odilio)",
+  "inicio": "2025",
+  "fim": "2028",
+  "site": "http://governodecondeuba.ba.gov.br/",
+  "telefone": null,
+  "oficial": {
+   "nome": "Micael Batista Silveira",
+   "partido": "MDB",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Contendas Do Sincorá": {
+  "titulo": "Contendas do Sincorá",
+  "prefeito": "Ueliton Valdir Palmeira Souza (Didi)",
+  "inicio": null,
+  "fim": "2028",
+  "site": null,
+  "telefone": null,
+  "brasao": "Brasão de Contendas do Sincorá.jpg",
+  "oficial": {
+   "nome": "Ueliton Valdir Palmeira Souza",
+   "partido": "AVANTE",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Coribe": {
+  "titulo": "Coribe",
+  "prefeito": "Murilo Ferreira Viana (Doutor Murillo)",
+  "inicio": "2021",
+  "fim": "2028",
+  "site": null,
+  "telefone": null,
+  "oficial": {
+   "nome": "Murillo Ferreira Viana",
+   "partido": "UNIÃO",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Coronel João Sá": {
+  "titulo": "Coronel João Sá",
+  "prefeito": "Carlos Augusto Silveira Sobral",
+  "inicio": null,
+  "fim": "2024",
+  "site": "https://www.coroneljoaosa.ba.gov.br/",
+  "telefone": "(75) 3286-2120",
+  "oficial": {
+   "nome": "Carlos Fernando Oliva Silveira",
+   "partido": "MDB",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Correntina": {
+  "titulo": "Correntina",
+  "prefeito": "Walter Mariano Messias de Souza (Mariano Correntina )",
+  "inicio": null,
+  "fim": "2028",
+  "site": "https://www.correntina.ba.gov.br/",
+  "telefone": "(77) 3488-2134",
+  "brasao": "Theshied.JPG",
+  "oficial": {
+   "nome": "Walter Mariano Messias de Souza",
+   "partido": "UNIÃO",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Cotegipe": {
+  "titulo": "Cotegipe",
+  "prefeito": "Márcia da Silva Sá Teles",
+  "inicio": null,
+  "fim": "2024",
+  "site": "https://www.cotegipe.ba.gov.br/",
+  "telefone": null,
+  "brasaoLocal": "/brasoes/BA/cotegipe.png",
+  "oficial": {
+   "nome": "Beatriz Batista Ribeiro Calado",
+   "partido": "PT",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Cristópolis": {
+  "titulo": "Cristópolis",
+  "prefeito": "Gilson Nascimento de Souza",
+  "inicio": null,
+  "fim": "2024",
+  "site": "http://www.cristopolis.ba.gov.br/",
+  "telefone": null,
+  "oficial": {
+   "nome": "Erivaldo Conegundes da Câmara",
+   "partido": "PT",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Crisópolis": {
+  "titulo": "Crisópolis",
+  "prefeito": "Leandro Dantas de Jesus Costa",
+  "inicio": null,
+  "fim": "2024",
+  "site": "https://crisopolis.ba.gov.br",
+  "telefone": "(75) 3443-2182",
+  "oficial": {
+   "nome": "Leandro Dantas de Jesus Costa",
+   "partido": "PSB",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Curaçá": {
+  "titulo": "Curaçá",
+  "prefeito": "Robson Murilo Bomfim Da Silva (Murilo Bomfim)",
+  "inicio": "2025",
+  "fim": "2028",
+  "site": "http://www.curaca.ba.gov.br/",
+  "telefone": null,
+  "oficial": {
+   "nome": "Robson Murilo Bomfim da Silva",
+   "partido": "PT",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Cândido Sales": {
+  "titulo": "Cândido Sales",
+  "prefeito": "Maurílio Lemos das Virgens (Dr Maurilio)",
+  "inicio": "2021",
+  "fim": "2028",
+  "site": "http://www.candidosales.ba.gov.br/",
+  "telefone": null,
+  "oficial": {
+   "nome": "Maurílio Lemos das Virgens",
+   "partido": "PSD",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Cícero Dantas": {
+  "titulo": "Cícero Dantas",
+  "prefeito": "Vinicius Jose Araujo Borges de Souza (Vinicius do Sao Jose)",
+  "inicio": "2025",
+  "fim": "2028",
+  "site": "http://www.cicerodantas.ba.gov.br",
+  "telefone": "(75) 98271-7248",
+  "oficial": {
+   "nome": "Vinicius Jose Araujo Borges de Souza",
+   "partido": "PP",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Dias D'Ávila": {
+  "titulo": null,
+  "prefeito": null,
+  "inicio": null,
+  "fim": null,
+  "site": null,
+  "telefone": null,
+  "oficial": {
+   "nome": "Alberto Pereira Castro",
+   "partido": "PSDB",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Dom Basílio": {
+  "titulo": "Dom Basílio",
+  "prefeito": "Fernando Silva Santos",
+  "inicio": null,
+  "fim": "2028",
+  "site": "https://www.dombasilio.ba.gov.br/",
+  "telefone": "(77) 3448-2121",
+  "oficial": {
+   "nome": "Fernando Silva Santos",
+   "partido": "PSD",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Dário Meira": {
+  "titulo": "Dário Meira",
+  "prefeito": "Marivane Dias Santos",
+  "inicio": null,
+  "fim": "2028",
+  "site": null,
+  "telefone": null,
+  "oficial": {
+   "nome": "Marivane Dias Santos",
+   "partido": "PP",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Encruzilhada": {
+  "titulo": "Encruzilhada (Bahia)",
+  "prefeito": "Pedro Alves de Lacerda Sobrinho,conhecido por \"Doutor Pedrinho\"",
+  "inicio": "2025",
+  "fim": "2028",
+  "site": "https://www.encruzilhada.ba.gov.br/",
+  "telefone": null,
+  "oficial": {
+   "nome": "Pedro Alves de Lacerda Sobrinho",
+   "partido": "PC do B",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Entre Rios": {
+  "titulo": "Entre Rios (Bahia)",
+  "prefeito": "Manoelito Argolo dos Santos Júnior",
+  "inicio": "2025",
+  "fim": "2029",
+  "site": "http://www.entrerios.ba.gov.br/",
+  "telefone": null,
+  "oficial": {
+   "nome": "Manoelito Argolo dos Santos Junior",
+   "partido": "SOLIDARIEDADE",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Esplanada": {
+  "titulo": "Esplanada",
+  "prefeito": "José Naldinho Alves dos Santos",
+  "inicio": null,
+  "fim": "2024",
+  "site": "https://www.esplanada.ba.gov.br/",
+  "telefone": null,
+  "oficial": {
+   "nome": "Jose Naudinho Alves dos Santos",
+   "partido": "PT",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Euclides Da Cunha": {
+  "titulo": "Euclides da Cunha (Bahia)",
+  "prefeito": "Helder Macedo da Silva",
+  "inicio": "2025",
+  "fim": "2028",
+  "site": "https://www.euclidesdacunha.ba.gov.br",
+  "telefone": "(75) 3271-1410",
+  "oficial": {
+   "nome": "Helder Macedo da Silva",
+   "partido": "PDT",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Eunápolis": {
+  "titulo": "Eunápolis",
+  "prefeito": "José Robério Batista de Oliveira (Robério Oliveira)",
+  "inicio": "2025",
+  "fim": "2028",
+  "site": "https://www.eunapolis.ba.gov.br/",
+  "telefone": "(73) 3281-6894",
+  "oficial": {
+   "nome": "José Robério Batista de Oliveira",
+   "partido": "PSD",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Feira Da Mata": {
+  "titulo": "Feira da Mata",
+  "prefeito": "Valmir Macedo Rodrigues",
+  "inicio": null,
+  "fim": "2024",
+  "site": "https://www.feiradamata.ba.gov.br/",
+  "telefone": "(77) 3474-1126",
+  "oficial": {
+   "nome": "Valmir Macedo Rodrigues",
+   "partido": "PSD",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Feira De Santana": {
+  "titulo": "Feira de Santana",
+  "prefeito": "José Ronaldo de Carvalho",
+  "inicio": "2025",
+  "fim": "2028",
+  "site": "http://www.feiradesantana.ba.gov.br",
+  "telefone": "(75) 3617-0600",
+  "oficial": {
+   "nome": "Jose Ronaldo de Carvalho",
+   "partido": "UNIÃO",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Filadélfia": {
+  "titulo": "Filadélfia (Bahia)",
+  "prefeito": "Lourivaldo Pereira Maia",
+  "inicio": null,
+  "fim": "2024",
+  "site": "http://www.filadelfia.ba.gov.br",
+  "telefone": null,
+  "oficial": {
+   "nome": "André Luiz Ribeiro Maia",
+   "partido": "PRD",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Firmino Alves": {
+  "titulo": "Firmino Alves",
+  "prefeito": "Fabiano de Jesus Sampaio",
+  "inicio": null,
+  "fim": "2024",
+  "site": null,
+  "telefone": null,
+  "oficial": {
+   "nome": "Fabiano de Jesus Sampaio",
+   "partido": "PP",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Formosa Do Rio Preto": {
+  "titulo": "Formosa do Rio Preto",
+  "prefeito": "Manoel Afonso de Araújo",
+  "inicio": null,
+  "fim": "2024",
+  "site": "https://www.formosadoriopreto.ba.gov.br/",
+  "telefone": "(77) 3616-2125",
+  "oficial": {
+   "nome": "Manoel Afonso de Araújo",
+   "partido": "PSD",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Gandu": {
+  "titulo": "Gandu",
+  "prefeito": "Daiana Santos Santana (Dai de Leo de Neco)",
+  "inicio": "2025",
+  "fim": "2028",
+  "site": null,
+  "telefone": null,
+  "oficial": {
+   "nome": "Daiana Santos Santana",
+   "partido": "AVANTE",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Gentio Do Ouro": {
+  "titulo": "Gentio do Ouro",
+  "prefeito": "Cícero Elizeu Oliveira Da Franca",
+  "inicio": null,
+  "fim": "2028",
+  "site": "http://www.gentiodoouro.ba.gov.br",
+  "telefone": null,
+  "oficial": {
+   "nome": "Cicero Elizeu Oliveira da Franca",
+   "partido": "PDT",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Glória": {
+  "titulo": "Glória (Bahia)",
+  "prefeito": "Vilma Negromonte",
+  "inicio": null,
+  "fim": "2028",
+  "site": "http://www.gloria.ba.gov.br/",
+  "telefone": "(75) 98702-4299",
+  "oficial": {
+   "nome": "Ena Vilma Pereira de Souza Negromonte",
+   "partido": "PP",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Gongogi": {
+  "titulo": "Gongogi",
+  "prefeito": "Adriano Mendonça Pinheiro",
+  "inicio": null,
+  "fim": "2024",
+  "site": "http://gongogi.ba.gov.br/",
+  "telefone": "(73) 3240-2445",
+  "oficial": {
+   "nome": "Adriano Mendonça Pinheiro",
+   "partido": "AVANTE",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Guanambi": {
+  "titulo": "Guanambi",
+  "prefeito": "Arnaldo Pereira de Azevedo",
+  "inicio": null,
+  "fim": "2023",
+  "site": "http://www.guanambi.ba.gov.br/",
+  "telefone": "(77) 3452-4310",
+  "oficial": {
+   "nome": "Arnaldo Pereira de Azevedo",
+   "partido": "AVANTE",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Guaratinga": {
+  "titulo": "Guaratinga",
+  "prefeito": "Marlene Dantas Martins",
+  "inicio": null,
+  "fim": "2024",
+  "site": "https://www.guaratinga.ba.gov.br/",
+  "telefone": "(73) 3277-2450",
+  "oficial": {
+   "nome": "Rafael Gandhi Marques das Virgens",
+   "partido": "PT",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Heliópolis": {
+  "titulo": "Heliópolis (Bahia)",
+  "prefeito": "José Mendonça Dantas",
+  "inicio": "2021",
+  "fim": "2028",
+  "site": "http://www.heliopolis.ba.gov.br/",
+  "telefone": "(75) 99931-8308",
+  "oficial": {
+   "nome": "Jose Mendonça Dantas",
+   "partido": "MDB",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Iaçu": {
+  "titulo": "Iaçu",
+  "prefeito": "Nixon Duarte Muniz Ferreira",
+  "inicio": "2025",
+  "fim": "2028",
+  "site": null,
+  "telefone": null,
+  "oficial": {
+   "nome": "Nixon Duarte Muniz Ferreira",
+   "partido": "PSD",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Ibiassucê": {
+  "titulo": "Ibiassucê",
+  "prefeito": "Tadeu Prado Rebouças Prates (Tadeuzinho Prates)",
+  "inicio": "2025",
+  "fim": "2028",
+  "site": "https://ibiassuce.ba.gov.br/",
+  "telefone": "(77) 3465-2181",
+  "oficial": {
+   "nome": "Tadeu Prado Rebouças Prates",
+   "partido": "UNIÃO",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Ibicoara": {
+  "titulo": "Ibicoara",
+  "prefeito": "Gilmadson Cruz De Melo, \"Gil\"",
+  "inicio": null,
+  "fim": "2028",
+  "site": "http://ibicoara.ba.gov.br/",
+  "telefone": "(77) 98822-9540",
+  "oficial": {
+   "nome": "Gilmadson Cruz de Melo",
+   "partido": "AVANTE",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Ibicuí": {
+  "titulo": "Ibicuí",
+  "prefeito": "Salomão Brito de Cerqueira",
+  "inicio": "2025",
+  "fim": "2028",
+  "site": "http://www.ibicui.ba.gov.br",
+  "telefone": "(73) 8153-8677",
+  "oficial": {
+   "nome": "Salomão Brito de Cerqueira",
+   "partido": "PSD",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Ibipeba": {
+  "titulo": "Ibipeba",
+  "prefeito": "Rhallber Vieira de Sousa",
+  "inicio": "2025",
+  "fim": "2028",
+  "site": null,
+  "telefone": null,
+  "oficial": {
+   "nome": "Rhallber Vieira de Sousa",
+   "partido": "PSD",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Ibipitanga": {
+  "titulo": "Ibipitanga",
+  "prefeito": "Humberto Raimundo Rodrigues De Oliveira",
+  "inicio": null,
+  "fim": "2028",
+  "site": "http://ibipitanga.ba.gov.br/",
+  "telefone": "(77) 3674-2202",
+  "oficial": {
+   "nome": "Humberto Raimundo Rodrigues de Oliveira",
+   "partido": "PT",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Ibiquera": {
+  "titulo": "Ibiquera",
+  "prefeito": "Carlos Cezar de Almeida Santos Queiroz (Cezar Almeida)",
+  "inicio": "2025",
+  "fim": "2028",
+  "site": null,
+  "telefone": null,
+  "oficial": {
+   "nome": "Carlos Cezar de Almeida Santos Queiroz",
+   "partido": "AVANTE",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Ibirapuã": {
+  "titulo": "Ibirapuã",
+  "prefeito": "Carla Chácara",
+  "inicio": null,
+  "fim": "2025-2028",
+  "site": "http://www.ibirapua.ba.gov.br",
+  "telefone": "(73) 3011-0850",
+  "oficial": {
+   "nome": "Carla Andreia Soares Chacara",
+   "partido": "PP",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Ibitiara": {
+  "titulo": "Ibitiara",
+  "prefeito": "Wilson dos Santos Souza",
+  "inicio": "2021",
+  "fim": "2028",
+  "site": "https://www.ibitiara.ba.gov.br/",
+  "telefone": "(77) 3647-2151",
+  "oficial": {
+   "nome": "Wilson dos Santos Souza",
+   "partido": "PSD",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Ibititá": {
+  "titulo": "Ibititá",
+  "prefeito": "Nilva Barreto dos Santos",
+  "inicio": null,
+  "fim": "2024",
+  "site": "http://ibitita.ba.gov.br/",
+  "telefone": "(74) 3652-1116",
+  "oficial": {
+   "nome": "Afonso Ferreira Mendonça",
+   "partido": "MDB",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Ibotirama": {
+  "titulo": "Ibotirama",
+  "prefeito": "Laércio Silva de Santana",
+  "inicio": null,
+  "fim": "2028",
+  "site": "http://www.ibotirama.ba.io.org.br",
+  "telefone": null,
+  "oficial": {
+   "nome": "Laercio Silva de Santana",
+   "partido": "PSB",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Igaporã": {
+  "titulo": "Igaporã",
+  "prefeito": "Newton Francisco Neves Cotrim",
+  "inicio": null,
+  "fim": "2024",
+  "site": "http://www.igapora.ba.gov.br/",
+  "telefone": null,
+  "oficial": {
+   "nome": "Newton Francisco Neves Cotrim",
+   "partido": "PT",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Igrapiúna": {
+  "titulo": "Igrapiúna",
+  "prefeito": "Manoel Ribeiro dos Santos",
+  "inicio": null,
+  "fim": "2024",
+  "site": null,
+  "telefone": null,
+  "oficial": {
+   "nome": "Manoel Ribeiro dos Santos",
+   "partido": "AVANTE",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Iguaí": {
+  "titulo": "Iguaí",
+  "prefeito": "David César Louzada Álvares Macedo (Dr Davi)",
+  "inicio": "2025",
+  "fim": "2028",
+  "site": null,
+  "telefone": null,
+  "oficial": {
+   "nome": "David César Louzada Álvares Macedo",
+   "partido": "AVANTE",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Ilhéus": {
+  "titulo": "Ilhéus",
+  "prefeito": "Valderico Luiz dos Reis Júnior",
+  "inicio": "2025",
+  "fim": null,
+  "site": "http://www.ilheus.ba.gov.br/",
+  "telefone": null,
+  "oficial": {
+   "nome": "Valderico Luiz dos Reis Júnior",
+   "partido": "UNIÃO",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Ipecaetá": {
+  "titulo": "Ipecaetá",
+  "prefeito": "Elcydes Piaggio de Oliveira Júnior",
+  "inicio": null,
+  "fim": "2024",
+  "site": "http://www.ipecaeta.ba.gov.br/",
+  "telefone": "(75) 3685-2113",
+  "oficial": {
+   "nome": "Elcydes Piaggio de Oliveira Junior",
+   "partido": "PSD",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Ipiaú": {
+  "titulo": "Ipiaú",
+  "prefeito": "Laryssa Andrade Santos Fernandes Dias",
+  "inicio": "2025",
+  "fim": "2028",
+  "site": "http://www.ipiauhoje.com.br/",
+  "telefone": null,
+  "oficial": {
+   "nome": "Laryssa Andrade Santos Fernandes Dias",
+   "partido": "PP",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Ipirá": {
+  "titulo": "Ipirá",
+  "prefeito": "Thiago Oliveira do Vale",
+  "inicio": "2025",
+  "fim": "2028",
+  "site": "https://ipira.ba.gov.br",
+  "telefone": "(75) 3284-2702",
+  "oficial": {
+   "nome": "Thiago Oliveira do Vale",
+   "partido": "PSD",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Ipupiara": {
+  "titulo": "Ipupiara",
+  "prefeito": "Ascir Leite Santos",
+  "inicio": null,
+  "fim": "2024",
+  "site": "https://www.ipupiara.ba.gov.br/",
+  "telefone": null,
+  "oficial": {
+   "nome": "Marcus Vinicius Rodrigues Moreno",
+   "partido": "PSD",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Irajuba": {
+  "titulo": "Irajuba",
+  "prefeito": "Antônio Oliveira Sampaio",
+  "inicio": null,
+  "fim": "2028",
+  "site": null,
+  "telefone": null,
+  "oficial": {
+   "nome": "Antonio Oliveira Sampaio",
+   "partido": "AVANTE",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Iramaia": {
+  "titulo": "Iramaia",
+  "prefeito": "Agripino Ramos da Silva (Piu de Santo)",
+  "inicio": "2025",
+  "fim": "2028",
+  "site": "https://www.iramaia.ba.gov.br/",
+  "telefone": "(73) 9991-3263",
+  "oficial": {
+   "nome": "Agripino Ramos da Silva",
+   "partido": "PP",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Iraquara": {
+  "titulo": "Iraquara",
+  "prefeito": "Walterson Ribeiro Coutinho",
+  "inicio": "2021",
+  "fim": "2024",
+  "site": null,
+  "telefone": null,
+  "oficial": {
+   "nome": "Walterson Ribeiro Coutinho",
+   "partido": "PSD",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Itaberaba": {
+  "titulo": "Itaberaba",
+  "prefeito": "João Almeida Mascarenhas Filho",
+  "inicio": "2025",
+  "fim": "2028",
+  "site": "https://itaberaba.ba.gov.br/",
+  "telefone": null,
+  "oficial": {
+   "nome": "João Almeida Mascarenhas Filho",
+   "partido": "PSD",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Itacaré": {
+  "titulo": "Itacaré",
+  "prefeito": "Edson Arante Santos Mendes (Nego de Saronga)",
+  "inicio": "2025",
+  "fim": "2028",
+  "site": "http://www.itacare.ba.gov.br",
+  "telefone": "(71) 99953-6032",
+  "brasaoLocal": "/brasoes/BA/itacare.png",
+  "oficial": {
+   "nome": "Edson Arante Santos Mendes",
+   "partido": "PT",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Itaeté": {
+  "titulo": "Itaetê",
+  "prefeito": "Zenildo Matos de Oliveira",
+  "inicio": null,
+  "fim": "2024",
+  "site": "http://www.itaete.ba.gov.br/",
+  "telefone": "(75) 3320-2121",
+  "oficial": {
+   "nome": "Zenildo Matos de Oliveira",
+   "partido": "PSB",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Itagibá": {
+  "titulo": "Itagibá",
+  "prefeito": "Marcos Valério Barreto",
+  "inicio": null,
+  "fim": "2024",
+  "site": null,
+  "telefone": null,
+  "oficial": {
+   "nome": "Marcos Valério Barreto",
+   "partido": "PC do B",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Itagimirim": {
+  "titulo": "Itagimirim",
+  "prefeito": "Luiz Carlos Júnior Silva de Oliveira (Luizinho)",
+  "inicio": "2021",
+  "fim": "2028",
+  "site": "https://www.itagimirim.ba.gov.br/",
+  "telefone": null,
+  "oficial": {
+   "nome": "Luiz Carlos Júnior Silva de Oliveira",
+   "partido": "MDB",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Itaguaçu Da Bahia": {
+  "titulo": "Itaguaçu da Bahia",
+  "prefeito": "Adão Alves de Carvalho Filho",
+  "inicio": null,
+  "fim": "2024",
+  "site": "http://www.itaguacudabahia.ba.gov.br/",
+  "telefone": "(74) 99970-7427",
+  "oficial": {
+   "nome": "Adão Alves de Carvalho Filho",
+   "partido": "PSD",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Itajuípe": {
+  "titulo": "Itajuípe",
+  "prefeito": "Leandro Junquilho Cunha (Léo da Capoeira)",
+  "inicio": "2025",
+  "fim": "2028",
+  "site": null,
+  "telefone": null,
+  "oficial": {
+   "nome": "Leandro Junquilho Cunha",
+   "partido": "AVANTE",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Itamaraju": {
+  "titulo": "Itamaraju",
+  "prefeito": "Jorge Luis Costa Sulz de Almeida",
+  "inicio": null,
+  "fim": "2028",
+  "site": "https://www.itamaraju.ba.gov.br/",
+  "telefone": "(73) 3234-3500",
+  "oficial": {
+   "nome": "Jorge Luis Costa Sulz de Almeida",
+   "partido": "PSDB",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Itamari": {
+  "titulo": "Itamari",
+  "prefeito": "Everton Borges Vasconcelos",
+  "inicio": null,
+  "fim": "2024",
+  "site": "http://www.itamari.ba.gov.br/",
+  "telefone": null,
+  "oficial": {
+   "nome": "Everton Borges Vasconcelos",
+   "partido": "AVANTE",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Itambé": {
+  "titulo": "Itambé (Bahia)",
+  "prefeito": "José Cândido Rocha Araújo (Candinho)",
+  "inicio": "2021",
+  "fim": "2028",
+  "site": null,
+  "telefone": null,
+  "oficial": {
+   "nome": "José Cândido Rocha Araújo",
+   "partido": "PSD",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Itanagra": {
+  "titulo": "Itanagra",
+  "prefeito": "Marcus Gustavo de Souza Sarmento",
+  "inicio": null,
+  "fim": "2024",
+  "site": null,
+  "telefone": null,
+  "oficial": {
+   "nome": "Marcus Gustavo de Souza Sarmento",
+   "partido": "AVANTE",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Itanhém": {
+  "titulo": "Itanhém",
+  "prefeito": "Milton Ferreira Guimarães (Bemtivi)",
+  "inicio": "2024",
+  "fim": "2028",
+  "site": "http://www.itanhem.ba.gov.br",
+  "telefone": "(73) 3295-2062",
+  "oficial": {
+   "nome": "Milton Ferreira Guimarães",
+   "partido": "PSB",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Itapebi": {
+  "titulo": "Itapebi",
+  "prefeito": "Isan Botelho",
+  "inicio": null,
+  "fim": "2028",
+  "site": null,
+  "telefone": null,
+  "oficial": {
+   "nome": "Isan do Nascimento Botelho",
+   "partido": "AVANTE",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Itapetinga": {
+  "titulo": "Itapetinga",
+  "prefeito": "Eduardo Jorge Almeida Hagge",
+  "inicio": "2025",
+  "fim": "2028",
+  "site": "http://www.itapetinga.ba.gov.br/",
+  "telefone": null,
+  "oficial": {
+   "nome": "Eduardo Jorge Almeida Hagge",
+   "partido": "MDB",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Itapicuru": {
+  "titulo": "Itapicuru (Bahia)",
+  "prefeito": "José Moreira de Carvalho Neto",
+  "inicio": null,
+  "fim": "2028",
+  "site": "https://itapicuru.ba.gov.br",
+  "telefone": null,
+  "oficial": {
+   "nome": "José Moreira de Carvalho Neto",
+   "partido": "PSD",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Itapitanga": {
+  "titulo": "Itapitanga",
+  "prefeito": "José Roberto dos Santos Tolentino",
+  "inicio": null,
+  "fim": "2024",
+  "site": "http://www.itapitanga.ba.gov.br/",
+  "telefone": null,
+  "oficial": {
+   "nome": "Glislaine Dórea Alves",
+   "partido": "AVANTE",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Itaquara": {
+  "titulo": "Itaquara",
+  "prefeito": "Marco Aurélio Costa",
+  "inicio": null,
+  "fim": "2024",
+  "site": null,
+  "telefone": null,
+  "oficial": {
+   "nome": "Rogério Rodrigues dos Santos",
+   "partido": "PSB",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Itatim": {
+  "titulo": "Itatim",
+  "prefeito": "Daiane Silva dos Anjos",
+  "inicio": null,
+  "fim": "2024",
+  "site": null,
+  "telefone": null,
+  "oficial": {
+   "nome": "Daiane Silva dos Anjos",
+   "partido": "PSD",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Itiruçu": {
+  "titulo": "Itiruçu",
+  "prefeito": "Lorenna Moura Di Gregorio",
+  "inicio": null,
+  "fim": "2024",
+  "site": "https://www.itirucu.ba.gov.br/",
+  "telefone": "(73) 3538-1200",
+  "brasao": "Brasão de Itiruçu.jpg",
+  "oficial": {
+   "nome": "Ubiratan Moraes da Silva",
+   "partido": "PP",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Itiúba": {
+  "titulo": "Itiúba",
+  "prefeito": "José Francisco dos Santos Filho",
+  "inicio": "2021",
+  "fim": "2028",
+  "site": "http://www.itiuba.ba.gov.br/",
+  "telefone": null,
+  "brasao": "Brasão de Itiúba.png",
+  "oficial": {
+   "nome": "Jose Francisco dos Santos Filho",
+   "partido": "MDB",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Ituaçu": {
+  "titulo": "Ituaçu",
+  "prefeito": "Phellipe Ramonn Gonçalves Brito",
+  "inicio": "2021",
+  "fim": "2028",
+  "site": null,
+  "telefone": null,
+  "oficial": {
+   "nome": "Phellipe Ramonn Gonçalves Brito",
+   "partido": "PSD",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Jaborandi": {
+  "titulo": "Jaborandi (Bahia)",
+  "prefeito": "Marcos Antônio Matos da Silva",
+  "inicio": null,
+  "fim": "2028",
+  "site": "http://jaborandi.ba.gov.br/",
+  "telefone": "(77) 3683-2212",
+  "oficial": {
+   "nome": "Marcos Antônio Matos da Silva",
+   "partido": "PSD",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Jacaraci": {
+  "titulo": "Jacaraci",
+  "prefeito": "Deusdedit Carvalho Rocha (Detinho)",
+  "inicio": "2025",
+  "fim": "2028",
+  "site": null,
+  "telefone": null,
+  "oficial": {
+   "nome": "Deusdedit Carvalho Rocha",
+   "partido": "PSB",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Jacobina": {
+  "titulo": "Jacobina",
+  "prefeito": "Valdice Castro",
+  "inicio": null,
+  "fim": "2028",
+  "site": "http://www.jacobina.ba.gov.br/",
+  "telefone": "(74) 3621-3672",
+  "oficial": {
+   "nome": "Valdice Castro Vieira da Silva",
+   "partido": "PMB",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Jaguaquara": {
+  "titulo": "Jaguaquara",
+  "prefeito": "Edione Agostinone",
+  "inicio": null,
+  "fim": "2024",
+  "site": "http://www.jaguaquara.ba.gov.br",
+  "telefone": null,
+  "oficial": {
+   "nome": "Edione Oliveira Agostinone",
+   "partido": "PT",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Jaguarari": {
+  "titulo": "Jaguarari",
+  "prefeito": "Antônio Ferreira do Nascimento",
+  "inicio": "2021",
+  "fim": "2028",
+  "site": null,
+  "telefone": null,
+  "oficial": {
+   "nome": "Antônio Ferreira do Nascimento",
+   "partido": "PT",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Jaguaripe": {
+  "titulo": "Jaguaripe",
+  "prefeito": "Heráclito Rocha Arandas",
+  "inicio": null,
+  "fim": "2024",
+  "site": null,
+  "telefone": null,
+  "oficial": {
+   "nome": "Fábio Nonato Barbosa",
+   "partido": "MDB",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Jandaíra": {
+  "titulo": "Jandaíra (Bahia)",
+  "prefeito": "Gildasio Mendes Lopes",
+  "inicio": null,
+  "fim": "2028",
+  "site": null,
+  "telefone": null,
+  "brasaoLocal": "/brasoes/BA/jandaira.png",
+  "oficial": {
+   "nome": "Gildasio Mendes Lopes",
+   "partido": "PSD",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Jequié": {
+  "titulo": "Jequié",
+  "prefeito": "Flávio Santana (Flavinho Santana)",
+  "inicio": "2026",
+  "fim": "2028",
+  "site": "http://www.jequie.ba.gov.br/",
+  "telefone": null,
+  "oficial": {
+   "nome": "Flávio Santana (Flavinho Santana)",
+   "partido": null,
+   "fonte": "Wikipédia",
+   "obs": "mandato até 2028"
+  }
+ },
+ "Jeremoabo": {
+  "titulo": "Jeremoabo",
+  "prefeito": "João Batista Melo de Carvalho",
+  "inicio": null,
+  "fim": "2028",
+  "site": "http://www.jeremoabo.ba.gov.br/",
+  "telefone": "(75) 3203-2106",
+  "oficial": {
+   "nome": "João Batista Melo de Carvalho",
+   "partido": "PSD",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "João Dourado": {
+  "titulo": "João Dourado",
+  "prefeito": "Diamerson Costa Cardoso Dourado",
+  "inicio": "2021",
+  "fim": "2024",
+  "site": "http://www.joaodourado.ba.gov.br/",
+  "telefone": null,
+  "oficial": {
+   "nome": "Diamerson Costa Cardoso Dourado",
+   "partido": "PRD",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Juazeiro": {
+  "titulo": "Juazeiro (Bahia)",
+  "prefeito": "Andrei Gonçalves",
+  "inicio": "2025",
+  "fim": "2028",
+  "site": "http://www.juazeiro.ba.gov.br/",
+  "telefone": "(74) 98846-0016",
+  "oficial": {
+   "nome": "Marcos Andrei Souza Gonçalves da Silva",
+   "partido": "MDB",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Jucuruçu": {
+  "titulo": "Jucuruçu",
+  "prefeito": "Arivaldo de Almeida Costa",
+  "inicio": null,
+  "fim": "2024",
+  "site": null,
+  "telefone": null,
+  "oficial": {
+   "nome": "Arivaldo de Almeida Costa",
+   "partido": "PSDB",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Jussara": {
+  "titulo": "Jussara (Bahia)",
+  "prefeito": "Taciano Mendes da Silva",
+  "inicio": null,
+  "fim": "2024",
+  "site": "https://www.jussara.ba.gov.br/",
+  "telefone": "(74) 3647-1029",
+  "oficial": {
+   "nome": "Taciano Mendes da Silva",
+   "partido": "PP",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Jussari": {
+  "titulo": "Jussari",
+  "prefeito": "Orleans Mascarenhas dos Santos",
+  "inicio": "2025",
+  "fim": "2028",
+  "site": null,
+  "telefone": null,
+  "oficial": {
+   "nome": "Orleans Mascarenhas dos Santos",
+   "partido": "PSD",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Jussiape": {
+  "titulo": "Jussiape",
+  "prefeito": "José Santos Luz",
+  "inicio": null,
+  "fim": "2028",
+  "site": "https://jussiape.ba.gov.br/",
+  "telefone": null,
+  "oficial": {
+   "nome": "José Santos Luz",
+   "partido": "AVANTE",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Lafaiete Coutinho": {
+  "titulo": "Lafaiete Coutinho (Bahia)",
+  "prefeito": "José Freitas de Santana Júnior",
+  "inicio": null,
+  "fim": "2024",
+  "site": null,
+  "telefone": null,
+  "oficial": {
+   "nome": "Flávio Brandão Santana",
+   "partido": "PP",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Lagoa Real": {
+  "titulo": "Lagoa Real",
+  "prefeito": "José Carlos Trindade Duca (Bida)",
+  "inicio": "2025",
+  "fim": "2028",
+  "site": null,
+  "telefone": null,
+  "oficial": {
+   "nome": "José Carlos Trindade Duca",
+   "partido": "UNIÃO",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Lajedinho": {
+  "titulo": "Lajedinho",
+  "prefeito": "Antônio Mario Lima Silva",
+  "inicio": null,
+  "fim": "2024",
+  "site": null,
+  "telefone": null,
+  "oficial": {
+   "nome": "Antonio Mario Lima Silva",
+   "partido": "PSD",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Lajedo Do Tabocal": {
+  "titulo": "Lajedo do Tabocal",
+  "prefeito": "Antônio Marcos Araújo de Sena",
+  "inicio": null,
+  "fim": "2024",
+  "site": "https://www.lagedodotabocal.ba.gov.br/",
+  "telefone": "(73) 3556-1227",
+  "oficial": {
+   "nome": "Antônio Marcos Araújo de Sena",
+   "partido": "PP",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Lajedão": {
+  "titulo": "Lajedão",
+  "prefeito": "Ariston Almeida Passos Filho",
+  "inicio": null,
+  "fim": "2024",
+  "site": null,
+  "telefone": null,
+  "oficial": {
+   "nome": "Ariston Almeida Passos Filho",
+   "partido": "PSD",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Lapão": {
+  "titulo": "Lapão (Bahia)",
+  "prefeito": "Marcio Antonio Messias da Silva",
+  "inicio": null,
+  "fim": "2028",
+  "site": "http://www.lapao.ba.gov.br",
+  "telefone": "(74) 3657-1010",
+  "oficial": {
+   "nome": "Marcio Antonio Messias da Silva",
+   "partido": "PSD",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Lençóis": {
+  "titulo": "Lençóis",
+  "prefeito": "Vanessa dos Anjos Teles Senna",
+  "inicio": "2021",
+  "fim": "2024",
+  "site": "http://www.lencois.ba.gov.br/",
+  "telefone": "(75) 3334-1121",
+  "oficial": {
+   "nome": "Vanessa dos Anjos Teles Senna",
+   "partido": "PSD",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Licínio De Almeida": {
+  "titulo": "Licínio de Almeida",
+  "prefeito": "Roney Francisco Cotrim",
+  "inicio": null,
+  "fim": "2028",
+  "site": "http://www.liciniodealmeida.ba.gov.br/",
+  "telefone": "(77) 3463-2196",
+  "oficial": {
+   "nome": "Roney Francisco Cotrim",
+   "partido": "PC do B",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Livramento De Nossa Senhora": {
+  "titulo": "Livramento de Nossa Senhora",
+  "prefeito": "Joanina Batista Silva Morais Sampaio",
+  "inicio": null,
+  "fim": "2028",
+  "site": "http://www.livramento.ba.gov.br/",
+  "telefone": null,
+  "oficial": {
+   "nome": "Joanina Batista Silva Morais Sampaio",
+   "partido": "PSB",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Luís Eduardo Magalhães": {
+  "titulo": "Luís Eduardo Magalhães (Bahia)",
+  "prefeito": "Ondumar Ferreira Borges Junior (Junior Marabá)",
+  "inicio": "2021",
+  "fim": "2028",
+  "site": "http://www.luiseduardomagalhaes.ba.gov.br/",
+  "telefone": "(77) 99932-2032",
+  "oficial": {
+   "nome": "Ondumar Ferreira Borges Junior",
+   "partido": "PP",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Macajuba": {
+  "titulo": "Macajuba",
+  "prefeito": "Luciano Pamponet de Sousa",
+  "inicio": "2021",
+  "fim": "2024",
+  "site": "https://macajuba.ba.gov.br/",
+  "telefone": "(74) 2040-0001",
+  "brasao": "Brasão de Macajuba.png",
+  "oficial": {
+   "nome": "Luciano Pamponet de Sousa",
+   "partido": "PSD",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Macarani": {
+  "titulo": "Macarani",
+  "prefeito": "Selma Rodrigues Souto",
+  "inicio": "2025",
+  "fim": "2028",
+  "site": null,
+  "telefone": null,
+  "oficial": {
+   "nome": "Selma Rodrigues Souto",
+   "partido": "PSD",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Macaúbas": {
+  "titulo": "Macaúbas",
+  "prefeito": "Aloisio Miguel Rebonato",
+  "inicio": "2021",
+  "fim": "2028",
+  "site": "http://www.macaubas.ba.gov.br/",
+  "telefone": "(77) 3473-1461",
+  "oficial": {
+   "nome": "Aloísio Miguel Rebonato",
+   "partido": "MDB",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Macururé": {
+  "titulo": "Macururé",
+  "prefeito": "Leandro Bergue Gomes da Cruz",
+  "inicio": null,
+  "fim": "2024",
+  "site": "https://www.macurure.ba.gov.br/",
+  "telefone": "(75) 3284-2170",
+  "oficial": {
+   "nome": "Leandro Bergue Gomes da Cruz",
+   "partido": "PC do B",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Mairi": {
+  "titulo": "Mairi",
+  "prefeito": "Gustavo Alves Ferreira Carneiro",
+  "inicio": "2025",
+  "fim": "2028",
+  "site": "https://mairi.ba.gov.br/",
+  "telefone": null,
+  "brasao": "Braz mairi index.png",
+  "oficial": {
+   "nome": "Gustavo Alves Ferreira Carneiro",
+   "partido": "MDB",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Malhada": {
+  "titulo": "Malhada",
+  "prefeito": "Gimmy Everton Mouraria Ramos",
+  "inicio": null,
+  "fim": "2024",
+  "site": "http://www.malhada.ba.gov.br/",
+  "telefone": "(77) 3691-2145",
+  "oficial": {
+   "nome": "Gimmy Everton Mouraria Ramos",
+   "partido": "PT",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Manoel Vitorino": {
+  "titulo": "Manoel Vitorino",
+  "prefeito": "Manoel Silvany Barros",
+  "inicio": null,
+  "fim": "2024",
+  "site": null,
+  "telefone": null,
+  "oficial": {
+   "nome": "Vinicius Costa Bispo de Sena",
+   "partido": "PP",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Mansidão": {
+  "titulo": "Mansidão",
+  "prefeito": "Juvio Ferreira De Oliveira",
+  "inicio": null,
+  "fim": "2028",
+  "site": null,
+  "telefone": null,
+  "oficial": {
+   "nome": "Juvio Ferreira de Oliveira",
+   "partido": "UNIÃO",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Maracás": {
+  "titulo": "Maracás",
+  "prefeito": "Nelson Portela",
+  "inicio": null,
+  "fim": "2025",
+  "site": "https://www.maracas.ba.gov.br/",
+  "telefone": "(73) 99978-5783",
+  "oficial": {
+   "nome": "Nelson Luiz dos Anjos Portela",
+   "partido": "PT",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Maraú": {
+  "titulo": "Maraú",
+  "prefeito": "Dr. Ravan",
+  "inicio": null,
+  "fim": "2028",
+  "site": "http://www.marau.ba.gov.br/",
+  "telefone": null,
+  "brasao": "Brasão maraú.jpg",
+  "oficial": {
+   "nome": "Isravan Lemos Barcelos",
+   "partido": "PSD",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Marcionílio Souza": {
+  "titulo": "Marcionílio Souza",
+  "prefeito": "Hermínio José Oliveira Mercês",
+  "inicio": null,
+  "fim": "2024",
+  "site": null,
+  "telefone": null,
+  "oficial": {
+   "nome": "Herminio Jose Oliveira Merces",
+   "partido": "AVANTE",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Mascote": {
+  "titulo": "Mascote (Bahia)",
+  "prefeito": "Arnaldo Lopes Costa",
+  "inicio": null,
+  "fim": "2024",
+  "site": null,
+  "telefone": null,
+  "brasao": "Braso-de-mascote-1-638.jpg",
+  "oficial": {
+   "nome": "Sebastião Moreira Carvalho",
+   "partido": "PSB",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Mata De São João": {
+  "titulo": "Mata de São João",
+  "prefeito": "Agostinho Batista dos Santos Neto (Bira)",
+  "inicio": null,
+  "fim": "2028",
+  "site": "http://www.matadesaojoao.ba.gov.br/",
+  "telefone": "(71) 3635-1310",
+  "oficial": {
+   "nome": "Agostinho Batista dos Santos Neto",
+   "partido": "UNIÃO",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Matina": {
+  "titulo": "Matina",
+  "prefeito": "Olga Gentil de Castro Cardoso",
+  "inicio": null,
+  "fim": "2024",
+  "site": "http://www.matina.ba.gov.br/",
+  "telefone": "(77) 3643-1008",
+  "oficial": {
+   "nome": "Olga Gentil de Castro Cardoso",
+   "partido": "PSD",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Medeiros Neto": {
+  "titulo": "Medeiros Neto",
+  "prefeito": "Adalberto Alves Pinto (Beto Pinto)",
+  "inicio": "2021",
+  "fim": "2028",
+  "site": "https://medeirosneto.com/",
+  "telefone": "(73) 99832-6959",
+  "brasao": "Brasão Medeiros Neto (BA).jpg",
+  "oficial": {
+   "nome": "Adalberto Alves Pinto",
+   "partido": "MDB",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Miguel Calmon": {
+  "titulo": "Miguel Calmon",
+  "prefeito": "Marinaldo Sampaio de Souza Filho",
+  "inicio": null,
+  "fim": "2028",
+  "site": null,
+  "telefone": null,
+  "oficial": {
+   "nome": "Marinaldo Sampaio de Souza Filho",
+   "partido": "PP",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Mirangaba": {
+  "titulo": "Mirangaba",
+  "prefeito": "Dirceu Mendes Ribeiro",
+  "inicio": null,
+  "fim": "2024",
+  "site": "https://www.mirangaba.ba.gov.br/",
+  "telefone": "(74) 3630-2113",
+  "oficial": {
+   "nome": "Dirceu Mendes Ribeiro",
+   "partido": "PSD",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Mirante": {
+  "titulo": "Mirante (Bahia)",
+  "prefeito": "Wagner Ramos Lima",
+  "inicio": null,
+  "fim": "2024",
+  "site": null,
+  "telefone": null,
+  "oficial": {
+   "nome": "Edno Silva Nascimento",
+   "partido": "PT",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Monte Santo": {
+  "titulo": "Monte Santo",
+  "prefeito": "Silvania Matos",
+  "inicio": null,
+  "fim": "2024",
+  "site": "http://www.montesanto.ba.gov.br/",
+  "telefone": null,
+  "oficial": {
+   "nome": "Silvania Silva Matos",
+   "partido": "PSB",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Morpará": {
+  "titulo": "Morpará",
+  "prefeito": "Sirley Novaes Barreto - Lelei",
+  "inicio": null,
+  "fim": "2024",
+  "site": "http://www.morpara.ba.gov.br",
+  "telefone": "(77) 3663-2168",
+  "oficial": {
+   "nome": "Natalito Ribeiro de Alcantara",
+   "partido": "PT",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Morro Do Chapéu": {
+  "titulo": "Morro do Chapéu",
+  "prefeito": "Juliana Pereira Araujo Leal",
+  "inicio": "2021",
+  "fim": "2024",
+  "site": null,
+  "telefone": null,
+  "oficial": {
+   "nome": "Juliana Pereira Araujo Leal",
+   "partido": "PDT",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Mortugaba": {
+  "titulo": "Mortugaba",
+  "prefeito": "Rita de Cássia Cerqueira dos Santos (Cássia)",
+  "inicio": "2025",
+  "fim": "2028",
+  "site": "https://www.mortugaba.ba.gov.br/",
+  "telefone": "(77) 3464-2210",
+  "oficial": {
+   "nome": "Rita de Cássia Cerqueira dos Santos",
+   "partido": "PSB",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Mucugê": {
+  "titulo": "Mucugê",
+  "prefeito": "Ana Olímpia Hora Medrado",
+  "inicio": null,
+  "fim": "2028",
+  "site": null,
+  "telefone": null,
+  "oficial": {
+   "nome": "Ana Olimpia Hora Medrado",
+   "partido": "PSB",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Mucuri": {
+  "titulo": "Mucuri",
+  "prefeito": "Roberto Carlos Figueiredo Costa",
+  "inicio": "2025",
+  "fim": null,
+  "site": "https://www.mucuri.ba.gov.br/",
+  "telefone": "(73) 3206-1221",
+  "oficial": {
+   "nome": "Roberto Carlos Figueiredo Costa",
+   "partido": "UNIÃO",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Mulungu Do Morro": {
+  "titulo": "Mulungu do Morro",
+  "prefeito": "Edimario José Boaventura",
+  "inicio": null,
+  "fim": "2024",
+  "site": "https://www.mulungudomorro.ba.gov.br/",
+  "telefone": "(74) 3643-1036",
+  "oficial": {
+   "nome": "Acácio Teles dos Santos",
+   "partido": "MDB",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Mundo Novo": {
+  "titulo": "Mundo Novo (Bahia)",
+  "prefeito": "Ana Paula de Oliveira Costa",
+  "inicio": "2025",
+  "fim": null,
+  "site": null,
+  "telefone": null,
+  "oficial": {
+   "nome": "Ana Paula de Oliveira Costa",
+   "partido": "PSD",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Muniz Ferreira": {
+  "titulo": "Muniz Ferreira",
+  "prefeito": "Gileno Pereira dos Santos",
+  "inicio": null,
+  "fim": "2024",
+  "site": null,
+  "telefone": null,
+  "oficial": {
+   "nome": "Gileno Pereira dos Santos",
+   "partido": "AVANTE",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Muquém De São Francisco": {
+  "titulo": "Muquém do São Francisco",
+  "prefeito": "Ailson de Souza Selis",
+  "inicio": null,
+  "fim": "2028",
+  "site": null,
+  "telefone": null,
+  "oficial": {
+   "nome": "Ailson de Souza Selis",
+   "partido": "AVANTE",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Mutuípe": {
+  "titulo": "Mutuípe",
+  "prefeito": "João Carlos Rauedys Cardoso da Silva",
+  "inicio": "2025",
+  "fim": "2028",
+  "site": null,
+  "telefone": null,
+  "oficial": {
+   "nome": "João Carlos Rauedys Cardoso da Silva",
+   "partido": "PT",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Nilo Peçanha": {
+  "titulo": "Nilo Peçanha (Bahia)",
+  "prefeito": "Jacqueline Soares de Oliveira",
+  "inicio": null,
+  "fim": "2024",
+  "site": null,
+  "telefone": null,
+  "oficial": {
+   "nome": "Jacqueline Soares de Oliveira",
+   "partido": "PODE",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Nova Canaã": {
+  "titulo": "Nova Canaã",
+  "prefeito": "Wadson Oliveira Rocha (Dói Rocha)",
+  "inicio": null,
+  "fim": "2028",
+  "site": null,
+  "telefone": null,
+  "oficial": {
+   "nome": "Wadson Oliveira Rocha",
+   "partido": "AVANTE",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Nova Fátima": {
+  "titulo": "Nova Fátima (Bahia)",
+  "prefeito": "José Adriano Santos Pereira",
+  "inicio": null,
+  "fim": "2024",
+  "site": "http://www.novafatima.ba.gov.br/",
+  "telefone": null,
+  "oficial": {
+   "nome": "Jose de Assis de Oliveira Porto",
+   "partido": "SOLIDARIEDADE",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Nova Itarana": {
+  "titulo": "Nova Itarana",
+  "prefeito": "Danilo Italiano",
+  "inicio": null,
+  "fim": "2024",
+  "site": "https://www.novaitarana.ba.gov.br/",
+  "telefone": "(73) 3546-2108",
+  "oficial": {
+   "nome": "Elmo Ricardo Galvao de Souza  Silva",
+   "partido": "PSD",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Nova Redenção": {
+  "titulo": "Nova Redenção",
+  "prefeito": "Guilma Soares",
+  "inicio": null,
+  "fim": "2024",
+  "site": null,
+  "telefone": null,
+  "oficial": {
+   "nome": "Ademar Martins de Oliveira Filho",
+   "partido": "PSD",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Nova Soure": {
+  "titulo": "Nova Soure",
+  "prefeito": "Luís Cássio de Souza Andrade",
+  "inicio": null,
+  "fim": "2024",
+  "site": "https://www.novasoure.ba.gov.br/",
+  "telefone": "(75) 99812-7156",
+  "oficial": {
+   "nome": "Alan Camilo Barreto Reis",
+   "partido": "PSD",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Nova Viçosa": {
+  "titulo": "Nova Viçosa",
+  "prefeito": "Luciana Sousa Machado Rodrigues",
+  "inicio": null,
+  "fim": "2028",
+  "site": "https://www.novavicosa.ba.gov.br/",
+  "telefone": "(73) 9865-7880",
+  "oficial": {
+   "nome": "Luciana Sousa Machado Rodrigues",
+   "partido": "UNIÃO",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Novo Horizonte": {
+  "titulo": "Novo Horizonte (Bahia)",
+  "prefeito": "Rogerio de Oliveira Prado",
+  "inicio": null,
+  "fim": "2028",
+  "site": "https://www.novohorizonte.ba.gov.br/",
+  "telefone": null,
+  "oficial": {
+   "nome": "Rogerio de Oliveira Prado",
+   "partido": "PSD",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Olindina": {
+  "titulo": "Olindina",
+  "prefeito": "Luiz Alberto Araújo Dantas Filho",
+  "inicio": null,
+  "fim": "2024",
+  "site": "http://www.olindina.ba.gov.br",
+  "telefone": "(75) 3436-1008",
+  "brasao": "Bras olindina.jpg",
+  "oficial": {
+   "nome": "Luiz Alberto Araújo Dantas Filho",
+   "partido": "PSD",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Oliveira Dos Brejinhos": {
+  "titulo": "Oliveira dos Brejinhos",
+  "prefeito": "Cleriston Uaide Reis Guedes Pereira",
+  "inicio": null,
+  "fim": "2028",
+  "site": "http://www.oliveiradosbrejinhos.ba.gov.br/",
+  "telefone": null,
+  "oficial": {
+   "nome": "Cleriston Uaide Reis Guedes Pereira",
+   "partido": "PT",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Ourolândia": {
+  "titulo": "Ourolândia",
+  "prefeito": "José Raimundo Araújo de Souza",
+  "inicio": null,
+  "fim": "2024",
+  "site": "https://www.ourolandia.ba.gov.br/",
+  "telefone": "(74) 3681-2250",
+  "oficial": {
+   "nome": "José Raimundo Araujo de Souza",
+   "partido": "UNIÃO",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Palmas De Monte Alto": {
+  "titulo": "Palmas de Monte Alto",
+  "prefeito": "Manoel Rubens Vicente da Cruz",
+  "inicio": null,
+  "fim": "2024",
+  "site": null,
+  "telefone": null,
+  "oficial": {
+   "nome": "Marcos Tulio Laranjeira Rocha",
+   "partido": "PSD",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Palmeiras": {
+  "titulo": "Palmeiras (Bahia)",
+  "prefeito": "Wilson José da Rocha",
+  "inicio": null,
+  "fim": "2028",
+  "site": "https://www.palmeiras.ba.gov.br/",
+  "telefone": "(75) 99252-5388",
+  "oficial": {
+   "nome": "Wilson Jose da Rocha",
+   "partido": "AVANTE",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Paramirim": {
+  "titulo": "Paramirim",
+  "prefeito": "João Ricardo Brasil Matos",
+  "inicio": "2025",
+  "fim": "2028",
+  "site": null,
+  "telefone": null,
+  "oficial": {
+   "nome": "João Ricardo Brasil Matos",
+   "partido": "AVANTE",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Paratinga": {
+  "titulo": "Paratinga",
+  "prefeito": "Vitor Ferreira de Santana",
+  "inicio": null,
+  "fim": "2028",
+  "site": "https://www.paratinga.ba.gov.br/",
+  "telefone": null,
+  "oficial": {
+   "nome": "Vitor Ferreira de Santana",
+   "partido": "PT",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Paripiranga": {
+  "titulo": "Paripiranga",
+  "prefeito": "Talisson Santa Rosa Nascimento",
+  "inicio": null,
+  "fim": "2028",
+  "site": "http://www.paripiranga.ba.gov.br/",
+  "telefone": "(75) 99912-9025",
+  "oficial": {
+   "nome": "Talisson Santa Rosa Nascimento",
+   "partido": "PSD",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Paulo Afonso": {
+  "titulo": "Paulo Afonso",
+  "prefeito": "Mario Galinho",
+  "inicio": null,
+  "fim": "2028",
+  "site": "http://www.pauloafonso.ba.gov.br",
+  "telefone": "(75) 3281-3011",
+  "oficial": {
+   "nome": "Mario Cesar Barreto Azevedo",
+   "partido": "PSD",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Pedro Alexandre": {
+  "titulo": "Pedro Alexandre",
+  "prefeito": "Yuri Cesar de Andrade Menezes",
+  "inicio": null,
+  "fim": "2024",
+  "site": "https://www.pedroalexandre.ba.gov.br/",
+  "telefone": "(75) 3289-2131",
+  "oficial": {
+   "nome": "Yuri Cesar de Andrade Menezes",
+   "partido": "PP",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Piatã": {
+  "titulo": "Piatã",
+  "prefeito": "Marcos Paulo Santos Azevedo",
+  "inicio": null,
+  "fim": "2028",
+  "site": "https://www.piata.ba.gov.br/",
+  "telefone": "(77) 99147-0025",
+  "brasaoLocal": "/brasoes/BA/piata.png",
+  "oficial": {
+   "nome": "Marcos Paulo Santos Azevedo",
+   "partido": "PSD",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Pilão Arcado": {
+  "titulo": "Pilão Arcado",
+  "prefeito": "Leosmir Atanazio Gama",
+  "inicio": "2021",
+  "fim": "2024",
+  "site": "https://www.pilaoarcado.ba.gov.br/",
+  "telefone": null,
+  "oficial": {
+   "nome": "Leosmir Atanazio Gama",
+   "partido": "PT",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Pindobaçu": {
+  "titulo": "Pindobaçu",
+  "prefeito": "David Menezes Farias (Dr Davi)",
+  "inicio": "2025",
+  "fim": "2028",
+  "site": "http://pindobacu.ba.gov.br/",
+  "telefone": "(77) 3656-2156",
+  "oficial": {
+   "nome": "David Menezes Farias",
+   "partido": "PSD",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Pintadas": {
+  "titulo": "Pintadas",
+  "prefeito": "Valcyr Almeida Rios",
+  "inicio": null,
+  "fim": "2024",
+  "site": "https://pintadas.ba.gov.br/",
+  "telefone": "(75) 98101-0934",
+  "brasao": "Bra mul pintadas.jpg",
+  "oficial": {
+   "nome": "Valcyr Almeida Rios",
+   "partido": "PT",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Piraí Do Norte": {
+  "titulo": "Piraí do Norte",
+  "prefeito": "Heliton Fabiano Tavares da Silva",
+  "inicio": null,
+  "fim": null,
+  "site": null,
+  "telefone": null,
+  "oficial": {
+   "nome": "Heliton Fabiano Tavares da Silva Pereira",
+   "partido": "PP",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Piripá": {
+  "titulo": "Piripá",
+  "prefeito": "Flávio Oliveira Rocha",
+  "inicio": null,
+  "fim": "2024",
+  "site": null,
+  "telefone": null,
+  "oficial": {
+   "nome": "Cristiano Santos Silva",
+   "partido": "PSD",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Piritiba": {
+  "titulo": "Piritiba",
+  "prefeito": "Leandra Belitardo Barretto de Andrade Lima",
+  "inicio": null,
+  "fim": "2028",
+  "site": "http://piritiba.ba.gov.br/",
+  "telefone": "(74) 3628-2153",
+  "oficial": {
+   "nome": "Leandra Belitardo Barretto de Andrade Lima",
+   "partido": "SOLIDARIEDADE",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Planaltino": {
+  "titulo": "Planaltino",
+  "prefeito": "Ronaldo Lisboa da Silva",
+  "inicio": null,
+  "fim": "2024",
+  "site": "https://www.planaltino.ba.gov.br/",
+  "telefone": "(73) 3544-2313",
+  "oficial": {
+   "nome": "Ronaldo Lisboa da Silva",
+   "partido": "PT",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Planalto": {
+  "titulo": "Planalto (Bahia)",
+  "prefeito": "Cloves Alves Andrade",
+  "inicio": "2021",
+  "fim": "2028",
+  "site": "http://planalto.ba.gov.br/",
+  "telefone": "(77) 3434-2137",
+  "oficial": {
+   "nome": "Cloves Alves Andrade",
+   "partido": "PT",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Porto Seguro": {
+  "titulo": "Porto Seguro",
+  "prefeito": "Janio Natal Andrade Borges",
+  "inicio": "2021",
+  "fim": "2028",
+  "site": "https://www.portoseguro.ba.gov.br/",
+  "telefone": null,
+  "oficial": {
+   "nome": "Janio Natal Andrade Borges",
+   "partido": "PL",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Potiraguá": {
+  "titulo": "Potiraguá",
+  "prefeito": "Jorge Porto Cheles",
+  "inicio": null,
+  "fim": "2024",
+  "site": "https://potiragua.ba.gov.br/",
+  "telefone": null,
+  "oficial": {
+   "nome": "Elias de Carvalho Filho",
+   "partido": "AVANTE",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Poções": {
+  "titulo": "Poções",
+  "prefeito": "Irenilda Cunha de Magalhaes (Dona Nilda)",
+  "inicio": null,
+  "fim": "2024",
+  "site": "http://pocoes.ba.gov.br/",
+  "telefone": null,
+  "oficial": {
+   "nome": "Irenilda Cunha de Magalhães",
+   "partido": "PC do B",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Prado": {
+  "titulo": "Prado (Bahia)",
+  "prefeito": "Gilvan da Silva Santos",
+  "inicio": null,
+  "fim": "2028",
+  "site": "https://www.prado.ba.gov.br",
+  "telefone": null,
+  "oficial": {
+   "nome": "Gilvan da Silva Santos",
+   "partido": "PSD",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Presidente Dutra": {
+  "titulo": "Presidente Dutra (Bahia)",
+  "prefeito": "Roberto Carlos Alves de Souza",
+  "inicio": null,
+  "fim": "2024",
+  "site": "http://www.presidentedutra.ba.gov.br/",
+  "telefone": null,
+  "brasaoLocal": "/brasoes/BA/presidente-dutra.png",
+  "oficial": {
+   "nome": "Roberto Carlos Alves de Souza",
+   "partido": "MDB",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Presidente Jânio Quadros": {
+  "titulo": "Presidente Jânio Quadros",
+  "prefeito": "Lélio Alves Brito Junior",
+  "inicio": null,
+  "fim": "2024",
+  "site": "https://www.presidentejanioquadros.ba.gov.br/",
+  "telefone": null,
+  "oficial": {
+   "nome": "Lelio Alves Brito Junior",
+   "partido": "PT",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Presidente Tancredo Neves": {
+  "titulo": "Presidente Tancredo Neves",
+  "prefeito": "Antônio dos Santos Mendes",
+  "inicio": null,
+  "fim": "2024",
+  "site": null,
+  "telefone": null,
+  "oficial": {
+   "nome": "Josue Paulo dos Santos Filho",
+   "partido": "AVANTE",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Pé De Serra": {
+  "titulo": "Pé de Serra",
+  "prefeito": "Edgar Miranda",
+  "inicio": null,
+  "fim": "2024",
+  "site": "https://www.pedeserra.ba.gov.br/",
+  "telefone": "(75) 3660-2085",
+  "oficial": {
+   "nome": "Zedivan de Freitas Rios",
+   "partido": "UNIÃO",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Queimadas": {
+  "titulo": "Queimadas (Bahia)",
+  "prefeito": "André Luiz Andrade",
+  "inicio": null,
+  "fim": "2024",
+  "site": "http://www.queimadas.ba.gov.br/",
+  "telefone": null,
+  "oficial": {
+   "nome": "Ricardo Marcos Batista Lopes",
+   "partido": "PSD",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Quijingue": {
+  "titulo": "Quijingue",
+  "prefeito": "José Romero Rocha Matos Filho",
+  "inicio": null,
+  "fim": "2028",
+  "site": "http://quijingue.ba.gov.br",
+  "telefone": "(75) 3387-2113",
+  "oficial": {
+   "nome": "José Romero Rocha Matos Filho",
+   "partido": "AVANTE",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Quixabeira": {
+  "titulo": "Quixabeira (Bahia)",
+  "prefeito": "Edinaldo Oliveira Rios (Dinho do Piloto)",
+  "inicio": null,
+  "fim": "2029",
+  "site": "http://www.quixabeira.ba.gov.br",
+  "telefone": "(74) 2018-0170",
+  "oficial": {
+   "nome": "Edinaldo Oliveira Rios",
+   "partido": "UNIÃO",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Rafael Jambeiro": {
+  "titulo": "Rafael Jambeiro",
+  "prefeito": "Marinalvo Fernandes Serra (Nalvinho)",
+  "inicio": "2025",
+  "fim": null,
+  "site": "https://www.rafaeljambeiro.ba.gov.br/",
+  "telefone": "(75) 3680-2122",
+  "oficial": {
+   "nome": "Marinalvo Fernandes Serra",
+   "partido": "UNIÃO",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Remanso": {
+  "titulo": "Remanso",
+  "prefeito": "Marcos Carvalho Palmeira",
+  "inicio": "2021",
+  "fim": "2028",
+  "site": "http://www.remanso.ba.gov.br/",
+  "telefone": null,
+  "oficial": {
+   "nome": "Marcos Carvalho Palmeira",
+   "partido": "PC do B",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Retirolândia": {
+  "titulo": "Retirolândia",
+  "prefeito": "Alivanaldo Martins dos Santos",
+  "inicio": null,
+  "fim": "2024",
+  "site": "http://www.retirolandia.ba.gov.br/",
+  "telefone": "(75) 3202-1176",
+  "oficial": {
+   "nome": "José Egnildo dos Santos",
+   "partido": "PSB",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Riacho De Santana": {
+  "titulo": "Riacho de Santana (Bahia)",
+  "prefeito": "Tito Eugênio Cardoso de Castro",
+  "inicio": null,
+  "fim": "2024",
+  "site": "https://www.riachodesantana.ba.gov.br/",
+  "telefone": "(77) 3457-2121",
+  "oficial": {
+   "nome": "Joao Vitor Martins Laranjeira",
+   "partido": "PSD",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Riachão Das Neves": {
+  "titulo": "Riachão das Neves",
+  "prefeito": "Moab Santana",
+  "inicio": null,
+  "fim": "2025",
+  "site": "https://riachaodasneves.ba.gov.br/",
+  "telefone": "(77) 98119-1010",
+  "oficial": {
+   "nome": "Moab Nascimento de Santana",
+   "partido": "REPUBLICANOS",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Riachão Do Jacuípe": {
+  "titulo": "Riachão do Jacuípe",
+  "prefeito": "José Carlos de Matos Soares",
+  "inicio": null,
+  "fim": "2025 a 2028",
+  "site": "https://www.riachaodojacuipe.ba.gov.br/",
+  "telefone": "(75) 3264-1552",
+  "oficial": {
+   "nome": "José Carlos de Matos Soares",
+   "partido": "UNIÃO",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Ribeira Do Amparo": {
+  "titulo": "Ribeira do Amparo",
+  "prefeito": "Tetiana de Paula Fontes Cedro Britto",
+  "inicio": "2025",
+  "fim": "2028",
+  "site": "https://www.ribeiradoamparo.ba.gov.br/",
+  "telefone": "(75) 3439-2166",
+  "oficial": {
+   "nome": "Tetiana de Paula Fontes Cedro Britto",
+   "partido": "MDB",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Ribeira Do Pombal": {
+  "titulo": "Ribeira do Pombal",
+  "prefeito": "Eriksson Santos Silva",
+  "inicio": null,
+  "fim": "2028",
+  "site": "https://ribeiradopombal.ba.gov.br/",
+  "telefone": "(75) 3276-1967",
+  "oficial": {
+   "nome": "Eriksson Santos Silva",
+   "partido": "MDB",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Ribeirão Do Largo": {
+  "titulo": "Ribeirão do Largo",
+  "prefeito": "Jesuina Moreira Borges",
+  "inicio": null,
+  "fim": "2028",
+  "site": "https://www.ribeiraodolargo.ba.gov.br/",
+  "telefone": "(77) 3478-1010",
+  "oficial": {
+   "nome": "Jesuina Moreira Borges",
+   "partido": "AVANTE",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Rio De Contas": {
+  "titulo": "Rio de Contas (Bahia)",
+  "prefeito": "Celio Evangelista da Silva (Célio)",
+  "inicio": "2025",
+  "fim": "2028",
+  "site": "https://www.riodecontas.ba.gov.br/",
+  "telefone": null,
+  "brasao": "Riodecontas.ba.coat.of.arms.jpg",
+  "oficial": {
+   "nome": "Celio Evangelista da Silva",
+   "partido": "PSD",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Rio Do Pires": {
+  "titulo": "Rio do Pires",
+  "prefeito": "José Marcos Pereira",
+  "inicio": null,
+  "fim": "2028",
+  "site": "http://www.riodopires.ba.gov.br/",
+  "telefone": null,
+  "oficial": {
+   "nome": "Jose Marcos Pereira",
+   "partido": "AVANTE",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Rio Real": {
+  "titulo": "Rio Real (Bahia)",
+  "prefeito": "Antônio Alves dos Santos \"Carroça\"",
+  "inicio": null,
+  "fim": "2024",
+  "site": "http://www.rioreal.ba.gov.br",
+  "telefone": "(75) 3426-1320",
+  "oficial": {
+   "nome": "Giancarlo Alves de Alcantara Souza",
+   "partido": "PV",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Rodelas": {
+  "titulo": "Rodelas",
+  "prefeito": "Emanuel Rodrigues Ferreira",
+  "inicio": null,
+  "fim": "2024",
+  "site": "https://www.rodelas.ba.gov.br/",
+  "telefone": "(75) 3285-2204",
+  "oficial": {
+   "nome": "Emanuel Rodrigues Ferreira",
+   "partido": "PC do B",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Ruy Barbosa": {
+  "titulo": "Ruy Barbosa (Bahia)",
+  "prefeito": "Eridan Martins de Araújo Dourado",
+  "inicio": "2025",
+  "fim": "2028",
+  "site": "http://www.ruybarbosa.ba.gov.br",
+  "telefone": null,
+  "oficial": {
+   "nome": "Eridan Martins de Araújo Dourado",
+   "partido": "MDB",
+   "fonte": "TSE",
+   "obs": "eleito em eleição suplementar"
+  }
+ },
+ "Santa Brígida": {
+  "titulo": "Santa Brígida (Bahia)",
+  "prefeito": "Elton Carlos Magalhães",
+  "inicio": "2021",
+  "fim": "2028",
+  "site": "http://www.santabrigida.ba.gov.br",
+  "telefone": "(75) 99846-3135",
+  "oficial": {
+   "nome": "Elton Carlos Magalhães",
+   "partido": "PODE",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Santa Bárbara": {
+  "titulo": "Santa Bárbara (Bahia)",
+  "prefeito": "Edifrancio de Jesus Oliveira",
+  "inicio": "2021",
+  "fim": "2028",
+  "site": "https://www.santabarbara.ba.gov.br/",
+  "telefone": null,
+  "brasaoLocal": "/brasoes/BA/santa-barbara.png",
+  "oficial": {
+   "nome": "Edifrancio de Jesus Oliveira",
+   "partido": "PSD",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Santa Inês": {
+  "titulo": "Santa Inês (Bahia)",
+  "prefeito": "Hermeson Eloi",
+  "inicio": null,
+  "fim": "2024",
+  "site": "https://www.santaines.ba.gov.br/",
+  "telefone": "(73) 3536-1991",
+  "oficial": {
+   "nome": "Sandro Santos Silva",
+   "partido": "PT",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Santa Maria Da Vitória": {
+  "titulo": "Santa Maria da Vitória",
+  "prefeito": "Antônio Elson Marques da Silva",
+  "inicio": null,
+  "fim": "2028",
+  "site": "http://www.santamariadavitoria.ba.gov.br/",
+  "telefone": "(77) 3483-2379",
+  "oficial": {
+   "nome": "Antonio Elson Marques da Silva",
+   "partido": "UNIÃO",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Santa Rita De Cássia": {
+  "titulo": "Santa Rita de Cássia (Bahia)",
+  "prefeito": "José Benedito Rocha Aragão",
+  "inicio": null,
+  "fim": "2024",
+  "site": "https://santaritadecassia.ba.gov.br/",
+  "telefone": null,
+  "oficial": {
+   "nome": "José Benedito Rocha Aragão",
+   "partido": "PSD",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Santa Teresinha": {
+  "titulo": "Santa Teresinha (Bahia)",
+  "prefeito": "Agnaldo Figueiredo Andrade",
+  "inicio": null,
+  "fim": "2024",
+  "site": "https://www.santateresinha.ba.gov.br/",
+  "telefone": null,
+  "oficial": {
+   "nome": "Agnaldo Figueiredo Andrade",
+   "partido": "PSD",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Santaluz": {
+  "titulo": "Santaluz",
+  "prefeito": "Dr. Arismário Barbosa",
+  "inicio": null,
+  "fim": "2024",
+  "site": "http://santaluz.ba.gov.br/",
+  "telefone": null,
+  "oficial": {
+   "nome": "Arismário Barbosa Junior",
+   "partido": "AVANTE",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Santana": {
+  "titulo": "Santana (Bahia)",
+  "prefeito": "Zé Raul",
+  "inicio": null,
+  "fim": "2025 - Atualmente",
+  "site": "https://www.santana.ba.gov.br/",
+  "telefone": "(77) 3484-2148",
+  "oficial": {
+   "nome": "José Raul Alkmim Leão",
+   "partido": "MDB",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Santanópolis": {
+  "titulo": "Santanópolis",
+  "prefeito": "Gilson Cerqueira Almeida",
+  "inicio": null,
+  "fim": "2024",
+  "site": "http://www.santanopolis.ba.gov.br/",
+  "telefone": null,
+  "oficial": {
+   "nome": "Gilson Cerqueira Almeida",
+   "partido": "MDB",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Santo Estêvão": {
+  "titulo": "Santo Estêvão (Bahia)",
+  "prefeito": "Tiago Gomes Dias",
+  "inicio": null,
+  "fim": "2028",
+  "site": "https://www.santoestevao.ba.gov.br/",
+  "telefone": null,
+  "oficial": {
+   "nome": "Tiago Gomes Dias",
+   "partido": "UNIÃO",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Saúde": {
+  "titulo": "Saúde (Bahia)",
+  "prefeito": "Auciclei Costa Rodrigues",
+  "inicio": null,
+  "fim": "2024",
+  "site": "https://www.pmsaude.ba.gov.br/",
+  "telefone": "(74) 3633-2993",
+  "oficial": {
+   "nome": "Auciclei Costa Rodrigues",
+   "partido": "PSD",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Seabra": {
+  "titulo": "Seabra",
+  "prefeito": "Joaquim Inácio de Souza Neto",
+  "inicio": "2025",
+  "fim": "2028",
+  "site": "https://www.seabra.ba.gov.br/",
+  "telefone": null,
+  "oficial": {
+   "nome": "Joaquim Inacio de Souza Neto",
+   "partido": "PC do B",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Sebastião Laranjeiras": {
+  "titulo": "Sebastião Laranjeiras",
+  "prefeito": "Pedro Antônio Pereira Malheiros",
+  "inicio": null,
+  "fim": "2024",
+  "site": null,
+  "telefone": null,
+  "oficial": {
+   "nome": "Pedro Antonio Pereira Malheiros",
+   "partido": "PSB",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Sento Sé": {
+  "titulo": "Sento Sé",
+  "prefeito": "Giselda Carvalho",
+  "inicio": null,
+  "fim": "2028",
+  "site": null,
+  "telefone": null,
+  "oficial": {
+   "nome": "Giselda Carvalho dos Santos Rodrigues",
+   "partido": "PT",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Serra Do Ramalho": {
+  "titulo": "Serra do Ramalho (Bahia)",
+  "prefeito": "Eli Carlos dos Anjos Santos",
+  "inicio": null,
+  "fim": "2028",
+  "site": null,
+  "telefone": null,
+  "oficial": {
+   "nome": "Eli Carlos dos Anjos Santos",
+   "partido": "PSDB",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Serra Dourada": {
+  "titulo": "Serra Dourada",
+  "prefeito": "Auzenildo Sousa Costa (Nenenzão)",
+  "inicio": "2021",
+  "fim": "2028",
+  "site": "https://www.serradourada.ba.gov.br/",
+  "telefone": "(77) 3686-2079",
+  "brasao": "Serra Dourada -BA.JPG",
+  "oficial": {
+   "nome": "Auzenildo Sousa Costa",
+   "partido": "PT",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Serra Preta": {
+  "titulo": "Serra Preta",
+  "prefeito": "Franklin Leite",
+  "inicio": null,
+  "fim": "2024",
+  "site": "http://www.serrapreta.ba.gov.br/",
+  "telefone": "(75) 3697-2114",
+  "oficial": {
+   "nome": "Franklin Leite da Silva",
+   "partido": "AVANTE",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Serrolândia": {
+  "titulo": "Serrolândia",
+  "prefeito": "Gildo Mota Bispo",
+  "inicio": "2021",
+  "fim": "2028",
+  "site": "https://www.serrolandia.ba.gov.br/",
+  "telefone": "(74) 3631-2733",
+  "oficial": {
+   "nome": "Gildo Mota Bispo",
+   "partido": "PC do B",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Souto Soares": {
+  "titulo": "Souto Soares",
+  "prefeito": "André Luiz Sampaio Cardoso",
+  "inicio": null,
+  "fim": "2024",
+  "site": "https://www.soutosoares.ba.gov.br/",
+  "telefone": "(75) 3339-2128",
+  "oficial": {
+   "nome": "Lucas Tadeu de Oliveira",
+   "partido": "PT",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Sátiro Dias": {
+  "titulo": "Sátiro Dias",
+  "prefeito": "Pedro Raimundo Santana da Cruz",
+  "inicio": null,
+  "fim": "2028",
+  "site": "https://www.satirodias.ba.gov.br/",
+  "telefone": null,
+  "oficial": {
+   "nome": "Pedro Raimundo Santana da Cruz",
+   "partido": "PSD",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "São Desidério": {
+  "titulo": "São Desidério",
+  "prefeito": "José Carlos",
+  "inicio": null,
+  "fim": "2024",
+  "site": "https://saodesiderio.ba.gov.br/",
+  "telefone": "(77) 3623-2145",
+  "oficial": {
+   "nome": "Joao Antonio Rodrigues Linhares",
+   "partido": "PP",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "São Félix Do Coribe": {
+  "titulo": "São Félix do Coribe",
+  "prefeito": "Toni Marcos Santos (Toni de Dalmir)",
+  "inicio": "2025",
+  "fim": null,
+  "site": null,
+  "telefone": null,
+  "oficial": {
+   "nome": "Toni Marcos Santos",
+   "partido": "PP",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "São Gabriel": {
+  "titulo": "São Gabriel (Bahia)",
+  "prefeito": "Hipólito Rodrigues Silva Gomes",
+  "inicio": null,
+  "fim": "2024",
+  "site": "http://saogabriel.ba.gov.br/",
+  "telefone": null,
+  "oficial": {
+   "nome": "Mateus Machado Rocha",
+   "partido": "PT",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "São Miguel Das Matas": {
+  "titulo": "São Miguel das Matas",
+  "prefeito": "Valdelino de Jesus Santos",
+  "inicio": "2021",
+  "fim": "2024",
+  "site": "http://saomigueldasmatas.ba.gov.br",
+  "telefone": "(75) 3676-2141",
+  "brasao": "Brasão de São Miguel das Matas.png",
+  "oficial": {
+   "nome": "Valdelino de Jesus Santos",
+   "partido": "PSDB",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "São Sebastião Do Passé": {
+  "titulo": "São Sebastião do Passé",
+  "prefeito": "Maria Nilza da Mata Santana",
+  "inicio": null,
+  "fim": "2028",
+  "site": "http://www.sspasse.ba.gov.br/",
+  "telefone": null,
+  "oficial": {
+   "nome": "Maria Nilza da Mata Santana",
+   "partido": "PSD",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Sítio Do Mato": {
+  "titulo": "Sítio do Mato",
+  "prefeito": "Alfredo de Oliveira Magalhães Junior (Alfredinho Magalhães)",
+  "inicio": "2025",
+  "fim": "2028",
+  "site": null,
+  "telefone": null,
+  "brasao": "Brasão de Sítio do Mato.png",
+  "oficial": {
+   "nome": "Alfredo de Oliveira Magalhães Junior",
+   "partido": "UNIÃO",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Sítio Do Quinto": {
+  "titulo": "Sítio do Quinto",
+  "prefeito": "Jair Jesus dos Santos",
+  "inicio": null,
+  "fim": "2024",
+  "site": null,
+  "telefone": null,
+  "oficial": {
+   "nome": "Benedito Jose de Jesus Reis",
+   "partido": "PSD",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Tabocas Do Brejo Velho": {
+  "titulo": "Tabocas do Brejo Velho",
+  "prefeito": "Flávio da Silva Carvalho",
+  "inicio": null,
+  "fim": "2028",
+  "site": null,
+  "telefone": null,
+  "brasao": "Tabocas do Brejo Velho.jpg",
+  "oficial": {
+   "nome": "Flavio da Silva Carvalho",
+   "partido": "PSD",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Tanhaçu": {
+  "titulo": "Tanhaçu",
+  "prefeito": "João Francisco Santos",
+  "inicio": null,
+  "fim": "2024",
+  "site": "http://tanhacu.ba.gov.br",
+  "telefone": "(77) 9811-4254",
+  "oficial": {
+   "nome": "Valdemir Brito Aguiar Gondim",
+   "partido": "PSD",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Tanque Novo": {
+  "titulo": "Tanque Novo",
+  "prefeito": "Paulo Ricardo Bonfim Carneiro",
+  "inicio": null,
+  "fim": "2028",
+  "site": "http://tanquenovo.ba.gov.br/",
+  "telefone": "(77) 98822-6146",
+  "oficial": {
+   "nome": "Paulo Ricardo Bonfim Carneiro",
+   "partido": "PP",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Tanquinho": {
+  "titulo": "Tanquinho",
+  "prefeito": "José Luiz dos Santos Reis",
+  "inicio": "2025",
+  "fim": "2028",
+  "site": "https://www.tanquinho.ba.gov.br/",
+  "telefone": null,
+  "oficial": {
+   "nome": "José Luiz dos Santos Reis",
+   "partido": "PT",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Taperoá": {
+  "titulo": "Taperoá (Bahia)",
+  "prefeito": "Christianne Mary Pereira Guimarães",
+  "inicio": null,
+  "fim": "2024",
+  "site": "http://www.taperoa.ba.gov.br/",
+  "telefone": null,
+  "brasaoLocal": "/brasoes/BA/taperoa.png",
+  "oficial": {
+   "nome": "Christianne Mary Pereira Guimarães",
+   "partido": "AVANTE",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Tapiramutá": {
+  "titulo": "Tapiramutá",
+  "prefeito": "Roberto Venâncio dos Santos",
+  "inicio": "2021",
+  "fim": "2028",
+  "site": "http://www.tapiramuta.ba.gov.br/",
+  "telefone": null,
+  "oficial": {
+   "nome": "Roberto Venâncio dos Santos",
+   "partido": "PC do B",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Teixeira De Freitas": {
+  "titulo": "Teixeira de Freitas",
+  "prefeito": "Marcelo Gusmão Pontes Belitardo (Doutor Marcelo Belitardo)",
+  "inicio": "2021",
+  "fim": "2028",
+  "site": "https://www.teixeiradefreitas.ba.gov.br/",
+  "telefone": "(73) 3291-0000",
+  "oficial": {
+   "nome": "Marcelo Gusmão Pontes Belitardo",
+   "partido": "UNIÃO",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Teodoro Sampaio": {
+  "titulo": "Teodoro Sampaio (Bahia)",
+  "prefeito": "José Alves da Cruz",
+  "inicio": null,
+  "fim": "2024",
+  "site": "http://teodorosampaio.ba.gov.br",
+  "telefone": "(75) 9289-0017",
+  "brasao": "Brasão de armas Teodoro Sampaio - BA.jpg",
+  "oficial": {
+   "nome": "João Paulo Vaz Góes",
+   "partido": "AVANTE",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Teofilândia": {
+  "titulo": "Teofilândia",
+  "prefeito": "Higo Moura Medeiros",
+  "inicio": "2021",
+  "fim": "Atualmente",
+  "site": "https://www.teofilandia.ba.gov.br/",
+  "telefone": "(75) 3268-2150",
+  "oficial": {
+   "nome": "Higo Moura Medeiros",
+   "partido": "PSB",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Teolândia": {
+  "titulo": "Teolândia",
+  "prefeito": "Maria Baitinga de Santana",
+  "inicio": null,
+  "fim": "2024",
+  "site": null,
+  "telefone": null,
+  "oficial": {
+   "nome": "Maria Baitinga de Santana",
+   "partido": "AVANTE",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Tremedal": {
+  "titulo": "Tremedal",
+  "prefeito": "José Carlos Vieira Bahia",
+  "inicio": null,
+  "fim": "2024",
+  "site": "https://www.tremedal.ba.gov.br/",
+  "telefone": "(77) 3494-2100",
+  "oficial": {
+   "nome": "Jose Carlos Vieira Bahia",
+   "partido": "AVANTE",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Tucano": {
+  "titulo": "Tucano (Bahia)",
+  "prefeito": "Ricardo Maia Chaves de Souza Filho",
+  "inicio": "2021",
+  "fim": "2028",
+  "site": "http://www.tucano.ba.gov.br/",
+  "telefone": "(75) 3272-2181",
+  "oficial": {
+   "nome": "Ricardo Maia Chaves de Souza Filho",
+   "partido": "MDB",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Uauá": {
+  "titulo": "Uauá",
+  "prefeito": "Marcos Henrique Lobo Rosa",
+  "inicio": null,
+  "fim": "2028",
+  "site": "http://www.uaua.ba.gov.br//",
+  "telefone": "(74) 99805-0482",
+  "oficial": {
+   "nome": "Marcos Henrique Lobo Rosa",
+   "partido": "AVANTE",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Ubaitaba": {
+  "titulo": "Ubaitaba",
+  "prefeito": "Maria das Graças de Deus Viana (Gracinha Viana)",
+  "inicio": null,
+  "fim": "2024 - presente",
+  "site": "http://www.ubaitaba.ba.gov.br/",
+  "telefone": "(73) 8105-6357",
+  "oficial": {
+   "nome": "Maria das Graças de Deus Viana",
+   "partido": "AVANTE",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Ubaíra": {
+  "titulo": "Ubaíra",
+  "prefeito": "Lúcio Passos Monteiro",
+  "inicio": null,
+  "fim": "2024",
+  "site": null,
+  "telefone": null,
+  "oficial": {
+   "nome": "Uildberger Alves Rabelo",
+   "partido": "PP",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Uibaí": {
+  "titulo": "Uibaí",
+  "prefeito": "Ubiraci Rocha Levi",
+  "inicio": "2020",
+  "fim": "2024",
+  "site": "http://www.uibai.ba.gov.br/",
+  "telefone": null,
+  "oficial": {
+   "nome": "Aiderlene Rocha Levi",
+   "partido": "PSD",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Umburanas": {
+  "titulo": "Umburanas",
+  "prefeito": "Roberto Bruno",
+  "inicio": null,
+  "fim": "2024",
+  "site": "http://umburanas.ba.gov.br/",
+  "telefone": "(74) 3528-1258",
+  "oficial": {
+   "nome": "Fabricio Lopes Ribeiro de Almeida",
+   "partido": "PRD",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Una": {
+  "titulo": "Una",
+  "prefeito": "Rogerio Martins Borges",
+  "inicio": "2025",
+  "fim": "2028",
+  "site": "http://www.una.ba.io.org.br",
+  "telefone": null,
+  "oficial": {
+   "nome": "Rogerio Martins Borges",
+   "partido": "PP",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Urandi": {
+  "titulo": "Urandi",
+  "prefeito": "Warlei Oliveira de Souza",
+  "inicio": "2021",
+  "fim": "2028",
+  "site": null,
+  "telefone": null,
+  "oficial": {
+   "nome": "Warlei Oliveira de Souza",
+   "partido": "PSD",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Utinga": {
+  "titulo": "Utinga (Bahia)",
+  "prefeito": "Atila Sant Ana Karaoglan (Átila)",
+  "inicio": "2025",
+  "fim": null,
+  "site": null,
+  "telefone": null,
+  "oficial": {
+   "nome": "Atila Sant Ana Karaoglan",
+   "partido": "PSDB",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Valente": {
+  "titulo": "Valente (Bahia)",
+  "prefeito": "Ubaldino Amaral de Oliveira",
+  "inicio": null,
+  "fim": "2028",
+  "site": "https://www.valente.ba.gov.br/",
+  "telefone": null,
+  "oficial": {
+   "nome": "Ubaldino Amaral de Oliveira",
+   "partido": "AVANTE",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Valença": {
+  "titulo": "Valença (Bahia)",
+  "prefeito": "Marcos Medrado",
+  "inicio": null,
+  "fim": "2028",
+  "site": "http://valenca.ba.gov.br",
+  "telefone": null,
+  "oficial": {
+   "nome": "Marcos Antonio Medrado",
+   "partido": "PV",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Vereda": {
+  "titulo": "Vereda (Bahia)",
+  "prefeito": "Manrick Gregório Prates Teixeira",
+  "inicio": "2021",
+  "fim": "2024",
+  "site": "http://www.vereda.ba.gov.br",
+  "telefone": "(73) 3661-2120",
+  "oficial": {
+   "nome": "Manrick Gregório Prates Teixeira",
+   "partido": "AVANTE",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Vitória Da Conquista": {
+  "titulo": "Vitória da Conquista",
+  "prefeito": "Ana Sheila Lemos Andrade (Sheila Lemos)",
+  "inicio": "2025",
+  "fim": null,
+  "site": "http://www.pmvc.ba.gov.br/",
+  "telefone": "(77) 3424-8500",
+  "oficial": {
+   "nome": "Ana Sheila Lemos Andrade",
+   "partido": "UNIÃO",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Várzea Da Roça": {
+  "titulo": "Várzea da Roça",
+  "prefeito": "Danillo Santos Sales Rios",
+  "inicio": null,
+  "fim": "2024",
+  "site": "http://varzeadaroca.ba.gov.br/",
+  "telefone": "(74) 3669-2188",
+  "oficial": {
+   "nome": "Danillo Santos Sales Rios",
+   "partido": "PC do B",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Várzea Nova": {
+  "titulo": "Várzea Nova",
+  "prefeito": "Daiane Severina Pereira",
+  "inicio": null,
+  "fim": "2028",
+  "site": "https://www.varzeanova.ba.gov.br/",
+  "telefone": "(74) 3659-2125",
+  "oficial": {
+   "nome": "Daiane Severina Pereira",
+   "partido": "PC do B",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Wagner": {
+  "titulo": "Wagner (Bahia)",
+  "prefeito": "Elter Silva Bastos",
+  "inicio": null,
+  "fim": "2024",
+  "site": null,
+  "telefone": null,
+  "brasaoLocal": "/brasoes/BA/wagner.png",
+  "oficial": {
+   "nome": "Thiago Rocha Ladeia",
+   "partido": "AVANTE",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Wanderley": {
+  "titulo": "Wanderley (Bahia)",
+  "prefeito": "Camargo Antônio Pinto Crisóstomo",
+  "inicio": null,
+  "fim": "2028",
+  "site": "https://www.wanderley.ba.gov.br/",
+  "telefone": "(77) 3626-1122",
+  "oficial": {
+   "nome": "Camargo Antônio Pinto Crisostomo",
+   "partido": "AVANTE",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Wenceslau Guimarães": {
+  "titulo": "Wenceslau Guimarães",
+  "prefeito": "Carlos Alberto Liotério dos Santos",
+  "inicio": "2017",
+  "fim": "2024",
+  "site": "https://www.wenceslauguimaraes.ba.gov.br",
+  "telefone": null,
+  "oficial": {
+   "nome": "Benedito Gabriel de Andrade Gomes",
+   "partido": "MDB",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Xique-Xique": {
+  "titulo": "Xique-Xique",
+  "prefeito": "Renan Pinto Dantas Braga (Renanzinho)",
+  "inicio": "2025",
+  "fim": "2028",
+  "site": "https://xiquexique.ba.gov.br",
+  "telefone": null,
+  "oficial": {
+   "nome": "Renan Pinto Dantas Braga",
+   "partido": "MDB",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Água Fria": {
+  "titulo": "Água Fria (Bahia)",
+  "prefeito": "Renan Araujo Barros (Renan de Ziza)",
+  "inicio": "2021",
+  "fim": "2028",
+  "site": "http://www.aguafria.ba.gov.br/",
+  "telefone": "(75) 3294-2181",
+  "brasao": "Brasão de Água Fria.png",
+  "oficial": {
+   "nome": "Renan Araujo Barros",
+   "partido": "PSD",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Érico Cardoso": {
+  "titulo": "Érico Cardoso",
+  "prefeito": "Eraldo Félix da Silva",
+  "inicio": "2021",
+  "fim": "2028",
+  "site": "https://www.ericocardoso.ba.gov.br/",
+  "telefone": "(77) 3677-2100",
+  "oficial": {
+   "nome": "Eraldo Félix da Silva",
+   "partido": "REPUBLICANOS",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ }
+}

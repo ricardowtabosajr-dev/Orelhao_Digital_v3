@@ -1,0 +1,411 @@
+{
+ "Alta Floresta D'Oeste": {
+  "titulo": "Alta Floresta d'Oeste",
+  "prefeito": "Giovan Damo",
+  "inicio": null,
+  "fim": "2024",
+  "site": "http://altaflorestadoeste.ro.gov.br",
+  "telefone": null,
+  "oficial": {
+   "nome": "Giovan Damo",
+   "partido": "UNIÃO",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Alto Alegre Dos Parecis": {
+  "titulo": "Alto Alegre dos Parecis",
+  "prefeito": "Denair Pedro da Silva",
+  "inicio": null,
+  "fim": "2024",
+  "site": null,
+  "telefone": null,
+  "oficial": {
+   "nome": "Denair Pedro da Silva",
+   "partido": "UNIÃO",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Alto Paraíso": {
+  "titulo": "Alto Paraíso (Rondônia)",
+  "prefeito": "João Pavan",
+  "inicio": null,
+  "fim": "2024",
+  "site": "http://www.altoparaiso.ro.gov.br/",
+  "telefone": "(69) 3534-2101",
+  "oficial": {
+   "nome": "João Pavan",
+   "partido": "REPUBLICANOS",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Ariquemes": {
+  "titulo": "Ariquemes",
+  "prefeito": "Carla Redano",
+  "inicio": null,
+  "fim": "2028",
+  "site": "https://ariquemes.ro.gov.br/",
+  "telefone": "(69) 3516-2032",
+  "brasao": "Brasao-ariquemes-ro.jpg",
+  "oficial": {
+   "nome": "Carla Gonçalves Rezende",
+   "partido": "UNIÃO",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Cabixi": {
+  "titulo": "Cabixi",
+  "prefeito": "Silvano Ascari de Almeida",
+  "inicio": null,
+  "fim": "2028",
+  "site": "https://cabixi.ro.gov.br/",
+  "telefone": "(69) 3345-2353",
+  "oficial": {
+   "nome": "Silvano Ascari de Almeida",
+   "partido": "MDB",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Cacoal": {
+  "titulo": "Cacoal",
+  "prefeito": "Adailton Fúria",
+  "inicio": null,
+  "fim": "2024",
+  "site": "http://www.cacoal.ro.gov.br/",
+  "telefone": "(69) 3907-4096",
+  "oficial": {
+   "nome": "Adailton Antunes Ferreira",
+   "partido": "PSD",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Campo Novo De Rondônia": {
+  "titulo": "Campo Novo de Rondônia",
+  "prefeito": "Alexandre José Silvestre Dias",
+  "inicio": null,
+  "fim": "2024",
+  "site": "https://camponovo.ro.gov.br/",
+  "telefone": "(69) 3239-2362",
+  "oficial": {
+   "nome": "Alexandre Jose Silvestre Dias",
+   "partido": "UNIÃO",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Castanheiras": {
+  "titulo": "Castanheiras",
+  "prefeito": "Cícero Aparecido Godoi",
+  "inicio": null,
+  "fim": "2024",
+  "site": "http://www.castanheiras.ro.gov.br/",
+  "telefone": "(69) 3474-2170",
+  "oficial": {
+   "nome": "Cicero Aparecido Godoi",
+   "partido": "PP",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Chupinguaia": {
+  "titulo": "Chupinguaia",
+  "prefeito": "Wesley Wanderley Da Costa Gonçalves",
+  "inicio": "2025",
+  "fim": "2028",
+  "site": null,
+  "telefone": null,
+  "oficial": {
+   "nome": "Wesley Wanderley da Costa Gonçalves",
+   "partido": "PP",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Corumbiara": {
+  "titulo": "Corumbiara",
+  "prefeito": "Leandro Teixeira Vieira",
+  "inicio": null,
+  "fim": "2028",
+  "site": "http://www.corumbiara.ro.gov.br/",
+  "telefone": "(69) 3343-2192",
+  "oficial": {
+   "nome": "Leandro Teixeira Vieira",
+   "partido": "UNIÃO",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Costa Marques": {
+  "titulo": "Costa Marques",
+  "prefeito": "Vagner Miranda da Silva",
+  "inicio": null,
+  "fim": "2024",
+  "site": "https://www.costamarques.ro.gov.br",
+  "telefone": "(69) 3651-3786",
+  "oficial": {
+   "nome": "Fabiomar Agostini Bento",
+   "partido": "UNIÃO",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Espigão D'Oeste": {
+  "titulo": "Espigão d'Oeste",
+  "prefeito": "Welinton Pereira Campos",
+  "inicio": null,
+  "fim": "2024",
+  "site": "https://espigaodooeste.ro.gov.br/",
+  "telefone": null,
+  "oficial": {
+   "nome": "Weliton Pereira Campos",
+   "partido": "PL",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Guajará-Mirim": {
+  "titulo": "Guajará-Mirim",
+  "prefeito": "Fabio Netinho",
+  "inicio": "01 de janeiro 2025",
+  "fim": "31 de dezembro de 2028",
+  "site": "http://www.guajaramirim.ro.gov.br/",
+  "telefone": null,
+  "oficial": {
+   "nome": "Fabio Garcia de Oliveira",
+   "partido": "PP",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Itapuã Do Oeste": {
+  "titulo": "Itapuã do Oeste",
+  "prefeito": "Moisés Cavalheiro",
+  "inicio": null,
+  "fim": "2024",
+  "site": "http://www.itapuadooeste.ro.gov.br/",
+  "telefone": "(69) 3231-2245",
+  "oficial": {
+   "nome": "Idiznei Castro Martins",
+   "partido": "AVANTE",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Jaru": {
+  "titulo": "Jaru",
+  "prefeito": "Jeverson Luiz de Lima",
+  "inicio": null,
+  "fim": "2028",
+  "site": "http://jaru.ro.gov.br/",
+  "telefone": "(69) 3521-1384",
+  "oficial": {
+   "nome": "Jeverson Luiz de Lima",
+   "partido": "MDB",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Machadinho D'Oeste": {
+  "titulo": "Machadinho d'Oeste",
+  "prefeito": "Paulo da Remap",
+  "inicio": null,
+  "fim": "2028",
+  "site": "http://machadinho.ro.gov.br/",
+  "telefone": "(69) 9357-9471",
+  "oficial": {
+   "nome": "Paulo Henrique dos Santos",
+   "partido": "PL",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Mirante Da Serra": {
+  "titulo": "Mirante da Serra",
+  "prefeito": "José Carlos Pereira de Andrade (Neno Andrade)",
+  "inicio": null,
+  "fim": "2028",
+  "site": "https://www.mirantedaserra.ro.gov.br/",
+  "telefone": "(69) 99366-6248",
+  "brasao": "Mirante da Serrarobrason.png",
+  "oficial": {
+   "nome": "Jose Carlos Pereira de Andrade",
+   "partido": "REPUBLICANOS",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Monte Negro": {
+  "titulo": "Monte Negro",
+  "prefeito": "Ivair Fernandes",
+  "inicio": null,
+  "fim": "2024",
+  "site": "http://www.montenegro.ro.gov.br/",
+  "telefone": null,
+  "oficial": {
+   "nome": "Ivair Jose Fernandes",
+   "partido": "PSD",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Nova Mamoré": {
+  "titulo": "Nova Mamoré",
+  "prefeito": "Marcélio Rodrigues Uchoa",
+  "inicio": null,
+  "fim": "2024",
+  "site": "http://www.novamamore.ro.gov.br/",
+  "telefone": "(69) 3544-3240",
+  "oficial": {
+   "nome": "Marcélio Rodrigues Uchôa",
+   "partido": "PL",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Porto Velho": {
+  "titulo": "Porto Velho",
+  "prefeito": "Léo Moraes",
+  "inicio": "2025",
+  "fim": "2028",
+  "site": "http://www.portovelho.ro.gov.br/",
+  "telefone": null,
+  "oficial": {
+   "nome": "Leonardo Barreto de Moraes",
+   "partido": "PODE",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Presidente Médici": {
+  "titulo": "Presidente Médici (Rondônia)",
+  "prefeito": "Sergio Pedro Da Silva ( Sérgio do Skināo)",
+  "inicio": null,
+  "fim": "2028",
+  "site": "https://www.presidentemedici.ro.gov.br/",
+  "telefone": "(69) 3471-2551",
+  "oficial": {
+   "nome": "Sergio Pedro da Silva",
+   "partido": "PL",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Primavera De Rondônia": {
+  "titulo": "Primavera de Rondônia",
+  "prefeito": "Eduardo Bertoletti Siviero",
+  "inicio": null,
+  "fim": "2024",
+  "site": "http://www.primavera.ro.gov.br/",
+  "telefone": null,
+  "oficial": {
+   "nome": "Lucas Nunes da Silva",
+   "partido": "PL",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Rolim De Moura": {
+  "titulo": "Rolim de Moura",
+  "prefeito": "Aldair Julio Pereira",
+  "inicio": "2025",
+  "fim": "2028",
+  "site": null,
+  "telefone": null,
+  "brasao": "CoA Rolim de Moura.jpg",
+  "oficial": {
+   "nome": "Aldair Julio Pereira",
+   "partido": "UNIÃO",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Seringueiras": {
+  "titulo": "Seringueiras",
+  "prefeito": "Armando Bernardo da Silva",
+  "inicio": null,
+  "fim": "2024",
+  "site": null,
+  "telefone": null,
+  "oficial": {
+   "nome": "Armando Bernardo da Silva",
+   "partido": "UNIÃO",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "São Francisco Do Guaporé": {
+  "titulo": "São Francisco do Guaporé",
+  "prefeito": "Alcino Bilac Machado",
+  "inicio": null,
+  "fim": "2024",
+  "site": "http://www.saofrancisco.ro.gov.br/",
+  "telefone": "(69) 3621-2580",
+  "oficial": {
+   "nome": "José Wellington Drumond Gouvea",
+   "partido": "PL",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Theobroma": {
+  "titulo": "Theobroma",
+  "prefeito": "Gilliard Gomes",
+  "inicio": null,
+  "fim": "2024",
+  "site": "https://www.theobroma.ro.gov.br/",
+  "telefone": "(69) 99268-3466",
+  "oficial": {
+   "nome": "Gilliard dos Santos Gomes",
+   "partido": "PSD",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Vale Do Anari": {
+  "titulo": "Vale do Anari",
+  "prefeito": "Anildo Alberton",
+  "inicio": null,
+  "fim": "2024",
+  "site": "https://www.valedoanari.ro.gov.br/",
+  "telefone": "(69) 99242-2139",
+  "oficial": {
+   "nome": "Cleone Lima Ribeiro",
+   "partido": "MDB",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Vale Do Paraíso": {
+  "titulo": "Vale do Paraíso (Rondônia)",
+  "prefeito": "Charles Luis Pinheiro Gomes",
+  "inicio": null,
+  "fim": "2028",
+  "site": null,
+  "telefone": null,
+  "oficial": {
+   "nome": "Charles Luis Pinheiro Gomes",
+   "partido": "PSD",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Vilhena": {
+  "titulo": "Vilhena",
+  "prefeito": "Delegado Flori Cordeiro De Miranda Jr.",
+  "inicio": null,
+  "fim": "2028",
+  "site": "http://www.vilhena.ro.gov.br",
+  "telefone": "(69) 3919-7011",
+  "oficial": {
+   "nome": "Flori Cordeiro de Miranda Junior",
+   "partido": "PODE",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ }
+}

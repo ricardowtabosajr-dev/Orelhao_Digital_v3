@@ -1,0 +1,916 @@
+{
+ "Acreúna": {
+  "titulo": "Acreúna",
+  "prefeito": "Claudiomar Contin Portugal",
+  "inicio": null,
+  "fim": "2028",
+  "site": "http://www.acreunagoias.com.br",
+  "telefone": null,
+  "oficial": {
+   "nome": "Claudiomar Contin Portugal",
+   "partido": "PP",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Anicuns": {
+  "titulo": "Anicuns",
+  "prefeito": "Paulo César José do Nascimento",
+  "inicio": null,
+  "fim": "2024",
+  "site": "http://www.anicuns.go.gov.br/",
+  "telefone": null,
+  "oficial": {
+   "nome": "Paulo César José do Nascimento",
+   "partido": "UNIÃO",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Araguapaz": {
+  "titulo": "Araguapaz",
+  "prefeito": "Gabriel Fornieles Moreira",
+  "inicio": null,
+  "fim": "2024",
+  "site": "https://araguapaz.go.gov.br/",
+  "telefone": "(62) 99261-2116",
+  "oficial": {
+   "nome": "Francisco Deuristom Gonçalves da Silva",
+   "partido": "PP",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Barro Alto": {
+  "titulo": "Barro Alto (Goiás)",
+  "prefeito": "Àlvaro Machado de Freitas (Professor Alvaro)",
+  "inicio": null,
+  "fim": "2028",
+  "site": "http://www.barroalto.go.gov.br",
+  "telefone": "(62) 3347-6575",
+  "brasaoLocal": "/brasoes/GO/barro-alto.png",
+  "oficial": {
+   "nome": "Alvaro Machado de Freitas",
+   "partido": "MDB",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Bela Vista De Goiás": {
+  "titulo": "Bela Vista de Goiás",
+  "prefeito": "Eurípedes José do Carmo",
+  "inicio": null,
+  "fim": "2028",
+  "site": "https://belavista.go.gov.br/",
+  "telefone": "(62) 3551-7000",
+  "oficial": {
+   "nome": "Eurípedes José do Carmo",
+   "partido": "PODE",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Bom Jesus De Goiás": {
+  "titulo": "Bom Jesus de Goiás",
+  "prefeito": "Daniel Júnior",
+  "inicio": null,
+  "fim": "2028",
+  "site": null,
+  "telefone": null,
+  "oficial": {
+   "nome": "Daniel Vieira Ramos Junior",
+   "partido": "PL",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Bonópolis": {
+  "titulo": "Bonópolis",
+  "prefeito": "Deocleciano Araújo de Lira",
+  "inicio": null,
+  "fim": "2024",
+  "site": "https://www.bonopolis.go.gov.br/",
+  "telefone": "(62) 3393-1126",
+  "oficial": {
+   "nome": "Deocleciano Araujo de Lira",
+   "partido": "UNIÃO",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Buritinópolis": {
+  "titulo": "Buritinópolis",
+  "prefeito": "Ana Paula Soares Dourado",
+  "inicio": null,
+  "fim": "2024",
+  "site": null,
+  "telefone": null,
+  "oficial": {
+   "nome": "Marcilene Bastista de Brito Costa",
+   "partido": "UNIÃO",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Cabeceiras": {
+  "titulo": "Cabeceiras",
+  "prefeito": "Everton Francisco de Matos",
+  "inicio": null,
+  "fim": "2024",
+  "site": null,
+  "telefone": null,
+  "oficial": {
+   "nome": "Jaco Isidoro Rotta",
+   "partido": "PL",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Caiapônia": {
+  "titulo": "Caiapônia",
+  "prefeito": "Argemiro Rodrigues Santos Neto",
+  "inicio": null,
+  "fim": "2028",
+  "site": "https://www.caiaponia.go.gov.br/",
+  "telefone": "(64) 3663-8484",
+  "oficial": {
+   "nome": "Argemiro Rodrigues Santos Neto",
+   "partido": "UNIÃO",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Campinaçu": {
+  "titulo": "Campinaçu",
+  "prefeito": "Douglas Adyel Ribeiro de Faria",
+  "inicio": null,
+  "fim": "2028",
+  "site": null,
+  "telefone": null,
+  "oficial": {
+   "nome": "Douglas Adyel Ribeiro de Faria",
+   "partido": "UNIÃO",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Campinorte": {
+  "titulo": "Campinorte",
+  "prefeito": "Cleomar Martins de Araújo",
+  "inicio": "2021",
+  "fim": "2028",
+  "site": "https://campinorte.go.gov.br/",
+  "telefone": "(62) 92002-3429",
+  "brasao": "Brasão do Município de Campinorte, Goiás, Brasil.jpg",
+  "oficial": {
+   "nome": "Cleomar Martins de Araujo",
+   "partido": "UNIÃO",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Campos Belos": {
+  "titulo": "Campos Belos",
+  "prefeito": "Pablo Geovanni Moreira Batista",
+  "inicio": null,
+  "fim": "2024",
+  "site": "https://www.camposbelos.go.gov.br/",
+  "telefone": null,
+  "oficial": {
+   "nome": "Pablo Geovanni Moreira Batista",
+   "partido": "UNIÃO",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Catalão": {
+  "titulo": "Catalão (Goiás)",
+  "prefeito": "Velomar Rios",
+  "inicio": null,
+  "fim": "2028",
+  "site": "http://www.catalao.go.gov.br/",
+  "telefone": "(64) 3441-5000",
+  "oficial": {
+   "nome": "Velomar Gonçalves Rios",
+   "partido": "MDB",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Cavalcante": {
+  "titulo": "Cavalcante (Goiás)",
+  "prefeito": "Vilmar Souza Costa",
+  "inicio": null,
+  "fim": "2024",
+  "site": "https://www.cavalcante.go.gov.br/",
+  "telefone": "(62) 3494-1399",
+  "oficial": {
+   "nome": "Vilmar Souza Costa",
+   "partido": "PSB",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Colinas Do Sul": {
+  "titulo": "Colinas do Sul",
+  "prefeito": "Onofre Aparecido Paulista",
+  "inicio": null,
+  "fim": "2028",
+  "site": "https://colinasdosul.go.gov.br/",
+  "telefone": "(62) 3170-0017",
+  "oficial": {
+   "nome": "Onofre Aparecido Paulista",
+   "partido": "REPUBLICANOS",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Corumbaíba": {
+  "titulo": "Corumbaíba",
+  "prefeito": "Dr. Luís otávio",
+  "inicio": null,
+  "fim": null,
+  "site": "http://www.corumbaiba.go.gov.br/",
+  "telefone": "(64) 99279-6199",
+  "oficial": {
+   "nome": "Dr. Luís otávio",
+   "partido": null,
+   "fonte": "Wikipédia",
+   "obs": ""
+  }
+ },
+ "Corumbá De Goiás": {
+  "titulo": "Corumbá de Goiás",
+  "prefeito": "Francisco Alessandro Fernandes",
+  "inicio": null,
+  "fim": "2024",
+  "site": null,
+  "telefone": null,
+  "oficial": {
+   "nome": "Francisco Alessandro Fernandes",
+   "partido": "PL",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Damianópolis": {
+  "titulo": "Damianópolis",
+  "prefeito": "Andreia Lins Depollo",
+  "inicio": null,
+  "fim": "2024",
+  "site": null,
+  "telefone": null,
+  "oficial": {
+   "nome": "Deni Santana Rodrigues",
+   "partido": "PL",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Divinópolis De Goiás": {
+  "titulo": "Divinópolis de Goiás",
+  "prefeito": "Charley Rodrigues Tolentino",
+  "inicio": null,
+  "fim": "2024",
+  "site": null,
+  "telefone": null,
+  "oficial": {
+   "nome": "Isteiner Abreu Alves de Oliveira",
+   "partido": "PP",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Edéia": {
+  "titulo": "Edéia",
+  "prefeito": "José Wagner Neves de Andrade",
+  "inicio": null,
+  "fim": "2024",
+  "site": "https://www.edeia.go.gov.br/",
+  "telefone": "(64) 3492-1523",
+  "oficial": {
+   "nome": "Carla Faria de Freitas",
+   "partido": "PSDB",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Faina": {
+  "titulo": "Faina",
+  "prefeito": "Creonir Borges de Oliveira",
+  "inicio": null,
+  "fim": "2028",
+  "site": null,
+  "telefone": null,
+  "oficial": {
+   "nome": "Creonir Borges de Oliveira",
+   "partido": "PP",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Fazenda Nova": {
+  "titulo": "Fazenda Nova",
+  "prefeito": "Marcus Vinicius Azeredo Costa",
+  "inicio": null,
+  "fim": "2024",
+  "site": null,
+  "telefone": null,
+  "oficial": {
+   "nome": "Marcus Vinicius Azeredo Costa",
+   "partido": "UNIÃO",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Firminópolis": {
+  "titulo": "Firminópolis",
+  "prefeito": "José Airton de Oliveira",
+  "inicio": null,
+  "fim": "2024",
+  "site": "http://www.firminopolis.go.gov.br/",
+  "telefone": null,
+  "oficial": {
+   "nome": "Jose Airton de Oliveira",
+   "partido": "UNIÃO",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Flores De Goiás": {
+  "titulo": "Flores de Goiás",
+  "prefeito": "Altran Lopes Avelar Nery",
+  "inicio": null,
+  "fim": "2024",
+  "site": null,
+  "telefone": null,
+  "oficial": {
+   "nome": "Altran Lopes Avelar Nery",
+   "partido": "UNIÃO",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Formosa": {
+  "titulo": "Formosa (Goiás)",
+  "prefeito": "Simone Dias Ribeiro de Melo",
+  "inicio": null,
+  "fim": "2028",
+  "site": "http://www.formosa.go.gov.br/",
+  "telefone": null,
+  "oficial": {
+   "nome": "Simone Dias Ribeiro de Melo",
+   "partido": "PL",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Goiandira": {
+  "titulo": "Goiandira",
+  "prefeito": "Allisson Henrique Barbosa Peixoto",
+  "inicio": null,
+  "fim": "2024",
+  "site": null,
+  "telefone": null,
+  "oficial": {
+   "nome": "Allison Henrique Barbosa Peixoto",
+   "partido": "MDB",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Goiás": {
+  "titulo": "Goiás (município)",
+  "prefeito": "Aderson Liberato Gouvea",
+  "inicio": null,
+  "fim": null,
+  "site": "http://www.goias-go.com.br",
+  "telefone": null,
+  "oficial": {
+   "nome": "Aderson Liberato Gouvea",
+   "partido": "PT",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Guarani De Goiás": {
+  "titulo": "Guarani de Goiás",
+  "prefeito": "Janézio Pereira da Silva",
+  "inicio": null,
+  "fim": "2024",
+  "site": "http://www.guaranidegoias.go.gov.br",
+  "telefone": "(62) 99697-8804",
+  "oficial": {
+   "nome": "Janezio Pereira da Silva",
+   "partido": "MDB",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Hidrolina": {
+  "titulo": "Hidrolina",
+  "prefeito": "Eli Gonçalves Siqueira",
+  "inicio": null,
+  "fim": "2028",
+  "site": "http://www.hidrolina.go.gov.br/",
+  "telefone": "(62) 3349-6499",
+  "oficial": {
+   "nome": "Eli Gonçalves Siqueira",
+   "partido": "MDB",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Hidrolândia": {
+  "titulo": "Hidrolândia (Goiás)",
+  "prefeito": "José Délio Alves Junior",
+  "inicio": null,
+  "fim": "2024",
+  "site": null,
+  "telefone": null,
+  "oficial": {
+   "nome": "José Délio Alves Júnior",
+   "partido": "UNIÃO",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Iaciara": {
+  "titulo": "Iaciara",
+  "prefeito": "Haicer Sebastião Pereira Lima",
+  "inicio": null,
+  "fim": "2024",
+  "site": null,
+  "telefone": null,
+  "oficial": {
+   "nome": "Wagner Nery Sampaio",
+   "partido": "UNIÃO",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Ipameri": {
+  "titulo": "Ipameri",
+  "prefeito": "Jânio Pacheco",
+  "inicio": null,
+  "fim": "2028",
+  "site": null,
+  "telefone": null,
+  "oficial": {
+   "nome": "Janio Pacheco",
+   "partido": "UNIÃO",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Iporá": {
+  "titulo": "Iporá",
+  "prefeito": "Maysa Cunha",
+  "inicio": "2025",
+  "fim": "2028",
+  "site": "http://www.ipora.go.gov.br",
+  "telefone": "(64) 99314-2491",
+  "oficial": {
+   "nome": "Maysa Cunha",
+   "partido": null,
+   "fonte": "Wikipédia",
+   "obs": "mandato até 2028"
+  }
+ },
+ "Israelândia": {
+  "titulo": "Israelândia",
+  "prefeito": "Adelícia Moura da Costa",
+  "inicio": null,
+  "fim": "2024",
+  "site": null,
+  "telefone": null,
+  "oficial": {
+   "nome": "Adelicia Moura da Costa",
+   "partido": "PODE",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Itapirapuã": {
+  "titulo": "Itapirapuã (Goiás)",
+  "prefeito": "Cássio Roberto Hilário da Silva",
+  "inicio": "2025",
+  "fim": "2028",
+  "site": null,
+  "telefone": null,
+  "oficial": {
+   "nome": "Cássio Roberto Hilário da Silva",
+   "partido": "PRD",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Jaraguá": {
+  "titulo": "Jaraguá (Goiás)",
+  "prefeito": "Paulo Vitor Avelar",
+  "inicio": "2025",
+  "fim": "2028",
+  "site": "https://www.jaragua.go.gov.br/",
+  "telefone": "(62) 3326-4077",
+  "oficial": {
+   "nome": "Paulo Vitor Avelar",
+   "partido": "UNIÃO",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Luziânia": {
+  "titulo": "Luziânia",
+  "prefeito": "Diego Vaz Sorgatto",
+  "inicio": null,
+  "fim": "2028",
+  "site": "http://www.luziania.go.gov.br/",
+  "telefone": null,
+  "oficial": {
+   "nome": "Diego Vaz Sorgatto",
+   "partido": "UNIÃO",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Mara Rosa": {
+  "titulo": "Mara Rosa",
+  "prefeito": "Flavio Moura",
+  "inicio": null,
+  "fim": "2028",
+  "site": null,
+  "telefone": null,
+  "oficial": {
+   "nome": "Flavio Divino Mauricio de Moura",
+   "partido": "UNIÃO",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Matrinchã": {
+  "titulo": "Matrinchã",
+  "prefeito": "Ivânia Alves Fernandes Pessoa",
+  "inicio": null,
+  "fim": "2024",
+  "site": null,
+  "telefone": null,
+  "oficial": {
+   "nome": "Ivânia Alves Fernandes",
+   "partido": "UNIÃO",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Moiporá": {
+  "titulo": "Moiporá",
+  "prefeito": "Wilson José Ferreira",
+  "inicio": null,
+  "fim": "2024",
+  "site": null,
+  "telefone": null,
+  "oficial": {
+   "nome": "Wilson José Ferreira",
+   "partido": "PL",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Monte Alegre De Goiás": {
+  "titulo": "Monte Alegre de Goiás",
+  "prefeito": "Felipi de Sousa Campos",
+  "inicio": null,
+  "fim": "2024",
+  "site": null,
+  "telefone": null,
+  "oficial": {
+   "nome": "Felipi de Sousa Campos",
+   "partido": "UNIÃO",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Montes Claros De Goiás": {
+  "titulo": "Montes Claros de Goiás",
+  "prefeito": "José Vilmar Maciel",
+  "inicio": null,
+  "fim": "2024",
+  "site": "http://www.montesclarosdegoias.go.gov.br/",
+  "telefone": null,
+  "oficial": {
+   "nome": "Jose Vilmar Maciel",
+   "partido": "PP",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Montividiu Do Norte": {
+  "titulo": "Montividiu do Norte",
+  "prefeito": "Clemerson Lopes",
+  "inicio": null,
+  "fim": "2028",
+  "site": "https://www.montividiudonorte.go.gov.br/",
+  "telefone": "(62) 3384-6282",
+  "oficial": {
+   "nome": "Clemerson Lopes da Silva",
+   "partido": "PRD",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Niquelândia": {
+  "titulo": "Niquelândia",
+  "prefeito": "EDUARDO MOREIRA",
+  "inicio": null,
+  "fim": "2028",
+  "site": "http://www.niquelandia.go.gov.br",
+  "telefone": "(62) 3190-0800",
+  "brasaoLocal": "/brasoes/GO/niquelandia.png",
+  "oficial": {
+   "nome": "Carlos Eduardo Moreira",
+   "partido": "NOVO",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Nova Crixás": {
+  "titulo": "Nova Crixás",
+  "prefeito": "Lázaro Valdivino da Silva",
+  "inicio": null,
+  "fim": "2024",
+  "site": "http://www.novacrixas.go.gov.br/",
+  "telefone": "(62) 98555-0017",
+  "oficial": {
+   "nome": "Rodrigo Barbosa Tavares",
+   "partido": "MDB",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Nova Roma": {
+  "titulo": "Nova Roma",
+  "prefeito": "Eleuses Rodrigues Gonzaga",
+  "inicio": null,
+  "fim": "2024",
+  "site": null,
+  "telefone": null,
+  "oficial": {
+   "nome": "Eleuses Rodrigues Gonzaga",
+   "partido": "UNIÃO",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Novo Brasil": {
+  "titulo": "Novo Brasil",
+  "prefeito": "Gabriel Gomes Alves de Castro",
+  "inicio": null,
+  "fim": "2028",
+  "site": null,
+  "telefone": null,
+  "brasao": "Brasão de Novo Brasil.png",
+  "oficial": {
+   "nome": "Gabriel Gomes Alves de Castro",
+   "partido": "UNIÃO",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Orizona": {
+  "titulo": "Orizona",
+  "prefeito": "Felipe Antônio Dias",
+  "inicio": null,
+  "fim": "2024",
+  "site": "https://www.orizona.go.gov.br/",
+  "telefone": "(64) 92001-3680",
+  "oficial": {
+   "nome": "Felipe Antonio Dias",
+   "partido": "MDB",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Padre Bernardo": {
+  "titulo": "Padre Bernardo",
+  "prefeito": "Joseleide Lázaro Luiz da Silva",
+  "inicio": "2021",
+  "fim": "2024",
+  "site": "https://www.padrebernardo.go.gov.br/",
+  "telefone": "(61) 3633-1251",
+  "oficial": {
+   "nome": "Joseleide Lázaro Luiz da Silva",
+   "partido": "UNIÃO",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Pirenópolis": {
+  "titulo": "Pirenópolis",
+  "prefeito": "Nivaldo Melo",
+  "inicio": null,
+  "fim": "2028",
+  "site": "https://pirenopolis.go.gov.br/",
+  "telefone": "(62) 99414-5185",
+  "oficial": {
+   "nome": "Nivaldo Antônio de Melo",
+   "partido": "PSDB",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Planaltina": {
+  "titulo": "Planaltina (Goiás)",
+  "prefeito": "José Venceslau de Sousa (Zezinho do Planalto)",
+  "inicio": "2026",
+  "fim": "2028",
+  "site": "https://planaltina.go.gov.br/",
+  "telefone": "(61) 3774-0234",
+  "oficial": {
+   "nome": "José Venceslau de Sousa (Zezinho do Planalto)",
+   "partido": null,
+   "fonte": "Wikipédia",
+   "obs": "mandato até 2028"
+  }
+ },
+ "Porangatu": {
+  "titulo": "Porangatu",
+  "prefeito": "Vanuza Primo de Araújo Valadares",
+  "inicio": null,
+  "fim": "2028",
+  "site": "https://porangatu.go.gov.br/",
+  "telefone": null,
+  "oficial": {
+   "nome": "Vanuza Primo de Araújo Valadares",
+   "partido": "UNIÃO",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Posse": {
+  "titulo": "Posse (Goiás)",
+  "prefeito": "Paulo César Krauspenhar",
+  "inicio": null,
+  "fim": "2028",
+  "site": "https://www.posse.go.gov.br/",
+  "telefone": "(62) 3481-1370",
+  "oficial": {
+   "nome": "Paulo Cezar Krauspenhar",
+   "partido": "PL",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Santa Cruz De Goiás": {
+  "titulo": "Santa Cruz de Goiás",
+  "prefeito": "Ângelo Natal da Paz",
+  "inicio": null,
+  "fim": "2024",
+  "site": null,
+  "telefone": null,
+  "oficial": {
+   "nome": "Ângelo Natal da Paz",
+   "partido": "UNIÃO",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Santa Isabel": {
+  "titulo": "Santa Isabel (Goiás)",
+  "prefeito": "Cássia Dourado",
+  "inicio": null,
+  "fim": "2024",
+  "site": "http://www.santaisabel.go.gov.br",
+  "telefone": "(62) 3358-1215",
+  "oficial": {
+   "nome": "Levino de Souza Silva",
+   "partido": "SOLIDARIEDADE",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Santa Rita Do Novo Destino": {
+  "titulo": "Santa Rita do Novo Destino",
+  "prefeito": "Roberto João de Oliveira",
+  "inicio": null,
+  "fim": "2024",
+  "site": "https://www.santaritadonovodestino.go.gov.br/",
+  "telefone": "(62) 98227-6147",
+  "oficial": {
+   "nome": "Roberto Joao de Oliveira",
+   "partido": "MDB",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Santa Terezinha De Goiás": {
+  "titulo": "Santa Terezinha de Goiás",
+  "prefeito": "Karla Cristina Moreira Alves",
+  "inicio": null,
+  "fim": "2024",
+  "site": "https://www.santaterezinhadegoias.go.gov.br/",
+  "telefone": "(62) 3339-6053",
+  "oficial": {
+   "nome": "Karla Cristina Moreira Alves",
+   "partido": "MDB",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "São Domingos": {
+  "titulo": "São Domingos (Goiás)",
+  "prefeito": "Cleiton Gonçalves Martins",
+  "inicio": null,
+  "fim": "2024",
+  "site": "https://www.saodomingos.go.gov.br",
+  "telefone": "(62) 94263-5255",
+  "oficial": {
+   "nome": "Gilvanir Cardoso dos Reis",
+   "partido": "PP",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "São João D'Aliança": {
+  "titulo": null,
+  "prefeito": null,
+  "inicio": null,
+  "fim": null,
+  "site": null,
+  "telefone": null,
+  "oficial": {
+   "nome": "Genivam Gonçalves dos Santos",
+   "partido": "PRD",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "São Luís De Montes Belos": {
+  "titulo": "São Luís de Montes Belos",
+  "prefeito": "Júnior{{Citar web",
+  "inicio": "2025",
+  "fim": "2029",
+  "site": null,
+  "telefone": null,
+  "oficial": {
+   "nome": "Jorcelino Marques Palmeira Junior",
+   "partido": "UNIÃO",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Sítio D'Abadia": {
+  "titulo": null,
+  "prefeito": null,
+  "inicio": null,
+  "fim": null,
+  "site": null,
+  "telefone": null,
+  "oficial": {
+   "nome": "Orlando Jose da Silva Neto",
+   "partido": "UNIÃO",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Uruaçu": {
+  "titulo": "Uruaçu",
+  "prefeito": "Azarias Machado Neto",
+  "inicio": null,
+  "fim": "2029",
+  "site": "https://uruacu.go.gov.br/",
+  "telefone": "(62) 92002-2298",
+  "oficial": {
+   "nome": "Azarias Machado Neto",
+   "partido": "MDB",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Vianópolis": {
+  "titulo": "Vianópolis",
+  "prefeito": "Samuel dos Reis Cotrim",
+  "inicio": null,
+  "fim": "2024",
+  "site": "http://vianopolis.go.gov.br/",
+  "telefone": "(62) 3907-0100",
+  "oficial": {
+   "nome": "Marcelo Umbelino de Rezende",
+   "partido": "MDB",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Água Fria De Goiás": {
+  "titulo": "Água Fria de Goiás",
+  "prefeito": "José Eduardo Oliveira Neto",
+  "inicio": null,
+  "fim": "2024",
+  "site": "https://aguafriadegoias.go.gov.br/",
+  "telefone": "(62) 3464-1138",
+  "oficial": {
+   "nome": "Virginia Angelica Santos Castro",
+   "partido": "PP",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ }
+}

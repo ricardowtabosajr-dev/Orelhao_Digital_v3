@@ -1,0 +1,324 @@
+{
+ "Bom Jardim": {
+  "titulo": "Bom Jardim (Rio de Janeiro)",
+  "prefeito": "Affonso Monerat",
+  "inicio": null,
+  "fim": "2028",
+  "site": "https://www.bomjardim.rj.gov.br/",
+  "telefone": null,
+  "oficial": {
+   "nome": "Affonso Monerat",
+   "partido": null,
+   "fonte": "Wikipédia",
+   "obs": "mandato até 2028"
+  }
+ },
+ "Bom Jesus Do Itabapoana": {
+  "titulo": "Bom Jesus do Itabapoana",
+  "prefeito": "Paulo Sérgio Travassos do Carmo Cyrillo",
+  "inicio": "2021",
+  "fim": "2028",
+  "site": "https://www.bomjesus.rj.gov.br/",
+  "telefone": null,
+  "oficial": {
+   "nome": "Paulo Sergio Travassos do Carmo Cyrillo",
+   "partido": "PL",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Cachoeiras De Macacu": {
+  "titulo": "Cachoeiras de Macacu",
+  "prefeito": "Rafael Muzzi de Miranda",
+  "inicio": "2021",
+  "fim": "2028",
+  "site": "https://www.prefeituracachoeiras.com/",
+  "telefone": "(21) 4748-3647",
+  "oficial": {
+   "nome": "Rafael Muzzi de Miranda",
+   "partido": "PP",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Cambuci": {
+  "titulo": "Cambuci",
+  "prefeito": "Murillo Silva Defanti",
+  "inicio": null,
+  "fim": "2028",
+  "site": "http://www.prefeituradecambuci.rj.gov.br",
+  "telefone": "(22) 2900-0501",
+  "oficial": {
+   "nome": "Murillo Silva Defanti",
+   "partido": "PP",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Campos Dos Goytacazes": {
+  "titulo": "Campos dos Goytacazes",
+  "prefeito": "Frederico Paes",
+  "inicio": "2026",
+  "fim": null,
+  "site": "http://www.campos.rj.gov.br",
+  "telefone": "(22) 98175-2364",
+  "oficial": {
+   "nome": "Frederico Paes",
+   "partido": null,
+   "fonte": "Wikipédia",
+   "obs": "desde 2026"
+  }
+ },
+ "Cantagalo": {
+  "titulo": "Cantagalo (Rio de Janeiro)",
+  "prefeito": "Emanuela Teixeira Silva",
+  "inicio": null,
+  "fim": "2028",
+  "site": "http://www.cantagalo.rj.gov.br/",
+  "telefone": "(22) 2555-0909",
+  "oficial": {
+   "nome": "Emanuela Teixeira Silva",
+   "partido": "SOLIDARIEDADE",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Guapimirim": {
+  "titulo": "Guapimirim",
+  "prefeito": "Marina Pereira da Rocha Fernandez",
+  "inicio": null,
+  "fim": "2028",
+  "site": "http://www.guapimirim.rj.gov.br/",
+  "telefone": "(21) 2253-1177",
+  "oficial": {
+   "nome": "Marina Pereira da Rocha Fernandez",
+   "partido": "AGIR",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Itaperuna": {
+  "titulo": "Itaperuna",
+  "prefeito": "Emanuel Medeiros da Silva",
+  "inicio": null,
+  "fim": "2028",
+  "site": "https://www.itaperuna.rj.gov.br/",
+  "telefone": "(22) 3811-1050",
+  "oficial": {
+   "nome": "Emanuel Medeiros da Silva",
+   "partido": "PL",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Macaé": {
+  "titulo": "Macaé",
+  "prefeito": "Welberth Rezende",
+  "inicio": "2021",
+  "fim": "2028",
+  "site": "https://www.macae.rj.gov.br/",
+  "telefone": "(22) 2791-9008",
+  "oficial": {
+   "nome": "Welberth Porto de Rezende",
+   "partido": "CIDADANIA",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Nova Friburgo": {
+  "titulo": "Nova Friburgo",
+  "prefeito": "Johnny Maycon Cordeiro Ribeiro",
+  "inicio": "2021",
+  "fim": "2028",
+  "site": "http://www.pmnf.rj.gov.br",
+  "telefone": "(22) 2525-9100",
+  "oficial": {
+   "nome": "Johnny Maycon Cordeiro Ribeiro",
+   "partido": "PL",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Paraty": {
+  "titulo": "Paraty",
+  "prefeito": "José Carlos Porto Neto",
+  "inicio": "2025",
+  "fim": "2028",
+  "site": "https://www.paraty.rj.gov.br/",
+  "telefone": null,
+  "oficial": {
+   "nome": "José Carlos Porto Neto",
+   "partido": "REPUBLICANOS",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Resende": {
+  "titulo": "Resende (Rio de Janeiro)",
+  "prefeito": "Tande Vieira",
+  "inicio": "2025",
+  "fim": "atualmente",
+  "site": "http://www.resende.rj.gov.br/",
+  "telefone": "(24) 3354-6000",
+  "oficial": {
+   "nome": "Alexandre Sergio Alves Vieira",
+   "partido": "PP",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Rio Das Flores": {
+  "titulo": "Rio das Flores",
+  "prefeito": "Rodrigo Santana de Almeida",
+  "inicio": null,
+  "fim": "2028",
+  "site": "https://www.riodasflores.rj.gov.br/",
+  "telefone": "(24) 9900-4770",
+  "oficial": {
+   "nome": "Rodrigo Santana de Almeida",
+   "partido": "MDB",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Santa Maria Madalena": {
+  "titulo": "Santa Maria Madalena (Rio de Janeiro)",
+  "prefeito": "Nilson José Perdomo Costa",
+  "inicio": null,
+  "fim": "2028",
+  "site": "http://www.pmsmm.rj.gov.br/",
+  "telefone": "(22) 2561-1237",
+  "oficial": {
+   "nome": "Nilson José Perdomo Costa",
+   "partido": "SOLIDARIEDADE",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Silva Jardim": {
+  "titulo": "Silva Jardim",
+  "prefeito": "Maíra Branco Monteiro",
+  "inicio": null,
+  "fim": "2028",
+  "site": "http://www.silvajardim.rj.gov.br/",
+  "telefone": "(22) 9981-3653",
+  "oficial": {
+   "nome": "Maira Branco Monteiro",
+   "partido": "MDB",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Sumidouro": {
+  "titulo": "Sumidouro (Rio de Janeiro)",
+  "prefeito": "Galileu de Freitas",
+  "inicio": null,
+  "fim": "2028",
+  "site": "http://www.sumidouro.rj.gov.br/",
+  "telefone": "(22) 2531-1128",
+  "oficial": {
+   "nome": "Galileu de Freitas",
+   "partido": "PL",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "São Fidélis": {
+  "titulo": "São Fidélis",
+  "prefeito": "José William Ribeiro de Oliveira",
+  "inicio": null,
+  "fim": "2028",
+  "site": "http://saofidelis.rj.gov.br/",
+  "telefone": "(22) 2758-1082",
+  "oficial": {
+   "nome": "José William Ribeiro de Oliveira",
+   "partido": "PL",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "São Francisco De Itabapoana": {
+  "titulo": "São Francisco de Itabapoana",
+  "prefeito": "Yara Cinthia Rocha Nogueira",
+  "inicio": null,
+  "fim": "2028",
+  "site": "https://www.pmsfi.rj.gov.br/",
+  "telefone": "(22) 99615-8461",
+  "oficial": {
+   "nome": "Yara Cinthia Rocha Nogueira",
+   "partido": "SOLIDARIEDADE",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "São Sebastião Do Alto": {
+  "titulo": "São Sebastião do Alto",
+  "prefeito": "Claudiane dos Santos Pietrani Rodrigues",
+  "inicio": null,
+  "fim": "2028",
+  "site": "http://www.ssalto.rj.gov.br",
+  "telefone": "(22) 99924-5145",
+  "oficial": {
+   "nome": "Claudiane dos Santos Pietrani Rodrigues",
+   "partido": "SOLIDARIEDADE",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Trajano De Moraes": {
+  "titulo": "Trajano de Moraes",
+  "prefeito": "Rildo Gonçalves Neves",
+  "inicio": null,
+  "fim": "2028",
+  "site": "http://www.trajanodemoraes.rj.gov.br/",
+  "telefone": "(22) 2564-1285",
+  "oficial": {
+   "nome": "Rildo Gonçalves Neves",
+   "partido": "PL",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Valença": {
+  "titulo": "Valença (Rio de Janeiro)",
+  "prefeito": "Saulo Corrêa",
+  "inicio": null,
+  "fim": "2028",
+  "site": "http://www.valenca.rj.gov.br/",
+  "telefone": null,
+  "oficial": {
+   "nome": "Saulo de Tarso Pereira Correa da Silva",
+   "partido": "MDB",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Varre-Sai": {
+  "titulo": "Varre-Sai",
+  "prefeito": "Lauro Abib Fabri",
+  "inicio": null,
+  "fim": "2028",
+  "site": "http://www.varresai.rj.gov.br/",
+  "telefone": null,
+  "oficial": {
+   "nome": "Lauro Abib Fabri",
+   "partido": "UNIÃO",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Vassouras": {
+  "titulo": "Vassouras",
+  "prefeito": "Rosi Silva",
+  "inicio": null,
+  "fim": null,
+  "site": "http://www.vassouras.rj.gov.br",
+  "telefone": "(24) 3042-0002",
+  "oficial": {
+   "nome": "Rosilane Piveti Silva",
+   "partido": "PP",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ }
+}

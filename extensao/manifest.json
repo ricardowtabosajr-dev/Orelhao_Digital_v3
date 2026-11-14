@@ -1,0 +1,18 @@
+{
+  "manifest_version": 3,
+  "name": "Orelhão Digital — Marcar no Street View",
+  "version": "1.3.0",
+  "description": "Mira e botão no Google Street View e no Google Earth para corrigir a posição de um orelhão no Orelhão Digital.",
+  "icons": { "128": "icon.png" },
+  "permissions": ["scripting", "tabs"],
+  "host_permissions": ["http://localhost:3000/*", "http://127.0.0.1:3000/*"],
+  "background": { "service_worker": "background.js" },
+  "content_scripts": [
+    {
+      "matches": ["https://www.google.com/maps/*", "https://www.google.com.br/maps/*", "https://earth.google.com/*"],
+      "js": ["content.js"],
+      "css": ["content.css"],
+      "run_at": "document_idle"
+    }
+  ]
+}

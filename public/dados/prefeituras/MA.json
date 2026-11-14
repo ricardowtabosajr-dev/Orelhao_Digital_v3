@@ -1,0 +1,2739 @@
+{
+ "Afonso Cunha": {
+  "titulo": "Afonso Cunha",
+  "prefeito": "Pedro Ferreira Medeiros",
+  "inicio": null,
+  "fim": "2028",
+  "site": null,
+  "telefone": null,
+  "oficial": {
+   "nome": "Pedro Ferreira Medeiros",
+   "partido": "PL",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Alcântara": {
+  "titulo": "Alcântara (Maranhão)",
+  "prefeito": "Nivaldo Araujo",
+  "inicio": null,
+  "fim": "2028",
+  "site": "http://www.alcantara.ma.gov.br",
+  "telefone": null,
+  "brasaoLocal": "/brasoes/MA/alcantara.png",
+  "oficial": {
+   "nome": "Nivaldo Araújo de Jesus",
+   "partido": "PSB",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Aldeias Altas": {
+  "titulo": "Aldeias Altas",
+  "prefeito": "Kedson Araújo Lima",
+  "inicio": null,
+  "fim": "2028",
+  "site": "https://aldeiasaltas.ma.gov.br/",
+  "telefone": "(99) 3402-6000",
+  "oficial": {
+   "nome": "Kedson Araujo Lima",
+   "partido": "PL",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Altamira Do Maranhão": {
+  "titulo": "Altamira do Maranhão",
+  "prefeito": "Marton Sands Câmara Pageú",
+  "inicio": null,
+  "fim": "2028",
+  "site": "https://altamira.ma.gov.br/",
+  "telefone": null,
+  "oficial": {
+   "nome": "Marton Sands Câmara Pageú",
+   "partido": "PL",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Alto Alegre Do Maranhão": {
+  "titulo": "Alto Alegre do Maranhão",
+  "prefeito": "Nilsilene Santana Ribeiro Almeida",
+  "inicio": null,
+  "fim": "2024",
+  "site": "https://altoalegredomaranhao.ma.gov.br/",
+  "telefone": null,
+  "brasao": "Alto-alegre-do-maranhao-brasao.png",
+  "oficial": {
+   "nome": "Nilsilene Santana Ribeiro Almeida",
+   "partido": "UNIÃO",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Alto Alegre Do Pindaré": {
+  "titulo": "Alto Alegre do Pindaré",
+  "prefeito": "Fufuca",
+  "inicio": null,
+  "fim": "2024",
+  "site": "https://www.altoalegredopindare.ma.gov.br/",
+  "telefone": "(98) 3664-1267",
+  "brasao": "Brasão de Alto Alegre do Pindaré-MA, Brasil.png",
+  "oficial": {
+   "nome": "Jose Francinete Bento Luna",
+   "partido": "PP",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Amapá Do Maranhão": {
+  "titulo": "Amapá do Maranhão",
+  "prefeito": "Nelene Gomes",
+  "inicio": null,
+  "fim": "2024",
+  "site": "http://www.amapa.ma.gov.br/",
+  "telefone": null,
+  "oficial": {
+   "nome": "Nelene da Costa Gomes",
+   "partido": "PL",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Amarante Do Maranhão": {
+  "titulo": "Amarante do Maranhão",
+  "prefeito": "Vanderly Gomes Miranda",
+  "inicio": null,
+  "fim": "2024",
+  "site": "https://www.amarante.ma.gov.br/",
+  "telefone": "(99) 3532-2176",
+  "oficial": {
+   "nome": "Vanderly Gomes Miranda",
+   "partido": "MDB",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Anapurus": {
+  "titulo": "Anapurus",
+  "prefeito": "Vanderly Monteles",
+  "inicio": null,
+  "fim": "2024",
+  "site": "https://www.anapurus.ma.gov.br/",
+  "telefone": "(98) 98408-9977",
+  "oficial": {
+   "nome": "Tanios Matias Lima",
+   "partido": "PP",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Araguanã": {
+  "titulo": "Araguanã (Maranhão)",
+  "prefeito": "Flávio Ronne Amorim Muniz",
+  "inicio": null,
+  "fim": "2028",
+  "site": "http://www.araguana.ma.gov.br/",
+  "telefone": "(98) 3651-1132",
+  "oficial": {
+   "nome": "Flavio Ronne Amorim Muniz",
+   "partido": "PL",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Araioses": {
+  "titulo": "Araioses",
+  "prefeito": "João Cândido Carvalho Neto",
+  "inicio": null,
+  "fim": null,
+  "site": "http://www.araioses.ma.gov.br/",
+  "telefone": "(98) 3478-1322",
+  "brasao": "Brasão de Araioses.jpg",
+  "oficial": {
+   "nome": "Joao Candido Carvalho Neto",
+   "partido": "PDT",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Arame": {
+  "titulo": "Arame (Maranhão)",
+  "prefeito": "Pedro Fernandes Ribeiro",
+  "inicio": null,
+  "fim": "2024",
+  "site": "https://arame.ma.gov.br/",
+  "telefone": "(99) 3532-4554",
+  "oficial": {
+   "nome": "Pedro Fernandes Ribeiro",
+   "partido": "UNIÃO",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Arari": {
+  "titulo": "Arari",
+  "prefeito": "Maria Alves Muniz",
+  "inicio": null,
+  "fim": "2028",
+  "site": null,
+  "telefone": null,
+  "oficial": {
+   "nome": "Maria Alves Muniz",
+   "partido": "MDB",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Açailândia": {
+  "titulo": "Açailândia",
+  "prefeito": "Benjamin de Oliveira, \"Dr. Benjamin\"",
+  "inicio": null,
+  "fim": "2028",
+  "site": "https://www.acailandia.ma.gov.br/",
+  "telefone": null,
+  "oficial": {
+   "nome": "Benjamin de Oliveira, \"Dr. Benjamin\"",
+   "partido": null,
+   "fonte": "Wikipédia",
+   "obs": "mandato até 2028"
+  }
+ },
+ "Bacabal": {
+  "titulo": "Bacabal",
+  "prefeito": "José Roberto Costa Santos",
+  "inicio": "2025",
+  "fim": "2028",
+  "site": "http://www.bacabal.ma.gov.br/portal/",
+  "telefone": "(99) 3621-0533",
+  "oficial": {
+   "nome": "José Roberto Costa Santos",
+   "partido": "MDB",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Bacabeira": {
+  "titulo": "Bacabeira",
+  "prefeito": "Naila Gonçalo",
+  "inicio": null,
+  "fim": "2028",
+  "site": "https://www.bacabeira.ma.gov.br/",
+  "telefone": null,
+  "oficial": {
+   "nome": "Naila Gonçalo Gaspar",
+   "partido": "MOBILIZA",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Bacuri": {
+  "titulo": "Bacuri (Maranhão)",
+  "prefeito": "Marcio Hominho",
+  "inicio": null,
+  "fim": "2028",
+  "site": null,
+  "telefone": null,
+  "oficial": {
+   "nome": "Marcio Flavio dos Santos Abreu",
+   "partido": "PL",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Bacurituba": {
+  "titulo": "Bacurituba",
+  "prefeito": "Letícia Líbia Barros Costa",
+  "inicio": "2021",
+  "fim": "2024",
+  "site": "http://www.bacurituba.ma.gov.br/",
+  "telefone": "(98) 98806-5152",
+  "oficial": {
+   "nome": "Leticia Libia Barros Costa",
+   "partido": "MDB",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Balsas": {
+  "titulo": "Balsas",
+  "prefeito": "Alan Douglas de Oliveira",
+  "inicio": null,
+  "fim": "2028",
+  "site": "http://www.balsas.ma.gov.br/",
+  "telefone": "(99) 3541-2197",
+  "oficial": {
+   "nome": "Alan Douglas de Oliveira",
+   "partido": "PRD",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Barra Do Corda": {
+  "titulo": "Barra do Corda",
+  "prefeito": "Rigo Alberto Telis de Sousa",
+  "inicio": "2025",
+  "fim": "2028",
+  "site": "https://barradocorda.ma.gov.br/",
+  "telefone": "(99) 3643-2333",
+  "oficial": {
+   "nome": "Rigo Alberto Telis de Sousa",
+   "partido": "MDB",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Barreirinhas": {
+  "titulo": "Barreirinhas",
+  "prefeito": "Marcus Vinicius Vale Lima",
+  "inicio": null,
+  "fim": "2028",
+  "site": "https://www.barreirinhas.ma.gov.br/",
+  "telefone": null,
+  "oficial": {
+   "nome": "Marcus Vinicius Vale Lima",
+   "partido": "MDB",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Barão De Grajaú": {
+  "titulo": "Barão de Grajaú",
+  "prefeito": "Antônio Carlos Resende",
+  "inicio": null,
+  "fim": "2028",
+  "site": null,
+  "telefone": null,
+  "oficial": {
+   "nome": "Antônio Carlos Resende",
+   "partido": null,
+   "fonte": "Wikipédia",
+   "obs": "mandato até 2028"
+  }
+ },
+ "Bela Vista Do Maranhão": {
+  "titulo": "Bela Vista do Maranhão",
+  "prefeito": "Adilson do Guri",
+  "inicio": "2024",
+  "fim": "2028",
+  "site": "http://belavista.ma.gov.br/",
+  "telefone": null,
+  "oficial": {
+   "nome": "Adilson da Silva Sousa",
+   "partido": "PP",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Belágua": {
+  "titulo": "Belágua",
+  "prefeito": "Hérlon Costa Lima",
+  "inicio": null,
+  "fim": "2024",
+  "site": "https://www.belagua.ma.gov.br/",
+  "telefone": "(98) 98532-6577",
+  "oficial": {
+   "nome": "Frutuoso Machado da Ponte Filho",
+   "partido": "REPUBLICANOS",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Benedito Leite": {
+  "titulo": "Benedito Leite",
+  "prefeito": "Ramon Carvalho de Barros",
+  "inicio": null,
+  "fim": "2024",
+  "site": null,
+  "telefone": null,
+  "brasao": "Brasão Benedito Leite.png",
+  "oficial": {
+   "nome": "Rodrigo Pimentel da Silva Coelho",
+   "partido": "REPUBLICANOS",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Bequimão": {
+  "titulo": "Bequimão",
+  "prefeito": "Joao Batista Martins",
+  "inicio": "2021",
+  "fim": "2024",
+  "site": null,
+  "telefone": null,
+  "oficial": {
+   "nome": "Antonio José Martins",
+   "partido": "MDB",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Bernardo Do Mearim": {
+  "titulo": "Bernardo do Mearim",
+  "prefeito": "Junior Xavier",
+  "inicio": null,
+  "fim": "2024",
+  "site": null,
+  "telefone": null,
+  "oficial": {
+   "nome": "Arlindo de Moura Xavier Junior",
+   "partido": "PDT",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Boa Vista Do Gurupi": {
+  "titulo": "Boa Vista do Gurupi",
+  "prefeito": "Dilcilene Guimarães de Melo Oliveira",
+  "inicio": null,
+  "fim": "2024",
+  "site": null,
+  "telefone": null,
+  "brasao": "Brasão de boa vista do gurupi.png",
+  "oficial": {
+   "nome": "Dilcilene Guimarães de Melo Oliveira",
+   "partido": "PL",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Bom Jardim": {
+  "titulo": "Bom Jardim (Maranhão)",
+  "prefeito": "Cristiane Varão",
+  "inicio": null,
+  "fim": "2028",
+  "site": "http://bomjardim.ma.gov.br/",
+  "telefone": "(98) 3664-2125",
+  "brasao": "Bom-jardim.jpg",
+  "oficial": {
+   "nome": "Christianne de Araujo Varão",
+   "partido": "PL",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Bom Jesus Das Selvas": {
+  "titulo": "Bom Jesus das Selvas",
+  "prefeito": "Franklim Duarte",
+  "inicio": null,
+  "fim": "2028",
+  "site": "http://bomjesusdasselvas.ma.gov.br/",
+  "telefone": "(98) 3652-1271",
+  "oficial": {
+   "nome": "Franklim Willame Rodrigues Araujo Duarte",
+   "partido": "PSB",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Bom Lugar": {
+  "titulo": "Bom Lugar",
+  "prefeito": "Marlene Miranda",
+  "inicio": null,
+  "fim": "2028",
+  "site": "http://bomlugar.ma.gov.br",
+  "telefone": null,
+  "oficial": {
+   "nome": "Marlene Silva Miranda",
+   "partido": "UNIÃO",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Brejo": {
+  "titulo": "Brejo (Maranhão)",
+  "prefeito": "José Farias de Castro",
+  "inicio": null,
+  "fim": "2024",
+  "site": null,
+  "telefone": null,
+  "brasaoLocal": "/brasoes/MA/brejo.png",
+  "oficial": {
+   "nome": "Thâmara Araujo de Castro",
+   "partido": "PT",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Brejo De Areia": {
+  "titulo": "Brejo de Areia",
+  "prefeito": "Geizianne da Conceição Costa",
+  "inicio": null,
+  "fim": "2028",
+  "site": "https://www.brejodeareia.ma.gov.br/",
+  "telefone": null,
+  "oficial": {
+   "nome": "Geizianne da Conceição Costa",
+   "partido": "PP",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Buriti": {
+  "titulo": "Buriti (Maranhão)",
+  "prefeito": "Andre Augusto Kerber Introvini (André Gaúcho)",
+  "inicio": "2025",
+  "fim": "2028",
+  "site": "http://www.buriti.ma.gov.br/",
+  "telefone": "(98) 97010-8671",
+  "oficial": {
+   "nome": "Andre Augusto Kerber Introvini",
+   "partido": "REPUBLICANOS",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Buriti Bravo": {
+  "titulo": "Buriti Bravo",
+  "prefeito": "Luciana Borges Leocádio",
+  "inicio": null,
+  "fim": "2024",
+  "site": null,
+  "telefone": null,
+  "oficial": {
+   "nome": "Luciana Borges Leocadio",
+   "partido": "MDB",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Buriticupu": {
+  "titulo": "Buriticupu",
+  "prefeito": "João Carlos",
+  "inicio": null,
+  "fim": "2024",
+  "site": "http://www.buriticupu.ma.gov.br/",
+  "telefone": "(98) 8108-3987",
+  "oficial": {
+   "nome": "João Carlos Teixeira da Silva",
+   "partido": "PP",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Buritirana": {
+  "titulo": "Buritirana",
+  "prefeito": "Tony Brandão",
+  "inicio": null,
+  "fim": "2028",
+  "site": null,
+  "telefone": null,
+  "oficial": {
+   "nome": "Tonisley dos Santos Sousa",
+   "partido": "MDB",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Cachoeira Grande": {
+  "titulo": "Cachoeira Grande",
+  "prefeito": "Raimundo César Castro de Sousa",
+  "inicio": "2024",
+  "fim": "2028",
+  "site": "https://www.cachoeiragrande.ma.gov.br/",
+  "telefone": null,
+  "oficial": {
+   "nome": "Raimundo Cesar Castro de Sousa",
+   "partido": "PL",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Cajari": {
+  "titulo": "Cajari",
+  "prefeito": "Maria Félix Rodrigues dos Santos",
+  "inicio": null,
+  "fim": "2024",
+  "site": "http://www.cajari.ma.gov.br/",
+  "telefone": "(98) 3356-1220",
+  "oficial": {
+   "nome": "Constancio Alessanco Coelho de Souza",
+   "partido": "UNIÃO",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Cantanhede": {
+  "titulo": "Cantanhede (Maranhão)",
+  "prefeito": "José Martinho dos Santos Barros",
+  "inicio": null,
+  "fim": "2028",
+  "site": "http://www.cantanhede.ma.gov.br",
+  "telefone": null,
+  "oficial": {
+   "nome": "José Martinho dos Santos Barros",
+   "partido": "MDB",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Capinzal Do Norte": {
+  "titulo": "Capinzal do Norte",
+  "prefeito": "André Portela",
+  "inicio": null,
+  "fim": "2024",
+  "site": null,
+  "telefone": null,
+  "oficial": {
+   "nome": "Abnadar de Sousa Pereira",
+   "partido": "REPUBLICANOS",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Carolina": {
+  "titulo": "Carolina (Maranhão)",
+  "prefeito": "Jayme Fonseca Espírito Santo",
+  "inicio": null,
+  "fim": "2028",
+  "site": null,
+  "telefone": null,
+  "oficial": {
+   "nome": "Jayme Fonseca Espírito Santo",
+   "partido": "PSDB",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Carutapera": {
+  "titulo": "Carutapera",
+  "prefeito": "Amin Barbosa Quemel",
+  "inicio": "2025",
+  "fim": "2028",
+  "site": "https://www.carutapera.ma.gov.br/",
+  "telefone": "(98) 98570-6058",
+  "oficial": {
+   "nome": "Amin Barbosa Quemel",
+   "partido": "PP",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Caxias": {
+  "titulo": "Caxias (Maranhão)",
+  "prefeito": "José Gentil Rosa Neto",
+  "inicio": "2025",
+  "fim": "2028",
+  "site": "https://caxias.ma.gov.br/",
+  "telefone": "(99) 2221-0011",
+  "oficial": {
+   "nome": "José Gentil Rosa Neto",
+   "partido": "PP",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Cedral": {
+  "titulo": "Cedral (Maranhão)",
+  "prefeito": "Fernando Gabriel Amorim",
+  "inicio": null,
+  "fim": "2024",
+  "site": "http://www.cedral.ma.gov.br/",
+  "telefone": "(98) 98496-3214",
+  "oficial": {
+   "nome": "Danilo Rafael Ferreira Moraes",
+   "partido": "PSB",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Central Do Maranhão": {
+  "titulo": "Central do Maranhão",
+  "prefeito": "Cleudilene Gonçalves Privado Barbosa",
+  "inicio": null,
+  "fim": "2024",
+  "site": null,
+  "telefone": null,
+  "oficial": {
+   "nome": "Cleudilene Gonçalves Privado Barbosa",
+   "partido": "MDB",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Centro Do Guilherme": {
+  "titulo": "Centro do Guilherme",
+  "prefeito": "José Auricelio de Morais Leandro",
+  "inicio": null,
+  "fim": "2028",
+  "site": "https://www.centrodoguilherme.ma.gov.br/",
+  "telefone": null,
+  "oficial": {
+   "nome": "José Auricélio de Morais Leandro",
+   "partido": "PL",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Centro Novo Do Maranhão": {
+  "titulo": "Centro Novo do Maranhão",
+  "prefeito": "Joedson Almeida dos Santos",
+  "inicio": null,
+  "fim": "2024",
+  "site": null,
+  "telefone": null,
+  "oficial": {
+   "nome": "Joedson Almeida dos Santos",
+   "partido": "PSDB",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Chapadinha": {
+  "titulo": "Chapadinha",
+  "prefeito": "Maria Dulcilene Pontes Cordeiro",
+  "inicio": null,
+  "fim": "2028",
+  "site": "https://www.chapadinha.ma.gov.br/",
+  "telefone": "(98) 98703-6932",
+  "oficial": {
+   "nome": "Maria Ducilene Pontes Cordeiro",
+   "partido": "PL",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Cidelândia": {
+  "titulo": "Cidelândia",
+  "prefeito": "Eustáquio Sampaio",
+  "inicio": null,
+  "fim": "2029",
+  "site": "http://cidelandia.ma.gov.br",
+  "telefone": "(99) 98765-4321",
+  "oficial": {
+   "nome": "Eustaquio Sampaio",
+   "partido": "PSB",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Codó": {
+  "titulo": "Codó",
+  "prefeito": "Chiquinho FC",
+  "inicio": "2025",
+  "fim": "2028",
+  "site": "http://www.codo.ma.gov.br",
+  "telefone": null,
+  "oficial": {
+   "nome": "Francisco Carlos de Oliveira",
+   "partido": "PT",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Coelho Neto": {
+  "titulo": "Coelho Neto (Maranhão)",
+  "prefeito": "Bruno José Almeida e Silva",
+  "inicio": null,
+  "fim": "2024",
+  "site": null,
+  "telefone": null,
+  "oficial": {
+   "nome": "Bruno José Almeida e Silva",
+   "partido": "PP",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Colinas": {
+  "titulo": "Colinas (Maranhão)",
+  "prefeito": "Renato Santos",
+  "inicio": null,
+  "fim": "2028",
+  "site": "http://www.colinas.ma.gov.br",
+  "telefone": "(99) 3552-1626",
+  "oficial": {
+   "nome": "Renato de Sousa Santos",
+   "partido": "MDB",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Conceição Do Lago-Açu": {
+  "titulo": "Conceição do Lago Açu",
+  "prefeito": "Alexandre Lavepel",
+  "inicio": null,
+  "fim": "2024",
+  "site": null,
+  "telefone": null,
+  "oficial": {
+   "nome": "Elcilene Pinheiro Pereira dos Santos",
+   "partido": "PL",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Coroatá": {
+  "titulo": "Coroatá",
+  "prefeito": "Edimar de Aguiar Franco",
+  "inicio": null,
+  "fim": "2028",
+  "site": "http://www.coroata.ma.gov.br/",
+  "telefone": "(99) 99999-9999",
+  "oficial": {
+   "nome": "Edimar de Aguiar Franco",
+   "partido": "PSB",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Cururupu": {
+  "titulo": "Cururupu",
+  "prefeito": "Aldo Luís Borges Lopes",
+  "inicio": null,
+  "fim": "2024",
+  "site": null,
+  "telefone": null,
+  "oficial": {
+   "nome": "Aldo Luis Borges Lopes",
+   "partido": "REPUBLICANOS",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Cândido Mendes": {
+  "titulo": "Cândido Mendes",
+  "prefeito": "José Bonifácio Rocha de Jesus (Facinho)",
+  "inicio": null,
+  "fim": "2024",
+  "site": null,
+  "telefone": null,
+  "oficial": {
+   "nome": "Jose Bonifácio Rocha de Jesus",
+   "partido": "PL",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Davinópolis": {
+  "titulo": "Davinópolis (Maranhão)",
+  "prefeito": "Zé Pequeno",
+  "inicio": "2025",
+  "fim": "2029",
+  "site": null,
+  "telefone": null,
+  "oficial": {
+   "nome": "Jose Goncalves Lima",
+   "partido": "PDT",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Duque Bacelar": {
+  "titulo": "Duque Bacelar",
+  "prefeito": "Flávio Furtado",
+  "inicio": null,
+  "fim": "2028",
+  "site": null,
+  "telefone": null,
+  "oficial": {
+   "nome": "Francisco Flávio Lima Furtado",
+   "partido": "PDT",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Esperantinópolis": {
+  "titulo": "Esperantinópolis",
+  "prefeito": "Simone Carneiro",
+  "inicio": null,
+  "fim": "2028",
+  "site": "https://www.esperantinopolis.ma.gov.br/",
+  "telefone": "(99) 98459-6233",
+  "oficial": {
+   "nome": "Simone Vargas Carneiro de Lima",
+   "partido": "UNIÃO",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Estreito": {
+  "titulo": "Estreito (Maranhão)",
+  "prefeito": "Leoarren Túlio de Sousa Cunha",
+  "inicio": null,
+  "fim": "2028",
+  "site": "https://estreito.ma.gov.br/",
+  "telefone": null,
+  "oficial": {
+   "nome": "Leoarren Túlio de Sousa Cunha",
+   "partido": "PL",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Feira Nova Do Maranhão": {
+  "titulo": "Feira Nova do Maranhão",
+  "prefeito": "Luiza Coutinho Macedo",
+  "inicio": null,
+  "fim": "2024",
+  "site": null,
+  "telefone": null,
+  "oficial": {
+   "nome": "Luiza Coutinho Macedo",
+   "partido": "UNIÃO",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Fernando Falcão": {
+  "titulo": "Fernando Falcão",
+  "prefeito": "Raimunda da Silva Almeida",
+  "inicio": null,
+  "fim": "2024",
+  "site": "http://fernandofalcao.ma.gov.br",
+  "telefone": "(99) 3424-1011",
+  "oficial": {
+   "nome": "Raimunda da Silva Almeida",
+   "partido": "PDT",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Formosa Da Serra Negra": {
+  "titulo": "Formosa da Serra Negra",
+  "prefeito": "Juceni Oliveira Silva",
+  "inicio": "2025",
+  "fim": "2028",
+  "site": null,
+  "telefone": null,
+  "oficial": {
+   "nome": "Juceni Oliveira Silva",
+   "partido": "PSDB",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Fortuna": {
+  "titulo": "Fortuna (Maranhão)",
+  "prefeito": "Sebastião Pereira da Costa Neto",
+  "inicio": null,
+  "fim": "2024",
+  "site": "https://fortuna.ma.gov.br/",
+  "telefone": "(98) 98426-1333",
+  "oficial": {
+   "nome": "Sebastião Pereira da Costa Neto",
+   "partido": "PDT",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Godofredo Viana": {
+  "titulo": "Godofredo Viana",
+  "prefeito": "Márcio Heberte Viana Abreu",
+  "inicio": null,
+  "fim": "2028",
+  "site": "http://godofredoviana.ma.gov.br/",
+  "telefone": null,
+  "oficial": {
+   "nome": "Marcio Heberte Viana Abreu",
+   "partido": "PSB",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Gonçalves Dias": {
+  "titulo": "Gonçalves Dias (Maranhão)",
+  "prefeito": "Antônio Soares de Sena",
+  "inicio": null,
+  "fim": "2024",
+  "site": null,
+  "telefone": null,
+  "oficial": {
+   "nome": "Suane Maria Barros Dias",
+   "partido": "MDB",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Governador Archer": {
+  "titulo": "Governador Archer",
+  "prefeito": "Antônia Leide Ferreira da Silva Oliveira",
+  "inicio": null,
+  "fim": "2024",
+  "site": null,
+  "telefone": null,
+  "oficial": {
+   "nome": "Antonia Leide Ferreira da Silva Oliveira",
+   "partido": "UNIÃO",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Governador Edison Lobão": {
+  "titulo": "Ribeirãozinho do Maranhão",
+  "prefeito": "Geraldo Evandro Braga de Sousa",
+  "inicio": null,
+  "fim": "2024",
+  "site": "https://www.governadoredisonlobao.ma.gov.br/",
+  "telefone": "(99) 8456-4070",
+  "brasao": "Brasao-municipio-governador-edison-lobao-maranhao.png",
+  "oficial": {
+   "nome": "Flávio Soares Lima",
+   "partido": "PP",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Governador Eugênio Barros": {
+  "titulo": "Governador Eugênio Barros",
+  "prefeito": "Francisco Carneiro Ribeiro",
+  "inicio": null,
+  "fim": "2024",
+  "site": "https://governadoreugeniobarros.ma.gov.br/",
+  "telefone": "(99) 3564-1152",
+  "oficial": {
+   "nome": "Francisco Carneiro Ribeiro",
+   "partido": "MDB",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Governador Newton Bello": {
+  "titulo": "Governador Newton Bello",
+  "prefeito": "Roberto Silva Araújo",
+  "inicio": null,
+  "fim": "2024",
+  "site": "http://governadornewtonbello.ma.gov.br/",
+  "telefone": null,
+  "oficial": {
+   "nome": "Daniel Lima Rosa",
+   "partido": "MDB",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Governador Nunes Freire": {
+  "titulo": "Governador Nunes Freire",
+  "prefeito": "Luis Fernando Castro Braga",
+  "inicio": null,
+  "fim": "2028",
+  "site": null,
+  "telefone": null,
+  "oficial": {
+   "nome": "Luis Fernando de Castro Braga",
+   "partido": "PL",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Grajaú": {
+  "titulo": "Grajaú",
+  "prefeito": "Mercial Lima de Arruda",
+  "inicio": null,
+  "fim": "2024",
+  "site": null,
+  "telefone": null,
+  "oficial": {
+   "nome": "Antonio Gilson Bomfim da Silva",
+   "partido": "PSDB",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Graça Aranha": {
+  "titulo": "Graça Aranha (Maranhão)",
+  "prefeito": "Ubirajara Rayol Soares",
+  "inicio": null,
+  "fim": "2024",
+  "site": "http://www.gracaaranha.ma.gov.br",
+  "telefone": "(99) 3575-1117",
+  "brasaoLocal": "/brasoes/MA/graca-aranha.png",
+  "oficial": {
+   "nome": "Ubirajara Rayol Soares",
+   "partido": "UNIÃO",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Guimarães": {
+  "titulo": "Guimarães (Maranhão)",
+  "prefeito": "Ariomagno Ferreira Cartagenes",
+  "inicio": null,
+  "fim": "2028",
+  "site": null,
+  "telefone": null,
+  "brasaoLocal": "/brasoes/MA/guimaraes.png",
+  "oficial": {
+   "nome": "Ariomagno Ferreira Cartagenes",
+   "partido": null,
+   "fonte": "Wikipédia",
+   "obs": "mandato até 2028"
+  }
+ },
+ "Humberto De Campos": {
+  "titulo": "Humberto de Campos (Maranhão)",
+  "prefeito": "Luís Fernando Silva dos Santos",
+  "inicio": null,
+  "fim": "2024",
+  "site": null,
+  "telefone": null,
+  "oficial": {
+   "nome": "Luis Fernando Silva dos Santos",
+   "partido": "UNIÃO",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Icatu": {
+  "titulo": "Icatu",
+  "prefeito": "Walace Azevedo",
+  "inicio": null,
+  "fim": "2024",
+  "site": "http://www.icatu.ma.gov.br/",
+  "telefone": "(98) 3362-1260",
+  "oficial": {
+   "nome": "Walace Azevedo Mendes",
+   "partido": "PSDB",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Igarapé Do Meio": {
+  "titulo": "Igarapé do Meio",
+  "prefeito": "José Almeida de Sousa",
+  "inicio": null,
+  "fim": "2024",
+  "site": null,
+  "telefone": null,
+  "oficial": {
+   "nome": "Aldenira Carreiro Silva",
+   "partido": "PL",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Igarapé Grande": {
+  "titulo": "Igarapé Grande",
+  "prefeito": "Erlanio Xavier",
+  "inicio": null,
+  "fim": "2024",
+  "site": null,
+  "telefone": null,
+  "oficial": {
+   "nome": "João Vitor Peixoto Moura Xavier",
+   "partido": "PDT",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Imperatriz": {
+  "titulo": "Imperatriz (Maranhão)",
+  "prefeito": "Rildo Amaral",
+  "inicio": "2025",
+  "fim": "2028",
+  "site": "https://imperatriz.ma.gov.br/",
+  "telefone": null,
+  "oficial": {
+   "nome": "Rildo de Oliveira Amaral",
+   "partido": "PP",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Itaipava Do Grajaú": {
+  "titulo": "Itaipava do Grajaú",
+  "prefeito": "Jovaldo Cardoso Oliveira Júnior",
+  "inicio": null,
+  "fim": "2024",
+  "site": null,
+  "telefone": null,
+  "oficial": {
+   "nome": "Jovaldo Cardoso Oliveira Junior",
+   "partido": "PDT",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Itapecuru Mirim": {
+  "titulo": "Itapecuru-Mirim",
+  "prefeito": "Fillipe Marreca",
+  "inicio": "2025",
+  "fim": "2029",
+  "site": "https://www.itapecurumirim.ma.gov.br/",
+  "telefone": "(98) 99152-3909",
+  "oficial": {
+   "nome": "Luis Fillipe Torres Filgueira",
+   "partido": "PRD",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Itinga Do Maranhão": {
+  "titulo": "Itinga do Maranhão",
+  "prefeito": "Paula do Quininha",
+  "inicio": null,
+  "fim": "2028",
+  "site": "http://itinga.ma.gov.br/",
+  "telefone": "(99) 99115-1320",
+  "oficial": {
+   "nome": "Leny Paula Firmiano Aguiar",
+   "partido": "PP",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Jatobá": {
+  "titulo": "Jatobá (Maranhão)",
+  "prefeito": "Leonardo César Ribeiro Sousa",
+  "inicio": null,
+  "fim": "2028",
+  "site": "https://jatoba.ma.gov.br/",
+  "telefone": "(99) 3491-1004",
+  "oficial": {
+   "nome": "Leonardo Cesar Ribeiro Sousa",
+   "partido": "UNIÃO",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Jenipapo Dos Vieiras": {
+  "titulo": "Jenipapo dos Vieiras",
+  "prefeito": "Arnobio de Almeida Martins",
+  "inicio": null,
+  "fim": "2024",
+  "site": null,
+  "telefone": null,
+  "oficial": {
+   "nome": "Arnobio de Almeida Martins",
+   "partido": "PDT",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Joselândia": {
+  "titulo": "Joselândia",
+  "prefeito": "Raimundo da Silva Santos",
+  "inicio": null,
+  "fim": "2024",
+  "site": "https://joselandia.ma.gov.br/",
+  "telefone": "(99) 98406-2522",
+  "oficial": {
+   "nome": "Raimundo da Silva Santos",
+   "partido": "REPUBLICANOS",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "João Lisboa": {
+  "titulo": "João Lisboa",
+  "prefeito": "Vilson Soares Ferreira Lima",
+  "inicio": null,
+  "fim": "2024",
+  "site": null,
+  "telefone": null,
+  "oficial": {
+   "nome": "Fábio Vale de Holanda",
+   "partido": "PSDB",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Lago Da Pedra": {
+  "titulo": "Lago da Pedra",
+  "prefeito": "Maura Jorge Alves de Melo Ribeiro",
+  "inicio": null,
+  "fim": "2024",
+  "site": "http://www.lagodapedra.ma.gov.br/",
+  "telefone": null,
+  "oficial": {
+   "nome": "Maura Jorge Alves de Melo Ribeiro",
+   "partido": "PP",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Lago Do Junco": {
+  "titulo": "Lago do Junco",
+  "prefeito": "Maria Edina Alves Fontes",
+  "inicio": null,
+  "fim": "2021-2024",
+  "site": "https://www.lagodojunco.ma.gov.br/",
+  "telefone": null,
+  "oficial": {
+   "nome": "Ataide Miranda Sousa",
+   "partido": "PSB",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Lago Verde": {
+  "titulo": "Lago Verde",
+  "prefeito": "Alex Cruz Almeida",
+  "inicio": null,
+  "fim": "2024",
+  "site": null,
+  "telefone": null,
+  "oficial": {
+   "nome": "Alex Cruz Almeida",
+   "partido": "PP",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Lagoa Do Mato": {
+  "titulo": "Lagoa do Mato",
+  "prefeito": "Nilton Ribeiro",
+  "inicio": null,
+  "fim": "2028",
+  "site": "https://www.lagoadomato.ma.gov.br/",
+  "telefone": "(99) 3492-1140",
+  "brasao": "Brasão de Lagoa do Mato MA.jpg",
+  "oficial": {
+   "nome": "Nilton Nedes Ribeiro Guimarães",
+   "partido": "MDB",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Lagoa Grande Do Maranhão": {
+  "titulo": "Lagoa Grande do Maranhão",
+  "prefeito": "Francisco Neres Moreira Policarpo",
+  "inicio": null,
+  "fim": "2024",
+  "site": null,
+  "telefone": null,
+  "oficial": {
+   "nome": "Francisco Neres Moreira Policarpo",
+   "partido": "PSB",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Lajeado Novo": {
+  "titulo": "Lajeado Novo",
+  "prefeito": "Ana Léa",
+  "inicio": null,
+  "fim": "2024",
+  "site": null,
+  "telefone": null,
+  "oficial": {
+   "nome": "Itaires Lobo Santos de Andrade",
+   "partido": "REPUBLICANOS",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Lima Campos": {
+  "titulo": "Lima Campos",
+  "prefeito": "Dirce Prazeres Rodrigues",
+  "inicio": null,
+  "fim": "2024",
+  "site": "https://limacampos.ma.gov.br/",
+  "telefone": "(99) 3646-1112",
+  "oficial": {
+   "nome": "Jailson Fausto Alves",
+   "partido": "UNIÃO",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Loreto": {
+  "titulo": "Loreto (Maranhão)",
+  "prefeito": "Germano Martins Coelho",
+  "inicio": null,
+  "fim": "2024",
+  "site": null,
+  "telefone": null,
+  "brasaoLocal": "/brasoes/MA/loreto.png",
+  "oficial": {
+   "nome": "Germano Martins Coelho",
+   "partido": "REPUBLICANOS",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Luís Domingues": {
+  "titulo": "Luís Domingues",
+  "prefeito": "Gilberto Braga Queiroz",
+  "inicio": null,
+  "fim": "2024",
+  "site": "http://www.luisdomingues.ma.gov.br/",
+  "telefone": "(98) 3393-1648",
+  "oficial": {
+   "nome": "Emanuel Izaque Oliveira Cirino",
+   "partido": "PL",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Magalhães De Almeida": {
+  "titulo": "Magalhães de Almeida",
+  "prefeito": "Raimundo Nonato Carvalho",
+  "inicio": null,
+  "fim": "2024",
+  "site": "https://magalhaesdealmeida.ma.gov.br/",
+  "telefone": "(98) 3483-1122",
+  "oficial": {
+   "nome": "Raimundo Nonato Carvalho",
+   "partido": "PDT",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Maracaçumé": {
+  "titulo": "Maracaçumé",
+  "prefeito": "Ruzinaldo Guimarães de Melo",
+  "inicio": null,
+  "fim": "2024",
+  "site": null,
+  "telefone": null,
+  "oficial": {
+   "nome": "Ruzinaldo Guimaraes de Melo",
+   "partido": "PL",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Marajá Do Sena": {
+  "titulo": "Marajá do Sena",
+  "prefeito": "Adonilson do Nascimento Lima (Neném Machado)",
+  "inicio": "2025",
+  "fim": "2028",
+  "site": "https://marajadosena.ma.gov.br/",
+  "telefone": null,
+  "oficial": {
+   "nome": "Adonilson do Nascimento Lima",
+   "partido": "PP",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Maranhãozinho": {
+  "titulo": "Maranhãozinho",
+  "prefeito": "Maria Deusa Lima Almeida",
+  "inicio": null,
+  "fim": "2028",
+  "site": "https://www.maranhaozinho.ma.gov.br/",
+  "telefone": null,
+  "oficial": {
+   "nome": "Maria Deusa Lima Almeida",
+   "partido": "PL",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Mata Roma": {
+  "titulo": "Mata Roma",
+  "prefeito": "Besaliel Freitas Albuquerque \"Besa\"",
+  "inicio": null,
+  "fim": "2024",
+  "site": "http://www.mataroma.ma.gov.br/",
+  "telefone": null,
+  "oficial": {
+   "nome": "Besaliel Freitas Albuquerque",
+   "partido": "PDT",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Matinha": {
+  "titulo": "Matinha",
+  "prefeito": "Linielda Nunes Cunha",
+  "inicio": null,
+  "fim": "2024",
+  "site": "https://www.matinha.ma.gov.br/",
+  "telefone": null,
+  "oficial": {
+   "nome": "Nilton Carlos Silva Everton",
+   "partido": "PRD",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Matões": {
+  "titulo": "Matões",
+  "prefeito": "Ferdinando Araújo Coutinho",
+  "inicio": null,
+  "fim": "2024",
+  "site": "https://matoes.ma.gov.br/",
+  "telefone": "(99) 98809-4338",
+  "oficial": {
+   "nome": "Raimundo Nonato Medeiros Carvalho",
+   "partido": "UNIÃO",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Matões Do Norte": {
+  "titulo": "Matões do Norte",
+  "prefeito": "Solimar Alves",
+  "inicio": "2024",
+  "fim": "2028",
+  "site": null,
+  "telefone": null,
+  "oficial": {
+   "nome": "Solimar Alves de Oliveira",
+   "partido": "MDB",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Milagres Do Maranhão": {
+  "titulo": "Milagres do Maranhão",
+  "prefeito": "José Augusto Cardoso Caldas",
+  "inicio": null,
+  "fim": "2024",
+  "site": "https://www.milagresdomaranhao.ma.gov.br/",
+  "telefone": "(98) 3476-1015",
+  "oficial": {
+   "nome": "José Augusto Cardoso Caldas",
+   "partido": "PDT",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Mirador": {
+  "titulo": "Mirador (Maranhão)",
+  "prefeito": "Domingas Cabral",
+  "inicio": null,
+  "fim": "2024",
+  "site": "http://mirador.ma.gov.br/",
+  "telefone": "(99) 98824-7622",
+  "oficial": {
+   "nome": "Maria Domingas Gomes Cabral Santana",
+   "partido": "UNIÃO",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Miranda Do Norte": {
+  "titulo": "Miranda do Norte",
+  "prefeito": "Angelica Maria Sousa Bonfim",
+  "inicio": null,
+  "fim": "2024",
+  "site": "https://www.mirandadonorte.ma.gov.br/",
+  "telefone": "(98) 98454-4727",
+  "oficial": {
+   "nome": "Ivaldo Marcelo Ribeiro Pereira",
+   "partido": "AVANTE",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Mirinzal": {
+  "titulo": "Mirinzal",
+  "prefeito": "Amaury Santos Almeida",
+  "inicio": null,
+  "fim": "2024",
+  "site": "http://mirinzal.ma.gov.br/",
+  "telefone": null,
+  "oficial": {
+   "nome": "Dayvison Ribeiro Soares",
+   "partido": "MDB",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Montes Altos": {
+  "titulo": "Montes Altos",
+  "prefeito": "Domingos França",
+  "inicio": null,
+  "fim": "2028",
+  "site": null,
+  "telefone": null,
+  "oficial": {
+   "nome": "Domingos Pinheiro Cirqueira",
+   "partido": "UNIÃO",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Monção": {
+  "titulo": "Monção (Maranhão)",
+  "prefeito": "Bárbara Nussrala Carvalho",
+  "inicio": null,
+  "fim": "2028",
+  "site": "https://www.moncao.ma.gov.br/",
+  "telefone": "(98) 2018-2669",
+  "oficial": {
+   "nome": "Barbara Nussrala Carvalho",
+   "partido": "PL",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Morros": {
+  "titulo": "Morros (Maranhão)",
+  "prefeito": "Milton José Sousa Santos",
+  "inicio": null,
+  "fim": "2028",
+  "site": null,
+  "telefone": null,
+  "oficial": {
+   "nome": "Milton Jose Sousa Santos",
+   "partido": "PL",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Nina Rodrigues": {
+  "titulo": "Nina Rodrigues (Maranhão)",
+  "prefeito": "João Francisco Jones Fortes Braga",
+  "inicio": "2025",
+  "fim": "2028",
+  "site": "https://ninarodrigues.ma.gov.br/",
+  "telefone": "(98) 99235-5423",
+  "oficial": {
+   "nome": "João Francisco Jones Fortes Braga",
+   "partido": "MDB",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Nova Colinas": {
+  "titulo": "Nova Colinas",
+  "prefeito": "Josei Rego Ribeiro",
+  "inicio": null,
+  "fim": "2024",
+  "site": null,
+  "telefone": null,
+  "oficial": {
+   "nome": "Mariana Pinto Ribeiro Macedo",
+   "partido": "UNIÃO",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Nova Iorque": {
+  "titulo": "Nova Iorque (Maranhão)",
+  "prefeito": "Daniel Franco de Castro",
+  "inicio": null,
+  "fim": "2028",
+  "site": null,
+  "telefone": null,
+  "oficial": {
+   "nome": "Daniel Franco de Castro",
+   "partido": "MDB",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Nova Olinda Do Maranhão": {
+  "titulo": "Nova Olinda do Maranhão",
+  "prefeito": "Ary Menezes",
+  "inicio": null,
+  "fim": "2025",
+  "site": null,
+  "telefone": null,
+  "oficial": {
+   "nome": "Ary Menezes Fernandes",
+   "partido": "PP",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Palmeirândia": {
+  "titulo": "Palmeirândia",
+  "prefeito": "Edilson Campos Gomes de Castro Júnior",
+  "inicio": null,
+  "fim": "2028",
+  "site": null,
+  "telefone": null,
+  "oficial": {
+   "nome": "Edilson Campos Gomes de Castro Junior",
+   "partido": "PL",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Paraibano": {
+  "titulo": "Paraibano (Maranhão)",
+  "prefeito": "Vanessa Queiroz Furtado Ferro",
+  "inicio": null,
+  "fim": "2028",
+  "site": "https://paraibano.ma.gov.br/",
+  "telefone": "(99) 3554-1480",
+  "oficial": {
+   "nome": "Vanessa Queiroz Furtado Ferro",
+   "partido": "UNIÃO",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Parnarama": {
+  "titulo": "Parnarama",
+  "prefeito": "Juvenal Francisco Carvalho e Silva",
+  "inicio": null,
+  "fim": "2028",
+  "site": "https://parnarama.ma.gov.br/",
+  "telefone": "(99) 98402-8352",
+  "oficial": {
+   "nome": "Juvenal Francisco Carvalho e Silva",
+   "partido": "PSDB",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Passagem Franca": {
+  "titulo": "Passagem Franca",
+  "prefeito": "Chicão da Parabólica",
+  "inicio": null,
+  "fim": "2028",
+  "site": "http://passagemfranca.ma.gov.br/",
+  "telefone": "(99) 3558-1212",
+  "oficial": {
+   "nome": "Francisco Menezes Souza",
+   "partido": "PP",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Pastos Bons": {
+  "titulo": "Pastos Bons",
+  "prefeito": "Enoque Mota",
+  "inicio": null,
+  "fim": "2024",
+  "site": "http://pastosbons.ma.gov.br/",
+  "telefone": "(99) 8412-4682",
+  "oficial": {
+   "nome": "Enoque Ferreira Mota Neto",
+   "partido": "MDB",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Paulino Neves": {
+  "titulo": "Paulino Neves",
+  "prefeito": "Raimundo de Oliveira Filho",
+  "inicio": "2021",
+  "fim": "2029",
+  "site": null,
+  "telefone": null,
+  "oficial": {
+   "nome": "Raimundo de Oliveira Filho",
+   "partido": "SOLIDARIEDADE",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Paulo Ramos": {
+  "titulo": "Paulo Ramos (Maranhão)",
+  "prefeito": "Adailson do Nascimento Lima",
+  "inicio": null,
+  "fim": "2024",
+  "site": "http://www.pauloramos.ma.gov.br",
+  "telefone": null,
+  "oficial": {
+   "nome": "Adailson do Nascimento Lima",
+   "partido": "PP",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Pedreiras": {
+  "titulo": "Pedreiras (Maranhão)",
+  "prefeito": "Vanessa dos Prazeres Santos",
+  "inicio": "2021",
+  "fim": null,
+  "site": null,
+  "telefone": null,
+  "brasao": "Brasão Pedreiras.png",
+  "oficial": {
+   "nome": "Vanessa dos Prazeres Santos",
+   "partido": "UNIÃO",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Pedro Do Rosário": {
+  "titulo": "Pedro do Rosário",
+  "prefeito": "Domingos Erinaldo Sousa Serra",
+  "inicio": null,
+  "fim": "2028",
+  "site": null,
+  "telefone": null,
+  "oficial": {
+   "nome": "Domingos Erinaldo Sousa Serra",
+   "partido": "PC do B",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Penalva": {
+  "titulo": "Penalva",
+  "prefeito": "Henrique Guerra",
+  "inicio": null,
+  "fim": "2025-2028",
+  "site": "http://penalva.ma.gov.br/",
+  "telefone": "(98) 3358-1329",
+  "oficial": {
+   "nome": "Luiz Henrique Alves Guerra",
+   "partido": "PP",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Peritoró": {
+  "titulo": "Peritoró",
+  "prefeito": "Josué Pinho da Silva Junior",
+  "inicio": "2021",
+  "fim": "2028",
+  "site": "https://www.peritoro.ma.gov.br/",
+  "telefone": "(99) 99172-4154",
+  "oficial": {
+   "nome": "Josue Pinho da Silva Junior",
+   "partido": "PP",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Pindaré-Mirim": {
+  "titulo": "Pindaré-Mirim",
+  "prefeito": "Alexandre Colares Bezerra Júnior",
+  "inicio": "2021",
+  "fim": "2024",
+  "site": null,
+  "telefone": null,
+  "oficial": {
+   "nome": "Alexandre Colares Bezerra Junior",
+   "partido": "MDB",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Pinheiro": {
+  "titulo": "Pinheiro (Maranhão)",
+  "prefeito": "André da Ralpnet",
+  "inicio": "2025",
+  "fim": "2028",
+  "site": "http://pinheiro.ma.gov.br/",
+  "telefone": "(98) 92005-3320",
+  "oficial": {
+   "nome": "Carlos Andre Costa Silva",
+   "partido": "PODE",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Pio Xii": {
+  "titulo": null,
+  "prefeito": null,
+  "inicio": null,
+  "fim": null,
+  "site": null,
+  "telefone": null,
+  "oficial": {
+   "nome": "Aurélio Pereira de Sousa",
+   "partido": "PL",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Pirapemas": {
+  "titulo": "Pirapemas",
+  "prefeito": "Fernando Cutrim",
+  "inicio": null,
+  "fim": "2024",
+  "site": "https://pirapemas.ma.gov.br/",
+  "telefone": null,
+  "oficial": {
+   "nome": "Luis Fernando Abreu Cutrim",
+   "partido": "PSB",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Porto Franco": {
+  "titulo": "Porto Franco",
+  "prefeito": "Deoclides Antônio Santos Neto Macedo",
+  "inicio": null,
+  "fim": "2024",
+  "site": null,
+  "telefone": null,
+  "oficial": {
+   "nome": "Deoclides Antonio Santos Neto Macedo",
+   "partido": "PSB",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Porto Rico Do Maranhão": {
+  "titulo": "Porto Rico do Maranhão",
+  "prefeito": "Aldene Nogueiro Passinho",
+  "inicio": null,
+  "fim": "2024",
+  "site": null,
+  "telefone": null,
+  "oficial": {
+   "nome": "Aldene Nogueira Passinho",
+   "partido": "PL",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Poção De Pedras": {
+  "titulo": "Poção de Pedras",
+  "prefeito": "Francisco de Assis Lima Pinheiro",
+  "inicio": null,
+  "fim": "2024",
+  "site": null,
+  "telefone": null,
+  "oficial": {
+   "nome": "Jhulio Sousa da Silva",
+   "partido": "REPUBLICANOS",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Presidente Dutra": {
+  "titulo": "Presidente Dutra (Maranhão)",
+  "prefeito": "Raimundo Alves Carvalho",
+  "inicio": "2021",
+  "fim": "2024",
+  "site": "https://presidentedutra.ma.gov.br/",
+  "telefone": "(99) 9208-2146",
+  "oficial": {
+   "nome": "Raimundo Alves Carvalho",
+   "partido": "MDB",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Presidente Juscelino": {
+  "titulo": "Presidente Juscelino (Maranhão)",
+  "prefeito": "Pedro Paulo Cantanheide Lemos",
+  "inicio": null,
+  "fim": "2028",
+  "site": null,
+  "telefone": null,
+  "oficial": {
+   "nome": "Pedro Paulo Cantanheide Lemos",
+   "partido": "PL",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Presidente Médici": {
+  "titulo": "Presidente Médici (Maranhão)",
+  "prefeito": "Janilson dos Santos Coelho",
+  "inicio": null,
+  "fim": "2024",
+  "site": null,
+  "telefone": null,
+  "brasaoLocal": "/brasoes/MA/presidente-medici.png",
+  "oficial": {
+   "nome": "Janilson dos Santos Coelho",
+   "partido": "REPUBLICANOS",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Presidente Sarney": {
+  "titulo": "Presidente Sarney (Maranhão)",
+  "prefeito": "Gilson Lima",
+  "inicio": null,
+  "fim": "2028",
+  "site": null,
+  "telefone": null,
+  "oficial": {
+   "nome": "Alberto Gilson Moraes de Sousa",
+   "partido": "UNIÃO",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Presidente Vargas": {
+  "titulo": "Presidente Vargas (Maranhão)",
+  "prefeito": "Raimundo Bartolomeu Santos Aguiar",
+  "inicio": null,
+  "fim": "2008",
+  "site": "http://www.presidentevargas.ma.gov.br/",
+  "telefone": "(98) 3467-1265",
+  "oficial": {
+   "nome": "Fabiana Rodrigues Mendes",
+   "partido": "PSB",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Primeira Cruz": {
+  "titulo": "Primeira Cruz",
+  "prefeito": "Guilherme Carneiro Aguiar",
+  "inicio": "2025",
+  "fim": "2028",
+  "site": "http://www.primeiracruz.ma.gov.br/",
+  "telefone": null,
+  "oficial": {
+   "nome": "Guilherme Carneiro Aguiar",
+   "partido": "UNIÃO",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Riachão": {
+  "titulo": "Riachão (Maranhão)",
+  "prefeito": "Paula Coelho",
+  "inicio": null,
+  "fim": "2028",
+  "site": "https://www.riachao.ma.gov.br/",
+  "telefone": "(99) 0000-0000",
+  "brasaoLocal": "/brasoes/MA/riachao.png",
+  "oficial": {
+   "nome": "Joana Paula Coelho de Oliveira",
+   "partido": "MDB",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Ribamar Fiquene": {
+  "titulo": "Ribamar Fiquene",
+  "prefeito": "Cociflan Silva do Amarante",
+  "inicio": null,
+  "fim": "2024",
+  "site": null,
+  "telefone": null,
+  "oficial": {
+   "nome": "Cociflan Silva do Amarante",
+   "partido": "REPUBLICANOS",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Rosário": {
+  "titulo": "Rosário (Maranhão)",
+  "prefeito": "Jonas Magno Machado Moraes",
+  "inicio": null,
+  "fim": "2028",
+  "site": "https://rosario.ma.gov.br/",
+  "telefone": null,
+  "oficial": {
+   "nome": "Jonas Magno Machado Moraes",
+   "partido": "PDT",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Santa Filomena Do Maranhão": {
+  "titulo": "Santa Filomena do Maranhão",
+  "prefeito": "Salomão Barbosa de Sousa",
+  "inicio": "2021",
+  "fim": "2024",
+  "site": "http://santafilomena.ma.gov.br/",
+  "telefone": null,
+  "oficial": {
+   "nome": "Salomão Barbosa de Sousa",
+   "partido": "PP",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Santa Helena": {
+  "titulo": "Santa Helena (Maranhão)",
+  "prefeito": "Joãozinho Pavão",
+  "inicio": null,
+  "fim": "2028",
+  "site": "http://www.santahelena.ma.gov.br",
+  "telefone": "(98) 98140-8918",
+  "brasaoLocal": "/brasoes/MA/santa-helena.png",
+  "oficial": {
+   "nome": "Joao Jorge Jinkings Pavão Filho",
+   "partido": "MDB",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Santa Inês": {
+  "titulo": "Santa Inês (Maranhão)",
+  "prefeito": "Luís Felipe Oliveira de Carvalho",
+  "inicio": null,
+  "fim": "2024",
+  "site": "http://www.santaines.ma.gov.br",
+  "telefone": null,
+  "oficial": {
+   "nome": "Luis Felipe Oliveira de Carvalho",
+   "partido": "PP",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Santa Luzia": {
+  "titulo": "Santa Luzia (Maranhão)",
+  "prefeito": "Juscelino da Cruz Filgueira Junior",
+  "inicio": null,
+  "fim": "2028",
+  "site": "https://santaluzia.ma.gov.br",
+  "telefone": "(98) 8102-5014",
+  "brasaoLocal": "/brasoes/MA/santa-luzia.png",
+  "oficial": {
+   "nome": "Juscelino da Cruz Filgueira Junior",
+   "partido": "PRD",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Santa Luzia Do Paruá": {
+  "titulo": "Santa Luzia do Paruá",
+  "prefeito": "Antônio Vilson Marreiros Ferraz",
+  "inicio": null,
+  "fim": "2024",
+  "site": "https://www.santaluziadoparua.ma.gov.br/",
+  "telefone": "(98) 98538-8951",
+  "oficial": {
+   "nome": "Antonio Vilson Marreiros Ferraz",
+   "partido": "PL",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Santa Quitéria Do Maranhão": {
+  "titulo": "Santa Quitéria do Maranhão",
+  "prefeito": "Sâmia Coelho Moreira Carvalho",
+  "inicio": null,
+  "fim": "2024",
+  "site": "http://santaquiteria.ma.gov.br/",
+  "telefone": "(98) 97019-1036",
+  "oficial": {
+   "nome": "Sâmia Coelho Moreira Carvalho",
+   "partido": "PDT",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Santa Rita": {
+  "titulo": "Santa Rita (Maranhão)",
+  "prefeito": "Milton Gonçalo",
+  "inicio": "2025",
+  "fim": "2028",
+  "site": "https://santarita.ma.gov.br/",
+  "telefone": null,
+  "oficial": {
+   "nome": "Milton Aquino Gonçalo Mota Junior",
+   "partido": "MOBILIZA",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Santana Do Maranhão": {
+  "titulo": "Santana do Maranhão",
+  "prefeito": "Marcio Jose Melo Santiago",
+  "inicio": "2021",
+  "fim": "2028",
+  "site": "http://www.santanadomaranhao.ma.gov.br/",
+  "telefone": "(98) 3488-1019",
+  "oficial": {
+   "nome": "Marcio Jose Melo Santiago",
+   "partido": null,
+   "fonte": "Wikipédia",
+   "obs": "mandato até 2028"
+  }
+ },
+ "Santo Amaro Do Maranhão": {
+  "titulo": "Santo Amaro do Maranhão",
+  "prefeito": "Leandro Moura",
+  "inicio": null,
+  "fim": "2028",
+  "site": null,
+  "telefone": null,
+  "oficial": {
+   "nome": "Leandro Oliveira da Silva",
+   "partido": "PC do B",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Santo Antônio Dos Lopes": {
+  "titulo": "Santo Antônio dos Lopes",
+  "prefeito": "Cibelle Napoleão",
+  "inicio": null,
+  "fim": "2028",
+  "site": null,
+  "telefone": null,
+  "oficial": {
+   "nome": "Cibelle Trabulsi Napoleão Mendonça da Silva",
+   "partido": "PL",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Satubinha": {
+  "titulo": "Satubinha",
+  "prefeito": "Santos Franklin",
+  "inicio": null,
+  "fim": "2028",
+  "site": null,
+  "telefone": null,
+  "oficial": {
+   "nome": "Orlando Pires Franklin",
+   "partido": "PL",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Senador Alexandre Costa": {
+  "titulo": "Senador Alexandre Costa",
+  "prefeito": "Orlando Mauro Sousa Arouche",
+  "inicio": null,
+  "fim": "2024",
+  "site": null,
+  "telefone": null,
+  "oficial": {
+   "nome": "Nilo Tayrone Arouche Amorim",
+   "partido": "REPUBLICANOS",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Senador La Rocque": {
+  "titulo": "Senador La Rocque",
+  "prefeito": "Bartolomeu Gomes Alves",
+  "inicio": null,
+  "fim": "2024",
+  "site": "https://senadorlarocque.ma.gov.br/",
+  "telefone": "(99) 98547-1454",
+  "oficial": {
+   "nome": "Bartolomeu Gomes Alves",
+   "partido": "MDB",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Serrano Do Maranhão": {
+  "titulo": "Serrano do Maranhão",
+  "prefeito": "Valdine de Castro Cunha",
+  "inicio": null,
+  "fim": "2024",
+  "site": "https://serrano.ma.gov.br/",
+  "telefone": "(98) 98480-2302",
+  "oficial": {
+   "nome": "Valdine de Castro Cunha",
+   "partido": "PL",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Sucupira Do Norte": {
+  "titulo": "Sucupira do Norte",
+  "prefeito": "Marcony de Silva dos Santos",
+  "inicio": null,
+  "fim": "2024",
+  "site": null,
+  "telefone": null,
+  "oficial": {
+   "nome": "Marcony da Silva dos Santos",
+   "partido": "MDB",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "São Benedito Do Rio Preto": {
+  "titulo": "São Benedito do Rio Preto",
+  "prefeito": "Wallas Gonçalves Rocha",
+  "inicio": null,
+  "fim": "2024",
+  "site": "https://www.saobeneditodoriopreto.ma.gov.br/",
+  "telefone": null,
+  "oficial": {
+   "nome": "Wallas Gonçalves Rocha",
+   "partido": "REPUBLICANOS",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "São Bento": {
+  "titulo": "São Bento (Maranhão)",
+  "prefeito": "Carlos Dino Penha",
+  "inicio": null,
+  "fim": "2024",
+  "site": "http://www.saobento.ma.gov.br",
+  "telefone": null,
+  "brasaoLocal": "/brasoes/MA/sao-bento.png",
+  "oficial": {
+   "nome": "Carlos Dino Penha",
+   "partido": "MDB",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "São Bernardo": {
+  "titulo": "São Bernardo (Maranhão)",
+  "prefeito": "Francisco Das Chagas Carvalho",
+  "inicio": null,
+  "fim": "2028",
+  "site": null,
+  "telefone": null,
+  "oficial": {
+   "nome": "Francisco das Chagas Carvalho",
+   "partido": "PDT",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "São Domingos Do Azeitão": {
+  "titulo": "São Domingos do Azeitão",
+  "prefeito": "Júnior do Posto",
+  "inicio": null,
+  "fim": "2028",
+  "site": null,
+  "telefone": null,
+  "oficial": {
+   "nome": "Lourival Leandro dos Santos Junior",
+   "partido": "PP",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "São Domingos Do Maranhão": {
+  "titulo": "São Domingos do Maranhão",
+  "prefeito": "Kleber Alves de Andrade",
+  "inicio": "2021",
+  "fim": "2028",
+  "site": "https://www.saodomingosdomaranhao.ma.gov.br/",
+  "telefone": "(99) 3578-2086",
+  "oficial": {
+   "nome": "Kleber Alves de Andrade",
+   "partido": "PP",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "São Francisco Do Brejão": {
+  "titulo": "São Francisco do Brejão",
+  "prefeito": "Edinalva Brandão Gonçalves",
+  "inicio": null,
+  "fim": "2024",
+  "site": "http://www.saofranciscodobrejao.ma.gov.br/",
+  "telefone": "(99) 98434-8511",
+  "oficial": {
+   "nome": "Edinalva Brandao Goncalves",
+   "partido": "PP",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "São Francisco Do Maranhão": {
+  "titulo": "São Francisco do Maranhão",
+  "prefeito": "Francisco Neto Rodrigues de Sousa",
+  "inicio": null,
+  "fim": "2028",
+  "site": "https://www.saofranciscodomaranhao.ma.gov.br/",
+  "telefone": "(98) 98126-7949",
+  "oficial": {
+   "nome": "Francisco Neto Rodrigues de Sousa",
+   "partido": "PL",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "São José Dos Basílios": {
+  "titulo": "São José dos Basílios",
+  "prefeito": "Ronaldo Vieira de Sousa Junior",
+  "inicio": null,
+  "fim": "2028",
+  "site": null,
+  "telefone": null,
+  "oficial": {
+   "nome": "Ronaldo Vieira de Sousa Junior",
+   "partido": "MDB",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "São João Do Carú": {
+  "titulo": "São João do Caru",
+  "prefeito": "Bruno Cardoso \"Peteca\"",
+  "inicio": null,
+  "fim": "2028",
+  "site": null,
+  "telefone": null,
+  "oficial": {
+   "nome": "Antonio Bruno Cardoso dos Santos",
+   "partido": "PL",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "São João Do Paraíso": {
+  "titulo": "São João do Paraíso (Maranhão)",
+  "prefeito": "Marcos Vinicius",
+  "inicio": null,
+  "fim": "2028",
+  "site": null,
+  "telefone": null,
+  "oficial": {
+   "nome": "Marcos Vinicius de França Ferreira",
+   "partido": "MDB",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "São João Do Soter": {
+  "titulo": "São João do Soter",
+  "prefeito": "Joserlene Silva Bezerra de Araújo",
+  "inicio": null,
+  "fim": "2024",
+  "site": null,
+  "telefone": null,
+  "oficial": {
+   "nome": "Maria do Carmo Cavalcante Lacerda",
+   "partido": "PSB",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "São João Dos Patos": {
+  "titulo": "São João dos Patos",
+  "prefeito": "Alexandre Magno Pereira Gomes",
+  "inicio": null,
+  "fim": "2028",
+  "site": "http://saojoaodospatos.ma.gov.br/",
+  "telefone": "(99) 9301-2858",
+  "oficial": {
+   "nome": "Alexandre Magno Pereira Gomes",
+   "partido": "AVANTE",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "São Luís Gonzaga Do Maranhão": {
+  "titulo": "São Luís Gonzaga do Maranhão",
+  "prefeito": "Francisco Pedreira Martins Júnior",
+  "inicio": null,
+  "fim": "2024",
+  "site": null,
+  "telefone": null,
+  "oficial": {
+   "nome": "Emanoel Carvalho Filho",
+   "partido": "MDB",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "São Mateus Do Maranhão": {
+  "titulo": "São Mateus do Maranhão",
+  "prefeito": "Miltinho Aragão",
+  "inicio": null,
+  "fim": "2028",
+  "site": null,
+  "telefone": null,
+  "oficial": {
+   "nome": "Hamilton Nogueira Aragão",
+   "partido": "PSB",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "São Pedro Da Água Branca": {
+  "titulo": "São Pedro da Água Branca",
+  "prefeito": "Samuel Ribeiro (2025)",
+  "inicio": null,
+  "fim": "2028",
+  "site": null,
+  "telefone": null,
+  "oficial": {
+   "nome": "Samuel Kesley Ribeiro de Souza",
+   "partido": "PL",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "São Pedro Dos Crentes": {
+  "titulo": "São Pedro dos Crentes",
+  "prefeito": "Rômulo Costa Arruda",
+  "inicio": "2022",
+  "fim": "2024",
+  "site": null,
+  "telefone": null,
+  "oficial": {
+   "nome": "Rômulo Costa Arruda",
+   "partido": "REPUBLICANOS",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "São Raimundo Das Mangabeiras": {
+  "titulo": "São Raimundo das Mangabeiras",
+  "prefeito": "Accioly Cardoso",
+  "inicio": null,
+  "fim": "2024",
+  "site": "http://saoraimundodasmangabeiras.ma.gov.br",
+  "telefone": null,
+  "oficial": {
+   "nome": "Accioly Cardoso Lima e Silva",
+   "partido": "PP",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "São Raimundo Do Doca Bezerra": {
+  "titulo": "São Raimundo do Doca Bezerra",
+  "prefeito": "Seliton Miranda",
+  "inicio": null,
+  "fim": "2024",
+  "site": null,
+  "telefone": null,
+  "oficial": {
+   "nome": "Antonio Jacinto de Melo Neto",
+   "partido": "PP",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "São Roberto": {
+  "titulo": "São Roberto (Maranhão)",
+  "prefeito": "Danielly Trabulsi",
+  "inicio": null,
+  "fim": "2028",
+  "site": null,
+  "telefone": null,
+  "oficial": {
+   "nome": "Danielly Coelho Trabulsi Nascimento",
+   "partido": "UNIÃO",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Sítio Novo": {
+  "titulo": "Sítio Novo (Maranhão)",
+  "prefeito": "Antônio Coelho",
+  "inicio": null,
+  "fim": "2028",
+  "site": null,
+  "telefone": null,
+  "brasaoLocal": "/brasoes/MA/sitio-novo.png",
+  "oficial": {
+   "nome": "Antonio Coelho Rodrigues",
+   "partido": "MDB",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Tasso Fragoso": {
+  "titulo": "Tasso Fragoso (Maranhão)",
+  "prefeito": "Roberth Cleydson Martins Coelho",
+  "inicio": null,
+  "fim": "2024",
+  "site": null,
+  "telefone": null,
+  "oficial": {
+   "nome": "Kelson Richard Carvalho Holanda Vieira",
+   "partido": "REPUBLICANOS",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Timbiras": {
+  "titulo": "Timbiras (Maranhão)",
+  "prefeito": "Paulo Vinícius Lima Da Silva",
+  "inicio": "2024",
+  "fim": "2028",
+  "site": null,
+  "telefone": null,
+  "oficial": {
+   "nome": "Paulo Vinicius Lima da Silva",
+   "partido": "PRD",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Timon": {
+  "titulo": "Timon",
+  "prefeito": "Rafael Brito",
+  "inicio": "2025",
+  "fim": "Em andamento",
+  "site": "http://www.timon.ma.gov.br",
+  "telefone": null,
+  "oficial": {
+   "nome": "Rafael de Brito Sousa",
+   "partido": "PSB",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Trizidela Do Vale": {
+  "titulo": "Trizidela do Vale",
+  "prefeito": "Deibson Balé",
+  "inicio": null,
+  "fim": "2024",
+  "site": "https://trizideladovale.ma.gov.br/",
+  "telefone": "(99) 98276-2653",
+  "brasao": "Brasão de Trizidela do Vale - MA.jpg",
+  "oficial": {
+   "nome": "Deibson Pereira Freitas",
+   "partido": "PDT",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Tufilândia": {
+  "titulo": "Tufilândia",
+  "prefeito": "Vildimar Alves Ricardo",
+  "inicio": null,
+  "fim": "2024",
+  "site": "https://tufilandia.ma.gov.br/",
+  "telefone": null,
+  "oficial": {
+   "nome": "Henrique Emanoel Ricardo Santos",
+   "partido": "PP",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Tuntum": {
+  "titulo": "Tuntum",
+  "prefeito": "Fernando Pessoa",
+  "inicio": "2021",
+  "fim": "2024",
+  "site": null,
+  "telefone": null,
+  "oficial": {
+   "nome": "Fernando Portela Teles Pessoa",
+   "partido": "PDT",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Turiaçu": {
+  "titulo": "Turiaçu",
+  "prefeito": "Edesio Joao Cavalcanti",
+  "inicio": "2025",
+  "fim": "2028",
+  "site": null,
+  "telefone": null,
+  "oficial": {
+   "nome": "Edesio Joao Cavalcanti",
+   "partido": "REPUBLICANOS",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Turilândia": {
+  "titulo": "Turilândia",
+  "prefeito": "Thiago Josino Carrilho de Arruda Macêdo (Interventor Estadual)",
+  "inicio": "2026",
+  "fim": "2026",
+  "site": null,
+  "telefone": null,
+  "oficial": {
+   "nome": "Thiago Josino Carrilho de Arruda Macêdo (Interventor Estadual)",
+   "partido": null,
+   "fonte": "Wikipédia",
+   "obs": "mandato até 2026"
+  }
+ },
+ "Tutóia": {
+  "titulo": "Tutóia",
+  "prefeito": "Francisco Cardoso Rodrigues",
+  "inicio": null,
+  "fim": "2028",
+  "site": "https://www.tutoia.ma.gov.br/",
+  "telefone": null,
+  "oficial": {
+   "nome": "Francisco Cardoso Rodrigues",
+   "partido": "PL",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Urbano Santos": {
+  "titulo": "Urbano Santos",
+  "prefeito": "Clemilton Barros Araújo",
+  "inicio": null,
+  "fim": "2024",
+  "site": "http://www.urbanosantos.ma.gov.br/",
+  "telefone": "(98) 98466-2049",
+  "oficial": {
+   "nome": "Clemilton Barros Araujo",
+   "partido": "REPUBLICANOS",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Vargem Grande": {
+  "titulo": "Vargem Grande",
+  "prefeito": "Raimundo Nonato Rodrigues da Costa",
+  "inicio": null,
+  "fim": "2028",
+  "site": "http://vargemgrande.ma.gov.br/",
+  "telefone": "(98) 3461-1201",
+  "oficial": {
+   "nome": "Raimundo Nonato Rodrigues da Costa",
+   "partido": "PP",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Viana": {
+  "titulo": "Viana (Maranhão)",
+  "prefeito": "Carrinho Cidreira",
+  "inicio": null,
+  "fim": "2024",
+  "site": null,
+  "telefone": null,
+  "oficial": {
+   "nome": "Carlos Augusto Furtado Cidreira",
+   "partido": "PL",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Vila Nova Dos Martírios": {
+  "titulo": "Vila Nova dos Martírios",
+  "prefeito": "Jorge Vieira dos Santos Filho",
+  "inicio": null,
+  "fim": "2024",
+  "site": null,
+  "telefone": null,
+  "oficial": {
+   "nome": "Jorge Vieira dos Santos Filho",
+   "partido": "PL",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Vitorino Freire": {
+  "titulo": "Vitorino Freire (Maranhão)",
+  "prefeito": "Luanna Martins Bringel Rezende",
+  "inicio": null,
+  "fim": "2024",
+  "site": null,
+  "telefone": null,
+  "oficial": {
+   "nome": "Ademar Alves Magalhães",
+   "partido": "UNIÃO",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Vitória Do Mearim": {
+  "titulo": "Vitória do Mearim",
+  "prefeito": "Raimundo Nonato Everton Silva",
+  "inicio": null,
+  "fim": "2024",
+  "site": "https://www.vitoriadomearim.ma.gov.br/",
+  "telefone": null,
+  "oficial": {
+   "nome": "Raimundo Nonato Everton Silva",
+   "partido": "PL",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Zé Doca": {
+  "titulo": "Zé Doca",
+  "prefeito": "Flaviana Vilar Rodrigues",
+  "inicio": null,
+  "fim": "2028",
+  "site": "https://www.zedoca.ma.gov.br/",
+  "telefone": "(98) 93655-3645",
+  "oficial": {
+   "nome": "Flaviana Vilar Rodrigues",
+   "partido": "PL",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Água Doce Do Maranhão": {
+  "titulo": "Água Doce do Maranhão",
+  "prefeito": "Maria Eliane da Costa Dias",
+  "inicio": null,
+  "fim": "2028",
+  "site": "https://aguadocedomaranhao.ma.gov.br/",
+  "telefone": "(98) 99605-9253",
+  "oficial": {
+   "nome": "Maria Eliane da Costa Dias",
+   "partido": "PDT",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ }
+}

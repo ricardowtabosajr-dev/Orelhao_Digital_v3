@@ -1,0 +1,735 @@
+{
+ "Alvarães": {
+  "titulo": "Alvarães (Amazonas)",
+  "prefeito": "Lucenildo de Souza Macedo",
+  "inicio": "2021",
+  "fim": "2024",
+  "site": null,
+  "telefone": null,
+  "oficial": {
+   "nome": "Lucenildo de Souza Macedo",
+   "partido": "UNIÃO",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Amaturá": {
+  "titulo": "Amaturá",
+  "prefeito": "José Augusto Barrozo Eufrásio",
+  "inicio": "2021",
+  "fim": "2024",
+  "site": "http://www.amatura.am.gov.br/",
+  "telefone": "(92) 99324-9141",
+  "oficial": {
+   "nome": "Maria de Nazaré da Silva Rocha",
+   "partido": "MDB",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Anamã": {
+  "titulo": "Anamã",
+  "prefeito": "Kátia Maria Dantas Ribeiro",
+  "inicio": "2025",
+  "fim": "2029",
+  "site": null,
+  "telefone": null,
+  "oficial": {
+   "nome": "Katia Maria Dantas Ribeiro",
+   "partido": "MDB",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Apuí": {
+  "titulo": "Apuí",
+  "prefeito": "Marcos Antônio Lise",
+  "inicio": "2021",
+  "fim": "2024",
+  "site": "https://www.apui.am.gov.br/",
+  "telefone": "(97) 98419-2703",
+  "oficial": {
+   "nome": "Antônio Marcos Maciel Fernandes",
+   "partido": "MDB",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Atalaia Do Norte": {
+  "titulo": "Atalaia do Norte",
+  "prefeito": "Denis Linder Rojas de Paiva",
+  "inicio": "2025",
+  "fim": "2028",
+  "site": "http://www.atalaiadonorte.am.gov.br/",
+  "telefone": null,
+  "oficial": {
+   "nome": "Denis Linder Rojas de Paiva",
+   "partido": "UNIÃO",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Autazes": {
+  "titulo": "Autazes",
+  "prefeito": "José Thomé Neto",
+  "inicio": "2025",
+  "fim": "2028",
+  "site": null,
+  "telefone": null,
+  "oficial": {
+   "nome": "José Thomé Neto",
+   "partido": "PP",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Barcelos": {
+  "titulo": "Barcelos (Amazonas)",
+  "prefeito": "Radson Rogerton dos Santos Alves (RADINHO)",
+  "inicio": "2025",
+  "fim": "Atualmente",
+  "site": "http://barcelos.am.gov.br",
+  "telefone": null,
+  "brasaoLocal": "/brasoes/AM/barcelos.png",
+  "oficial": {
+   "nome": "Radson Rogerton dos Santos Alves",
+   "partido": "UNIÃO",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Barreirinha": {
+  "titulo": "Barreirinha",
+  "prefeito": "Darlan Teixeira Peres",
+  "inicio": "2025",
+  "fim": "Em andamento",
+  "site": null,
+  "telefone": null,
+  "oficial": {
+   "nome": "Darlan Taveira Peres",
+   "partido": "UNIÃO",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Benjamin Constant": {
+  "titulo": "Benjamin Constant (Amazonas)",
+  "prefeito": "Semeide Bermeguy",
+  "inicio": "2025",
+  "fim": "2028",
+  "site": "http://www.benjaminconstant.am.gov.br/",
+  "telefone": "(97) 98434-8883",
+  "oficial": {
+   "nome": "Semeide Bermeguy Porto",
+   "partido": "MDB",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Beruri": {
+  "titulo": "Beruri",
+  "prefeito": "Maria Lucir Santos de Oliveira",
+  "inicio": "2021",
+  "fim": "2024",
+  "site": null,
+  "telefone": null,
+  "oficial": {
+   "nome": "Emerson Klinger Gonçalves de Mello",
+   "partido": "PODE",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Boa Vista Do Ramos": {
+  "titulo": "Boa Vista do Ramos",
+  "prefeito": "Jarlem de Almeida Trindade",
+  "inicio": "2025",
+  "fim": null,
+  "site": "http://www.portalbvr.com.br",
+  "telefone": null,
+  "oficial": {
+   "nome": "Jarlem de Almeida Trindade",
+   "partido": "PSD",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Boca Do Acre": {
+  "titulo": "Boca do Acre",
+  "prefeito": "Frank Sobreira Barros",
+  "inicio": "2025",
+  "fim": "2028",
+  "site": null,
+  "telefone": null,
+  "oficial": {
+   "nome": "Frank Sobreira Barros",
+   "partido": "MDB",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Borba": {
+  "titulo": "Borba (Amazonas)",
+  "prefeito": "Toco Santana",
+  "inicio": "2025",
+  "fim": "2028",
+  "site": null,
+  "telefone": null,
+  "oficial": {
+   "nome": "Raimundo Santana de Freitas",
+   "partido": "REPUBLICANOS",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Caapiranga": {
+  "titulo": "Caapiranga",
+  "prefeito": "Francisco Andrade Braz",
+  "inicio": "2021",
+  "fim": "2024",
+  "site": "https://www.caapiranga.am.gov.br/",
+  "telefone": "(92) 3364-1223",
+  "oficial": {
+   "nome": "Matulinho Xavier Braz",
+   "partido": "UNIÃO",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Canutama": {
+  "titulo": "Canutama",
+  "prefeito": "José Roberto Torres de Pontes",
+  "inicio": "2021",
+  "fim": "2024",
+  "site": null,
+  "telefone": null,
+  "oficial": {
+   "nome": "José Roberto Torres de Pontes",
+   "partido": "UNIÃO",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Carauari": {
+  "titulo": "Carauari",
+  "prefeito": "Bruno Luiz Litaiff Ramalho",
+  "inicio": "2021",
+  "fim": "2024",
+  "site": null,
+  "telefone": null,
+  "oficial": {
+   "nome": "Jose Airton Freitas Siqueira",
+   "partido": "MDB",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Careiro": {
+  "titulo": "Careiro",
+  "prefeito": "Nathan Macena de Souza",
+  "inicio": "2021",
+  "fim": "2024",
+  "site": null,
+  "telefone": null,
+  "brasaoLocal": "/brasoes/AM/careiro.png",
+  "oficial": {
+   "nome": "Mara Alves de Lima",
+   "partido": "REPUBLICANOS",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Careiro Da Várzea": {
+  "titulo": "Careiro da Várzea",
+  "prefeito": "Pedro Duarte Guedes",
+  "inicio": "2021",
+  "fim": "2028",
+  "site": "http://www.aam.org.br/prefeituras/333-prefeitura-municipal-de-careiro-da-varzea",
+  "telefone": null,
+  "oficial": {
+   "nome": "Pedro Duarte Guedes",
+   "partido": "PSD",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Coari": {
+  "titulo": "Coari",
+  "prefeito": "Adail Pinheiro",
+  "inicio": null,
+  "fim": "2028",
+  "site": "http://www.coari.am.gov.br",
+  "telefone": null,
+  "oficial": {
+   "nome": "Manoel Adail Amaral Pinheiro",
+   "partido": "REPUBLICANOS",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Eirunepé": {
+  "titulo": "Eirunepé",
+  "prefeito": "Áurea Maria Ester Marques",
+  "inicio": "2025",
+  "fim": "2028",
+  "site": "http://www.eirunepe.am.gov.br/",
+  "telefone": "(97) 3481-1386",
+  "oficial": {
+   "nome": "Áurea Maria Ester Alves Marques",
+   "partido": "MDB",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Envira": {
+  "titulo": "Envira",
+  "prefeito": "Ivon Rates",
+  "inicio": "2025",
+  "fim": "2028",
+  "site": "https://www.envira.am.gov.br/",
+  "telefone": "(97) 3483-1179",
+  "oficial": {
+   "nome": "Ivon Rates da Silva",
+   "partido": "PSD",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Humaitá": {
+  "titulo": "Humaitá (Amazonas)",
+  "prefeito": "José Cidenei Lobo do Nascimento",
+  "inicio": "2021",
+  "fim": "2024",
+  "site": "http://www.humaita.am.gov.br/site/",
+  "telefone": null,
+  "oficial": {
+   "nome": "Jose Cidenei Lobo do Nascimento",
+   "partido": "UNIÃO",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Iranduba": {
+  "titulo": "Iranduba",
+  "prefeito": "José Augusto Ferraz de Lima",
+  "inicio": "2021",
+  "fim": "2024",
+  "site": "http://www.iranduba.am.gov.br/",
+  "telefone": null,
+  "brasao": "Iranduba Coat.jpg",
+  "oficial": {
+   "nome": "Jose Augusto Ferraz de Lima",
+   "partido": "UNIÃO",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Itacoatiara": {
+  "titulo": "Itacoatiara",
+  "prefeito": "Mário Jorge Bouez Abrahim",
+  "inicio": "2025",
+  "fim": "2028",
+  "site": "http://www.itacoatiara.am.gov.br/",
+  "telefone": "(92) 3521-1877",
+  "oficial": {
+   "nome": "Mario Jorge Bouez Abrahim",
+   "partido": "REPUBLICANOS",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Itamarati": {
+  "titulo": "Itamarati",
+  "prefeito": "João Medeiros Campelo",
+  "inicio": "2021",
+  "fim": "2024",
+  "site": null,
+  "telefone": null,
+  "brasaoLocal": "/brasoes/AM/itamarati.png",
+  "oficial": {
+   "nome": "João Medeiros Campelo",
+   "partido": "MDB",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Japurá": {
+  "titulo": "Japurá (Amazonas)",
+  "prefeito": "Vanilso Monteiro da Silva",
+  "inicio": "2021",
+  "fim": "2024",
+  "site": null,
+  "telefone": null,
+  "oficial": {
+   "nome": "Vanilso Monteiro da Silva",
+   "partido": "UNIÃO",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Juruá": {
+  "titulo": "Juruá",
+  "prefeito": "José Maria Rodrigues da Rocha Júnior",
+  "inicio": "2021",
+  "fim": "2024",
+  "site": null,
+  "telefone": null,
+  "oficial": {
+   "nome": "Ilque Cunha de Lima",
+   "partido": "MDB",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Lábrea": {
+  "titulo": "Lábrea",
+  "prefeito": "Gerlando Lopes do Nascimento",
+  "inicio": "2025",
+  "fim": "2028",
+  "site": null,
+  "telefone": null,
+  "oficial": {
+   "nome": "Gerlando Lopes do Nascimento",
+   "partido": "PL",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Manacapuru": {
+  "titulo": "Manacapuru",
+  "prefeito": "Válcileia Flores Maciel",
+  "inicio": "2025",
+  "fim": "2028",
+  "site": "http://www.manacapuru.am.gov.br/",
+  "telefone": "(92) 99228-9269",
+  "oficial": {
+   "nome": "Valcileia Flores Maciel",
+   "partido": "MDB",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Manaquiri": {
+  "titulo": "Manaquiri",
+  "prefeito": "Nelson Nilo",
+  "inicio": "2025",
+  "fim": "2028",
+  "site": null,
+  "telefone": null,
+  "oficial": {
+   "nome": "Nelson Pereira da Silva",
+   "partido": "MDB",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Manaus": {
+  "titulo": "Manaus",
+  "prefeito": "Renato Junior",
+  "inicio": "2026",
+  "fim": "2028",
+  "site": "http://www.manaus.am.gov.br/",
+  "telefone": null,
+  "oficial": {
+   "nome": "Renato Junior",
+   "partido": null,
+   "fonte": "Wikipédia",
+   "obs": "mandato até 2028"
+  }
+ },
+ "Manicoré": {
+  "titulo": "Manicoré",
+  "prefeito": "Lúcio Flávio do Rosário",
+  "inicio": "2021",
+  "fim": "2024",
+  "site": "http://www.manicore.am.gov.br",
+  "telefone": "(97) 98436-3455",
+  "oficial": {
+   "nome": "Lúcio Flávio do Rosário",
+   "partido": "PSD",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Maraã": {
+  "titulo": "Maraã",
+  "prefeito": "Edir Costa Castelo Branco",
+  "inicio": "2021",
+  "fim": "2024",
+  "site": "http://www.maraa.am.gov.br/",
+  "telefone": null,
+  "oficial": {
+   "nome": "Edir Costa Castelo Branco",
+   "partido": "UNIÃO",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Maués": {
+  "titulo": "Maués (Amazonas)",
+  "prefeito": "Macelly Veras",
+  "inicio": "2025",
+  "fim": "2028",
+  "site": "http://www.maues.am.gov.br/",
+  "telefone": null,
+  "oficial": {
+   "nome": "Macelly Cristina de Souza Veras",
+   "partido": "PDT",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Nhamundá": {
+  "titulo": "Nhamundá",
+  "prefeito": "Raimunda Marina Brito Pandolfo",
+  "inicio": "2021",
+  "fim": "2024",
+  "site": null,
+  "telefone": null,
+  "oficial": {
+   "nome": "Raimunda Marina Brito Pandolfo",
+   "partido": "UNIÃO",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Nova Olinda Do Norte": {
+  "titulo": "Nova Olinda do Norte",
+  "prefeito": "Adenilson Lima Reis",
+  "inicio": "2021",
+  "fim": "2024",
+  "site": null,
+  "telefone": null,
+  "oficial": {
+   "nome": "Araci Rodrigues da Cunha",
+   "partido": "MDB",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Novo Airão": {
+  "titulo": "Novo Airão",
+  "prefeito": "Otávio da Cruz Farias",
+  "inicio": "2024",
+  "fim": "2027",
+  "site": null,
+  "telefone": null,
+  "oficial": {
+   "nome": "Otávio da Cruz Farias",
+   "partido": "UNIÃO",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Parintins": {
+  "titulo": "Parintins",
+  "prefeito": "Mateus Assayag",
+  "inicio": "2025",
+  "fim": "2028",
+  "site": "https://parintins.am.gov.br/",
+  "telefone": "(92) 98253-0058",
+  "oficial": {
+   "nome": "Mateus Ferreira Assayag",
+   "partido": "PSD",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Pauini": {
+  "titulo": "Pauini",
+  "prefeito": "Raimundo Renato Rodrigues Afonso",
+  "inicio": "2021",
+  "fim": "2024",
+  "site": "https://pauini.am.gov.br/",
+  "telefone": "(97) 3458-1101",
+  "oficial": {
+   "nome": "Raimundo Renato Rodrigues Afonso",
+   "partido": "PSD",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Presidente Figueiredo": {
+  "titulo": "Presidente Figueiredo",
+  "prefeito": "Antônio Fernando Fontes Vieira",
+  "inicio": "2025",
+  "fim": "2028",
+  "site": "http://presidentefigueiredo.am.gov.br",
+  "telefone": "(92) 3324-2901",
+  "oficial": {
+   "nome": "Antonio Fernando Fontes Vieira",
+   "partido": "PL",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Santa Isabel Do Rio Negro": {
+  "titulo": "Santa Isabel do Rio Negro",
+  "prefeito": "José Ribamar Fontes Beleza",
+  "inicio": "2025",
+  "fim": "2028",
+  "site": null,
+  "telefone": null,
+  "oficial": {
+   "nome": "José Ribamar Fontes Beleza",
+   "partido": "UNIÃO",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Santo Antônio Do Içá": {
+  "titulo": "Santo Antônio do Içá",
+  "prefeito": "Walder Ribeiro da Costa",
+  "inicio": "2021",
+  "fim": "2024",
+  "site": null,
+  "telefone": null,
+  "oficial": {
+   "nome": "Walder Ribeiro da Costa",
+   "partido": "MDB",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Silves": {
+  "titulo": "Silves (Amazonas)",
+  "prefeito": "Raimundo Paulino de Almeida Grana",
+  "inicio": "2021",
+  "fim": "2024",
+  "site": "https://www.silves.am.gov.br/",
+  "telefone": null,
+  "oficial": {
+   "nome": "Raimundo Paulino de Almeida Grana",
+   "partido": "REPUBLICANOS",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "São Gabriel Da Cachoeira": {
+  "titulo": "São Gabriel da Cachoeira",
+  "prefeito": "Egmar Curubinha",
+  "inicio": null,
+  "fim": "2028",
+  "site": "https://www.saogabrieldacachoeira.am.gov.br/",
+  "telefone": null,
+  "oficial": {
+   "nome": "Egmar Velasques Saldanha",
+   "partido": "PT",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "São Paulo De Olivença": {
+  "titulo": "São Paulo de Olivença",
+  "prefeito": "Nazareno Souza Martins",
+  "inicio": null,
+  "fim": "2024",
+  "site": null,
+  "telefone": null,
+  "oficial": {
+   "nome": "Nazareno Souza Martins",
+   "partido": "UNIÃO",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Tabatinga": {
+  "titulo": "Tabatinga (Amazonas)",
+  "prefeito": "Plinio Cruz",
+  "inicio": "2025",
+  "fim": "2028",
+  "site": "http://www.tabatinga.am.gov.br/",
+  "telefone": "(97) 3412-3427",
+  "brasaoLocal": "/brasoes/AM/tabatinga.png",
+  "oficial": {
+   "nome": "Plinio Souza da Cruz",
+   "partido": "REPUBLICANOS",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Tapauá": {
+  "titulo": "Tapauá",
+  "prefeito": "Gamaliel Andrade de Almeida",
+  "inicio": null,
+  "fim": "2028",
+  "site": "https://www.tapaua.am.gov.br/",
+  "telefone": "(92) 3308-9615",
+  "oficial": {
+   "nome": "Gamaliel Andrade de Almeida",
+   "partido": "UNIÃO",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Tefé": {
+  "titulo": "Tefé",
+  "prefeito": "Nicson Marreira Lima",
+  "inicio": "2021",
+  "fim": "2024",
+  "site": null,
+  "telefone": null,
+  "oficial": {
+   "nome": "Nicson Marreira Lima",
+   "partido": "UNIÃO",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Tonantins": {
+  "titulo": "Tonantins",
+  "prefeito": "Francisco Sales de Oliveira",
+  "inicio": "2021",
+  "fim": "2024",
+  "site": null,
+  "telefone": null,
+  "oficial": {
+   "nome": "Francisco Sales de Oliveira",
+   "partido": "REPUBLICANOS",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Uarini": {
+  "titulo": "Uarini",
+  "prefeito": "Antônio Waldertrudes Uchôa de Brito",
+  "inicio": "2021",
+  "fim": "2024",
+  "site": null,
+  "telefone": null,
+  "oficial": {
+   "nome": "Marcos Souza Martins",
+   "partido": "UNIÃO",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Urucará": {
+  "titulo": "Urucará",
+  "prefeito": "Bosco Falabella",
+  "inicio": "2025",
+  "fim": "2028",
+  "site": "https://www.urucara.am.gov.br/",
+  "telefone": "(92) 99336-3551",
+  "oficial": {
+   "nome": "João Bosco Falabella",
+   "partido": "UNIÃO",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Urucurituba": {
+  "titulo": "Urucurituba",
+  "prefeito": "Leôncio Antônio Tundis Carvalho",
+  "inicio": null,
+  "fim": "2028",
+  "site": "https://urucurituba.am.gov.br/prefeitura",
+  "telefone": null,
+  "oficial": {
+   "nome": "Leôncio Antônio Tundis Carvalho",
+   "partido": "PT",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ }
+}

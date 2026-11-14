@@ -1,0 +1,199 @@
+{
+ "Amapá": {
+  "titulo": "Amapá (município)",
+  "prefeito": "Kelly Lobato",
+  "inicio": null,
+  "fim": "2028",
+  "site": null,
+  "telefone": null,
+  "oficial": {
+   "nome": "Kelley Lobato",
+   "partido": "UNIÃO",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Calçoene": {
+  "titulo": "Calçoene",
+  "prefeito": "Antonio de Sousa Pinto(\"Toim\")",
+  "inicio": null,
+  "fim": "2024",
+  "site": "http://www.calcoene.ap.gov.br/",
+  "telefone": null,
+  "oficial": {
+   "nome": "Antonio de Sousa Pinto",
+   "partido": "PSD",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Cutias": {
+  "titulo": "Cutias (Amapá)",
+  "prefeito": "Raimundo Barbosa Amanajás Filho",
+  "inicio": null,
+  "fim": "2024",
+  "site": "http://cutias.ap.gov.br/",
+  "telefone": "(96) 3325-1112",
+  "oficial": {
+   "nome": "Juscelino Rabelo Mourão Júnior",
+   "partido": "PL",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Itaubal": {
+  "titulo": "Itaubal",
+  "prefeito": "Jaisom da Costa Picanço",
+  "inicio": null,
+  "fim": "2028",
+  "site": null,
+  "telefone": null,
+  "oficial": {
+   "nome": "Jaisom da Costa Picanço",
+   "partido": "UNIÃO",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Laranjal Do Jari": {
+  "titulo": "Laranjal do Jari",
+  "prefeito": "Márcio Clay da Costa Serrão (Márcio Serrão)",
+  "inicio": null,
+  "fim": "2024",
+  "site": "http://www.laranjaldojari.ap.gov.br/",
+  "telefone": "(96) 98430-1402",
+  "oficial": {
+   "nome": "Marcel Jandson Menezes",
+   "partido": "UNIÃO",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Macapá": {
+  "titulo": "Macapá",
+  "prefeito": "Pedro Da Lua (interino)",
+  "inicio": null,
+  "fim": "2028",
+  "site": "http://www.prefeiturademacapa.ap.gov.br",
+  "telefone": null,
+  "oficial": {
+   "nome": "Pedro Da Lua (interino)",
+   "partido": null,
+   "fonte": "Wikipédia",
+   "obs": "mandato até 2028"
+  }
+ },
+ "Mazagão": {
+  "titulo": "Mazagão (Amapá)",
+  "prefeito": "Manoel Souza dos Santos (CHICO NÓ)",
+  "inicio": null,
+  "fim": "2028",
+  "site": "http://www.mazagao.ap.gov.br",
+  "telefone": null,
+  "brasao": "BRAZÃO MAZAGÃO.png",
+  "oficial": {
+   "nome": "Manoel Souza dos Santos",
+   "partido": "UNIÃO",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Oiapoque": {
+  "titulo": "Oiapoque",
+  "prefeito": "Inácio Monteiro",
+  "inicio": "2026",
+  "fim": null,
+  "site": "http://www.oiapoque.ap.gov.br/",
+  "telefone": "(96) 3521-2417",
+  "oficial": {
+   "nome": "Inacio Monteiro Maciel",
+   "partido": "PDT",
+   "fonte": "TSE",
+   "obs": "eleito em eleição suplementar"
+  }
+ },
+ "Pedra Branca Do Amapari": {
+  "titulo": "Pedra Branca do Amapari",
+  "prefeito": "Elizabeth Pelaes",
+  "inicio": null,
+  "fim": "2024",
+  "site": null,
+  "telefone": null,
+  "oficial": {
+   "nome": "Marcelo Pantoja dos Santos",
+   "partido": "UNIÃO",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Porto Grande": {
+  "titulo": "Porto Grande",
+  "prefeito": "José Maria Bessa",
+  "inicio": null,
+  "fim": "2024",
+  "site": "http://www.portogrande.ap.gov.br",
+  "telefone": null,
+  "oficial": {
+   "nome": "Elielson da Silva Moraes",
+   "partido": "MDB",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Pracuúba": {
+  "titulo": "Pracuúba",
+  "prefeito": "Antônio Carlos Leite de Mendonça Júnior",
+  "inicio": null,
+  "fim": "2024",
+  "site": null,
+  "telefone": null,
+  "oficial": {
+   "nome": "Antônio Carlos Leite de Mendonça Júnior",
+   "partido": "UNIÃO",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Serra Do Navio": {
+  "titulo": "Serra do Navio",
+  "prefeito": "Ana Paula Santos Sousa",
+  "inicio": null,
+  "fim": "2024",
+  "site": null,
+  "telefone": null,
+  "oficial": {
+   "nome": "Ana Paula Santos Sousa",
+   "partido": "MDB",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Tartarugalzinho": {
+  "titulo": "Tartarugalzinho",
+  "prefeito": "Bruno Manoel Rezende",
+  "inicio": null,
+  "fim": "2024",
+  "site": null,
+  "telefone": null,
+  "oficial": {
+   "nome": "Bruno Manoel Rezende",
+   "partido": "UNIÃO",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Vitória Do Jari": {
+  "titulo": "Vitória do Jari",
+  "prefeito": "Ary Duarte da Costa",
+  "inicio": null,
+  "fim": "2028",
+  "site": null,
+  "telefone": null,
+  "oficial": {
+   "nome": "Ary Duarte da Costa",
+   "partido": "UNIÃO",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ }
+}

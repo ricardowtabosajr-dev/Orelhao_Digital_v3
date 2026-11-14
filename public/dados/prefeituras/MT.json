@@ -1,0 +1,1005 @@
+{
+ "Acorizal": {
+  "titulo": "Acorizal",
+  "prefeito": "Diego Ewerton Figueredo Taques",
+  "inicio": null,
+  "fim": "2024",
+  "site": "https://www.acorizal.mt.gov.br/",
+  "telefone": "(65) 3353-1203",
+  "oficial": {
+   "nome": "Diego Ewerton Figueiredo Taques",
+   "partido": "UNIÃO",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Alta Floresta": {
+  "titulo": "Alta Floresta",
+  "prefeito": "Valdemar Gamba (Chico Gamba)",
+  "inicio": "2021",
+  "fim": "2028",
+  "site": "http://www.altafloresta.mt.gov.br",
+  "telefone": "(66) 3512-3100",
+  "brasao": "Alta Floresta.PNG",
+  "oficial": {
+   "nome": "Valdemar Gamba",
+   "partido": "UNIÃO",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Alto Araguaia": {
+  "titulo": "Alto Araguaia",
+  "prefeito": "Gustavo Melo",
+  "inicio": null,
+  "fim": "2024",
+  "site": "http://altoaraguaia.mt.gov.br",
+  "telefone": "(66) 3481-1165",
+  "oficial": {
+   "nome": "Jacson Marlon Niedermeier",
+   "partido": "UNIÃO",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Alto Boa Vista": {
+  "titulo": "Alto Boa Vista",
+  "prefeito": "José Pereira Maranhão",
+  "inicio": null,
+  "fim": "2024",
+  "site": "http://www.altoboavista.mt.gov.br",
+  "telefone": "(66) 3539-1217",
+  "oficial": {
+   "nome": "José Pereira Maranhão",
+   "partido": "PSB",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Apiacás": {
+  "titulo": "Apiacás (Mato Grosso)",
+  "prefeito": "Júlio César dos Santos",
+  "inicio": "2024",
+  "fim": "2028",
+  "site": "http://www.apiacas.mt.gov.br",
+  "telefone": "(66) 3593-2200",
+  "oficial": {
+   "nome": "Julio Cesar dos Santos",
+   "partido": "MDB",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Aripuanã": {
+  "titulo": "Aripuanã",
+  "prefeito": "Seluir Peixer Reghin",
+  "inicio": null,
+  "fim": "2028",
+  "site": "https://www.aripuana.mt.gov.br/",
+  "telefone": "(66) 3565-3909",
+  "brasao": "Aripuanã.PNG",
+  "oficial": {
+   "nome": "Seluir Peixer Reghin",
+   "partido": "UNIÃO",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Barra Do Bugres": {
+  "titulo": "Barra do Bugres",
+  "prefeito": "Maria Azenilda Pereira",
+  "inicio": null,
+  "fim": "2028",
+  "site": "http://www.barradobugres.mt.gov.br",
+  "telefone": "(66) 6666-6667",
+  "oficial": {
+   "nome": "Maria Azenilda Pereira",
+   "partido": "REPUBLICANOS",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Barra Do Garças": {
+  "titulo": "Barra do Garças",
+  "prefeito": "Adilson Gonçalves de Macedo",
+  "inicio": null,
+  "fim": "2028",
+  "site": "http://www.barradogarcas.mt.gov.br",
+  "telefone": "(66) 3402-2000",
+  "oficial": {
+   "nome": "Adilson Gonçalves de Macedo",
+   "partido": "UNIÃO",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Barão De Melgaço": {
+  "titulo": "Barão de Melgaço",
+  "prefeito": "Margareth de Munil",
+  "inicio": null,
+  "fim": "2028",
+  "site": "http://www.baraodemelgaco.mt.gov.br",
+  "telefone": "(65) 3331-1191",
+  "oficial": {
+   "nome": "Margareth Gonçalves da Silva",
+   "partido": "UNIÃO",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Bom Jesus Do Araguaia": {
+  "titulo": "Bom Jesus do Araguaia",
+  "prefeito": "Marcilei Alves de Oliveira",
+  "inicio": null,
+  "fim": "2024",
+  "site": "https://www.bomjesusdoaraguaia.mt.gov.br",
+  "telefone": "(66) 98146-0179",
+  "oficial": {
+   "nome": "Marcilei Alves de Oliveira",
+   "partido": "PSB",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Brasnorte": {
+  "titulo": "Brasnorte",
+  "prefeito": "Edelo Marcelo Ferrari",
+  "inicio": null,
+  "fim": "2028",
+  "site": "http://www.brasnorte.mt.gov.br",
+  "telefone": "(66) 3592-3200",
+  "oficial": {
+   "nome": "Edelo Marcelo Ferrari",
+   "partido": "UNIÃO",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Campinápolis": {
+  "titulo": "Campinápolis",
+  "prefeito": "Jeovan Faria",
+  "inicio": null,
+  "fim": "2028",
+  "site": "http://www.campinapolis.mt.gov.br/",
+  "telefone": "(66) 3437-1992",
+  "oficial": {
+   "nome": "Jeovan Faria",
+   "partido": "REPUBLICANOS",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Campo Verde": {
+  "titulo": "Campo Verde",
+  "prefeito": "Alexandre Lopes de Oliveira",
+  "inicio": "2025",
+  "fim": "2028",
+  "site": "http://www.campoverde.mt.gov.br",
+  "telefone": "(66) 3419-1244",
+  "oficial": {
+   "nome": "Alexandre Lopes de Oliveira",
+   "partido": "UNIÃO",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Canabrava Do Norte": {
+  "titulo": "Canabrava do Norte",
+  "prefeito": "João Cleiton Araujo de Medeiros",
+  "inicio": "2021",
+  "fim": "2024",
+  "site": "http://www.canabravadonorte.mt.gov.br",
+  "telefone": "(66) 3577-1152",
+  "brasao": "Canabrava do Norte.PNG",
+  "oficial": {
+   "nome": "Neuilson da Silva Lima",
+   "partido": "UNIÃO",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Canarana": {
+  "titulo": "Canarana (Mato Grosso)",
+  "prefeito": "Vilson Biguelini",
+  "inicio": null,
+  "fim": "2028",
+  "site": "http://www.canarana.mt.gov.br",
+  "telefone": null,
+  "brasao": "Brasão Canarana MT.png",
+  "oficial": {
+   "nome": "Vilson Biguelini",
+   "partido": "UNIÃO",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Carlinda": {
+  "titulo": "Carlinda",
+  "prefeito": "Fernando Ribeiro",
+  "inicio": null,
+  "fim": "2028",
+  "site": "https://www.carlinda.mt.gov.br/",
+  "telefone": "(66) 3525-2000",
+  "oficial": {
+   "nome": "Fernando de Oliveira Ribeiro",
+   "partido": "UNIÃO",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Castanheira": {
+  "titulo": "Castanheira (Mato Grosso)",
+  "prefeito": "Jakson de Oliveira Rios Junior",
+  "inicio": null,
+  "fim": "2024",
+  "site": "http://www.castanheira.mt.gov.br",
+  "telefone": "(66) 3197-0000",
+  "oficial": {
+   "nome": "Jakson de Oliveira Rios Junior",
+   "partido": "UNIÃO",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Chapada Dos Guimarães": {
+  "titulo": "Chapada dos Guimarães (Mato Grosso)",
+  "prefeito": "Osmar Froner",
+  "inicio": null,
+  "fim": "2024",
+  "site": "http://www.chapadadosguimaraes.mt.gov.br/",
+  "telefone": "(65) 3301-1570",
+  "oficial": {
+   "nome": "Osmar Froner de Mello",
+   "partido": "UNIÃO",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Cláudia": {
+  "titulo": "Cláudia (Mato Grosso)",
+  "prefeito": "Marcos Tadeu",
+  "inicio": null,
+  "fim": "2028",
+  "site": "https://www.claudia.mt.gov.br/",
+  "telefone": "(66) 3546-3100",
+  "oficial": {
+   "nome": "Marcos Fernando Feldhaus",
+   "partido": "UNIÃO",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Colíder": {
+  "titulo": "Colíder",
+  "prefeito": "Rodrigo Benassi",
+  "inicio": "2025",
+  "fim": "2028",
+  "site": "http://www.colider.mt.gov.br",
+  "telefone": "(66) 3541-6300",
+  "oficial": {
+   "nome": "Rodrigo Luiz Benassi",
+   "partido": "PRD",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Comodoro": {
+  "titulo": "Comodoro (Mato Grosso)",
+  "prefeito": "Rogério Vilela Victor de Oliveira",
+  "inicio": "2021",
+  "fim": "2024",
+  "site": "https://www.comodoro.mt.gov.br/",
+  "telefone": "(65) 99908-0013",
+  "oficial": {
+   "nome": "Rogerio Vilela Victor de Oliveira",
+   "partido": "UNIÃO",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Confresa": {
+  "titulo": "Confresa",
+  "prefeito": "Ricardo Aloísio Babinski",
+  "inicio": "2025",
+  "fim": "2028",
+  "site": "http://www.prefeituradeconfresa.com.br/",
+  "telefone": null,
+  "brasaoLocal": "/brasoes/MT/confresa.png",
+  "oficial": {
+   "nome": "Ricardo Aloisio Babinski",
+   "partido": "MDB",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Cotriguaçu": {
+  "titulo": "Cotriguaçu",
+  "prefeito": "Moisés Ferreira de Jesus",
+  "inicio": null,
+  "fim": "2028",
+  "site": "http://www.cotriguacu.mt.gov.br",
+  "telefone": null,
+  "oficial": {
+   "nome": "Moises Ferreira de Jesus",
+   "partido": "UNIÃO",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Cáceres": {
+  "titulo": "Cáceres (Mato Grosso)",
+  "prefeito": "Eliene Liberato",
+  "inicio": "2021",
+  "fim": "2028",
+  "site": "https://www.caceres.mt.gov.br/",
+  "telefone": "(65) 3223-1848",
+  "oficial": {
+   "nome": "Antônia Eliene Liberato Dias",
+   "partido": "PSB",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Diamantino": {
+  "titulo": "Diamantino",
+  "prefeito": "Francisco Mendes",
+  "inicio": "2025",
+  "fim": "2028",
+  "site": "https://www.diamantino.mt.gov.br/",
+  "telefone": "(65) 3336-6400",
+  "oficial": {
+   "nome": "Francisco Ferreira Mendes Junior",
+   "partido": "UNIÃO",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Gaúcha Do Norte": {
+  "titulo": "Gaúcha do Norte",
+  "prefeito": "Ari do Prado",
+  "inicio": null,
+  "fim": "2028",
+  "site": "http://www.gauchadonorte.mt.gov.br",
+  "telefone": null,
+  "oficial": {
+   "nome": "Ari do Prado",
+   "partido": "UNIÃO",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Itanhangá": {
+  "titulo": "Itanhangá",
+  "prefeito": "Edu Pascoski",
+  "inicio": null,
+  "fim": "2024",
+  "site": "https://itanhanga.mt.gov.br",
+  "telefone": "(66) 98149-0251",
+  "oficial": {
+   "nome": "Emerson Sabatine",
+   "partido": "PL",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Itaúba": {
+  "titulo": "Itaúba (Mato Grosso)",
+  "prefeito": "Antonio Ferreira de Oliveira Neto",
+  "inicio": null,
+  "fim": "2024",
+  "site": "http://www.itauba.mt.gov.br",
+  "telefone": "(66) 9963-5330",
+  "oficial": {
+   "nome": "Antonio  Ferreira de Oliveira Neto",
+   "partido": "PSB",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Juína": {
+  "titulo": "Juína",
+  "prefeito": "Paulo Augusto Veronese",
+  "inicio": null,
+  "fim": "2028",
+  "site": "http://www.juina.mt.gov.br",
+  "telefone": "(66) 3566-8300",
+  "brasao": "Juína.PNG",
+  "oficial": {
+   "nome": "Paulo Augusto Veronese",
+   "partido": "UNIÃO",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Lambari D'Oeste": {
+  "titulo": "Lambari d'Oeste",
+  "prefeito": "Marcelo Vieira Vitorazzi",
+  "inicio": null,
+  "fim": "2024",
+  "site": "http://www.lambaridoeste.mt.gov.br",
+  "telefone": "(65) 3228-1178",
+  "oficial": {
+   "nome": "Marcelo Vieira Vitorazzi",
+   "partido": "UNIÃO",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Lucas Do Rio Verde": {
+  "titulo": "Lucas do Rio Verde",
+  "prefeito": "Miguel Vaz",
+  "inicio": null,
+  "fim": "2028",
+  "site": "http://www.lucasdorioverde.mt.gov.br/",
+  "telefone": null,
+  "oficial": {
+   "nome": "Miguel Vaz Ribeiro",
+   "partido": "REPUBLICANOS",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Marcelândia": {
+  "titulo": "Marcelândia",
+  "prefeito": "Celso Luiz Podovani",
+  "inicio": null,
+  "fim": "2028",
+  "site": "http://www.marcelandia.mt.gov.br",
+  "telefone": "(66) 3536-3101",
+  "oficial": {
+   "nome": "Celso Luiz Padovani",
+   "partido": "UNIÃO",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Matupá": {
+  "titulo": "Matupá",
+  "prefeito": "Bruno Santos Mena",
+  "inicio": null,
+  "fim": "2024",
+  "site": "http://www.matupa.mt.gov.br",
+  "telefone": "(66) 3595-1190",
+  "oficial": {
+   "nome": "Bruno Santos Mena",
+   "partido": "UNIÃO",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Mirassol D'Oeste": {
+  "titulo": null,
+  "prefeito": null,
+  "inicio": null,
+  "fim": null,
+  "site": null,
+  "telefone": null,
+  "brasao": "Brasão Mirassol D'Oeste.png",
+  "oficial": {
+   "nome": "Hector Alvares Bezerra",
+   "partido": "UNIÃO",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Nortelândia": {
+  "titulo": "Nortelândia",
+  "prefeito": "Jossimar José Fernandes",
+  "inicio": null,
+  "fim": "2024",
+  "site": "http://www.nortelandia.mt.gov.br",
+  "telefone": "(65) 3346-1411",
+  "oficial": {
+   "nome": "Mariano Gomes Miranda",
+   "partido": "UNIÃO",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Nova Brasilândia": {
+  "titulo": "Nova Brasilândia",
+  "prefeito": "Mauriza Augusta de Oliveira",
+  "inicio": null,
+  "fim": "2024",
+  "site": "http://www.novabrasilandia.mt.gov.br",
+  "telefone": "(66) 3385-1280",
+  "oficial": {
+   "nome": "José Antônio Domingos Cardoso",
+   "partido": "UNIÃO",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Nova Canaã Do Norte": {
+  "titulo": "Nova Canaã do Norte",
+  "prefeito": "Vinicius Oliveira",
+  "inicio": null,
+  "fim": "2028",
+  "site": "http://www.novacanaadonorte.mt.gov.br",
+  "telefone": null,
+  "oficial": {
+   "nome": "Allison Vinicius Oliveira da Silva",
+   "partido": "UNIÃO",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Nova Maringá": {
+  "titulo": "Nova Maringá",
+  "prefeito": "Ana Maria Urquiza Casagrande",
+  "inicio": null,
+  "fim": "2028",
+  "site": "https://www.novamaringa.mt.gov.br/",
+  "telefone": "(66) 3537-1240",
+  "oficial": {
+   "nome": "Ana Maria Urquiza Casagrande",
+   "partido": "UNIÃO",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Nova Monte Verde": {
+  "titulo": "Nova Monte Verde",
+  "prefeito": "Edmilson Marino dos Santos",
+  "inicio": null,
+  "fim": "2024",
+  "site": "http://www.novamonteverde.mt.gov.br",
+  "telefone": "(66) 3597-2800",
+  "oficial": {
+   "nome": "Edemilson Marino dos Santos",
+   "partido": "UNIÃO",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Nova Mutum": {
+  "titulo": "Nova Mutum",
+  "prefeito": "Leandro Felix Pereira",
+  "inicio": null,
+  "fim": "2024",
+  "site": "http://www.novamutum.mt.gov.br",
+  "telefone": null,
+  "oficial": {
+   "nome": "Leandro Felix Pereira",
+   "partido": "UNIÃO",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Nova Nazaré": {
+  "titulo": "Nova Nazaré",
+  "prefeito": "João Teodoro Filho",
+  "inicio": null,
+  "fim": "2024",
+  "site": "http://novanazare.mt.gov.br",
+  "telefone": "(66) 3467-1019",
+  "oficial": {
+   "nome": "Reginaldo Martins Del Colle",
+   "partido": "PSB",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Nova Santa Helena": {
+  "titulo": "Nova Santa Helena",
+  "prefeito": "Paulinho Botonili",
+  "inicio": null,
+  "fim": "2024",
+  "site": "https://www.novasantahelena.mt.gov.br/",
+  "telefone": "(66) 99665-4823",
+  "oficial": {
+   "nome": "Paulinho Bortolini",
+   "partido": "UNIÃO",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Nova Ubiratã": {
+  "titulo": "Nova Ubiratã",
+  "prefeito": "Edegar Jose Bernardi",
+  "inicio": null,
+  "fim": "2028",
+  "site": "http://www.novaubirata.mt.gov.br",
+  "telefone": "(66) 3579-1192",
+  "oficial": {
+   "nome": "Edegar José Bernardi",
+   "partido": "UNIÃO",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Nova Xavantina": {
+  "titulo": "Nova Xavantina",
+  "prefeito": "João Machado Neto",
+  "inicio": "2025",
+  "fim": "2028",
+  "site": "https://www.novaxavantina.mt.gov.br/",
+  "telefone": "(66) 3438-2653",
+  "oficial": {
+   "nome": "João Machado Neto",
+   "partido": "UNIÃO",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Novo Mundo": {
+  "titulo": "Novo Mundo (Mato Grosso)",
+  "prefeito": "Antonio Mafini",
+  "inicio": "2021",
+  "fim": "2024",
+  "site": "https://www.novomundo.mt.gov.br/",
+  "telefone": "(66) 3539-6244",
+  "oficial": {
+   "nome": "Casciano Martins Reis",
+   "partido": "MDB",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Novo São Joaquim": {
+  "titulo": "Novo São Joaquim",
+  "prefeito": "Leonardo Faria Zampa",
+  "inicio": null,
+  "fim": "2024",
+  "site": "http://www.novosaojoaquim.mt.gov.br",
+  "telefone": "(66) 6666-6667",
+  "oficial": {
+   "nome": "Leonardo Faria Zampa",
+   "partido": "PL",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Paranaíta": {
+  "titulo": "Paranaíta",
+  "prefeito": "Osmar Antônio Moreira",
+  "inicio": null,
+  "fim": "2024",
+  "site": "https://www.paranaita.mt.gov.br/",
+  "telefone": "(66) 3563-2700",
+  "oficial": {
+   "nome": "Osmar Antonio Moreira",
+   "partido": "UNIÃO",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Peixoto De Azevedo": {
+  "titulo": "Peixoto de Azevedo",
+  "prefeito": "Mauricio Ferreira de Souza",
+  "inicio": null,
+  "fim": "2024",
+  "site": "http://www.peixotodeazevedo.mt.gov.br",
+  "telefone": "(66) 3575-3042",
+  "oficial": {
+   "nome": "Nilmar Nunes de Miranda",
+   "partido": "UNIÃO",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Poconé": {
+  "titulo": "Poconé",
+  "prefeito": "Atail Marques do Amaral",
+  "inicio": null,
+  "fim": "2024",
+  "site": "https://www.pocone.mt.gov.br",
+  "telefone": "(65) 4042-8433",
+  "oficial": {
+   "nome": "Jonas Eduardo de Queiroz Moraes",
+   "partido": "PODE",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Pontes E Lacerda": {
+  "titulo": "Pontes e Lacerda",
+  "prefeito": "Jakson Bassi",
+  "inicio": null,
+  "fim": "2028",
+  "site": "http://www.ponteselacerda.mt.gov.br",
+  "telefone": null,
+  "oficial": {
+   "nome": "Jakson Francisco Bassi",
+   "partido": "PL",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Porto Alegre Do Norte": {
+  "titulo": "Porto Alegre do Norte",
+  "prefeito": "Daniel Rosa do Lago",
+  "inicio": null,
+  "fim": "2024",
+  "site": "http://www.portoalegredonorte.mt.gov.br",
+  "telefone": "(66) 3144-0030",
+  "oficial": {
+   "nome": "Carlos Roberto Tomazetto",
+   "partido": "UNIÃO",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Porto Dos Gaúchos": {
+  "titulo": "Porto dos Gaúchos",
+  "prefeito": "Valderlei Antônio de Abreu",
+  "inicio": null,
+  "fim": "2024",
+  "site": "http://www.portodosgauchos.mt.gov.br",
+  "telefone": "(66) 3526-2001",
+  "oficial": {
+   "nome": "Vanderlei Antonio de Abreu",
+   "partido": "MDB",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Poxoréo": {
+  "titulo": "Poxoréu",
+  "prefeito": "Luciano Hudson Sol da Costa",
+  "inicio": "2025",
+  "fim": null,
+  "site": "http://www.poxoreu.mt.gov.br",
+  "telefone": "(66) 3436-1493",
+  "oficial": {
+   "nome": "Luciano Hudson Sol da Costa",
+   "partido": "REPUBLICANOS",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Rondonópolis": {
+  "titulo": "Rondonópolis",
+  "prefeito": "Cláudio Ferreira",
+  "inicio": null,
+  "fim": "2028",
+  "site": "http://www.rondonopolis.mt.gov.br/",
+  "telefone": "(66) 3411-3549",
+  "oficial": {
+   "nome": "Claudio Ferreira de Souza",
+   "partido": "PL",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Salto Do Céu": {
+  "titulo": "Salto do Céu",
+  "prefeito": "Mauto Teixeira Espíndola",
+  "inicio": "2021",
+  "fim": "2024",
+  "site": "http://www.saltodoceu.mt.gov.br",
+  "telefone": "(65) 3233-1211",
+  "oficial": {
+   "nome": "Mauto Teixeira Espindola",
+   "partido": "REPUBLICANOS",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Santa Cruz Do Xingu": {
+  "titulo": "Santa Cruz do Xingu",
+  "prefeito": "Joraildes Soares de Sousa",
+  "inicio": null,
+  "fim": "2028",
+  "site": "http://santacruzdoxingu.mt.gov.br",
+  "telefone": "(66) 3594-1000",
+  "oficial": {
+   "nome": "Joraildes Soares de Sousa",
+   "partido": "UNIÃO",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Santa Rita Do Trivelato": {
+  "titulo": "Santa Rita do Trivelato",
+  "prefeito": "Volmir Bassani",
+  "inicio": null,
+  "fim": "2028",
+  "site": "http://www.santaritadotrivelato.mt.gov.br",
+  "telefone": null,
+  "oficial": {
+   "nome": "Volmir Bassani",
+   "partido": "MDB",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Santa Terezinha": {
+  "titulo": "Santa Terezinha (Mato Grosso)",
+  "prefeito": "Thiago Castellan Ribeiro",
+  "inicio": "2021",
+  "fim": "2024",
+  "site": "http://www.santaterezinha.mt.gov.br/",
+  "telefone": "(66) 3558-1463",
+  "brasaoLocal": "/brasoes/MT/santa-terezinha.png",
+  "oficial": {
+   "nome": "Thiago Castellan Ribeiro",
+   "partido": "PSB",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Santo Antônio Do Leverger": {
+  "titulo": "Santo Antônio de Leverger",
+  "prefeito": "Francieli Magalhães de Arruda",
+  "inicio": null,
+  "fim": "2028",
+  "site": "http://www.leverger.mt.gov.br",
+  "telefone": "(65) 3341-1229",
+  "oficial": {
+   "nome": "Francieli Magalhães de Arruda Vieira Pires",
+   "partido": "PSB",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "São Félix Do Araguaia": {
+  "titulo": "São Félix do Araguaia",
+  "prefeito": "Janailza Taveira Leite",
+  "inicio": null,
+  "fim": "2024",
+  "site": "http://www.saofelixdoaraguaia.mt.gov.br/}}",
+  "telefone": "(66) 99657-3749",
+  "oficial": {
+   "nome": "Acácio Alves Souza",
+   "partido": "REPUBLICANOS",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "São José Do Xingu": {
+  "titulo": "São José do Xingu",
+  "prefeito": "Sandro José Luiz Costa",
+  "inicio": null,
+  "fim": "2024",
+  "site": "http://www.saojosedoxingu.mt.gov.br",
+  "telefone": "(66) 3568-1109",
+  "oficial": {
+   "nome": "Sandro Jose Luz Costa",
+   "partido": "UNIÃO",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "São José Dos Quatro Marcos": {
+  "titulo": "São José dos Quatro Marcos",
+  "prefeito": "Jamis Silva Bolandin",
+  "inicio": null,
+  "fim": "2024",
+  "site": "http://www.saojosedosquatromarcos.mt.gov.br",
+  "telefone": null,
+  "oficial": {
+   "nome": "Jamis Silva Bolandin",
+   "partido": "UNIÃO",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Tabaporã": {
+  "titulo": "Tabaporã",
+  "prefeito": "Sirineu Moleta",
+  "inicio": null,
+  "fim": "2024",
+  "site": "https://www.tabapora.mt.gov.br/",
+  "telefone": null,
+  "oficial": {
+   "nome": "Carlos Eduardo Borchardt",
+   "partido": "PL",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Tangará Da Serra": {
+  "titulo": "Tangará da Serra",
+  "prefeito": "Vander Masson",
+  "inicio": null,
+  "fim": "2028",
+  "site": "https://www.tangaradaserra.mt.gov.br/",
+  "telefone": "(65) 3311-4800",
+  "oficial": {
+   "nome": "Vander Alberto Masson",
+   "partido": "UNIÃO",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Tapurah": {
+  "titulo": "Tapurah",
+  "prefeito": "Álvaro Galvan",
+  "inicio": null,
+  "fim": "2028",
+  "site": "https://tapurah.mt.gov.br",
+  "telefone": null,
+  "oficial": {
+   "nome": "Alvaro Galvan",
+   "partido": "PL",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Terra Nova Do Norte": {
+  "titulo": "Terra Nova do Norte",
+  "prefeito": "Pascoal Alberton",
+  "inicio": "2021",
+  "fim": "2024",
+  "site": "http://www.terranovadonorte.mt.gov.br",
+  "telefone": "(66) 3534-2500",
+  "oficial": {
+   "nome": "Pascoal Alberton",
+   "partido": "MDB",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Tesouro": {
+  "titulo": "Tesouro (Mato Grosso)",
+  "prefeito": "João Isaack Moreira Castelo Branco",
+  "inicio": null,
+  "fim": "2024",
+  "site": "http://www.pmtesouro.com.br",
+  "telefone": null,
+  "oficial": {
+   "nome": "João Isaack Moreira Castelo Branco",
+   "partido": "PSB",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Torixoréu": {
+  "titulo": "Torixoréu",
+  "prefeito": "Thiago Timo Oliveira",
+  "inicio": null,
+  "fim": "2024",
+  "site": "http://www.prefeituratorixoreu.com.br",
+  "telefone": null,
+  "oficial": {
+   "nome": "Thiago Timo Oliveira",
+   "partido": "PSB",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "União Do Sul": {
+  "titulo": "União do Sul",
+  "prefeito": "Vanderlei Antonio de March",
+  "inicio": null,
+  "fim": "2028",
+  "site": "https://www.uniaodosul.mt.gov.br/",
+  "telefone": "(66) 3540-1283",
+  "oficial": {
+   "nome": "Vanderlei Antonio de March",
+   "partido": "UNIÃO",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Vila Bela Da Santíssima Trindade": {
+  "titulo": "Vila Bela da Santíssima Trindade",
+  "prefeito": "Jacob Andre Bringsken",
+  "inicio": null,
+  "fim": "2028",
+  "site": "https://www.vilabeladasantissimatrindade.mt.gov.br/",
+  "telefone": "(65) 3180-0036",
+  "brasao": "Vila-Belabrasao.jpg",
+  "oficial": {
+   "nome": "Jacob André Bringsken",
+   "partido": "MDB",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Várzea Grande": {
+  "titulo": "Várzea Grande (Mato Grosso)",
+  "prefeito": "Flávia Moretti",
+  "inicio": null,
+  "fim": "2028",
+  "site": "http://www.varzeagrande.mt.gov.br",
+  "telefone": "(65) 3688-8000",
+  "oficial": {
+   "nome": "Flavia Petersen Moretti de Araujo",
+   "partido": "PL",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ }
+}

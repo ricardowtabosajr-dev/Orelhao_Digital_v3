@@ -1,0 +1,791 @@
+{
+ "Ananás": {
+  "titulo": "Ananás (Tocantins)",
+  "prefeito": "Robson Pereira da Silva (Robson do Zé Geraldo)",
+  "inicio": "2025",
+  "fim": "2028",
+  "site": "http://www.ananas.to.gov.br/",
+  "telefone": "(63) 3442-1232",
+  "oficial": {
+   "nome": "Robson Pereira da Silva",
+   "partido": "UNIÃO",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Angico": {
+  "titulo": "Angico (Tocantins)",
+  "prefeito": "Cleofan Barbosa Lima",
+  "inicio": "2021",
+  "fim": "2028",
+  "site": "https://angico.to.gov.br/",
+  "telefone": "(63) 3431-1279",
+  "oficial": {
+   "nome": "Cleofan Barbosa Lima",
+   "partido": "UNIÃO",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Aragominas": {
+  "titulo": "Aragominas",
+  "prefeito": "Marcos Alexandre",
+  "inicio": "2021",
+  "fim": "2028",
+  "site": null,
+  "telefone": null,
+  "oficial": {
+   "nome": "Francisco Rodrigues",
+   "partido": "REPUBLICANOS",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Araguacema": {
+  "titulo": "Araguacema",
+  "prefeito": "Marcus Vinicius Moraes Martins",
+  "inicio": "2021",
+  "fim": "2028",
+  "site": null,
+  "telefone": null,
+  "oficial": {
+   "nome": "Marcus Vinicius Moraes Martins",
+   "partido": "UNIÃO",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Araguatins": {
+  "titulo": "Araguatins",
+  "prefeito": "Aquiles Pereira de Sousa",
+  "inicio": "2021",
+  "fim": "2028",
+  "site": null,
+  "telefone": null,
+  "oficial": {
+   "nome": "Aquiles Pereira de Sousa",
+   "partido": "PP",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Araguaçu": {
+  "titulo": "Araguaçu",
+  "prefeito": "Jarbas Ribeiro",
+  "inicio": "2021",
+  "fim": "2028",
+  "site": "http://www.araguacu.to.gov.br/",
+  "telefone": "(63) 3384-2056",
+  "oficial": {
+   "nome": "Jarbas Ribeiro Ivo",
+   "partido": "PL",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Araguaína": {
+  "titulo": "Araguaína",
+  "prefeito": "Wagner Rodrigues",
+  "inicio": null,
+  "fim": "2028",
+  "site": "https://www.araguaina.to.gov.br/",
+  "telefone": "(63) 3412-5572",
+  "brasao": "Brasão Araguaina Tocantins Brasil.svg",
+  "oficial": {
+   "nome": "Wagner Rodrigues Barros",
+   "partido": "UNIÃO",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Arapoema": {
+  "titulo": "Arapoema",
+  "prefeito": "Paulo Antônio Pereira",
+  "inicio": "2021",
+  "fim": "2028",
+  "site": "https://arapoema.to.gov.br/",
+  "telefone": "(63) 3435-1792",
+  "oficial": {
+   "nome": "Paulo Antônio Pedreira",
+   "partido": "REPUBLICANOS",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Augustinópolis": {
+  "titulo": "Augustinópolis",
+  "prefeito": "Antônio Caires de Almeida",
+  "inicio": "2021",
+  "fim": "2028",
+  "site": "http://augustinopolis.to.gov.br/",
+  "telefone": "(63) 3456-1739",
+  "brasao": "Augustinópolis Coat.JPG",
+  "oficial": {
+   "nome": "Antonio Cayres de Almeida",
+   "partido": "REPUBLICANOS",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Babaçulândia": {
+  "titulo": "Babaçulândia",
+  "prefeito": "Ismael Ferreira de Brito",
+  "inicio": "2025",
+  "fim": "2028",
+  "site": "https://babaculandia.to.gov.br/",
+  "telefone": null,
+  "oficial": {
+   "nome": "Ismael Ferreira de Brito",
+   "partido": "REPUBLICANOS",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Bernardo Sayão": {
+  "titulo": "Bernardo Sayão",
+  "prefeito": "Osório Antunes Filho",
+  "inicio": "2021",
+  "fim": "2028",
+  "site": null,
+  "telefone": null,
+  "oficial": {
+   "nome": "Osorio Antunes Filho",
+   "partido": "REPUBLICANOS",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Buriti Do Tocantins": {
+  "titulo": "Buriti do Tocantins",
+  "prefeito": "Lucilene Gomes de Brito Almeida",
+  "inicio": null,
+  "fim": "2024",
+  "site": "https://www.buriti.to.gov.br/",
+  "telefone": null,
+  "oficial": {
+   "nome": "Lucilene Gomes de Brito Almeida",
+   "partido": "REPUBLICANOS",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Campos Lindos": {
+  "titulo": "Campos Lindos",
+  "prefeito": "Romil Iakov Kalugin",
+  "inicio": "2021",
+  "fim": "2024",
+  "site": null,
+  "telefone": null,
+  "oficial": {
+   "nome": "Romil Iakov Kalugin",
+   "partido": "REPUBLICANOS",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Chapada De Areia": {
+  "titulo": "Chapada de Areia",
+  "prefeito": "Adauto Mendes de Oliveira",
+  "inicio": null,
+  "fim": "2028",
+  "site": null,
+  "telefone": null,
+  "oficial": {
+   "nome": "Adauto Mendes de Oliveira",
+   "partido": "REPUBLICANOS",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Crixás Do Tocantins": {
+  "titulo": "Crixás do Tocantins",
+  "prefeito": "Ana Flávia Alves Silveira Monteiro",
+  "inicio": null,
+  "fim": "2024",
+  "site": "https://crixas.to.gov.br/",
+  "telefone": null,
+  "oficial": {
+   "nome": "Ana Flávia Alves Silveira Monteiro",
+   "partido": "REPUBLICANOS",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Dianópolis": {
+  "titulo": "Dianópolis",
+  "prefeito": "José Salomão Jacobina Aires",
+  "inicio": null,
+  "fim": "2024",
+  "site": "https://www.dianopolis.to.gov.br/",
+  "telefone": "(63) 3692-2005",
+  "oficial": {
+   "nome": "José Salomão Jacobina Aires",
+   "partido": "PT",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Esperantina": {
+  "titulo": "Esperantina (Tocantins)",
+  "prefeito": "Armando Alencar da Silva",
+  "inicio": null,
+  "fim": "2024",
+  "site": "https://www.esperantina.to.gov.br/",
+  "telefone": "(63) 3475-1132",
+  "oficial": {
+   "nome": "Maria Antonia Rodrigues dos Santos Silva",
+   "partido": "UNIÃO",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Filadélfia": {
+  "titulo": "Filadélfia (Tocantins)",
+  "prefeito": "David Sousa Bento",
+  "inicio": null,
+  "fim": "2028",
+  "site": null,
+  "telefone": null,
+  "oficial": {
+   "nome": "David Sousa Bento",
+   "partido": "PP",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Formoso Do Araguaia": {
+  "titulo": "Formoso do Araguaia",
+  "prefeito": "Heno Rodrigues da Silva",
+  "inicio": null,
+  "fim": "2024",
+  "site": null,
+  "telefone": null,
+  "oficial": {
+   "nome": "Israel Borges Nunes",
+   "partido": "PSB",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Goianorte": {
+  "titulo": "Goianorte",
+  "prefeito": "Maria de Jesus Amaro de Oliveira Parente",
+  "inicio": null,
+  "fim": "2024",
+  "site": null,
+  "telefone": null,
+  "oficial": {
+   "nome": "Maria de Jesus Amaro de Oliveira Parente",
+   "partido": "REPUBLICANOS",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Goiatins": {
+  "titulo": "Goiatins",
+  "prefeito": "Manoel Natalino Pereira Soares",
+  "inicio": null,
+  "fim": "2024",
+  "site": "http://goiatins.to.gov.br/",
+  "telefone": "(63) 3469-1494",
+  "oficial": {
+   "nome": "Max Cruz da Luz",
+   "partido": "SOLIDARIEDADE",
+   "fonte": "TSE",
+   "obs": "eleito em eleição suplementar"
+  }
+ },
+ "Guaraí": {
+  "titulo": "Guaraí",
+  "prefeito": "Maria de Fátima Coelho Nunes{{citar web",
+  "inicio": "2025",
+  "fim": "2028",
+  "site": null,
+  "telefone": null,
+  "oficial": {
+   "nome": "Maria de Fatima Coelho Nunes",
+   "partido": "UNIÃO",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Itacajá": {
+  "titulo": "Itacajá",
+  "prefeito": "Maria Aparecida Lima Rocha Costa",
+  "inicio": null,
+  "fim": "2024",
+  "site": null,
+  "telefone": null,
+  "oficial": {
+   "nome": "Maria Aparecida Lima Rocha Costa",
+   "partido": "REPUBLICANOS",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Itaguatins": {
+  "titulo": "Itaguatins",
+  "prefeito": "Maria Ivoneide Matos Barreto",
+  "inicio": null,
+  "fim": "2024",
+  "site": "https://itaguatins.to.gov.br/",
+  "telefone": "(63) 99245-8289",
+  "oficial": {
+   "nome": "Josemberg Vitor Barros Silva",
+   "partido": "REPUBLICANOS",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Jaú Do Tocantins": {
+  "titulo": "Jaú do Tocantins",
+  "prefeito": "Luciene Lourenço de Araújo",
+  "inicio": null,
+  "fim": "2024",
+  "site": "https://www.jau.to.gov.br/",
+  "telefone": "(63) 99212-0359",
+  "oficial": {
+   "nome": "Luciene Lourenço de Araujo",
+   "partido": "PSD",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Lagoa Da Confusão": {
+  "titulo": "Lagoa da Confusão",
+  "prefeito": "Thiago Soares Carlos",
+  "inicio": null,
+  "fim": "2024",
+  "site": "https://www.lagoadaconfusao.to.gov.br/",
+  "telefone": null,
+  "oficial": {
+   "nome": "Thiago Soares Carlos",
+   "partido": "UNIÃO",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Lajeado": {
+  "titulo": "Lajeado (Tocantins)",
+  "prefeito": "Antônio Luiz Bandeira Júnior",
+  "inicio": null,
+  "fim": "2024",
+  "site": "http://www.lajeado.to.gov.br/",
+  "telefone": null,
+  "oficial": {
+   "nome": "Márcia da Costa Reis Carvalho",
+   "partido": "PSDB",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Lizarda": {
+  "titulo": "Lizarda",
+  "prefeito": "Suelene Lustosa Matos",
+  "inicio": null,
+  "fim": "2024",
+  "site": null,
+  "telefone": null,
+  "oficial": {
+   "nome": "Marcello Lustosa do Amaral",
+   "partido": "REPUBLICANOS",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Marianópolis Do Tocantins": {
+  "titulo": "Marianópolis do Tocantins",
+  "prefeito": "Isaías Piagem",
+  "inicio": null,
+  "fim": "2024",
+  "site": null,
+  "telefone": null,
+  "oficial": {
+   "nome": "Saulo Costa Moreira",
+   "partido": "PDT",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Maurilândia Do Tocantins": {
+  "titulo": "Maurilândia do Tocantins",
+  "prefeito": "Rafael Maracaipe de Almeidaa",
+  "inicio": null,
+  "fim": "2024",
+  "site": null,
+  "telefone": null,
+  "oficial": {
+   "nome": "Rafael Maracaipe de Almeida",
+   "partido": "UNIÃO",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Monte Do Carmo": {
+  "titulo": "Monte do Carmo",
+  "prefeito": "Rubens da Paixão Pereira Amaral",
+  "inicio": null,
+  "fim": "2028",
+  "site": "https://www.montedocarmo.to.gov.br/",
+  "telefone": null,
+  "brasaoLocal": "/brasoes/TO/monte-do-carmo.png",
+  "oficial": {
+   "nome": "Rubens da Paixão Pereira Amaral",
+   "partido": "PDT",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Natividade": {
+  "titulo": "Natividade (Tocantins)",
+  "prefeito": "Thiago Jayme",
+  "inicio": null,
+  "fim": "2028",
+  "site": null,
+  "telefone": null,
+  "oficial": {
+   "nome": "Thiago Jayme Rodrigues de Cerqueira",
+   "partido": "PP",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Nova Olinda": {
+  "titulo": "Nova Olinda (Tocantins)",
+  "prefeito": "Jesus Evaristo Cardoso",
+  "inicio": null,
+  "fim": "2024",
+  "site": "http://www.novaolinda.to.gov.br",
+  "telefone": "(63) 3452-1408",
+  "oficial": {
+   "nome": "Jesus Evaristo Cardoso",
+   "partido": "UNIÃO",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Novo Jardim": {
+  "titulo": "Novo Jardim",
+  "prefeito": "José Vieira Neves",
+  "inicio": null,
+  "fim": "2024",
+  "site": "http://novojardim.to.gov.br/",
+  "telefone": "(63) 3696-1182",
+  "oficial": {
+   "nome": "Súsley Albuquerque Cerqueira",
+   "partido": "MDB",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Palmeirante": {
+  "titulo": "Palmeirante",
+  "prefeito": "Raimundo Brandao dos Santos",
+  "inicio": null,
+  "fim": "2024",
+  "site": null,
+  "telefone": null,
+  "oficial": {
+   "nome": "Raimundo Brandão dos Santos",
+   "partido": "REPUBLICANOS",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Palmeiras Do Tocantins": {
+  "titulo": "Palmeiras do Tocantins",
+  "prefeito": "Francisco Noleto Júnior",
+  "inicio": null,
+  "fim": "2024",
+  "site": null,
+  "telefone": null,
+  "oficial": {
+   "nome": "Francisco Noleto Junior",
+   "partido": "UNIÃO",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Paranã": {
+  "titulo": "Paranã",
+  "prefeito": "Phabio Augustus da Silva Moreira",
+  "inicio": null,
+  "fim": "2028",
+  "site": "https://www.parana.to.gov.br/",
+  "telefone": "(63) 99110-4448",
+  "oficial": {
+   "nome": "Phabio Augustus da Silva Moreira",
+   "partido": "REPUBLICANOS",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Pau D'Arco": {
+  "titulo": "Pau-d'Arco (Tocantins)",
+  "prefeito": "João Batista Neto",
+  "inicio": null,
+  "fim": "2024",
+  "site": null,
+  "telefone": null,
+  "oficial": {
+   "nome": "Gilmar Oliveira Souza",
+   "partido": "REPUBLICANOS",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Peixe": {
+  "titulo": "Peixe (Tocantins)",
+  "prefeito": "Augusto Cezar Pereira dos Santos",
+  "inicio": null,
+  "fim": "2024",
+  "site": null,
+  "telefone": null,
+  "oficial": {
+   "nome": "Augusto Cézar Pereira dos Santos",
+   "partido": "MDB",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Pequizeiro": {
+  "titulo": "Pequizeiro",
+  "prefeito": "Jocelio Nobre da Silva",
+  "inicio": null,
+  "fim": "2028",
+  "site": null,
+  "telefone": null,
+  "oficial": {
+   "nome": "Jocélio Nobre da Silva",
+   "partido": "UNIÃO",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Pium": {
+  "titulo": "Pium",
+  "prefeito": "Valdemir Oliveira Barros",
+  "inicio": null,
+  "fim": "2024",
+  "site": null,
+  "telefone": null,
+  "oficial": {
+   "nome": "Fernando Belarmino da Silva",
+   "partido": "PP",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Ponte Alta Do Bom Jesus": {
+  "titulo": "Ponte Alta do Bom Jesus",
+  "prefeito": "José Luciano Azevedo Carlos",
+  "inicio": null,
+  "fim": "2024",
+  "site": "https://pontealtadobomjesus.to.gov.br/",
+  "telefone": "(63) 3659-1317",
+  "oficial": {
+   "nome": "Jose Luciano Azevedo Carlos",
+   "partido": "REPUBLICANOS",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Ponte Alta Do Tocantins": {
+  "titulo": "Ponte Alta do Tocantins",
+  "prefeito": "Kedson Machado Alves",
+  "inicio": null,
+  "fim": "2028",
+  "site": "https://www.pontealtadotocantins.to.gov.br/",
+  "telefone": null,
+  "oficial": {
+   "nome": "Kedson Machado Alves",
+   "partido": "PP",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Recursolândia": {
+  "titulo": "Recursolândia",
+  "prefeito": "Carlos Vinícius Barbosa da Silva",
+  "inicio": null,
+  "fim": "2024",
+  "site": null,
+  "telefone": null,
+  "oficial": {
+   "nome": "Carlos Vinicius Barbosa da Silva",
+   "partido": "REPUBLICANOS",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Rio Dos Bois": {
+  "titulo": "Rio dos Bois",
+  "prefeito": "Moacyr Oliveira",
+  "inicio": null,
+  "fim": "2024",
+  "site": null,
+  "telefone": null,
+  "oficial": {
+   "nome": "Joel Alves Rufino",
+   "partido": "REPUBLICANOS",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Rio Sono": {
+  "titulo": "Rio Sono (município)",
+  "prefeito": "Itair Gomes Martins",
+  "inicio": null,
+  "fim": "2024",
+  "site": null,
+  "telefone": null,
+  "oficial": {
+   "nome": "Valdéia Martins Rodrigues",
+   "partido": "REPUBLICANOS",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Sampaio": {
+  "titulo": "Sampaio (Tocantins)",
+  "prefeito": "Armindo Cayres de Almeida",
+  "inicio": null,
+  "fim": "2024",
+  "site": "https://www.sampaio.to.gov.br/",
+  "telefone": "(63) 2013-0002",
+  "brasaoLocal": "/brasoes/TO/sampaio.png",
+  "oficial": {
+   "nome": "Agnom Gomes da Silva",
+   "partido": "REPUBLICANOS",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Santa Fé Do Araguaia": {
+  "titulo": "Santa Fé do Araguaia",
+  "prefeito": "Vicença Vieira Dantas Lino da Silva",
+  "inicio": null,
+  "fim": "2024",
+  "site": "https://www.santafedoaraguaia.to.gov.br/",
+  "telefone": null,
+  "oficial": {
+   "nome": "Vicença Vieira Dantas Lino da Silva",
+   "partido": "UNIÃO",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Santa Tereza Do Tocantins": {
+  "titulo": "Santa Tereza do Tocantins",
+  "prefeito": "António da Silva Campos",
+  "inicio": null,
+  "fim": "2024",
+  "site": "https://santaterezadotocantins.to.gov.br/",
+  "telefone": "(63) 99118-7410",
+  "oficial": {
+   "nome": "Eliene Batista Diogenes Lourenço",
+   "partido": "REPUBLICANOS",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Silvanópolis": {
+  "titulo": "Silvanópolis",
+  "prefeito": "Matheus Henrique Lemos",
+  "inicio": null,
+  "fim": "2028",
+  "site": "https://www.silvanopolis.to.gov.br/",
+  "telefone": null,
+  "oficial": {
+   "nome": "Matheus Henrique Lemos",
+   "partido": "PP",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "São Bento Do Tocantins": {
+  "titulo": "São Bento do Tocantins",
+  "prefeito": "Paulo Wanderson de Sousa",
+  "inicio": null,
+  "fim": "2028",
+  "site": null,
+  "telefone": null,
+  "oficial": {
+   "nome": "Paulo Wanderson de Sousa Damasceno",
+   "partido": "PSD",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "São Miguel Do Tocantins": {
+  "titulo": "São Miguel do Tocantins",
+  "prefeito": "Alberto Loiola Gomes Moreira",
+  "inicio": null,
+  "fim": "2024",
+  "site": null,
+  "telefone": null,
+  "oficial": {
+   "nome": "Alberto Loiola Gomes Moreira",
+   "partido": "REPUBLICANOS",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "São Sebastião Do Tocantins": {
+  "titulo": "São Sebastião do Tocantins",
+  "prefeito": "Prof: Adriano Rodrigues de moraes",
+  "inicio": null,
+  "fim": "2024",
+  "site": "http://www.saosebastiao.to.gov.br/",
+  "telefone": "(63) 9942-8362",
+  "brasao": "P.M. de São Sebastião do Tocantins.jpg",
+  "oficial": {
+   "nome": "Lucilene Irineu Moraes",
+   "partido": "PSD",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Taguatinga": {
+  "titulo": "Taguatinga (Tocantins)",
+  "prefeito": "Paulo Roberto Ribeiro",
+  "inicio": null,
+  "fim": "2028",
+  "site": "http://www.taguatinga.to.gov.br/",
+  "telefone": "(63) 9117-3432",
+  "oficial": {
+   "nome": "Paulo Roberto Ribeiro",
+   "partido": "REPUBLICANOS",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Tocantinópolis": {
+  "titulo": "Tocantinópolis",
+  "prefeito": "Paulo Gomes de Souza",
+  "inicio": null,
+  "fim": "2024",
+  "site": "http://www.tocantinopolis.to.gov.br",
+  "telefone": null,
+  "oficial": {
+   "nome": "Fabion Gomes de Sousa",
+   "partido": "PL",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Tocantínia": {
+  "titulo": "Tocantínia",
+  "prefeito": "Manoel Silvino Gomes Neto",
+  "inicio": null,
+  "fim": "2024",
+  "site": null,
+  "telefone": null,
+  "oficial": {
+   "nome": "João Alberto Coelho Machado",
+   "partido": "REPUBLICANOS",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ }
+}

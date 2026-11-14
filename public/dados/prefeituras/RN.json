@@ -1,0 +1,710 @@
+{
+ "Acari": {
+  "titulo": "Acari (Rio Grande do Norte)",
+  "prefeito": "Fernando Antônio Bezerra",
+  "inicio": "2021",
+  "fim": "2028",
+  "site": "https://www.acari.rn.gov.br",
+  "telefone": null,
+  "oficial": {
+   "nome": "Fernando Antonio Bezerra",
+   "partido": "PODE",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Angicos": {
+  "titulo": "Angicos",
+  "prefeito": "Miguel Pinheiro Neto",
+  "inicio": "2021",
+  "fim": "2028",
+  "site": "https://angicos.rn.gov.br",
+  "telefone": null,
+  "oficial": {
+   "nome": "Miguel Pinheiro Neto",
+   "partido": "MDB",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Antônio Martins": {
+  "titulo": "Antônio Martins",
+  "prefeito": "Jessica Iris Ferreira de Oliveira",
+  "inicio": "2025",
+  "fim": "2028",
+  "site": "http://antoniomartins.rn.gov.br",
+  "telefone": "(84) 3392-0209",
+  "oficial": {
+   "nome": "Jessica Iris Ferreira de Oliveira",
+   "partido": "PSD",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Apodi": {
+  "titulo": "Apodi",
+  "prefeito": "Luis Sabino da Costa Neto",
+  "inicio": "2025",
+  "fim": "2028",
+  "site": "http://www.apodi.rn.gov.br",
+  "telefone": "(84) 3333-3609",
+  "oficial": {
+   "nome": "Luis Sabino da Costa Neto",
+   "partido": "MDB",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Augusto Severo": {
+  "titulo": "Campo Grande (Rio Grande do Norte)",
+  "prefeito": "Francisco das Chagas Eufrásio Vieira de Melo",
+  "inicio": "2021",
+  "fim": "2028",
+  "site": "https://www.campogrande.rn.gov.br",
+  "telefone": "(84) 3362-2901",
+  "oficial": {
+   "nome": "Francisco das Chagas Eufrásio Vieira de Melo",
+   "partido": "MDB",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Açu": {
+  "titulo": "Assú",
+  "prefeito": "Luís Eduardo Pimentel Soares",
+  "inicio": null,
+  "fim": "2028",
+  "site": "http://assu.rn.gov.br/",
+  "telefone": "(84) 92000-8800",
+  "oficial": {
+   "nome": "Luis Eduardo Pimentel Soares",
+   "partido": "REPUBLICANOS",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Baraúna": {
+  "titulo": "Baraúna (Rio Grande do Norte)",
+  "prefeito": "Maria Divanize Alves de Oliveira",
+  "inicio": "2021",
+  "fim": "2028",
+  "site": "https://barauna.rn.gov.br",
+  "telefone": "(84) 3191-1215",
+  "brasao": "Brasão de Baraúna-RN, Brasil.png",
+  "oficial": {
+   "nome": "Maria Divanize Alves de Oliveira",
+   "partido": "PSD",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Baía Formosa": {
+  "titulo": "Baía Formosa",
+  "prefeito": "Camila Veras de Melo Cavalcanti",
+  "inicio": "2025",
+  "fim": "2028",
+  "site": "https://baiaformosa.rn.gov.br",
+  "telefone": "(84) 3244-2140",
+  "brasao": "Brasão de Baía Formosa-RN, Brasil.png",
+  "oficial": {
+   "nome": "Camila Veras de Melo Cavalcanti",
+   "partido": "MDB",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Bom Jesus": {
+  "titulo": "Bom Jesus (Rio Grande do Norte)",
+  "prefeito": "José Nilson Pereira da Silva",
+  "inicio": "2025",
+  "fim": "presente",
+  "site": "https://site.bomjesus.rn.gov.br",
+  "telefone": "(84) 3253-2209",
+  "oficial": {
+   "nome": "Jose Nilson Pereira da Silva",
+   "partido": "PL",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Caicó": {
+  "titulo": "Caicó",
+  "prefeito": "Judas Tadeu Alves dos Santos",
+  "inicio": "2021",
+  "fim": "2028",
+  "site": "https://www.caico.rn.gov.br/",
+  "telefone": null,
+  "oficial": {
+   "nome": "Judas Tadeu Alves dos Santos",
+   "partido": "PSDB",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Caiçara Do Norte": {
+  "titulo": "Caiçara do Norte",
+  "prefeito": "Alcélio Fernandes Barbosa",
+  "inicio": "2021",
+  "fim": "2028",
+  "site": "http://www.caicaradonorte.rn.gov.br",
+  "telefone": "(84) 99107-2206",
+  "oficial": {
+   "nome": "Alcélio Fernandes Barbosa",
+   "partido": "PSDB",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Caraúbas": {
+  "titulo": "Caraúbas (Rio Grande do Norte)",
+  "prefeito": "Paulo Givago Barreto Alves",
+  "inicio": "2025",
+  "fim": "2028",
+  "site": "http://www.caraubas.rn.gov.br/",
+  "telefone": "(84) 3331-2122",
+  "brasao": "Brasão de Caraúbas-RN, Brasil.jpeg",
+  "oficial": {
+   "nome": "Paulo Givago Barreto Alves",
+   "partido": "PSDB",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Carnaubais": {
+  "titulo": "Carnaubais",
+  "prefeito": "Marineide Marinho Pereira Diniz",
+  "inicio": null,
+  "fim": "2024",
+  "site": null,
+  "telefone": null,
+  "oficial": {
+   "nome": "Gleidson Benevides de Oliveira",
+   "partido": "PL",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Carnaúba Dos Dantas": {
+  "titulo": "Carnaúba dos Dantas",
+  "prefeito": "Kleyton Medeiros Dantas",
+  "inicio": "2025",
+  "fim": "2028",
+  "site": "https://www.carnaubadosdantas.rn.gov.br",
+  "telefone": "(84) 99855-0121",
+  "oficial": {
+   "nome": "Kleyton Medeiros Dantas",
+   "partido": "MDB",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Ceará-Mirim": {
+  "titulo": "Ceará-Mirim",
+  "prefeito": "Antonio Henrique Camara Bezerra",
+  "inicio": "2025",
+  "fim": "2028",
+  "site": "https://cearamirim.rn.gov.br/",
+  "telefone": "(84) 3274-5916",
+  "oficial": {
+   "nome": "Antonio Henrique Camara Bezerra",
+   "partido": "PSD",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Cerro Corá": {
+  "titulo": "Cerro Corá (Rio Grande do Norte)",
+  "prefeito": "MACIEL DOS SANTOS FREIRE",
+  "inicio": "2025",
+  "fim": "2028",
+  "site": "https://www.cerrocora.rn.gov.br",
+  "telefone": "(84) 3488-2478",
+  "oficial": {
+   "nome": "Maciel dos Santos Freire",
+   "partido": "MDB",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Currais Novos": {
+  "titulo": "Currais Novos",
+  "prefeito": "Lucas Galvão da Cruz",
+  "inicio": "2025",
+  "fim": "2028",
+  "site": "https://curraisnovos.rn.gov.br",
+  "telefone": "(84) 98755-7994",
+  "oficial": {
+   "nome": "Lucas Galvão da Cruz",
+   "partido": "PT",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Governador Dix-Sept Rosado": {
+  "titulo": "Governador Dix-Sept Rosado",
+  "prefeito": "Artur Rodrigues do Vale Costa",
+  "inicio": "2021",
+  "fim": "2028",
+  "site": "https://prefeituradegovdixsept.rn.gov.br",
+  "telefone": "(84) 3328-3902",
+  "oficial": {
+   "nome": "Artur Rodrigues do Vale Costa",
+   "partido": "UNIÃO",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Ielmo Marinho": {
+  "titulo": "Ielmo Marinho",
+  "prefeito": "Fernando Batista Damasceno",
+  "inicio": "2025",
+  "fim": "2028",
+  "site": "https://www.ielmomarinho.rn.gov.br/",
+  "telefone": "(84) 3267-0086",
+  "oficial": {
+   "nome": "Fernando Batista Damasceno",
+   "partido": "MDB",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Janduís": {
+  "titulo": "Janduís (Rio Grande do Norte)",
+  "prefeito": "Elvécio Gurgel de Sales",
+  "inicio": "2025",
+  "fim": "2028",
+  "site": "https://janduis.rn.gov.br",
+  "telefone": "(84) 3366-0169",
+  "oficial": {
+   "nome": "Elvécio Gurgel de Sales",
+   "partido": "PT",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Januário Cicco": {
+  "titulo": "Boa Saúde",
+  "prefeito": "João Maria Mesquita",
+  "inicio": "2021",
+  "fim": "2028",
+  "site": "http://www.boasaude.rn.gov.br/",
+  "telefone": "(84) 98173-5686",
+  "oficial": {
+   "nome": "Joao Maria Mesquita",
+   "partido": "MDB",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Jardim De Angicos": {
+  "titulo": "Jardim de Angicos",
+  "prefeito": "Carlos Andre Camara Bezerra",
+  "inicio": "2021",
+  "fim": "2028",
+  "site": "https://jardimdeangicos.rn.gov.br",
+  "telefone": null,
+  "oficial": {
+   "nome": "Carlos Andre Camara Bezerra",
+   "partido": "UNIÃO",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "João Câmara": {
+  "titulo": "João Câmara",
+  "prefeito": "Aize Talianne Bezerra de Souza",
+  "inicio": "2025",
+  "fim": "2028",
+  "site": "https://joaocamara.rn.gov.br/",
+  "telefone": "(84) 99400-6295",
+  "brasao": "Coat of Arms of João Câmara - RN - Brazil.png",
+  "oficial": {
+   "nome": "Aize Talianne Bezerra de Souza",
+   "partido": "PSDB",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Jucurutu": {
+  "titulo": "Jucurutu",
+  "prefeito": "Iogo Nielson de Queiroz e Silva",
+  "inicio": "2021",
+  "fim": "2028",
+  "site": "https://www.jucurutu.rn.gov.br/",
+  "telefone": "(84) 99487-4827",
+  "oficial": {
+   "nome": "Iogo Nielson de Queiroz e Silva",
+   "partido": "PSDB",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Lagoa Nova": {
+  "titulo": "Lagoa Nova",
+  "prefeito": "Iranildo Aciole da Silva",
+  "inicio": "2025",
+  "fim": "2028",
+  "site": "http://lagoanova.rn.gov.br",
+  "telefone": "(84) 3437-2232",
+  "oficial": {
+   "nome": "Iranildo Aciole da Silva",
+   "partido": "REPUBLICANOS",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Luís Gomes": {
+  "titulo": "Luís Gomes",
+  "prefeito": "Carlos Augusto de Paiva (Tututa)",
+  "inicio": "2021",
+  "fim": "2028",
+  "site": "https://luisgomes.rn.gov.br",
+  "telefone": "(84) 99692-0304",
+  "oficial": {
+   "nome": "Carlos Augusto de Paiva",
+   "partido": "MDB",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Macau": {
+  "titulo": "Macau (Rio Grande do Norte)",
+  "prefeito": "Flavia Patricia Tavares Veras Vieira",
+  "inicio": "2025",
+  "fim": "2028",
+  "site": "http://macau.rn.gov.br/",
+  "telefone": "(84) 92003-6268",
+  "oficial": {
+   "nome": "Flavia Patricia Tavares Veras Vieira",
+   "partido": "PDT",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Mossoró": {
+  "titulo": "Mossoró",
+  "prefeito": "Marcos Antonio Bezerra de Medeiros",
+  "inicio": "2026",
+  "fim": "2028",
+  "site": "https://www.prefeiturademossoro.com.br",
+  "telefone": null,
+  "oficial": {
+   "nome": "Marcos Antonio Bezerra de Medeiros",
+   "partido": null,
+   "fonte": "Wikipédia",
+   "obs": "mandato até 2028"
+  }
+ },
+ "Ouro Branco": {
+  "titulo": "Ouro Branco (Rio Grande do Norte)",
+  "prefeito": "Amariudo dos Santos Silva",
+  "inicio": "2026",
+  "fim": "2028",
+  "site": "https://ourobranco.rn.gov.br/",
+  "telefone": "(84) 98716-8854",
+  "brasao": "Brasão de Ouro Branco, Rio Grande do Norte, Brasil.png",
+  "oficial": {
+   "nome": "Amariudo dos Santos Silva",
+   "partido": "PP",
+   "fonte": "TSE",
+   "obs": "eleito em eleição suplementar"
+  }
+ },
+ "Parazinho": {
+  "titulo": "Parazinho",
+  "prefeito": "Rita de Luzier de Souza Martins",
+  "inicio": "2025",
+  "fim": "2028",
+  "site": "http://www.parazinho.rn.gov.br/",
+  "telefone": "(84) 3697-0077",
+  "oficial": {
+   "nome": "Rita de Luzier de Souza Martins",
+   "partido": "UNIÃO",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Paraú": {
+  "titulo": "Paraú",
+  "prefeito": "JOÃO EVARISTO PEIXOTO",
+  "inicio": "2025",
+  "fim": "2028",
+  "site": "http://parau.rn.gov.br/",
+  "telefone": null,
+  "oficial": {
+   "nome": "Joao Evaristo Peixoto",
+   "partido": "PP",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Parelhas": {
+  "titulo": "Parelhas",
+  "prefeito": "Tiago de Medeiros Almeida",
+  "inicio": "2021",
+  "fim": "2028",
+  "site": "https://www.parelhas.rn.gov.br",
+  "telefone": "(84) 3471-2540",
+  "oficial": {
+   "nome": "Tiago de Medeiros Almeida",
+   "partido": "PSDB",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Pendências": {
+  "titulo": "Pendências",
+  "prefeito": "Lays Helena Cabral de Queiroz",
+  "inicio": "2025",
+  "fim": "2028",
+  "site": "http://www.pendencias.rn.gov.br",
+  "telefone": null,
+  "oficial": {
+   "nome": "Lays Helena Cabral de Queiroz",
+   "partido": "MDB",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Poço Branco": {
+  "titulo": "Poço Branco",
+  "prefeito": "Edi Carlos Alexandre de Souza Oliveira",
+  "inicio": "2021",
+  "fim": "2028",
+  "site": "http://www.prefeiturapocobranco.com.br",
+  "telefone": null,
+  "oficial": {
+   "nome": "Edi Carlos Alexandre de Souza Oliveira",
+   "partido": "PSD",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Pureza": {
+  "titulo": "Pureza (Rio Grande do Norte)",
+  "prefeito": "Ricardo Santos de Brito",
+  "inicio": "2025",
+  "fim": "2028",
+  "site": "http://www.pureza.rn.gov.br/",
+  "telefone": "(84) 99461-6390",
+  "oficial": {
+   "nome": "Ricardo Santos de Brito",
+   "partido": "MDB",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Rio Do Fogo": {
+  "titulo": "Rio do Fogo",
+  "prefeito": "Márcio Luiz Pereira Barbosa",
+  "inicio": "2021",
+  "fim": "2028",
+  "site": "http://www.riodofogo.rn.gov.br",
+  "telefone": "(84) 3638-0088",
+  "oficial": {
+   "nome": "Marcio Luiz Pereira Barbosa",
+   "partido": "PSD",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Santa Maria": {
+  "titulo": "Santa Maria (Rio Grande do Norte)",
+  "prefeito": "Raniery Soares Câmara",
+  "inicio": "2021",
+  "fim": "2028",
+  "site": "http://www.santamaria.rn.gov.br/",
+  "telefone": "(84) 3635-0073",
+  "oficial": {
+   "nome": "Raniery Soares Camara",
+   "partido": "PT",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Santana Do Matos": {
+  "titulo": "Santana do Matos",
+  "prefeito": "CLAYLTON ANGELO PINHEIRO DA SILVEIRA",
+  "inicio": "2025",
+  "fim": "2028",
+  "site": "http://www.santanadomatos.rn.gov.br",
+  "telefone": "(84) 3434-2225",
+  "oficial": {
+   "nome": "Claylton Angelo Pinheiro da Silveira",
+   "partido": "UNIÃO",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Serra Negra Do Norte": {
+  "titulo": "Serra Negra do Norte",
+  "prefeito": "Acácio Sânzio de Brito",
+  "inicio": "2025",
+  "fim": "2028",
+  "site": "https://serranegra.rn.gov.br",
+  "telefone": "(84) 99881-0877",
+  "brasao": "Brasão de Serra Negra do Norte-RN, Brasil.png",
+  "oficial": {
+   "nome": "Acácio Sânzio de Brito",
+   "partido": "PSD",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "São Bento Do Norte": {
+  "titulo": "São Bento do Norte",
+  "prefeito": "João Maria Montenegro da Silva",
+  "inicio": "2021",
+  "fim": "2028",
+  "site": "http://saobentodonorte.rn.gov.br/",
+  "telefone": null,
+  "brasao": "Brasão de São Bento do Norte-RN, Brasil.png",
+  "oficial": {
+   "nome": "João Maria Montenegro da Silva",
+   "partido": "MDB",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "São Fernando": {
+  "titulo": "São Fernando (Rio Grande do Norte)",
+  "prefeito": "Genilson Medeiros Maia",
+  "inicio": "2021",
+  "fim": "2028",
+  "site": "http://www.saofernando.rn.gov.br",
+  "telefone": "(84) 3428-0001",
+  "oficial": {
+   "nome": "Genilson Medeiros Maia",
+   "partido": "PT",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "São João Do Sabugi": {
+  "titulo": "São João do Sabugi",
+  "prefeito": "Anibal Pereira de Araújo",
+  "inicio": "2021",
+  "fim": "2028",
+  "site": "http://saojoaodosabugi.rn.gov.br/",
+  "telefone": null,
+  "brasao": "Brasão - São João do Sabugi - Rio Grande do Norte - Brasil.jpg",
+  "oficial": {
+   "nome": "Anibal Pereira de Araújo",
+   "partido": "MDB",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "São Miguel Do Gostoso": {
+  "titulo": "São Miguel do Gostoso",
+  "prefeito": "Jean Ribeiro da Silva (interino)",
+  "inicio": "2026",
+  "fim": null,
+  "site": "https://site.saomigueldogostoso.rn.gov.br/",
+  "telefone": "(84) 3263-4181",
+  "oficial": {
+   "nome": "Jean Ribeiro da Silva (interino)",
+   "partido": null,
+   "fonte": "Wikipédia",
+   "obs": "desde 2026"
+  }
+ },
+ "São Rafael": {
+  "titulo": "São Rafael (Rio Grande do Norte)",
+  "prefeito": "Francisco Canindé Pinheiro dos Santos",
+  "inicio": null,
+  "fim": "2028",
+  "site": "https://www.saorafael.rn.gov.br/",
+  "telefone": "(84) 98805-7086",
+  "oficial": {
+   "nome": "Francisco Canindé Pinheiro dos Santos",
+   "partido": "UNIÃO",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "São Tomé": {
+  "titulo": "São Tomé (Rio Grande do Norte)",
+  "prefeito": "Josinaldo Amaro de Lima",
+  "inicio": "2025",
+  "fim": "2028",
+  "site": "http://prefeituramunicipaldesaotome.rn.gov.br",
+  "telefone": null,
+  "oficial": {
+   "nome": "Josinaldo Amaro de Lima",
+   "partido": "PL",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Sítio Novo": {
+  "titulo": "Sítio Novo (Rio Grande do Norte)",
+  "prefeito": "ANDREZZA BRASIL SOUTO BEZERRA",
+  "inicio": "2021",
+  "fim": "2028",
+  "site": "http://sitionovo.rn.gov.br/site/",
+  "telefone": null,
+  "oficial": {
+   "nome": "Andrezza Brasil Souto Bezerra",
+   "partido": "PT",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Taipu": {
+  "titulo": "Taipu",
+  "prefeito": "Ariosvaldo Bandeira Júnior",
+  "inicio": "2021",
+  "fim": "2028",
+  "site": "https://taipu.rn.gov.br",
+  "telefone": "(84) 3264-2311",
+  "oficial": {
+   "nome": "Ariosvaldo Bandeira Júnior",
+   "partido": "PSD",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Touros": {
+  "titulo": "Touros",
+  "prefeito": "Pedro Ferreira de Farias Filho",
+  "inicio": "2021",
+  "fim": "2028",
+  "site": "http://touros.rn.gov.br",
+  "telefone": "(84) 3263-2203",
+  "oficial": {
+   "nome": "Pedro Ferreira de Farias Filho",
+   "partido": "PSD",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Triunfo Potiguar": {
+  "titulo": "Triunfo Potiguar",
+  "prefeito": "Joana Darc Estevam da Fonseca Silva",
+  "inicio": "2021",
+  "fim": "2028",
+  "site": "http://www.triunfopotiguar.rn.gov.br",
+  "telefone": null,
+  "oficial": {
+   "nome": "Joana Darc Estevam da Fonseca Silva",
+   "partido": "PP",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Upanema": {
+  "titulo": "Upanema",
+  "prefeito": "Renan Mendonça Fernandes",
+  "inicio": "2021",
+  "fim": "2028",
+  "site": "https://upanema.rn.gov.br/",
+  "telefone": "(84) 3191-9047",
+  "oficial": {
+   "nome": "Renan Mendonca Fernandes",
+   "partido": "PP",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ }
+}

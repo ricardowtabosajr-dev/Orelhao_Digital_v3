@@ -1,0 +1,394 @@
+{
+ "Aquidabã": {
+  "titulo": "Aquidabã",
+  "prefeito": "Ana Helena Carvalho Fontes",
+  "inicio": null,
+  "fim": "2028",
+  "site": null,
+  "telefone": null,
+  "oficial": {
+   "nome": "Ana Helena Carvalho Fontes",
+   "partido": "UNIÃO",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Canhoba": {
+  "titulo": "Canhoba",
+  "prefeito": "Chrystophe Ferreira Divino",
+  "inicio": null,
+  "fim": "2028",
+  "site": "https://canhoba.se.gov.br/",
+  "telefone": "(79) 99973-6969",
+  "oficial": {
+   "nome": "Chrystophe Ferreira Divino",
+   "partido": "UNIÃO",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Canindé De São Francisco": {
+  "titulo": "Canindé de São Francisco",
+  "prefeito": "José Machado Feitosa Neto",
+  "inicio": "2025",
+  "fim": "2028",
+  "site": "http://www.caninde.se.gov.br",
+  "telefone": "(79) 3346-9500",
+  "oficial": {
+   "nome": "Jose Machado Feitosa Neto",
+   "partido": "UNIÃO",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Carira": {
+  "titulo": "Carira",
+  "prefeito": "Diogo Menezes Machado",
+  "inicio": "2021",
+  "fim": "2028",
+  "site": null,
+  "telefone": null,
+  "oficial": {
+   "nome": "Diogo Menezes Machado",
+   "partido": "PSD",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Cristinápolis": {
+  "titulo": "Cristinápolis",
+  "prefeito": "Sandro de Jesus",
+  "inicio": "2021",
+  "fim": "2028",
+  "site": "https://www.cristinapolis.se.gov.br/",
+  "telefone": "(79) 99134-2126",
+  "oficial": {
+   "nome": "Sandro de Jesus dos Santos",
+   "partido": "PT",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Frei Paulo": {
+  "titulo": "Frei Paulo",
+  "prefeito": "Douglas Rafael Santos da Costa",
+  "inicio": null,
+  "fim": "2028",
+  "site": null,
+  "telefone": null,
+  "oficial": {
+   "nome": "Douglas Rafael Santos da Costa",
+   "partido": "PSD",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Gararu": {
+  "titulo": "Gararu",
+  "prefeito": "Gilzete Dioniza de Matos \" Zete de Janjão\"",
+  "inicio": "2021",
+  "fim": "2028",
+  "site": null,
+  "telefone": null,
+  "oficial": {
+   "nome": "Gilzete Dioniza de Matos",
+   "partido": "PSD",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Indiaroba": {
+  "titulo": "Indiaroba",
+  "prefeito": "Marcos Henrique Ramos de Lima",
+  "inicio": null,
+  "fim": "2028",
+  "site": null,
+  "telefone": null,
+  "oficial": {
+   "nome": "Marcos Henrique Ramos de Lima",
+   "partido": "PSD",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Itaporanga D'Ajuda": {
+  "titulo": null,
+  "prefeito": null,
+  "inicio": null,
+  "fim": null,
+  "site": null,
+  "telefone": null,
+  "oficial": {
+   "nome": "Ivan Apostolo Sobral",
+   "partido": "UNIÃO",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Japaratuba": {
+  "titulo": "Japaratuba",
+  "prefeito": "Decio Garcez Vieira Neto",
+  "inicio": null,
+  "fim": "2028",
+  "site": null,
+  "telefone": null,
+  "oficial": {
+   "nome": "Decio Garcez Vieira Neto",
+   "partido": "UNIÃO",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Japoatã": {
+  "titulo": "Japoatã",
+  "prefeito": "Cláudio Dinisio Nascimento \"Careca da Samam\"",
+  "inicio": "2021",
+  "fim": "2028",
+  "site": "https://japoata.se.gov.br/",
+  "telefone": "(79) 3348-1030",
+  "oficial": {
+   "nome": "Claudio Dinisio Nascimento",
+   "partido": "PDT",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Lagarto": {
+  "titulo": "Lagarto (Sergipe)",
+  "prefeito": "Sérgio Reis",
+  "inicio": "2025",
+  "fim": "2028",
+  "site": "https://lagarto.se.gov.br/",
+  "telefone": "(79) 3631-9600",
+  "oficial": {
+   "nome": "Artur Sérgio de Almeida Reis",
+   "partido": "PSD",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Macambira": {
+  "titulo": "Macambira",
+  "prefeito": "José Carivaldo de Souza",
+  "inicio": "2021",
+  "fim": "2028",
+  "site": "https://macambira.se.gov.br/",
+  "telefone": null,
+  "oficial": {
+   "nome": "Jose Carivaldo de Souza",
+   "partido": "UNIÃO",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Monte Alegre De Sergipe": {
+  "titulo": "Monte Alegre de Sergipe",
+  "prefeito": "Evandro Silva Pereira Costa",
+  "inicio": null,
+  "fim": "2028",
+  "site": "https://www.montealegredesergipe.se.gov.br/",
+  "telefone": "(79) 9803-2912",
+  "oficial": {
+   "nome": "Evandro Silva Pereira Costa",
+   "partido": "PSD",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Neópolis": {
+  "titulo": "Neópolis",
+  "prefeito": "Allysson Tojal Serra Dantas",
+  "inicio": null,
+  "fim": "2028",
+  "site": null,
+  "telefone": null,
+  "oficial": {
+   "nome": "Allysson Tojal Serra Dantas",
+   "partido": "PSD",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Nossa Senhora Da Glória": {
+  "titulo": "Nossa Senhora da Glória",
+  "prefeito": "Luana Michele de Oliveira Silva Cacho",
+  "inicio": "2025",
+  "fim": "2028",
+  "site": "http://www.gloria.se.gov.br",
+  "telefone": "(79) 3411-1713",
+  "oficial": {
+   "nome": "Luana Michele de Oliveira Silva Cacho",
+   "partido": "PSD",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Nossa Senhora Das Dores": {
+  "titulo": "Nossa Senhora das Dores (Sergipe)",
+  "prefeito": "Ianna Maria Porto Melo De Oliveira",
+  "inicio": null,
+  "fim": "2028",
+  "site": "https://nossasenhoradasdores.se.gov.br/",
+  "telefone": "(79) 3265-1322",
+  "oficial": {
+   "nome": "Ianna Maria Porto Melo de Oliveira",
+   "partido": "PSD",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Nossa Senhora De Lourdes": {
+  "titulo": "Nossa Senhora de Lourdes (Sergipe)",
+  "prefeito": "Saulo Makerran Araújo Loureiro",
+  "inicio": null,
+  "fim": "2028",
+  "site": "https://nsdelourdes.se.gov.br/",
+  "telefone": "(79) 3316-1234",
+  "oficial": {
+   "nome": "Saulo Makerran Araújo Loureiro",
+   "partido": "PT",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Pacatuba": {
+  "titulo": "Pacatuba (Sergipe)",
+  "prefeito": "Iara Maria Feitosa De Lima Martins",
+  "inicio": null,
+  "fim": "2028",
+  "site": "https://pacatuba.se.gov.br/",
+  "telefone": null,
+  "oficial": {
+   "nome": "Iara Maria Feitosa de Lima Martins",
+   "partido": "PSD",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Porto Da Folha": {
+  "titulo": "Porto da Folha",
+  "prefeito": "Everton Lima Gois",
+  "inicio": null,
+  "fim": "2028",
+  "site": null,
+  "telefone": null,
+  "oficial": {
+   "nome": "Everton Lima Gois",
+   "partido": "UNIÃO",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Poço Redondo": {
+  "titulo": "Poço Redondo",
+  "prefeito": "Vado Gavião",
+  "inicio": null,
+  "fim": "2028",
+  "site": "https://www.pocoredondo.se.gov.br/",
+  "telefone": null,
+  "oficial": {
+   "nome": "Josivaldo de Souza",
+   "partido": "UNIÃO",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Poço Verde": {
+  "titulo": "Poço Verde",
+  "prefeito": "Roberto Correia Santana (Roberto Barracão)",
+  "inicio": null,
+  "fim": "2028",
+  "site": "https://pocoverde.se.gov.br/",
+  "telefone": "(79) 3549-1946",
+  "oficial": {
+   "nome": "Roberto Correia Santana",
+   "partido": "UNIÃO",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Riachão Do Dantas": {
+  "titulo": "Riachão do Dantas",
+  "prefeito": "Lucivaldo do Carmo Dantas",
+  "inicio": null,
+  "fim": "2028",
+  "site": null,
+  "telefone": null,
+  "oficial": {
+   "nome": "Lucivaldo do Carmo Dantas",
+   "partido": "PSD",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Salgado": {
+  "titulo": "Salgado (Sergipe)",
+  "prefeito": "Givanildo Costa",
+  "inicio": "2021",
+  "fim": "2028",
+  "site": "https://www.salgado.se.gov.br/",
+  "telefone": "(79) 99895-5784",
+  "oficial": {
+   "nome": "Givanildo de Souza Costa",
+   "partido": "PT",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Santa Luzia Do Itanhy": {
+  "titulo": "Santa Luzia do Itanhi",
+  "prefeito": "Adauto Dantas do Amor Cardoso (Adauto Amor)",
+  "inicio": "2021",
+  "fim": "2028",
+  "site": "https://santaluziadoitanhi.se.gov.br/",
+  "telefone": "(79) 3548-1432",
+  "oficial": {
+   "nome": "Adauto Dantas do Amor Cardoso",
+   "partido": "PSD",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Simão Dias": {
+  "titulo": "Simão Dias",
+  "prefeito": "Cristiano Viana Meneses",
+  "inicio": "2021",
+  "fim": "2028",
+  "site": "http://www.simaodias.se.gov.br",
+  "telefone": "(79) 3611-2521",
+  "oficial": {
+   "nome": "Cristiano Viana Meneses",
+   "partido": "PT",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Tobias Barreto": {
+  "titulo": "Tobias Barreto (Sergipe)",
+  "prefeito": "Dilson de Agripino",
+  "inicio": null,
+  "fim": "2028",
+  "site": "http://www.tobiasbarreto.se.gov.br/",
+  "telefone": "(79) 3541-5348",
+  "oficial": {
+   "nome": "Adilson de Jesus Santos",
+   "partido": "PSD",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ },
+ "Tomar Do Geru": {
+  "titulo": "Tomar do Geru",
+  "prefeito": "Jadson de Jesus",
+  "inicio": null,
+  "fim": "2028",
+  "site": "https://www.tomardogeru.se.gov.br/",
+  "telefone": null,
+  "oficial": {
+   "nome": "Jadson de Jesus",
+   "partido": "PSD",
+   "fonte": "TSE",
+   "obs": "eleito em 2024 · mandato 2025–2028"
+  }
+ }
+}
