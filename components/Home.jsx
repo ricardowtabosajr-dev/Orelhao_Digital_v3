@@ -624,7 +624,10 @@ export default function Home({ regioes = false, novidades = false }) {
     return () => removeEventListener('resize', medir);
   }, []);
   const enqTeste = useMemo(() => {
-    if (tela.w > 900) return ENQ_TESTE;
+    if (tela.w > 1500) return ENQ_TESTE;
+    if (tela.w > 900) { // faixa com duas linhas (título + botões): o mapa começa abaixo dela
+      return { ...ENQ_TESTE, livre: { ...ENQ_TESTE.livre, top: 150 }, painel: { ...ENQ_TESTE.painel, top: 160 } };
+    }
     const topo = tela.w <= 560 ? 130 : 140; // faixa + linha de botões
     const gaveta = Math.round(tela.h * (tela.w <= 560 ? 0.52 : 0.58)) + 16;
     return {

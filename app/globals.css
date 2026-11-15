@@ -725,10 +725,13 @@ button { font: inherit; color: inherit; cursor: pointer; background: none; borde
 /* ===== Em teste: faixa Método no alto da tela, de ponta a ponta =====
    Logo + "Conectando o Brasil" à esquerda, título centralizado, controles do mapa à direita
    (dentro da faixa). Painel, detalhe e avisos começam abaixo dela. Paleta da faixa Método. */
-.com-banner { --banner-top: 0.75rem; --banner-h: 68px; --abaixo-banner: calc(var(--banner-top) + var(--banner-h) + 0.75rem); }
+/* faixa = linha 1 (logo + título) + linha 2 (botões do mapa; só existe em telas ≤ 1500px,
+   quando os botões não cabem ao lado do título) */
+.com-banner { --banner-top: 0.75rem; --linha1: 68px; --linha2: 0px; --banner-h: calc(var(--linha1) + var(--linha2));
+  --abaixo-banner: calc(var(--banner-top) + var(--banner-h) + 0.75rem); }
 .banner-metodo {
   position: absolute; top: var(--banner-top); left: 1rem; right: 1rem; height: var(--banner-h); z-index: 9;
-  display: flex; align-items: center; padding: 0 1.5rem; overflow: hidden;
+  display: flex; align-items: flex-start; padding: 0 1.5rem; overflow: hidden;
   color: #fff; border-radius: 18px;
   background:
     radial-gradient(120% 140% at 50% -40%, rgba(255, 255, 255, 0.16), transparent 60%),
@@ -742,10 +745,10 @@ button { font: inherit; color: inherit; cursor: pointer; background: none; borde
 /* fio de luz na base da faixa */
 .banner-metodo::after { content: ''; position: absolute; left: 12%; right: 12%; bottom: 0; height: 2px; border-radius: 2px;
   background: linear-gradient(90deg, transparent, rgba(184, 240, 241, 0.85), transparent); }
-.banner-marca { display: flex; align-items: center; gap: 0.75rem; }
+.banner-marca { display: flex; align-items: center; gap: 0.75rem; height: var(--linha1); }
 .banner-marca .metodo-logo { height: 30px; }
 .banner-marca .metodo-frase { font-size: 1.12rem; font-weight: 600; top: -1px; }
-.banner-titulo { position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); display: grid; justify-items: center; gap: 0.2rem; }
+.banner-titulo { position: absolute; left: 50%; top: calc(var(--linha1) / 2); transform: translate(-50%, -50%); display: grid; justify-items: center; gap: 0.2rem; }
 .banner-titulo h1 { margin: 0; font-size: 1.9rem; font-weight: 800; letter-spacing: 0.02em; line-height: 1;
   color: #fff; text-shadow: 0 2px 10px rgba(10, 22, 38, 0.35); }
 .banner-titulo span { font-size: 0.68rem; font-weight: 600; letter-spacing: 0.22em; text-transform: uppercase; color: #d4f1f2; opacity: 0.9; }
@@ -790,22 +793,24 @@ button { font: inherit; color: inherit; cursor: pointer; background: none; borde
 /* zoom (+/−) e escala do mapa chegam para o lado quando o painel abre */
 .com-banner .maplibregl-ctrl-bottom-right { transition: right 0.6s cubic-bezier(0.22, 1, 0.36, 1); right: 0; }
 .com-banner.painel-aberto .maplibregl-ctrl-bottom-right { right: calc(400px + 1.5rem); }
-/* tela menor: os controles da direita ficam abaixo da faixa → painéis começam abaixo deles */
-@media (max-width: 1500px) { .com-banner { --topo-painel: calc(var(--abaixo-banner) + 46px + 0.75rem); } }
 @media (max-width: 900px) {
   .panel.painel-alterna, .drawer.drawer-alterna { width: auto; left: 1rem; }
   .recolher-painel { display: none; }
   .com-banner.painel-aberto .maplibregl-ctrl-bottom-right { right: 0; }
 }
 
-/* tela menor: título não cabe entre a marca e os controles → controles descem para baixo da faixa */
+/* tela menor: título não cabe entre a marca e os controles → a faixa cresce e os controles
+   ficam numa segunda linha DENTRO dela, centralizados */
 @media (max-width: 1500px) {
-  .com-banner .topbar { top: var(--abaixo-banner); right: 1rem; }
-  .com-banner .topbar .seg { background: rgba(10, 22, 38, 0.75); }
-  .com-banner .drawer { top: calc(var(--abaixo-banner) + 46px + 0.75rem); }
+  .com-banner { --linha2: 58px; }
+  .com-banner .topbar { top: calc(var(--banner-top) + var(--linha1) - 2px); left: 1.5rem; right: 1.5rem; justify-content: center; }
+  /* fio fino separando as duas linhas da faixa */
+  .banner-metodo::before { content: ''; position: absolute; left: 1.5rem; right: 1.5rem; top: calc(var(--linha1) - 8px); height: 1px;
+    background: linear-gradient(90deg, transparent, rgba(184, 240, 241, 0.3), transparent); }
 }
 @media (max-width: 900px) {
-  .com-banner { --banner-h: 52px; }
+  .com-banner { --linha1: 50px; --linha2: 50px; }
+  .banner-metodo::before { top: calc(var(--linha1) - 4px); left: 1rem; right: 1rem; }
   .banner-marca .metodo-frase { display: none; }
   .banner-titulo h1 { font-size: 1.3rem; }
   .banner-titulo span { display: none; }
@@ -829,8 +834,8 @@ button { font: inherit; color: inherit; cursor: pointer; background: none; borde
   .com-banner { --banner-top: 0.5rem; --abaixo-banner: calc(var(--banner-top) + var(--banner-h) + 0.5rem); --gaveta: 58dvh; }
   .banner-metodo { left: 0.5rem; right: 0.5rem; padding: 0 1rem; border-radius: 14px; }
   .banner-marca .metodo-logo { height: 22px; }
-  /* controles do mapa: linha inteira abaixo da faixa, centralizada, sem passar da tela */
-  .com-banner .topbar { top: var(--abaixo-banner); left: 0.5rem; right: 0.5rem; justify-content: center; gap: 0.4rem;
+  /* controles do mapa: segunda linha da faixa, centralizada, sem passar da tela */
+  .com-banner .topbar { top: calc(var(--banner-top) + var(--linha1) - 2px); left: 0.9rem; right: 0.9rem; justify-content: center; gap: 0.4rem;
     overflow-x: auto; scrollbar-width: none; }
   .com-banner .topbar::-webkit-scrollbar { display: none; }
   .com-banner .topbar .seg { flex-shrink: 0; }
@@ -854,7 +859,7 @@ button { font: inherit; color: inherit; cursor: pointer; background: none; borde
   /* zoom do mapa sobe junto com a gaveta (e some da frente do "Buscar") */
   .com-banner .maplibregl-ctrl-bottom-right { right: 0 !important; transition: bottom 0.6s cubic-bezier(0.22, 1, 0.36, 1); bottom: 4.5rem; }
   .com-banner.painel-aberto .maplibregl-ctrl-bottom-right { bottom: calc(var(--gaveta) + 1rem); }
-  .com-banner .edit-hint { top: calc(var(--abaixo-banner) + 52px); max-width: calc(100vw - 2rem); white-space: normal; text-align: center; }
+  .com-banner .edit-hint { top: var(--abaixo-banner); max-width: calc(100vw - 2rem); white-space: normal; text-align: center; }
   /* no painel: números e abas um pouco menores */
   .com-banner .stats { padding: 1.1rem 0.75rem 0.75rem; }
   .com-banner .tabs button { padding: 0.75rem; }
@@ -863,9 +868,10 @@ button { font: inherit; color: inherit; cursor: pointer; background: none; borde
 @media (max-width: 560px) {
   .banner-titulo { left: auto; right: 1rem; transform: translateY(-50%); justify-items: end; }
   .banner-titulo h1 { font-size: 1.1rem; }
-  .com-banner .topbar { justify-content: flex-start; }
-  .com-banner .topbar .seg button { padding: 0.42rem 0.55rem; font-size: 0.76rem; }
-  .com-banner .topbar .cta { padding: 0 0.7rem; height: 38px; }
+  /* botões encolhem junto com a largura da tela para caber inteiros dentro da faixa */
+  .com-banner .topbar { left: 0.6rem; right: 0.6rem; gap: clamp(0.2rem, 1.2vw, 0.4rem); }
+  .com-banner .topbar .seg button { padding: 0.4rem clamp(0.3rem, 1.6vw, 0.55rem); font-size: clamp(0.66rem, 3vw, 0.76rem); }
+  .com-banner .topbar .cta { padding: 0; width: 36px; height: 36px; justify-content: center; }
   .com-banner .topbar .cta span.rotulo { display: none; }
   .com-banner { --gaveta: 52dvh; }
 }
