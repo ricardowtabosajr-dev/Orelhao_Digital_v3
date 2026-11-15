@@ -298,14 +298,22 @@ export default function Home({ regioes = false, novidades = false }) {
     : porUf), [porUf, macro, macroDe]);
   useEffect(() => { if (macro && macro.uf !== uf) setMacro(null); }, [uf]); // eslint-disable-line react-hooks/exhaustive-deps
 
+  // Estado clicado no mapa (ou escolhido): a busca fica só dentro dele
+  const ufFocoBusca = novidades && !municipio && !macro ? (ufMapa || uf) : null;
   const filtered = useMemo(() => {
     const nq = norm(q.trim());
-    return porMacro.filter((p) =>
+    const base = porMacro.filter((p) =>
       (!municipio || p.municipio === municipio) &&
       (!soOriginais || p.origem === 'original') &&
-      (!nq || norm(p.localidade).includes(nq) || norm(p.municipio).includes(nq) || p.cod_localidade?.includes(nq))
+      (!nq || !ufFocoBusca || p.uf === ufFocoBusca)
     );
-  }, [porMacro, municipio, soOriginais, q]);
+    if (!nq) return base;
+    if (!novidades) return base.filter((p) => norm(p.localidade).includes(nq) || norm(p.municipio).includes(nq) || p.cod_localidade?.includes(nq));
+    // nome exato primeiro ("Formoso" não traz "Campo Formoso"); sem nome exato, os que começam com o texto
+    const exatos = base.filter((p) => norm(p.localidade) === nq || norm(p.municipio) === nq || p.cod_localidade === nq);
+    if (exatos.length) return exatos;
+    return base.filter((p) => norm(p.localidade).startsWith(nq) || norm(p.municipio).startsWith(nq) || p.cod_localidade?.startsWith(nq));
+  }, [porMacro, municipio, soOriginais, q, novidades, ufFocoBusca]);
 
   // Com uma macrorregião escolhida, a lista vem agrupada por município
   const porMunicipio = useMemo(() => {
@@ -440,12 +448,13 @@ export default function Home({ regioes = false, novidades = false }) {
     const fim = nq.split(' ').pop().toUpperCase();
     const ufBusca = nq.includes(' ') && UF_NOME[fim] ? fim : null;
     if (ufBusca) nq = nq.slice(0, -3).trim();
-    const daUf = (m) => !ufBusca || m.uf === ufBusca;
+    const ufAlvo = ufBusca || ufFocoBusca; // com um estado em foco, só municípios dele
+    const daUf = (m) => !ufAlvo || m.uf === ufAlvo;
     const exatos = municipiosIdx.filter((m) => daUf(m) && norm(m.municipio) === nq);
     const cand = exatos.length ? exatos : municipiosIdx.filter((m) => daUf(m) && norm(m.municipio).startsWith(nq));
     if (!cand.length) {
       if (filtered.length === 1) select(filtered[0].id);
-      else notify('Nenhum município com esse nome na base');
+      else if (!filtered.length) notify(ufFocoBusca ? `Nada com esse nome em ${UF_NOME[ufFocoBusca]}` : 'Nenhum município com esse nome na base');
       return;
     }
     const m = [...cand].sort((a, b) => b.n - a.n)[0];
@@ -643,13 +652,16 @@ export default function Home({ regioes = false, novidades = false }) {
   // município ou região do estado escolhidos (busca, lista, cartão ou pop-up do mapa, em qualquer estado):
   // o painel mostra só a busca e a lista de localidades
   const soMun = novidades && !!(municipio || macro);
+  // estado clicado no mapa: o painel mostra só o campo de busca (busca limitada ao estado).
+  // Aberto pelo botão "Buscar", sem estado, o painel continua completo.
+  const soBusca = novidades && !!ufMapa && !soMun;
 
   const limpar =() => { setRegiao(null); setUf(null); setMunicipio(null); setMacro(null); setQ(''); setSoOriginais(false); };
   const copy = (txt) => { navigator.clipboard.writeText(txt); notify('Copiado: ' + txt); };
   const maxRegiao = Math.max(1, ...porRegiaoStats.map((r) => r.n));
 
   return (
-    <main className={`app ${novidades ? 'com-banner' : ''} ${novidades && (mostrarPainel || selected) ? 'painel-aberto' : ''}`}>
+    <main className={`app ${novidades ? 'com-banner' : ''} ${novidades && (mostrarPainel || selected) ? 'painel-aberto' : ''} ${soBusca && !q.trim() && !selected ? 'busca-compacta' : ''}`}>
       <h1 className="sr-only">Orelhão Digital — mapa dos orelhões do Brasil</h1>
 
       {/* Splash */}
@@ -717,32 +729,32 @@ export default function Home({ regioes = false, novidades = false }) {
           </header>
         )}
 
-        {!soMun && <div className="stats">
+        {!soMun && !soBusca && <div className="stats">
           <Stat label="orelhões" value={stats.total} accent="#fbbf24" />
           <Stat label="municípios" value={stats.municipios} accent="#34d399" />
           <Stat label="estados" value={stats.ufs} accent="#60a5fa" />
         </div>}
 
-        {!soMun && <nav className="tabs" role="tablist">
+        {!soMun && !soBusca && <nav className="tabs" role="tablist">
           {[['explorar', 'Explorar'], ['dados', 'Painel']].map(([id, l]) => (
             <button key={id} id={`tab-${id}`} role="tab" aria-selected={tab === id} className={tab === id ? 'on' : ''} onClick={() => setTab(id)}>{l}</button>
           ))}
           <span className="tab-ink" style={{ transform: `translateX(${tab === 'explorar' ? 0 : 100}%)` }} />
         </nav>}
 
-        {tab === 'explorar' || soMun ? (
+        {tab === 'explorar' || soMun || soBusca ? (
           <div className="scroll">
             <label className="search">
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><circle cx="11" cy="11" r="7" stroke="currentColor" strokeWidth="2" /><path d="m20 20-3.5-3.5" stroke="currentColor" strokeWidth="2" strokeLinecap="round" /></svg>
               <input id="search" ref={searchRef} value={q} onChange={(e) => setQ(e.target.value)}
                 onKeyDown={(e) => { if (e.key === 'Enter') irParaMunicipio(); }}
-                placeholder="Município + Enter, localidade ou código…" />
+                placeholder={soBusca ? `Buscar em ${UF_NOME[ufMapa] || ufMapa}…` : 'Município + Enter, localidade ou código…'} />
               {q ? <button className="x" onClick={() => setQ('')} aria-label="Limpar busca">×</button> : <kbd>/</kbd>}
             </label>
 
             {soMun && <button id="voltar-busca" className="link voltar-busca" onClick={limpar}>‹ Ver Brasil</button>}
 
-            {!soMun && <>
+            {!soMun && !soBusca && <>
             {resumoMunicipio && (
               <div className="mun-card">
                 <div>

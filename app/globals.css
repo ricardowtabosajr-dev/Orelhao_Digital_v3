@@ -854,6 +854,9 @@ button { font: inherit; color: inherit; cursor: pointer; background: none; borde
     left: 0.5rem; right: 0.5rem; width: auto; top: auto; bottom: 0.5rem; height: var(--gaveta);
     border-radius: 20px; transform: translateY(calc(100% + 2rem)); transform-origin: bottom center; }
   .panel.painel-alterna.in, .drawer.drawer-alterna.open { transform: none; }
+  /* estado clicado, nada digitado: a gaveta fica só do tamanho do campo de busca */
+  .com-banner.busca-compacta { --gaveta: 96px; }
+  .panel.painel-alterna { transition: transform 0.7s cubic-bezier(0.22, 1, 0.36, 1), opacity 0.45s ease, filter 0.55s ease, height 0.45s cubic-bezier(0.22, 1, 0.36, 1); }
   /* alça da gaveta (só visual) */
   .panel.painel-alterna::before { content: ''; position: absolute; top: 6px; left: 50%; width: 40px; height: 4px; margin-left: -20px;
     border-radius: 4px; background: rgba(184, 240, 241, 0.35); z-index: 2; }
