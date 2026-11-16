@@ -578,6 +578,8 @@ button { font: inherit; color: inherit; cursor: pointer; background: none; borde
 .sel-pulse i { position: absolute; inset: 0; border-radius: 50%; border: 2px solid #fbbf24;
   background: rgba(251, 191, 36, 0.35); animation: sel-pulse 1.6s ease-out infinite; }
 .sel-pulse i + i { animation-delay: 0.8s; }
+/* orelhão confirmado (marcado no Street View e salvo): pulso vermelho */
+.sel-pulse.vermelho i { border-color: #ff2a2a; background: rgba(255, 42, 42, 0.35); }
 @keyframes sel-pulse {
   from { transform: scale(1); opacity: 0.9; }
   to { transform: scale(3.6); opacity: 0; }

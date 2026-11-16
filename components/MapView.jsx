@@ -34,13 +34,26 @@ const SELO_ESPACO = 58; // distância vertical mínima entre dois selos da fila 
 const STYLE = 'https://basemaps.cartocdn.com/gl/dark-matter-gl-style/style.json';
 const FONT = ['Montserrat Medium'];
 
+// Orelhão confirmado: posição marcada no Street View / Google Earth e salva (migrations 006/007
+// gravam "Posição corrigida manualmente (Street View)" em origem_desc). No mapa, pisca em vermelho.
+export const confirmado = (p) => /\((Street View|Google Earth)\)/.test(p?.origem_desc || '');
+
 const toGeoJSON = (points) => ({
   type: 'FeatureCollection',
   features: points.map((p) => ({
     type: 'Feature', id: p.id,
     geometry: { type: 'Point', coordinates: [p.lng, p.lat] },
-    properties: { id: p.id, localidade: p.localidade, municipio: p.municipio, uf: p.uf, regiao: p.regiao, origem: p.origem },
+    properties: { id: p.id, localidade: p.localidade, municipio: p.municipio, uf: p.uf, regiao: p.regiao, origem: p.origem, confirmado: confirmado(p) },
   })),
+});
+// pulso vermelho dos confirmados: um anel que cresce e some, embaixo do ícone
+const PULSO_COR = '#ff2a2a';
+const RAIO_GRUPO = ['step', ['get', 'point_count'], 19, 25, 23, 100, 28, 400, 34]; // mesmo tamanho do brilho do grupo
+const filtroConfirmado = ['all', ['!', ['has', 'point_count']], ['==', ['get', 'confirmado'], true]];
+const camadaPulso = (id, source) => ({
+  id, type: 'circle', source, filter: filtroConfirmado, minzoom: ICON_ZOOM,
+  paint: { 'circle-color': PULSO_COR, 'circle-opacity': 0.35, 'circle-blur': 0.35, 'circle-radius': 18,
+    'circle-stroke-width': 2, 'circle-stroke-color': PULSO_COR, 'circle-stroke-opacity': 0.8, 'circle-pitch-alignment': 'map' },
 });
 
 const ICON_ZOOM = 8; // abaixo disso, pontos simples em vez da logo (performance)
@@ -135,6 +148,8 @@ function Mapa({ points, mode, basemap = 'sat', orbit = false, onOrbitStop, editi
       m.addSource('orelhoes', {
         type: 'geojson', data: toGeoJSON(pending.current || []),
         cluster: true, clusterRadius: 55, clusterMaxZoom: 11,
+        // quantos orelhões confirmados há em cada grupo: o grupo também pisca em vermelho
+        clusterProperties: { confirmados: ['+', ['case', ['==', ['get', 'confirmado'], true], 1, 0]] },
       });
       // Os tiles do Esri são HTTP/1.1: o navegador só abre ~6 conexões por domínio.
       // Dividir entre os dois hosts dobra o paralelismo e corta a fila de imagens.
@@ -186,6 +201,12 @@ function Mapa({ points, mode, basemap = 'sat', orbit = false, onOrbitStop, editi
         },
       });
       m.addLayer({
+        id: 'confirmado-pulso-grupo', type: 'circle', source: 'orelhoes', minzoom: UF_ZOOM,
+        filter: ['all', ['has', 'point_count'], ['>', ['get', 'confirmados'], 0]],
+        paint: { 'circle-color': PULSO_COR, 'circle-opacity': 0.35, 'circle-blur': 0.35, 'circle-radius': RAIO_GRUPO,
+          'circle-stroke-width': 2, 'circle-stroke-color': PULSO_COR, 'circle-stroke-opacity': 0.8 },
+      });
+      m.addLayer({
         id: 'clusters', type: 'circle', source: 'orelhoes', filter: ['has', 'point_count'], minzoom: UF_ZOOM,
         paint: {
           'circle-color': COR_CLUSTER, 'circle-radius': RAIO_CLUSTER,
@@ -206,13 +227,14 @@ function Mapa({ points, mode, basemap = 'sat', orbit = false, onOrbitStop, editi
           'circle-stroke-width': 1.2, 'circle-stroke-color': ['case', ['==', ['get', 'origem'], 'estimada'], '#ef4444', '#0b1020'],
         },
       });
+      m.addLayer(camadaPulso('confirmado-pulso', 'orelhoes'));
       m.addLayer({
         id: 'point-ring', type: 'circle', source: 'orelhoes', filter: ['!', ['has', 'point_count']], minzoom: ICON_ZOOM,
         paint: {
           'circle-color': 'rgba(0,0,0,0)',
           'circle-radius': raioAnel(testeRef.current),
           'circle-stroke-width': 2.5,
-          'circle-stroke-color': ['case', ['==', ['get', 'origem'], 'estimada'], '#ef4444', REGION_COLOR],
+          'circle-stroke-color': ['case', ['==', ['get', 'confirmado'], true], PULSO_COR, ['==', ['get', 'origem'], 'estimada'], '#ef4444', REGION_COLOR],
         },
       });
       m.addLayer({
@@ -390,7 +412,7 @@ function Mapa({ points, mode, basemap = 'sat', orbit = false, onOrbitStop, editi
       const vis = (id, on) => m.getLayer(id) && m.setLayoutProperty(id, 'visibility', on ? 'visible' : 'none');
       const heat = mode === 'heat';
       vis('heat', heat);
-      ['clusters', 'cluster-glow', 'cluster-count'].forEach((l) => vis(l, mode === 'cluster'));
+      ['clusters', 'cluster-glow', 'cluster-count', 'confirmado-pulso-grupo'].forEach((l) => vis(l, mode === 'cluster'));
       ['points', 'point-ring', 'point-dots', 'point-labels'].forEach((l) => vis(l, !heat));
       if (mode === 'points') {
         // reaproveita a fonte sem cluster: mostra os pontos dentro de clusters via camada auxiliar
@@ -400,6 +422,7 @@ function Mapa({ points, mode, basemap = 'sat', orbit = false, onOrbitStop, editi
             id: 'raw-dots', type: 'circle', source: 'raw', maxzoom: ICON_ZOOM,
             paint: { 'circle-color': REGION_COLOR, 'circle-radius': ['interpolate', ['linear'], ['zoom'], 3, 2.2, ICON_ZOOM, 5], 'circle-stroke-width': 0.5, 'circle-stroke-color': '#0b1020' },
           }, 'selected-pulse');
+          m.addLayer(camadaPulso('confirmado-pulso-raw', 'raw'), 'selected-pulse');
           m.addLayer({
             id: 'raw-points', type: 'symbol', source: 'raw', minzoom: ICON_ZOOM,
             layout: { 'icon-image': icone(testeRef.current), 'icon-size': tamIcone(testeRef.current), 'icon-allow-overlap': true, 'icon-ignore-placement': true },
@@ -410,9 +433,12 @@ function Mapa({ points, mode, basemap = 'sat', orbit = false, onOrbitStop, editi
             m.on('mouseleave', l, () => (m.getCanvas().style.cursor = ''));
           });
         } else m.getSource('raw').setData(toGeoJSON(pending.current));
-        ['raw-points', 'raw-dots'].forEach((l) => vis(l, true));
-        ['points', 'point-ring', 'point-dots'].forEach((l) => vis(l, false));
-      } else ['raw-points', 'raw-dots'].forEach((l) => vis(l, false));
+        ['raw-points', 'raw-dots', 'confirmado-pulso-raw'].forEach((l) => vis(l, true));
+        ['points', 'point-ring', 'point-dots', 'confirmado-pulso'].forEach((l) => vis(l, false));
+      } else {
+        ['raw-points', 'raw-dots', 'confirmado-pulso-raw'].forEach((l) => vis(l, false));
+        vis('confirmado-pulso', !heat);
+      }
     };
     if (loaded.current) apply(); else map.current?.once('load', apply);
   }, [mode, points]);
@@ -542,8 +568,48 @@ function Mapa({ points, mode, basemap = 'sat', orbit = false, onOrbitStop, editi
       el.innerHTML = '<i></i><i></i>';
       pulseMarker.current = new maplibregl.Marker({ element: el });
     }
+    pulseMarker.current.getElement().classList.toggle('vermelho', confirmado(selected));
     pulseMarker.current.setLngLat([selected.lng, selected.lat]).addTo(map.current);
   }, [selected, pronto]);
+
+  // Pulso vermelho constante dos orelhões confirmados: o anel cresce e some (1,6 s), ~25 quadros/s.
+  // Só anima com orelhão confirmado na lista e com zoom em que os ícones aparecem.
+  const temConfirmado = points.some(confirmado);
+  useEffect(() => {
+    const m = map.current;
+    if (!m || !pronto || !temConfirmado) return;
+    const r0 = escalaTeste(testeRef.current, 13), r1 = escalaTeste(testeRef.current, 22);
+    let raf, ultimo = 0, conferido = 0, naTela = true;
+    const CAMADAS = ['confirmado-pulso', 'confirmado-pulso-raw', 'confirmado-pulso-grupo'];
+    const passo = (agora) => {
+      raf = requestAnimationFrame(passo);
+      if (agora - ultimo < 40 || m.getZoom() < UF_ZOOM) return;
+      // a cada meio segundo confere se há algum confirmado na tela (senão não redesenha à toa)
+      if (agora - conferido > 500) {
+        conferido = agora;
+        const ls = CAMADAS.filter((id) => m.getLayer(id) && m.getLayoutProperty(id, 'visibility') !== 'none');
+        try { naTela = ls.length > 0 && m.queryRenderedFeatures({ layers: ls }).length > 0; } catch { naTela = true; }
+      }
+      if (!naTela) return;
+      ultimo = agora;
+      const t = (agora % 1600) / 1600;
+      const k = 1 + t * 1.2;
+      const raio = ['interpolate', ['linear'], ['zoom'], ICON_ZOOM, r0 * k, 16, r1 * k];
+      if (m.getLayer('confirmado-pulso-grupo')) {
+        m.setPaintProperty('confirmado-pulso-grupo', 'circle-radius', ['*', 1 + t * 0.9, RAIO_GRUPO]);
+        m.setPaintProperty('confirmado-pulso-grupo', 'circle-opacity', 0.5 * (1 - t));
+        m.setPaintProperty('confirmado-pulso-grupo', 'circle-stroke-opacity', 0.9 * (1 - t));
+      }
+      for (const id of ['confirmado-pulso', 'confirmado-pulso-raw']) {
+        if (!m.getLayer(id)) continue;
+        m.setPaintProperty(id, 'circle-radius', raio);
+        m.setPaintProperty(id, 'circle-opacity', 0.5 * (1 - t));
+        m.setPaintProperty(id, 'circle-stroke-opacity', 0.9 * (1 - t));
+      }
+    };
+    raf = requestAnimationFrame(passo);
+    return () => cancelAnimationFrame(raf);
+  }, [pronto, temConfirmado]);
 
   // Edição de posição: clique no mapa ou arraste o pino
   const draftMarker = useRef(null);
