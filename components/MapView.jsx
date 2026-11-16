@@ -34,9 +34,10 @@ const SELO_ESPACO = 58; // distância vertical mínima entre dois selos da fila 
 const STYLE = 'https://basemaps.cartocdn.com/gl/dark-matter-gl-style/style.json';
 const FONT = ['Montserrat Medium'];
 
-// Orelhão confirmado: posição marcada no Street View / Google Earth e salva (migrations 006/007
-// gravam "Posição corrigida manualmente (Street View)" em origem_desc). No mapa, pisca em vermelho.
-export const confirmado = (p) => /\((Street View|Google Earth)\)/.test(p?.origem_desc || '');
+// Orelhão confirmado: posição corrigida à mão e salva — pelo Street View / Google Earth
+// ("Posição corrigida manualmente (Street View)", migrations 006/007) ou pela edição antiga
+// ("Posição corrigida manualmente"). No mapa, pisca em vermelho.
+export const confirmado = (p) => /corrigida manualmente/i.test(p?.origem_desc || '');
 
 const toGeoJSON = (points) => ({
   type: 'FeatureCollection',
