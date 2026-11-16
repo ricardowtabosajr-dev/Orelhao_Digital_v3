@@ -887,3 +887,54 @@ button { font: inherit; color: inherit; cursor: pointer; background: none; borde
 @media (max-width: 560px) {
   .com-banner { --gaveta: 52dvh; }
 }
+
+/* ===== Aba do Street View (/rua): Street View do Google em tela cheia + mira e "Marcar aqui" =====
+   Faz o papel da extensão do Chrome, em qualquer aparelho. Mesmo visual discreto da extensão. */
+.rua { position: fixed; inset: 0; background: #070b18; overflow: hidden; }
+.rua-pano { position: absolute; inset: 0; }
+.rua-topo { position: absolute; top: 0.75rem; left: 0.75rem; right: 0.75rem; z-index: 3; display: flex; gap: 0.5rem; align-items: center;
+  justify-content: space-between; pointer-events: none; }
+.rua-topo > * { pointer-events: auto; }
+.rua-nome { min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; padding: 0.45rem 0.85rem; border-radius: 999px;
+  color: #fff; font-weight: 600; font-size: 0.85rem; background: rgba(15, 32, 48, 0.72); border: 1px solid rgba(92, 195, 197, 0.6);
+  backdrop-filter: blur(6px); box-shadow: 0 3px 10px rgba(0, 0, 0, 0.35); }
+.rua-google { flex-shrink: 0; padding: 0.45rem 0.8rem; border-radius: 999px; font-size: 0.78rem; color: #d4f1f2; text-decoration: none;
+  background: rgba(15, 32, 48, 0.62); border: 1px solid rgba(184, 240, 241, 0.25); backdrop-filter: blur(6px); }
+.rua-google:hover { color: #fff; background: rgba(15, 32, 48, 0.85); }
+/* o Google põe os próprios controles nos cantos; os nossos ficam embaixo, no centro */
+.rua-aviso { position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); z-index: 3; width: min(92vw, 380px);
+  display: grid; gap: 0.6rem; justify-items: center; text-align: center; padding: 1.2rem 1.3rem; border-radius: 16px; color: #e6f4f4;
+  background: rgba(15, 32, 48, 0.9); border: 1px solid rgba(92, 195, 197, 0.5); box-shadow: 0 14px 34px rgba(5, 12, 22, 0.55); }
+.rua-aviso span { font-size: 0.86rem; opacity: 0.85; }
+.rua-aviso.erro { border-color: rgba(251, 191, 36, 0.6); }
+.rua-aviso a, .rua-aviso button { margin-top: 0.2rem; padding: 0.5rem 1rem; border-radius: 999px; border: 1px solid rgba(92, 195, 197, 0.8);
+  background: #2a8a8c; color: #fff; font: inherit; font-weight: 600; font-size: 0.85rem; text-decoration: none; cursor: pointer; }
+
+.rua-marcar { position: absolute; inset: 0; z-index: 2; pointer-events: none; }
+.rua-mira { position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%) scale(0.85); opacity: 0;
+  transition: opacity 0.25s ease, transform 0.3s cubic-bezier(0.22, 1, 0.36, 1); }
+.rua-mira i { display: block; width: 22px; height: 22px; border: 1.5px solid #fbbf24; border-radius: 50%; position: relative;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.45), inset 0 0 0 1px rgba(0, 0, 0, 0.35); }
+.rua-mira i::before, .rua-mira i::after { content: ''; position: absolute; left: 50%; top: 50%; }
+.rua-mira i::before { width: 1.5px; height: 34px; transform: translate(-50%, -50%);
+  background: linear-gradient(#fbbf24 0 11px, transparent 11px 23px, #fbbf24 23px); filter: drop-shadow(0 0 1px rgba(0, 0, 0, 0.7)); }
+.rua-mira i::after { height: 1.5px; width: 34px; transform: translate(-50%, -50%);
+  background: linear-gradient(90deg, #fbbf24 0 11px, transparent 11px 23px, #fbbf24 23px); filter: drop-shadow(0 0 1px rgba(0, 0, 0, 0.7)); }
+.rua-gatilho { position: absolute; left: 50%; bottom: calc(1.6rem + env(safe-area-inset-bottom)); transform: translateX(-50%); pointer-events: auto;
+  width: 44px; height: 44px; border-radius: 50%; display: grid; place-items: center; cursor: pointer;
+  color: #fff; background: rgba(15, 32, 48, 0.62); border: 1px solid rgba(92, 195, 197, 0.7);
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.35); backdrop-filter: blur(4px); opacity: 0.85; transition: opacity 0.2s, background 0.2s, transform 0.25s; }
+.rua-gatilho:hover { opacity: 1; background: #2a8a8c; }
+.rua-acoes { position: absolute; left: 50%; bottom: calc(1.6rem + env(safe-area-inset-bottom)); transform: translate(-50%, 8px); display: flex; gap: 6px;
+  opacity: 0; pointer-events: none; transition: opacity 0.25s ease, transform 0.3s cubic-bezier(0.22, 1, 0.36, 1); }
+.rua-btn, .rua-x { height: 40px; border: 1px solid rgba(92, 195, 197, 0.8); border-radius: 999px; cursor: pointer; color: #fff;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.35); font: 600 0.9rem/1 var(--font-sans, system-ui), sans-serif; }
+.rua-btn { display: flex; align-items: center; gap: 6px; padding: 0 16px 0 13px; background: #2a8a8c; }
+.rua-btn:hover { background: #34a1a3; }
+.rua-x { width: 40px; padding: 0; font-size: 20px; background: rgba(15, 32, 48, 0.7); }
+.rua-enviado { position: absolute; left: 50%; bottom: calc(1.6rem + env(safe-area-inset-bottom)); transform: translateX(-50%); width: max-content; max-width: 92vw;
+  padding: 0.7rem 1rem; border-radius: 14px; text-align: center; color: #fff; font-size: 0.88rem; background: #16a34a; border: 1px solid #4ade80;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.4); }
+.rua-marcar.marcando .rua-mira, .rua-marcar.ok .rua-mira { opacity: 1; transform: translate(-50%, -50%) scale(1); }
+.rua-marcar.marcando .rua-acoes { opacity: 1; pointer-events: auto; transform: translate(-50%, 0); }
+.rua-marcar.marcando .rua-gatilho { opacity: 0; pointer-events: none; transform: translateX(-50%) scale(0.6); }

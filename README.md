@@ -125,7 +125,21 @@ Os arquivos ficam no Storage do Supabase (bucket `fotos`, 1 GB no plano gratuito
 lista em `orelhoes_fotos`. Como o app só tem a chave pública, a senha libera uma
 autorização de 10 minutos para um arquivo (detalhes no topo de `004_fotos.sql`).
 
-### Extensão do Chrome (necessária para marcar no Earth / Street View)
+### Street View próprio (aba `/rua`, qualquer aparelho)
+
+Com a chave `NEXT_PUBLIC_GOOGLE_MAPS_KEY` (Maps JavaScript API, no `.env.local` e na Vercel),
+"Ver na rua" abre em outra aba a página `/rua` (`components/Rua.jsx`): Street View do Google em
+tela cheia, já virado para o orelhão. Botão redondo 📍 → mira → **Marcar aqui**: a aba fecha e a
+do mapa mostra o cartão **✔ Salvar**. Funciona no computador, no tablet e no celular, sem extensão.
+A marcação vai pelo `BroadcastChannel` `orelhao-marcar` e fica guardada no `localStorage`
+(`orelhao-marca-pendente`) até a aba do mapa recebê-la (celular pode congelar a aba).
+Sem a chave, o app volta a abrir o site do Google como antes.
+
+> A chave fica visível no navegador (normal para mapas). Restrinja no Google Cloud: só os
+> sites `orelhao-digital-v3.vercel.app/*` e `localhost:3000/*` e só a Maps JavaScript API,
+> com limite diário de uso.
+
+### Extensão do Chrome (só para marcar no Google Earth, no computador)
 
 - Instalar: `chrome://extensions` → **Modo do desenvolvedor** → **Carregar sem
   compactação** → pasta `extensao`.

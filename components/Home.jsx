@@ -5,6 +5,7 @@ import { fetchOrelhoes, fetchProximos, atualizarOrelhao, marcarPosicao, fetchVis
 import { useFotos, FotosEditor, VisorFotos } from '@/components/Fotos';
 import FotoMunicipio, { BrasaoMunicipio, useImagemMunicipio } from '@/components/FotoMunicipio';
 import { REGIOES, COR_REGIAO, UF_NOME, norm, haversine, fmt, bounds, destino } from '@/lib/geo';
+import { MARCA_PENDENTE, TEM_STREET_VIEW_PROPRIO, linkRua } from '@/lib/marcar';
 
 const ALTURA_CAMERA = 2.5; // metros, câmera do carro do Street View
 
@@ -553,12 +554,44 @@ export default function Home({ regioes = false, novidades = false }) {
     if (!regioes) setFlyTarget({ lat, lng, zoom: 16, pitch: 0, bearing: 0, t: Date.now() });
     notify(`Posição recebida do Street View (${d} m à frente da câmera)`);
   };
+  // Marcação vinda da aba do Street View (/rua): traz o id do orelhão e um número (n) para
+  // não ser usada duas vezes. Se outro orelhão estiver aberto (ou nenhum), abre o da marcação antes.
+  const ultimaMarca = useRef(0);
+  const marcaEsperando = useRef(null);
+  const receberMarca = useRef(null);
+  receberMarca.current = (m) => {
+    if (!m) return;
+    if (m.n) {
+      if (m.n <= ultimaMarca.current || Date.now() - m.n > 30 * 60 * 1000) return;
+      if (m.id != null && !byId.get(m.id)) return; // orelhões ainda carregando: tenta de novo depois
+      ultimaMarca.current = m.n;
+      try { localStorage.removeItem(MARCA_PENDENTE); } catch {}
+    }
+    if (m.id != null && selected?.id !== m.id) { marcaEsperando.current = m; select(m.id, false); return; }
+    onStreetView.current?.(m);
+  };
   useEffect(() => {
-    if (typeof BroadcastChannel === 'undefined') return;
-    const bc = new BroadcastChannel('orelhao-marcar');
-    bc.onmessage = (e) => onStreetView.current?.(e.data);
-    return () => bc.close();
-  }, []);
+    const m = marcaEsperando.current;
+    if (!m || !selected || selected.id !== m.id) return;
+    marcaEsperando.current = null;
+    onStreetView.current?.(m);
+  }, [selected?.id]);
+  useEffect(() => {
+    // marcação guardada no navegador: a aba do mapa pode ter ficado congelada (celular)
+    const verPendente = () => { try { const s = localStorage.getItem(MARCA_PENDENTE); if (s) receberMarca.current?.(JSON.parse(s)); } catch {} };
+    const aoVoltar = () => { if (document.visibilityState === 'visible') verPendente(); };
+    const aoGuardar = (e) => { if (e.key === MARCA_PENDENTE) verPendente(); };
+    let bc = null;
+    if (typeof BroadcastChannel !== 'undefined') {
+      bc = new BroadcastChannel('orelhao-marcar');
+      bc.onmessage = (e) => receberMarca.current?.(e.data);
+    }
+    document.addEventListener('visibilitychange', aoVoltar);
+    addEventListener('focus', verPendente);
+    addEventListener('storage', aoGuardar);
+    if (booted) verPendente();
+    return () => { bc?.close(); document.removeEventListener('visibilitychange', aoVoltar); removeEventListener('focus', verPendente); removeEventListener('storage', aoGuardar); };
+  }, [booted]);
 
   const salvarEdicao = async () => {
     if (!draft || !selected || !form) return;
@@ -594,10 +627,20 @@ export default function Home({ regioes = false, novidades = false }) {
     fetchVista(id).then((v) => setVistas((m) => ({ ...m, [id]: v })));
   }, [regioes, selected?.id, vistas]);
   // Link do Street View: com vista guardada, abre da câmera de onde o orelhão foi marcado, olhando para ele.
+  // Com a chave do Google Maps, abre a nossa aba /rua (Street View com "Marcar aqui", sem extensão).
   const linkStreetView = (p) => {
     const v = vistaSel && p?.id === selected?.id ? vistaSel : null;
+    if (TEM_STREET_VIEW_PROPRIO && regioes) return linkRua(p, v);
+    // (abaixo: sem chave, o site do Google como antes)
     return v ? `https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=${v.lat},${v.lng}&heading=${v.heading}&pitch=${v.pitch}&fov=80`
       : `https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=${p.lat},${p.lng}`;
+  };
+  // A aba /rua é aberta por código: assim o navegador deixa ela se fechar sozinha depois de marcar.
+  const abrirRua = (e) => {
+    const href = e.currentTarget.getAttribute('href');
+    if (!href?.startsWith('/rua')) return;
+    const aba = window.open(href, '_blank');
+    if (aba) e.preventDefault();
   };
 
   // Em teste: salva a posição marcada no Street View / Google Earth, sem senha (migration 006),
@@ -952,11 +995,13 @@ export default function Home({ regioes = false, novidades = false }) {
               {fotosSel.fotos.length > 0 ? (
                 <button id="btn-street-main" className="btn primary" onClick={() => setVisor(true)}>📷 Ver na rua ({fotosSel.fotos.length} foto{fotosSel.fotos.length > 1 ? 's' : ''})</button>
               ) : (
-                <a id="btn-street-main" className="btn primary" target="_blank" rel="noreferrer" href={linkStreetView(selected)}>📍 Ver na rua (Street View)</a>
+                <a id="btn-street-main" className="btn primary" target="_blank" rel="noreferrer" href={linkStreetView(selected)} onClick={abrirRua}>📍 Ver na rua (Street View)</a>
               )}
               <button id="btn-orbit" className="btn" onClick={() => setOrbit((o) => !o)}>{orbit ? '⏸ Parar giro' : '🔄 Girar em 3D'}</button>
             </div>
-            {regioes && !editing && <small className="dica-marcar">Posição errada? No Street View, mire no pé do orelhão e clique em <b>📍 Marcar orelhão aqui</b> (extensão do Chrome).</small>}
+            {regioes && !editing && (TEM_STREET_VIEW_PROPRIO
+              ? <small className="dica-marcar">Posição errada? Em <b>Ver na rua</b>, toque no botão redondo <b>📍</b>, mire no pé do orelhão e toque em <b>Marcar aqui</b>.</small>
+              : <small className="dica-marcar">Posição errada? No Street View, mire no pé do orelhão e clique em <b>📍 Marcar orelhão aqui</b> (extensão do Chrome).</small>)}
 
             {!editing && (
               <DadosLocalidade d={dadosLoc?.[selected.id]} a={dadosAcesso?.[selected.id]} carregando={!dadosLoc} p={selected} pref={temaDetalhe ? prefeituras[ufSel]?.[selected.municipio] : null} />
@@ -984,14 +1029,27 @@ export default function Home({ regioes = false, novidades = false }) {
                 <b>Corrigir posição no mapa</b>
                 <div className="edit-fontes">
                   <a id="btn-earth" className="btn primary" target="_blank" href={`https://earth.google.com/web/@${selected.lat},${selected.lng},10a,300d,35y,0h,0t,0r`}>🌎 Google Earth</a>
-                  <a id="btn-sv-edit" className="btn" target="_blank" href={linkStreetView(selected)}>🚶 Street View</a>
+                  <a id="btn-sv-edit" className="btn" target="_blank" href={linkStreetView(selected)} onClick={abrirRua}>🚶 Street View</a>
                 </div>
-                <ol className="edit-steps">
-                  <li>Abra o <b>Google Earth</b> (mais preciso) ou o <b>Street View</b>.</li>
-                  <li>Arraste a imagem até a <b>mira amarela</b> ficar sobre o orelhão. No Street View, mire no <b>pé</b> dele.</li>
-                  <li>Clique em <b>📍 Marcar orelhão aqui</b>. Você volta para cá com o pino no lugar.</li>
-                </ol>
-                <small>Precisa da extensão “Orelhão Digital” no Chrome (instalação única, pasta <code>extensao</code> do projeto).</small>
+                {TEM_STREET_VIEW_PROPRIO ? (
+                  <>
+                    <ol className="edit-steps">
+                      <li>Abra o <b>Street View</b> (abre em outra aba).</li>
+                      <li>Toque no botão redondo <b>📍</b> embaixo e gire a imagem até a <b>mira</b> ficar no <b>pé</b> do orelhão.</li>
+                      <li>Toque em <b>Marcar aqui</b>. A aba fecha e você volta para cá para confirmar em <b>✔ Salvar</b>.</li>
+                    </ol>
+                    <small>Funciona no computador, no tablet e no celular. O Google Earth continua precisando da extensão do Chrome (só no computador).</small>
+                  </>
+                ) : (
+                  <>
+                    <ol className="edit-steps">
+                      <li>Abra o <b>Google Earth</b> (mais preciso) ou o <b>Street View</b>.</li>
+                      <li>Arraste a imagem até a <b>mira amarela</b> ficar sobre o orelhão. No Street View, mire no <b>pé</b> dele.</li>
+                      <li>Clique em <b>📍 Marcar orelhão aqui</b>. Você volta para cá com o pino no lugar.</li>
+                    </ol>
+                    <small>Precisa da extensão “Orelhão Digital” no Chrome (instalação única, pasta <code>extensao</code> do projeto).</small>
+                  </>
+                )}
 
                 {camPos?.heading != null && (
                   <label className="edit-dist">
