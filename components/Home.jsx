@@ -4,7 +4,7 @@ import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { fetchOrelhoes, fetchProximos, atualizarOrelhao, marcarPosicao, fetchVista } from '@/lib/supabase';
 import { useFotos, FotosEditor, VisorFotos } from '@/components/Fotos';
 import FotoMunicipio, { BrasaoMunicipio, useImagemMunicipio } from '@/components/FotoMunicipio';
-import { REGIOES, COR_REGIAO, UF_NOME, norm, haversine, fmt, bounds, destino } from '@/lib/geo';
+import { REGIOES, COR_REGIAO, UF_NOME, norm, haversine, fmt, bounds, destino, confirmado } from '@/lib/geo';
 import { MARCA_PENDENTE, TEM_STREET_VIEW_PROPRIO, linkRua } from '@/lib/marcar';
 
 const ALTURA_CAMERA = 2.5; // metros, câmera do carro do Street View
@@ -271,10 +271,11 @@ export default function Home({ regioes = false, novidades = false }) {
     const nome = macroDe[uf]?.get(chaveMun(municipio));
     if (nome) setMacro({ uf, nome });
   }, [novidades, municipio, uf, macro, macroDe]);
-  const regioesInfo = useMemo(() => {
+  // cards das regiões contam os orelhões de `lista` (todos, ou só os localizados no modo "Localizados")
+  const montarRegioes = useCallback((lista) => {
     const out = {};
     for (const [u, g] of Object.entries(regioesGeo)) {
-      const pts = all.filter((p) => p.uf === u);
+      const pts = lista.filter((p) => p.uf === u);
       const porMun = {};
       const nomeNaBase = {}; // grafia do município no banco ("Barra De São Francisco"), usada no filtro
       pts.forEach((p) => {
@@ -293,7 +294,19 @@ export default function Home({ regioes = false, novidades = false }) {
       out[u] = { geo: g, cards };
     }
     return out;
-  }, [regioesGeo, all, macroDe, apelidoDe]);
+  }, [regioesGeo, macroDe, apelidoDe]);
+  const regioesInfo = useMemo(() => montarRegioes(all), [montarRegioes, all]);
+  const regioesInfoLoc = useMemo(() => montarRegioes(all.filter(confirmado)), [montarRegioes, all]);
+  // área de cada estado (todos os orelhões): no modo "Localizados" a bandeira enquadra o estado inteiro
+  const caixasUf = useMemo(() => {
+    const c = {};
+    all.forEach((p) => {
+      const u = p.uf?.toUpperCase(); if (!u) return;
+      const x = (c[u] ??= { w: p.lng, e: p.lng, s: p.lat, n: p.lat });
+      x.w = Math.min(x.w, p.lng); x.e = Math.max(x.e, p.lng); x.s = Math.min(x.s, p.lat); x.n = Math.max(x.n, p.lat);
+    });
+    return c;
+  }, [all]);
   const porMacro = useMemo(() => (macro
     ? porUf.filter((p) => p.uf === macro.uf && macroDe[p.uf]?.get(chaveMun(p.municipio)) === macro.nome)
     : porUf), [porUf, macro, macroDe]);
@@ -304,6 +317,7 @@ export default function Home({ regioes = false, novidades = false }) {
   const filtered = useMemo(() => {
     const nq = norm(q.trim());
     const base = porMacro.filter((p) =>
+      (mode !== 'localizados' || confirmado(p)) &&
       (!municipio || p.municipio === municipio) &&
       (!soOriginais || p.origem === 'original') &&
       (!nq || !ufFocoBusca || p.uf === ufFocoBusca)
@@ -314,7 +328,7 @@ export default function Home({ regioes = false, novidades = false }) {
     const exatos = base.filter((p) => norm(p.localidade) === nq || norm(p.municipio) === nq || p.cod_localidade === nq);
     if (exatos.length) return exatos;
     return base.filter((p) => norm(p.localidade).startsWith(nq) || norm(p.municipio).startsWith(nq) || p.cod_localidade?.startsWith(nq));
-  }, [porMacro, municipio, soOriginais, q, novidades, ufFocoBusca]);
+  }, [porMacro, municipio, soOriginais, q, novidades, ufFocoBusca, mode]);
 
   // Com uma macrorregião escolhida, a lista vem agrupada por município
   const porMunicipio = useMemo(() => {
@@ -402,7 +416,8 @@ export default function Home({ regioes = false, novidades = false }) {
       return;
     }
     const pts = municipio || macro ? filtered : porUf;
-    if (pts.length && (regiao || uf || municipio)) setFlyTarget({ bounds: bounds(pts) });
+    // só o estado (sem região/município): mesmo enquadramento do clique na bandeira (estado: true)
+    if (pts.length && (regiao || uf || municipio)) setFlyTarget({ bounds: bounds(pts), estado: novidades && !!uf && !municipio && !macro && !regiao });
     else if (!regiao && !uf) setFlyTarget({ bounds: [[-74, -34], [-34.8, 5.3]], livre: true });
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [regiao, uf, municipio, macro, booted]);
@@ -699,6 +714,76 @@ export default function Home({ regioes = false, novidades = false }) {
   // Aberto pelo botão "Buscar", sem estado, o painel continua completo.
   const soBusca = novidades && !!ufMapa && !soMun;
 
+  // Modo "Localizados": no mapa só os orelhões já localizados (posição corrigida e salva), por estado
+  // (o filtro dos localizados já está em `filtered`: mapa, lista e busca mostram só eles)
+  const pontosMapa = filtered;
+  const trocarModo = (id) => {
+    setMode(id);
+    if (id !== 'localizados' || id === mode) return;
+    const loc = all.filter(confirmado);
+    const nUf = new Set(loc.map((p) => p.uf)).size;
+    notify(loc.length ? `${fmt(loc.length)} ${loc.length > 1 ? 'orelhões localizados' : 'orelhão localizado'} em ${nUf} ${nUf > 1 ? 'estados' : 'estado'}` : 'Nenhum orelhão localizado ainda');
+    // volta para o Brasil inteiro, com os selos dos estados mostrando os localizados
+    if (!selected) {
+      setRegiao(null); setUf(null); setMunicipio(null); setMacro(null); setQ('');
+      setFlyTarget({ bounds: [[-74, -34], [-34.8, 5.3]], livre: true, t: Date.now() });
+    }
+  };
+
+  // ---- Trilha de navegação: Brasil › Estado › Região › Município › Orelhão ----
+  // Cada etapa volta direto àquele nível (fechando o orelhão e enquadrando o mapa); "‹ Voltar" sobe um nível.
+  const BRASIL = [[-74, -34], [-34.8, 5.3]];
+  const sairDoOrelhao = () => { if (editing) cancelEdit(); setSelectedId(null); setProximos(null); setQ(''); };
+  const irBrasil = () => {
+    sairDoOrelhao(); setRegiao(null); setUf(null); setMunicipio(null); setMacro(null);
+    setFlyTarget({ bounds: BRASIL, livre: true, t: Date.now() });
+  };
+  const irEstado = (u) => {
+    sairDoOrelhao(); setRegiao(null); setMacro(null); setMunicipio(null); setUf(u);
+    const c = caixasUf[u];
+    if (c) setFlyTarget({ bounds: [[c.w, c.s], [c.e, c.n]], estado: true, t: Date.now() });
+  };
+  const irRegiao = (u, nome) => {
+    sairDoOrelhao(); setRegiao(null); setUf(u); setMunicipio(null); setMacro({ uf: u, nome });
+    const area = regioesGeo[u]?.features.find((f) => f.properties.tipo === 'regiao' && f.properties.nome === nome);
+    if (!area) return;
+    const pts = [];
+    const juntar = (c) => (typeof c[0] === 'number' ? pts.push({ lng: c[0], lat: c[1] }) : c.forEach(juntar));
+    juntar(area.geometry.coordinates);
+    setFlyTarget({ bounds: bounds(pts), t: Date.now() });
+  };
+  const irMunicipio = (u, nome, mun) => {
+    sairDoOrelhao(); setRegiao(null); setUf(u); setMacro(nome ? { uf: u, nome } : null); setMunicipio(mun);
+    const pts = all.filter((p) => p.uf === u && p.municipio === mun);
+    if (pts.length) setFlyTarget({ bounds: bounds(pts), maxZoom: 14, t: Date.now() });
+  };
+  const trilha = (() => {
+    if (!novidades) return [];
+    const u = selected?.uf || macro?.uf || uf || ufMapa;
+    if (!u) return [];
+    const mun = selected?.municipio || municipio;
+    const reg = selected ? macroDe[u]?.get(chaveMun(selected.municipio)) || null : macro?.nome || null;
+    const t = [{ id: 'brasil', rotulo: 'Brasil', ir: irBrasil }, { id: 'uf', rotulo: UF_NOME[u] || u, ir: () => irEstado(u) }];
+    if (reg) t.push({ id: 'regiao', rotulo: `Região ${reg}`, ir: () => irRegiao(u, reg) });
+    if (mun) t.push({ id: 'mun', rotulo: mun, ir: () => irMunicipio(u, reg, mun) });
+    if (selected) t.push({ id: 'orelhao', rotulo: selected.localidade });
+    return t;
+  })();
+  const Trilha = () => (trilha.length > 1 ? (
+    <nav className="trilha" aria-label="Voltar para">
+      <button type="button" className="trilha-voltar" onClick={trilha[trilha.length - 2].ir} title={`Voltar para ${trilha[trilha.length - 2].rotulo}`}>‹ Voltar</button>
+      <ol>
+        {trilha.map((x, i) => (
+          <li key={x.id}>
+            {i < trilha.length - 1
+              ? <button type="button" onClick={x.ir}>{x.rotulo}</button>
+              : <span aria-current="page">{x.rotulo}</span>}
+          </li>
+        ))}
+      </ol>
+    </nav>
+  ) : null);
+
   const limpar =() => { setRegiao(null); setUf(null); setMunicipio(null); setMacro(null); setQ(''); setSoOriginais(false); };
   const copy = (txt) => { navigator.clipboard.writeText(txt); notify('Copiado: ' + txt); };
   const maxRegiao = Math.max(1, ...porRegiaoStats.map((r) => r.n));
@@ -715,8 +800,8 @@ export default function Home({ regioes = false, novidades = false }) {
         <div className="splash-sub">{error ? `Erro: ${error}` : `Conectando ${fmt(Math.round((progress / 100) * 6149))} orelhões…`}</div>
       </div>
 
-      <MapView points={filtered} mode={mode} basemap={basemap} orbit={orbit && !!selected} onOrbitStop={() => setOrbit(false)} selected={selected} userPos={userPos} flyTarget={flyTarget} editing={editing} draft={draft} onDraft={marcarNoMapa} onSelect={(id) => { if (!editing) select(id, false); }}
-        regioes={regioesInfo} ufFoco={uf} macro={macro?.nome ?? null} onMacro={escolherMacro} onMunicipio={escolherMunicipioRegiao} onFoco={onFocoMapa} teste={regioes}
+      <MapView points={pontosMapa} mode={mode} basemap={basemap} orbit={orbit && !!selected} onOrbitStop={() => setOrbit(false)} selected={selected} userPos={userPos} flyTarget={flyTarget} editing={editing} draft={draft} onDraft={marcarNoMapa} onSelect={(id) => { if (!editing) select(id, false); }}
+        regioes={mode === 'localizados' ? regioesInfoLoc : regioesInfo} caixasUf={caixasUf} ufFoco={uf} macro={macro?.nome ?? null} onMacro={escolherMacro} onMunicipio={escolherMunicipioRegiao} onFoco={onFocoMapa} teste={regioes}
         enquadramento={novidades ? enqTeste : null} />
 
       {/* Painel lateral */}
@@ -795,7 +880,7 @@ export default function Home({ regioes = false, novidades = false }) {
               {q ? <button className="x" onClick={() => setQ('')} aria-label="Limpar busca">×</button> : <kbd>/</kbd>}
             </label>
 
-            {soMun && <button id="voltar-busca" className="link voltar-busca" onClick={limpar}>‹ Ver Brasil</button>}
+            {(soMun || soBusca) && <Trilha />}
 
             {!soMun && !soBusca && <>
             {resumoMunicipio && (
@@ -953,8 +1038,8 @@ export default function Home({ regioes = false, novidades = false }) {
       {/* Controles superiores */}
       <div className={`topbar ${booted ? 'in' : ''}`}>
         <div className="seg glass">
-          {[['cluster', 'Agrupado'], ['points', 'Pontos'], ['heat', 'Calor']].map(([id, l]) => (
-            <button key={id} id={`modo-${id}`} className={mode === id ? 'on' : ''} onClick={() => setMode(id)}>{l}</button>
+          {[['cluster', 'Agrupado'], ['points', 'Pontos'], ['localizados', 'Localizados']].map(([id, l]) => (
+            <button key={id} id={`modo-${id}`} className={mode === id ? 'on' : ''} onClick={() => trocarModo(id)}>{l}</button>
           ))}
         </div>
         <div className="seg glass">
@@ -980,6 +1065,7 @@ export default function Home({ regioes = false, novidades = false }) {
         {selected && (
           <>
             <button className="close" onClick={() => setSelectedId(null)} aria-label="Fechar">×</button>
+            <Trilha />
             {/* em teste (RJ): sem brasão, a foto da cidade vai no topo */}
             {temaDetalhe && <FotoMunicipio info={imgMun} municipio={selected.municipio} />}
             <div className="drawer-hero" style={{ '--c': COR_REGIAO[selected.regiao] }}>

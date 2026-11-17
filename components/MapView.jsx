@@ -3,6 +3,7 @@ import { useEffect, useRef, useState } from 'react';
 import maplibregl from 'maplibre-gl';
 import 'maplibre-gl/dist/maplibre-gl.css';
 import { tileEsri, zoomComFoto } from '@/lib/esri';
+import { confirmado } from '@/lib/geo';
 
 // Satélite pelo protocolo "esri://", que troca o aviso "Map data not yet available"
 // pela última foto disponível esticada (ver lib/esri.js).
@@ -34,10 +35,6 @@ const SELO_ESPACO = 58; // distância vertical mínima entre dois selos da fila 
 const STYLE = 'https://basemaps.cartocdn.com/gl/dark-matter-gl-style/style.json';
 const FONT = ['Montserrat Medium'];
 
-// Orelhão confirmado: posição corrigida à mão e salva — pelo Street View / Google Earth
-// ("Posição corrigida manualmente (Street View)", migrations 006/007) ou pela edição antiga
-// ("Posição corrigida manualmente"). No mapa, pisca em vermelho.
-export const confirmado = (p) => /corrigida manualmente/i.test(p?.origem_desc || '');
 
 const toGeoJSON = (points) => ({
   type: 'FeatureCollection',
@@ -79,7 +76,7 @@ export default function MapView(props) {
   return <Mapa key={geracao} {...props} memoria={memoria} onRecriar={() => setGeracao((g) => g + 1)} />;
 }
 
-function Mapa({ points, mode, basemap = 'sat', orbit = false, onOrbitStop, editing = false, draft = null, onDraft, selected, userPos, flyTarget, onSelect, onReady, memoria, onRecriar, regioes, ufFoco, macro = null, onMacro, onMunicipio, onFoco, teste = false, enquadramento = null }) {
+function Mapa({ points, mode, basemap = 'sat', orbit = false, onOrbitStop, editing = false, draft = null, onDraft, selected, userPos, flyTarget, onSelect, onReady, memoria, onRecriar, regioes, caixasUf = null, ufFoco, macro = null, onMacro, onMunicipio, onFoco, teste = false, enquadramento = null }) {
   // Margens ao enquadrar: "livre" = sem painel aberto (Brasil centralizado), "painel" = com o painel,
   // "voo" = ao voar até um orelhão. Sem a prop, o painel fixo da esquerda de sempre.
   const enq = useRef(null);
@@ -224,7 +221,8 @@ function Mapa({ points, mode, basemap = 'sat', orbit = false, onOrbitStop, editi
       m.addLayer({
         id: 'point-dots', type: 'circle', source: 'orelhoes', filter: ['!', ['has', 'point_count']], maxzoom: ICON_ZOOM,
         paint: {
-          'circle-color': REGION_COLOR, 'circle-radius': 4,
+          'circle-color': ['case', ['==', ['get', 'confirmado'], true], PULSO_COR, REGION_COLOR],
+          'circle-radius': ['case', ['==', ['get', 'confirmado'], true], 5.5, 4],
           'circle-stroke-width': 1.2, 'circle-stroke-color': ['case', ['==', ['get', 'origem'], 'estimada'], '#ef4444', '#0b1020'],
         },
       });
@@ -285,7 +283,10 @@ function Mapa({ points, mode, basemap = 'sat', orbit = false, onOrbitStop, editi
   // Estado em foco (escolhido no painel ou no selo) que tem macrorregiões: enquanto nenhuma
   // região for escolhida, os orelhões dele ficam "dentro" dos cards das regiões.
   const foco = ufFoco || ufFiltro;
-  const infoReg = mode === 'cluster' && foco ? regioes?.[foco] ?? null : null;
+  // "Localizados": só os orelhões já localizados, agrupados e com selos por estado (sem os cards de regiões)
+  const localizados = mode === 'localizados';
+  const agrupa = mode === 'cluster' || localizados;
+  const infoReg = agrupa && foco ? regioes?.[foco] ?? null : null;
   const nosCards = !!infoReg && !macro && selected?.uf?.toUpperCase() !== foco;
   // avisa o Home qual estado está em foco (ele carrega as regiões desse estado sob demanda)
   // (também avisa quando sai do estado: null)
@@ -413,7 +414,7 @@ function Mapa({ points, mode, basemap = 'sat', orbit = false, onOrbitStop, editi
       const vis = (id, on) => m.getLayer(id) && m.setLayoutProperty(id, 'visibility', on ? 'visible' : 'none');
       const heat = mode === 'heat';
       vis('heat', heat);
-      ['clusters', 'cluster-glow', 'cluster-count', 'confirmado-pulso-grupo'].forEach((l) => vis(l, mode === 'cluster'));
+      ['clusters', 'cluster-glow', 'cluster-count', 'confirmado-pulso-grupo'].forEach((l) => vis(l, agrupa));
       ['points', 'point-ring', 'point-dots', 'point-labels'].forEach((l) => vis(l, !heat));
       if (mode === 'points') {
         // reaproveita a fonte sem cluster: mostra os pontos dentro de clusters via camada auxiliar
@@ -447,7 +448,7 @@ function Mapa({ points, mode, basemap = 'sat', orbit = false, onOrbitStop, editi
   // Selos dos estados: bandeira + total de TUPs, só no modo agrupado e na visão do país
   const ufPontos = useRef(null);
   // Fora do modo agrupado, ou se o usuário escolher outro lugar, o filtro por estado sai
-  useEffect(() => { if (mode !== 'cluster') { filtroUf.current = null; setUfFiltro(null); } }, [mode]);
+  useEffect(() => { filtroUf.current = null; setUfFiltro(null); }, [mode]);
   useEffect(() => {
     const f = filtroUf.current;
     if (f && selected && selected.uf?.toUpperCase() !== f.uf) { filtroUf.current = null; setUfFiltro(null); }
@@ -465,7 +466,7 @@ function Mapa({ points, mode, basemap = 'sat', orbit = false, onOrbitStop, editi
     const filasFora = teste ? FILAS_FORA_TESTE : FILAS_FORA;
     const atualizar = () => {
       const zoom = m.getZoom();
-      const ligar = mode === 'cluster' && zoom < UF_ZOOM;
+      const ligar = agrupa && zoom < UF_ZOOM;
       if (ligar !== ligado) {
         ligado = ligar;
         marcadores.forEach((x) => { x.el.style.display = ligar ? '' : 'none'; });
@@ -512,10 +513,10 @@ function Mapa({ points, mode, basemap = 'sat', orbit = false, onOrbitStop, editi
         const uf = f.properties.uf;
         if (!total[uf]) continue;
         const el = document.createElement('div');
-        el.className = 'uf-selo';
+        el.className = localizados ? 'uf-selo localizado' : 'uf-selo';
         const btn = document.createElement('button');
         btn.type = 'button';
-        btn.title = `${uf}: ${total[uf].toLocaleString('pt-BR')} orelhões`;
+        btn.title = `${uf}: ${total[uf].toLocaleString('pt-BR')} ${localizados ? (total[uf] > 1 ? 'orelhões localizados' : 'orelhão localizado') : 'orelhões'}`;
         const sigla = document.createElement('span');
         sigla.className = 'uf-sigla'; sigla.textContent = uf;
         const img = document.createElement('img');
@@ -525,7 +526,7 @@ function Mapa({ points, mode, basemap = 'sat', orbit = false, onOrbitStop, editi
         btn.append(sigla, img, n);
         el.append(btn);
         btn.addEventListener('click', () => {
-          const c = caixa[uf];
+          const c = (localizados && caixasUf?.[uf]) || caixa[uf];
           if (enq.current.livre !== ENQUADRAMENTO) m.setPadding({ top: 0, bottom: 0, left: 0, right: 0 }); // mesma razão do fitBounds
           const cam = m.cameraForBounds([[c.w, c.s], [c.e, c.n]], { padding: enq.current.painel });
           // só os orelhões deste estado: os grupos passam a ser calculados só com eles
@@ -535,8 +536,10 @@ function Mapa({ points, mode, basemap = 'sat', orbit = false, onOrbitStop, editi
           // Com margens próprias (teste): centraliza o estado na área livre (ao lado ou acima do painel).
           // O centro do cameraForBounds só vale para o zoom dele; quando o zoom mínimo entra, o estado
           // fugiria da área livre — por isso usa o centro do estado + as margens no próprio movimento.
-          if (cam && enq.current.livre !== ENQUADRAMENTO) m.easeTo({ center: [(c.w + c.e) / 2, (c.s + c.n) / 2], zoom: Math.max(cam.zoom, UF_ZOOM + 0.2), padding: enq.current.painel, duration: 1000 });
-          else if (cam) m.easeTo({ center: cam.center, zoom: Math.max(cam.zoom, UF_ZOOM + 0.2), duration: 1000 });
+          // (no modo Localizados o estado pode ter um só orelhão: não aproxima além do zoom 13)
+          const z = Math.min(Math.max(cam?.zoom ?? 0, UF_ZOOM + 0.2), 13);
+          if (cam && enq.current.livre !== ENQUADRAMENTO) m.easeTo({ center: [(c.w + c.e) / 2, (c.s + c.n) / 2], zoom: z, padding: enq.current.painel, duration: 1000 });
+          else if (cam) m.easeTo({ center: cam.center, zoom: z, duration: 1000 });
         });
         const dx = seloFora[uf];
         let liga = null;
@@ -668,6 +671,14 @@ function Mapa({ points, mode, basemap = 'sat', orbit = false, onOrbitStop, editi
     const m = map.current;
     // o voo até um orelhão deixa a margem do painel gravada no mapa; ela se somaria a esta
     if (flyTarget.bounds && enquadramento) m.setPadding({ top: 0, bottom: 0, left: 0, right: 0 });
+    // estado inteiro (trilha "‹ Voltar"): igual ao clique na bandeira — nunca abaixo de UF_ZOOM,
+    // senão no celular o mapa se afasta demais e mostra a bandeira em vez dos cards das regiões
+    if (flyTarget.bounds && flyTarget.estado) {
+      const [[w, s], [e, n]] = flyTarget.bounds;
+      const cam = m.cameraForBounds(flyTarget.bounds, { padding: enq.current.painel });
+      m.easeTo({ center: [(w + e) / 2, (s + n) / 2], zoom: Math.max(cam?.zoom ?? 0, UF_ZOOM + 0.2), padding: enq.current.painel, duration: 1200 });
+      return;
+    }
     if (flyTarget.bounds) { m.fitBounds(flyTarget.bounds, { padding: flyTarget.livre ? enq.current.livre : enq.current.painel, duration: 1400, maxZoom: flyTarget.maxZoom ?? 11 }); return; }
     let cancelado = false;
     const voar = (zoom) => !cancelado && m.flyTo({ center: [flyTarget.lng, flyTarget.lat], zoom, pitch: flyTarget.pitch ?? 45, bearing: flyTarget.bearing ?? -15, duration: 2200, essential: true, padding: enq.current.voo });

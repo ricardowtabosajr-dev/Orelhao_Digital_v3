@@ -573,6 +573,9 @@ button { font: inherit; color: inherit; cursor: pointer; background: none; borde
 .uf-selo button:hover { transform: scale(1.14); }
 .uf-selo img { display: block; width: 100%; height: 100%; border-radius: 50%; object-fit: cover; border: 2px solid #fbbf24; background: #0b1020; box-shadow: 0 2px 8px rgba(0,0,0,.65); }
 .uf-sigla { position: absolute; left: 50%; bottom: calc(100% + 1px); transform: translateX(-50%); color: #fff; font: 800 1em/1 'Montserrat', system-ui, sans-serif; letter-spacing: .06em; text-shadow: 0 0 3px #030612, 0 0 3px #030612, 0 1px 2px #030612; pointer-events: none; }
+/* modo "Localizados": selo vermelho com o total de orelhões localizados no estado */
+.uf-selo.localizado img { border-color: #ff2a2a; box-shadow: 0 0 0 3px rgba(255, 42, 42, .28), 0 2px 8px rgba(0,0,0,.65); }
+.uf-selo.localizado b { background: #ff2a2a !important; color: #fff !important; }
 .uf-selo b { position: absolute; left: 50%; top: calc(100% - .6em); transform: translateX(-50%); padding: .2em .5em; border-radius: 999px; background: #fbbf24; color: #0b1020; border: 1.5px solid rgba(3,6,18,.75); font: 700 1em/1 'Montserrat', system-ui, sans-serif; white-space: nowrap; }
 .sel-pulse { width: 20px; height: 20px; pointer-events: none; }
 .sel-pulse i { position: absolute; inset: 0; border-radius: 50%; border: 2px solid #fbbf24;
@@ -803,6 +806,12 @@ button { font: inherit; color: inherit; cursor: pointer; background: none; borde
 
 /* tela menor: título não cabe entre a marca e os controles → a faixa cresce e os controles
    ficam numa segunda linha DENTRO dela, centralizados */
+/* 1501–1800px: uma linha só (como aprovado), com os botões um pouco mais compactos para não encostar no título */
+@media (min-width: 1501px) and (max-width: 1800px) {
+  .com-banner .topbar { right: 1.6rem; gap: 0.5rem; }
+  .com-banner .topbar .seg button { padding: 0.45rem 0.72rem; font-size: 0.84rem; }
+  .com-banner .topbar .cta { padding: 0.62rem 0.95rem; font-size: 0.84rem; }
+}
 @media (max-width: 1500px) {
   .com-banner { --linha2: 58px; }
   .com-banner .topbar { top: calc(var(--banner-top) + var(--linha1) - 2px); left: 1.5rem; right: 1.5rem; justify-content: center; }
@@ -889,6 +898,26 @@ button { font: inherit; color: inherit; cursor: pointer; background: none; borde
 @media (max-width: 560px) {
   .com-banner { --gaveta: 52dvh; }
 }
+/* celular estreito: "Orelhão / Digital" em duas linhas (e o subtítulo também), para os botões caberem ao lado */
+@media (max-width: 440px) {
+  .banner-titulo { gap: 0.15rem; }
+  .banner-titulo h1 { white-space: normal; width: min-content; line-height: 1.02; font-size: clamp(0.82rem, 3.6vw, 0.95rem); }
+  .banner-titulo span { white-space: normal; max-width: 4.3rem; line-height: 1.25; }
+}
+@media (max-width: 380px) {
+  .com-banner .topbar { right: 0.85rem; gap: 0.12rem; }
+  .com-banner .topbar .seg button { padding: 0.3rem 0.16rem; font-size: 0.5rem; }
+  .com-banner .topbar .cta { width: 26px; height: 26px; }
+  .banner-titulo { left: 0.7rem; }
+}
+@media (max-width: 340px) {
+  .com-banner .topbar { right: 0.7rem; gap: 0.08rem; }
+  .com-banner .topbar .seg { padding: 1px; }
+  .com-banner .topbar .seg button { padding: 0.28rem 0.12rem; font-size: 0.46rem; }
+  .banner-titulo { left: 0.6rem; }
+  .banner-titulo h1 { font-size: 0.74rem; }
+  .banner-titulo span { max-width: 3.9rem; font-size: 0.34rem; }
+}
 
 /* ===== Aba do Street View (/rua): Street View do Google em tela cheia + mira e "Marcar aqui" =====
    Faz o papel da extensão do Chrome, em qualquer aparelho. Mesmo visual discreto da extensão. */
@@ -940,3 +969,17 @@ button { font: inherit; color: inherit; cursor: pointer; background: none; borde
 .rua-marcar.marcando .rua-mira, .rua-marcar.ok .rua-mira { opacity: 1; transform: translate(-50%, -50%) scale(1); }
 .rua-marcar.marcando .rua-acoes { opacity: 1; pointer-events: auto; transform: translate(-50%, 0); }
 .rua-marcar.marcando .rua-gatilho { opacity: 0; pointer-events: none; transform: translateX(-50%) scale(0.6); }
+
+/* ===== Trilha de navegação (Brasil › Estado › Região › Município › Orelhão) =====
+   No topo do painel de busca e do detalhe do orelhão: cada etapa volta àquele nível. */
+.trilha { display: flex; align-items: center; gap: 0.5rem; margin: 0 0 0.75rem; min-width: 0; }
+.drawer .trilha { margin: 0.1rem 2.6rem 0.75rem 0; } /* espaço para o × */
+.trilha-voltar { flex-shrink: 0; height: 28px; padding: 0 0.7rem; border-radius: 999px; cursor: pointer; font: inherit; font-size: 0.78rem; font-weight: 600;
+  color: #fff; background: linear-gradient(180deg, #2f9496, #237a7c); border: 1px solid rgba(92, 195, 197, 0.6); box-shadow: 0 3px 10px rgba(5, 12, 22, 0.35); }
+.trilha-voltar:hover { background: linear-gradient(180deg, #34a1a3, #2a8a8c); }
+.trilha ol { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; align-items: center; gap: 0.15rem 0.3rem; min-width: 0; font-size: 0.76rem; line-height: 1.3; }
+.trilha li { display: flex; align-items: center; gap: 0.3rem; min-width: 0; }
+.trilha li + li::before { content: '›'; color: rgba(184, 240, 241, 0.45); }
+.trilha li button { padding: 0; border: 0; background: none; cursor: pointer; font: inherit; color: #7fd6d8; text-decoration: underline; text-decoration-color: rgba(127, 214, 216, 0.35); text-underline-offset: 2px; }
+.trilha li button:hover { color: #fff; text-decoration-color: currentColor; }
+.trilha li span { color: #e6f4f4; font-weight: 600; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; max-width: 14rem; }
