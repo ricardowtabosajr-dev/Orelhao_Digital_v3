@@ -9,6 +9,7 @@ import { MARCA_PENDENTE, TEM_STREET_VIEW_PROPRIO, linkRua } from '@/lib/marcar';
 import TvRua, { TV_RUA_MS } from '@/components/TvRua';
 // gerador de propostas (Administração): carregado só quando for aberto (inclui o gerador de Word)
 const Propostas = dynamic(() => import('@/components/Propostas'), { ssr: false });
+const AcaoTups = dynamic(() => import('@/components/AcaoTups'), { ssr: false });
 
 const ALTURA_CAMERA = 2.5; // metros, câmera do carro do Street View
 
@@ -187,6 +188,7 @@ const TV_TEMPO = {
 // Funções do painel de administração: cada uma abre a sua tela (adminTela = id)
 const ADMIN_FUNCOES = [
   { id: 'propostas', nome: 'Propostas', desc: 'Gerar proposta Word e baixar materiais de apoio' },
+  { id: 'acao', nome: 'Ação TUPs', desc: 'Painel gerencial da ação comercial (SDR) · com senha' },
 ];
 
 export default function Home({ regioes = false, novidades = false, tv = false }) {
@@ -783,6 +785,15 @@ export default function Home({ regioes = false, novidades = false, tv = false })
     const pts = all.filter((p) => p.uf === u && p.municipio === mun);
     if (pts.length) setFlyTarget({ bounds: bounds(pts), maxZoom: 14, t: Date.now() });
   };
+  // Ação TUPs › município: fecha o painel e mostra o município no mapa (com os orelhões dele)
+  const verMunicipioAcao = (u, nome) => {
+    const k = chaveMun(nome);
+    const p = all.find((x) => x.uf === u && chaveMun(x.municipio) === k);
+    if (!p) { notify(`${nome} (${u}) não tem orelhões no mapa`); return; }
+    setAdminTela(null);
+    if (mode !== 'cluster') setMode('cluster');
+    irMunicipio(u, macroDe[u]?.get(chaveMun(p.municipio)) || null, p.municipio);
+  };
   const trilha = (() => {
     if (!novidades) return [];
     const u = selected?.uf || macro?.uf || uf || ufMapa;
@@ -821,6 +832,7 @@ export default function Home({ regioes = false, novidades = false, tv = false })
   // painel de administração (botão no lugar do antigo "Perto de mim"); fecha com Esc
   const [admin, setAdmin] = useState(false);
   const [adminTela, setAdminTela] = useState(null); // tela aberta a partir do painel (ex.: 'propostas')
+  const [propostaInicial, setPropostaInicial] = useState(null); // proposta aberta já preenchida (vinda da Ação TUPs)
   useEffect(() => {
     if (!admin) return;
     const esc = (e) => { if (e.key === 'Escape') setAdmin(false); };
@@ -1233,9 +1245,20 @@ export default function Home({ regioes = false, novidades = false, tv = false })
         </section>
       )}
       {adminTela === 'propostas' && (
-        <Propostas orelhoes={all}
+        <Propostas orelhoes={all} inicial={propostaInicial}
           contexto={selected ? { municipio: selected.municipio, uf: selected.uf } : municipio && uf ? { municipio, uf } : null}
-          onFechar={() => setAdminTela(null)} onVoltar={() => { setAdminTela(null); setAdmin(true); }} />
+          onFechar={() => { setAdminTela(null); setPropostaInicial(null); }}
+          onVoltar={() => { const de = propostaInicial?.de; setPropostaInicial(null); setAdminTela(de || null); if (!de) setAdmin(true); }} />
+      )}
+      {adminTela === 'acao' && (
+        <AcaoTups onFechar={() => setAdminTela(null)} onVoltar={() => { setAdminTela(null); setAdmin(true); }}
+          onVerMunicipio={verMunicipioAcao}
+          onGerarProposta={(x) => {
+            // TUPs pedidos: os que já existem no município entram como adaptados, o resto como novos
+            const pedidos = x.tupsPedidos || x.tupsDireito || 0, adapt = Math.min(x.tupsDireito || 0, pedidos);
+            setPropostaInicial({ municipio: x.municipio, uf: x.uf, adaptados: adapt, novos: Math.max(0, pedidos - adapt), de: 'acao' });
+            setAdminTela('propostas');
+          }} />
       )}
 
       {/* Legenda (retirada no teste a pedido do usuário) */}

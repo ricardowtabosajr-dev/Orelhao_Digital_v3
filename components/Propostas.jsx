@@ -58,21 +58,23 @@ const ILUSTRA = {
   ),
 };
 
-export default function Propostas({ onFechar, onVoltar, contexto = null, orelhoes = [] }) {
-  const [tela, setTela] = useState('inicio'); // inicio | gerar | materiais
+export default function Propostas({ onFechar, onVoltar, contexto = null, orelhoes = [], inicial = null }) {
+  // inicial: proposta já preenchida (ex.: vinda do quadro da Ação TUPs) — abre direto no gerador
+  const [tela, setTela] = useState(inicial ? 'gerar' : 'inicio'); // inicio | gerar | materiais
   useEffect(() => {
     const esc = (e) => { if (e.key === 'Escape') onFechar(); };
     addEventListener('keydown', esc);
     return () => removeEventListener('keydown', esc);
   }, [onFechar]);
 
-  const voltar = tela === 'inicio' ? onVoltar : () => setTela('inicio');
+  const voltar = tela === 'inicio' || inicial ? onVoltar : () => setTela('inicio');
+  const rotuloVoltar = inicial?.de === 'acao' ? 'Ação TUPs' : tela === 'inicio' ? 'Administração' : 'Propostas';
   return (
     <>
       <div className="admin-fundo prop-fundo" onClick={onFechar} />
       <section className="prop-tela" role="dialog" aria-label="Propostas">
         <header className="prop-topo">
-          <button type="button" className="prop-voltar" onClick={voltar}>‹ {tela === 'inicio' ? 'Administração' : 'Propostas'}</button>
+          <button type="button" className="prop-voltar" onClick={voltar}>‹ {rotuloVoltar}</button>
           <div className="prop-titulo">
             <span className="admin-selo">Administração</span>
             <h2>{tela === 'gerar' ? 'Gerar proposta Word' : tela === 'materiais' ? 'Materiais para download' : 'Proposta comercial'}</h2>
@@ -101,7 +103,7 @@ export default function Propostas({ onFechar, onVoltar, contexto = null, orelhoe
             </button>
           </div>
         )}
-        {tela === 'gerar' && <GerarProposta contexto={contexto} orelhoes={orelhoes} />}
+        {tela === 'gerar' && <GerarProposta contexto={inicial || contexto} orelhoes={orelhoes} inicial={inicial} />}
         {tela === 'materiais' && <Materiais />}
       </section>
     </>
@@ -136,11 +138,12 @@ function Materiais() {
   );
 }
 
-function GerarProposta({ contexto, orelhoes }) {
+function GerarProposta({ contexto, orelhoes, inicial = null }) {
   const [f, setF] = useState(() => ({
     nome_municipio: contexto?.municipio ? nomeProprio(contexto.municipio) : '', uf: contexto?.uf || '',
     destinatario_tratamento: 'EXMO. SR.', destinatario_nome: '', destinatario_cargo: 'PREFEITO',
-    numero_proposta: '', data_proposta: hoje(), qtd_adaptados: '', qtd_novos: '',
+    numero_proposta: '', data_proposta: hoje(),
+    qtd_adaptados: inicial ? String(inicial.adaptados ?? '') : '', qtd_novos: inicial ? String(inicial.novos ?? '') : '',
     total_mensal_override: '', descricao_item_investimento: DESCRICAO_PADRAO,
   }));
   const muda = (k) => (e) => setF((o) => ({ ...o, [k]: e.target.value }));
