@@ -1073,6 +1073,89 @@ button { font: inherit; color: inherit; cursor: pointer; background: none; borde
   .acao-rolagem { max-height: none; }
   .acao-filtros select { max-width: none; flex: 1 1 45%; }
 }
+/* ---------- Administração › Ferramenta SDR ---------- */
+.sdr-quem { display: grid; justify-items: end; gap: 0.05rem; margin-top: 0.15rem; font-size: 0.78rem; color: #9cc9ca; }
+.sdr-quem b { color: #fff; font-size: 0.9rem; }
+.sdr-ident { width: min(460px, calc(100% - 2rem)); }
+.sdr-papel { display: grid; grid-template-columns: 1fr 1fr; gap: 0.6rem; width: 100%; }
+.sdr-papel button { display: grid; gap: 0.2rem; padding: 0.8rem; border-radius: 12px; font: inherit; text-align: left; color: #cfe9ea; background: rgba(4, 10, 20, 0.5); border: 1px solid rgba(92, 195, 197, 0.3); cursor: pointer; }
+.sdr-papel button b { font-size: 0.95rem; color: #fff; }
+.sdr-papel button small { font-size: 0.75rem; color: #9cc9ca; }
+.sdr-papel button.on { border-color: #fbbf24; background: rgba(251, 191, 36, 0.1); box-shadow: 0 0 0 1px rgba(251, 191, 36, 0.4); }
+.sdr-corpo { flex: 1; min-height: 0; display: grid; grid-template-columns: 360px minmax(0, 1fr); }
+.sdr-esq { display: flex; flex-direction: column; gap: 0.55rem; min-height: 0; padding: 0.9rem; border-right: 1px solid rgba(92, 195, 197, 0.18); }
+.sdr-sync { font-size: 0.74rem; font-weight: 700; color: #8fb9ba; }
+.sdr-sync.ok { color: #4ade80; } .sdr-sync.erro { color: #fca5a5; }
+.sdr-filtros { display: grid; grid-template-columns: 1fr 120px; gap: 0.45rem; }
+.sdr-filtros select, .sdr-filtros input { padding: 0.5rem 0.6rem; border-radius: 9px; font: inherit; font-size: 0.82rem; color: #e8f6f6; background: rgba(4, 10, 20, 0.6); border: 1px solid rgba(92, 195, 197, 0.3); min-width: 0; }
+.sdr-filtros select option { color: #000; }
+.sdr-chips { display: flex; flex-wrap: wrap; gap: 0.3rem; }
+.sdr-chips button { padding: 0.22rem 0.55rem; border-radius: 999px; font: inherit; font-size: 0.72rem; font-weight: 700; color: #cfe9ea; background: rgba(92, 195, 197, 0.1); border: 1px solid rgba(92, 195, 197, 0.35); cursor: pointer; }
+.sdr-chips button.on { color: #0b1424; background: #5cc3c5; }
+.sdr-chips button.cart { border-color: rgba(74, 222, 128, 0.5); color: #bbf7d0; }
+.sdr-chips button.cart.on { background: #4ade80; color: #0b1424; }
+.sdr-legenda { display: flex; flex-wrap: wrap; gap: 0.25rem 0.6rem; font-size: 0.7rem; color: #9cc9ca; }
+.sdr-legenda span { display: inline-flex; align-items: center; gap: 0.25rem; }
+.sdr-legenda i { width: 9px; height: 9px; border-radius: 50%; }
+.sdr-legenda b { color: #fff; }
+.sdr-conta { margin: 0; font-size: 0.75rem; color: #8fb9ba; }
+.sdr-lista { flex: 1; min-height: 0; overflow: auto; margin: 0; padding: 0; list-style: none; display: grid; align-content: start; gap: 0.3rem; }
+.sdr-lista button { width: 100%; display: grid; gap: 0.1rem; padding: 0.5rem 0.65rem 0.5rem 0.8rem; border-radius: 10px; font: inherit; text-align: left; cursor: pointer; color: #e8f6f6;
+  background: rgba(4, 10, 20, 0.45); border: 1px solid rgba(92, 195, 197, 0.15); border-left: 4px solid var(--st); }
+.sdr-lista button:hover { background: rgba(92, 195, 197, 0.1); }
+.sdr-lista button.on { background: rgba(92, 195, 197, 0.18); border-color: rgba(92, 195, 197, 0.6); border-left-color: var(--st); }
+.sdr-li-nome { font-weight: 700; font-size: 0.88rem; }
+.sdr-li-nome small { color: #8fb9ba; font-weight: 600; }
+.sdr-li-info { font-size: 0.72rem; color: #9cc9ca; }
+.sdr-mais { padding: 0.5rem; font-size: 0.75rem; color: #8fb9ba; text-align: center; }
+.sdr-dir { min-height: 0; overflow: auto; padding: 0.9rem 1.1rem; }
+.sdr-vazio { height: 100%; display: grid; place-content: center; justify-items: center; gap: 0.4rem; text-align: center; color: #9cc9ca; }
+.sdr-vazio b { color: #fff; font-size: 1.05rem; }
+.sdr-mun-topo { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 0.6rem; }
+.sdr-mun-topo h3 { margin: 0; font: 800 1.4rem/1.15 'Montserrat', var(--font-sans), sans-serif; color: #fff; }
+.sdr-mun-topo h3 small { font-size: 0.9rem; color: #fbbf24; }
+.sdr-mun-topo span { font-size: 0.82rem; color: #9cc9ca; }
+.sdr-abas { margin: 0.7rem 0 0.9rem; }
+.sdr-lousa, .sdr-consulta { display: grid; gap: 0.75rem; }
+.sdr-plan { margin: 0; padding: 0.55rem 0.8rem; border-radius: 10px; font-size: 0.82rem; color: #e8f6f6; background: rgba(251, 191, 36, 0.08); border: 1px solid rgba(251, 191, 36, 0.3); }
+.sdr-salvo { margin-left: auto; font-size: 0.75rem; color: #6ee7b7; }
+.sdr-valido { font-size: 0.85rem; }
+.sdr-valido small { color: #bef264; }
+.sdr-tit { margin: 0.3rem 0 0; font-size: 0.72rem; font-weight: 800; letter-spacing: 0.14em; text-transform: uppercase; color: #5cc3c5; }
+.sdr-status { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 0.45rem; }
+.sdr-status button { display: flex; align-items: center; gap: 0.5rem; padding: 0.6rem 0.75rem; border-radius: 12px; font: inherit; font-size: 0.86rem; font-weight: 700; color: var(--c); cursor: pointer;
+  background: rgba(4, 10, 20, 0.5); border: 1px solid color-mix(in srgb, var(--c) 35%, transparent); }
+.sdr-status button i { width: 14px; height: 14px; border-radius: 50%; border: 2px solid var(--c); }
+.sdr-status button.on { background: color-mix(in srgb, var(--c) 18%, transparent); border-color: var(--c); box-shadow: 0 0 0 1px var(--c); }
+.sdr-status button.on i { background: var(--c); }
+.sdr-status button:disabled { opacity: 0.35; cursor: not-allowed; }
+.sdr-cons { padding: 0.8rem; border-radius: 12px; background: rgba(251, 191, 36, 0.05); border: 1px dashed rgba(251, 191, 36, 0.35); }
+.sdr-hist { margin: 0; padding: 0; list-style: none; display: grid; gap: 0.3rem; max-height: 220px; overflow: auto; }
+.sdr-hist li { display: flex; align-items: center; gap: 0.6rem; padding: 0.35rem 0.55rem; border-radius: 8px; font-size: 0.8rem; color: #e8f6f6; background: rgba(4, 10, 20, 0.4); }
+.sdr-hist li small { color: #8fb9ba; margin-left: auto; }
+.sdr-hist-st { padding: 0.1rem 0.5rem; border-radius: 999px; font-size: 0.72rem; font-weight: 700; color: var(--c); background: color-mix(in srgb, var(--c) 15%, transparent); }
+.sdr-cons-grade { display: grid; grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr); gap: 0.75rem; }
+.sdr-gestao { display: flex; gap: 0.9rem; align-items: flex-start; margin-bottom: 0.7rem; }
+.sdr-brasao { flex-shrink: 0; width: 72px; height: 82px; display: grid; place-items: center; border-radius: 10px; background: #fff; overflow: hidden; font-size: 1.8rem; }
+.sdr-brasao img { max-width: 92%; max-height: 92%; object-fit: contain; }
+.sdr-ops { display: flex; flex-wrap: wrap; gap: 0.35rem; margin-bottom: 0.6rem; }
+.sdr-ops span { padding: 0.2rem 0.6rem; border-radius: 999px; font-size: 0.75rem; font-weight: 700; color: #cfe9ea; background: rgba(148, 163, 184, 0.15); border: 1px solid rgba(148, 163, 184, 0.35); }
+.sdr-ops span.g4 { color: #bbf7d0; background: rgba(74, 222, 128, 0.12); border-color: rgba(74, 222, 128, 0.45); }
+.sdr-impacto { margin: 0 0 0.4rem; font-size: 0.85rem; font-weight: 700; }
+.sdr-impacto.pode { color: #4ade80; } .sdr-impacto.deve { color: #fbbf24; } .sdr-impacto.obrig { color: #f87171; }
+.sdr-fora { margin-left: 0.6rem; padding: 0.12rem 0.55rem; border-radius: 999px; font-size: 0.7rem; letter-spacing: 0; text-transform: none; color: #fecaca; background: rgba(248, 113, 113, 0.18); border: 1px solid rgba(248, 113, 113, 0.45); }
+@media (max-width: 1000px) {
+  .sdr-corpo { grid-template-columns: minmax(0, 1fr); overflow-y: auto; }
+  .sdr-esq { border-right: 0; border-bottom: 1px solid rgba(92, 195, 197, 0.18); }
+  .sdr-lista { max-height: 300px; flex: none; }
+  .sdr-dir { overflow: visible; }
+  .sdr-cons-grade { grid-template-columns: minmax(0, 1fr); }
+}
+@media (max-width: 720px) {
+  .sdr-status { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .sdr-papel { grid-template-columns: 1fr; }
+  .sdr-quem { display: none; }
+}
 @keyframes admin-entra { from { opacity: 0; transform: translateY(-10px); } to { opacity: 1; transform: none; } }
 @keyframes admin-fade { from { opacity: 0; } to { opacity: 1; } }
 /* com o detalhe aberto à direita, os controles continuam na faixa (o detalhe começa abaixo dela) */

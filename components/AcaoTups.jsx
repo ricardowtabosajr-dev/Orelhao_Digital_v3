@@ -3,13 +3,13 @@
 // Administração › Ação TUPs: painel gerencial da ação comercial (mesmos indicadores da plataforma
 // CoLR "acao-tups"), organizado em abas, com filtros fixos no topo e ligado ao mapa e às Propostas.
 
-import { useEffect, useMemo, useRef, useState } from 'react';
-import { acaoEntrar, acaoLer, acaoGravar, acaoDesfazer } from '@/lib/supabase';
+import { createContext, useContext, useEffect, useMemo, useRef, useState } from 'react';
+import { acaoEntrar, acaoLer, acaoGravar, acaoDesfazer, sdrLer } from '@/lib/supabase';
 import {
   lerArquivo, snapshotUtil, montarModelo, indices, calcMetricas, calcExtras, distribuicao, distSdr, distPipeline,
   distRegional, campanhas, relatorioPropostas, listaConferencia, aplicarFiltros, opcoes, cicloGestor, pessoasGestor,
   localidadesGestor, narrativaGestor, corBarra, AJUDA, csvPropostas, baixarTexto, pct, fmtN, fmtMoeda, situacaoTitulo,
-  valorExibido, destaqueEncaminhada, destaqueAEnviar, dataBr, VAZIO,
+  valorExibido, destaqueEncaminhada, destaqueAEnviar, dataBr, VAZIO, mesclarSdr,
 } from '@/lib/acaoTups';
 
 const SESSAO = 'acaoTupsSenha';
@@ -18,10 +18,11 @@ const ABAS = [
   ['geral', 'Visão geral'], ['distribuicao', 'Distribuições'], ['propostas', 'Propostas'],
   ['campanhas', 'Campanhas'], ['municipios', 'Municípios'], ['gestor', 'Painel do gestor'],
 ];
-const SDR_ANTIGO = (r) => `https://orelhao-digital.pages.dev/campanha-contatos.html?${new URLSearchParams({ uf: r.uf, mun: r.municipio, qtd: String(r.orelhoes || r.tupsDireito || ''), abrir: '1', from: 'painel' })}`;
+// ações do nome do município nas tabelas (ver no mapa / abrir na Ferramenta SDR)
+const AcoesMun = createContext({});
 const lerSessao = () => { try { return sessionStorage.getItem(SESSAO) || ''; } catch { return ''; } };
 
-export default function AcaoTups({ onFechar, onVoltar, onVerMunicipio, onGerarProposta }) {
+export default function AcaoTups({ onFechar, onVoltar, onVerMunicipio, onGerarProposta, onAbrirSdr }) {
   const [senha, setSenha] = useState(lerSessao);
   const [entrou, setEntrou] = useState(false);
   const [semBanco, setSemBanco] = useState(false);
@@ -53,7 +54,7 @@ export default function AcaoTups({ onFechar, onVoltar, onVerMunicipio, onGerarPr
           <button type="button" className="admin-x" onClick={onFechar} aria-label="Fechar" title="Fechar (Esc)">×</button>
         </header>
         {entrou
-          ? <Painel senha={senha} semBanco={semBanco} onVerMunicipio={onVerMunicipio} onGerarProposta={onGerarProposta} />
+          ? <AcoesMun.Provider value={{ abrirSdr: onAbrirSdr }}><Painel senha={senha} semBanco={semBanco} onVerMunicipio={onVerMunicipio} onGerarProposta={onGerarProposta} /></AcoesMun.Provider>
           : <Entrada onEntrou={(s, sb) => { try { sessionStorage.setItem(SESSAO, s); } catch {} setSenha(s); setSemBanco(sb); setEntrou(true); }} />}
       </section>
     </>
@@ -112,8 +113,19 @@ function Painel({ senha, semBanco, onVerMunicipio, onGerarProposta }) {
   useEffect(() => { carregar(); /* eslint-disable-next-line react-hooks/exhaustive-deps */ }, []);
   useEffect(() => { corpo.current?.scrollTo({ top: 0 }); }, [aba]);
 
-  const base = useMemo(() => (leitura ? montarModelo(leitura) : null), [leitura]);
-  const idx = useMemo(() => (leitura ? indices(leitura) : null), [leitura]);
+  // registros da Ferramenta SDR (ao vivo): entram por cima da planilha
+  const [sdr, setSdr] = useState([]);
+  useEffect(() => {
+    if (semBanco) return undefined;
+    let vivo = true;
+    const puxar = () => sdrLer(senha).then((d) => vivo && setSdr(d?.registros || [])).catch(() => {});
+    puxar();
+    const t = setInterval(() => { if (!document.hidden) puxar(); }, 30000);
+    return () => { vivo = false; clearInterval(t); };
+  }, [senha, semBanco]);
+  const mesclada = useMemo(() => mesclarSdr(leitura, sdr), [leitura, sdr]);
+  const base = useMemo(() => (mesclada ? montarModelo(mesclada) : null), [mesclada]);
+  const idx = useMemo(() => (mesclada ? indices(mesclada) : null), [mesclada]);
 
   const filtradas = useMemo(() => (base ? aplicarFiltros(base.modelo, f) : []), [base, f]);
   const escopo = base && filtradas.length !== base.modelo.length ? filtradas : base?.modelo || [];
@@ -477,10 +489,11 @@ function Gestor({ idx, modelo, leitura }) {
 
 // município: ver no mapa (Orelhão Digital) ou abrir a pesquisa SDR
 function MunLink({ r, verMun }) {
+  const { abrirSdr } = useContext(AcoesMun);
   return (
     <span className="acao-mun">
       <button type="button" onClick={() => verMun(r)} title="Ver no mapa do Orelhão Digital">{r.municipio}</button>
-      <a href={SDR_ANTIGO(r)} target="_blank" rel="noreferrer" title="Abrir a pesquisa SDR deste município">SDR ↗</a>
+      {abrirSdr && <a href="#" onClick={(e) => { e.preventDefault(); abrirSdr(r); }} title="Abrir este município na Ferramenta SDR">SDR</a>}
     </span>
   );
 }

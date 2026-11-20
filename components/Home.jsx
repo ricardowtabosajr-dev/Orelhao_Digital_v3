@@ -10,6 +10,7 @@ import TvRua, { TV_RUA_MS } from '@/components/TvRua';
 // gerador de propostas (Administração): carregado só quando for aberto (inclui o gerador de Word)
 const Propostas = dynamic(() => import('@/components/Propostas'), { ssr: false });
 const AcaoTups = dynamic(() => import('@/components/AcaoTups'), { ssr: false });
+const FerramentaSdr = dynamic(() => import('@/components/FerramentaSdr'), { ssr: false });
 
 const ALTURA_CAMERA = 2.5; // metros, câmera do carro do Street View
 
@@ -189,6 +190,7 @@ const TV_TEMPO = {
 const ADMIN_FUNCOES = [
   { id: 'propostas', nome: 'Propostas', desc: 'Gerar proposta Word e baixar materiais de apoio' },
   { id: 'acao', nome: 'Ação TUPs', desc: 'Painel gerencial da ação comercial (SDR) · com senha' },
+  { id: 'sdr', nome: 'Ferramenta SDR', desc: 'Pesquisa coletiva por município: lousa, ligações e consultor · com senha' },
 ];
 
 export default function Home({ regioes = false, novidades = false, tv = false }) {
@@ -833,6 +835,7 @@ export default function Home({ regioes = false, novidades = false, tv = false })
   const [admin, setAdmin] = useState(false);
   const [adminTela, setAdminTela] = useState(null); // tela aberta a partir do painel (ex.: 'propostas')
   const [propostaInicial, setPropostaInicial] = useState(null); // proposta aberta já preenchida (vinda da Ação TUPs)
+  const [sdrInicial, setSdrInicial] = useState(null); // município aberto direto na Ferramenta SDR
   useEffect(() => {
     if (!admin) return;
     const esc = (e) => { if (e.key === 'Escape') setAdmin(false); };
@@ -1253,12 +1256,18 @@ export default function Home({ regioes = false, novidades = false, tv = false })
       {adminTela === 'acao' && (
         <AcaoTups onFechar={() => setAdminTela(null)} onVoltar={() => { setAdminTela(null); setAdmin(true); }}
           onVerMunicipio={verMunicipioAcao}
+          onAbrirSdr={(r) => { setSdrInicial({ uf: r.uf, mun: r.municipio, qtd: r.orelhoes || r.tupsDireito, de: 'acao' }); setAdminTela('sdr'); }}
           onGerarProposta={(x) => {
             // TUPs pedidos: os que já existem no município entram como adaptados, o resto como novos
             const pedidos = x.tupsPedidos || x.tupsDireito || 0, adapt = Math.min(x.tupsDireito || 0, pedidos);
             setPropostaInicial({ municipio: x.municipio, uf: x.uf, adaptados: adapt, novos: Math.max(0, pedidos - adapt), de: 'acao' });
             setAdminTela('propostas');
           }} />
+      )}
+      {adminTela === 'sdr' && (
+        <FerramentaSdr orelhoes={all} inicial={sdrInicial} onVerMunicipio={verMunicipioAcao}
+          onFechar={() => { setAdminTela(null); setSdrInicial(null); }}
+          onVoltar={() => { const de = sdrInicial?.de; setSdrInicial(null); setAdminTela(de || null); if (!de) setAdmin(true); }} />
       )}
 
       {/* Legenda (retirada no teste a pedido do usuário) */}
