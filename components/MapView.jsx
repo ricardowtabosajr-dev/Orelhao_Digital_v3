@@ -76,7 +76,7 @@ export default function MapView(props) {
   return <Mapa key={geracao} {...props} memoria={memoria} onRecriar={() => setGeracao((g) => g + 1)} />;
 }
 
-function Mapa({ points, mode, basemap = 'sat', orbit = false, onOrbitStop, editing = false, draft = null, onDraft, selected, userPos, flyTarget, onSelect, onReady, memoria, onRecriar, regioes, caixasUf = null, ufFoco, macro = null, onMacro, onMunicipio, onFoco, teste = false, enquadramento = null, livre = false }) {
+function Mapa({ points, mode, basemap = 'sat', orbit = false, onOrbitStop, editing = false, draft = null, onDraft, selected, userPos, flyTarget, onSelect, onReady, memoria, onRecriar, regioes, caixasUf = null, ufFoco, macro = null, onMacro, onMunicipio, onFoco, teste = false, enquadramento = null, livre = false, deslocar = 0 }) {
   // Margens ao enquadrar: "livre" = sem painel aberto (Brasil centralizado), "painel" = com o painel,
   // "voo" = ao voar até um orelhão. Sem a prop, o painel fixo da esquerda de sempre.
   const enq = useRef(null);
@@ -85,6 +85,16 @@ function Mapa({ points, mode, basemap = 'sat', orbit = false, onOrbitStop, editi
   const map = useRef(null);
   const loaded = useRef(false);
   const [pronto, setPronto] = useState(false);
+  // deslocar (px): desliza o mapa para a esquerda (ex.: com o painel de Administração aberto) e volta ao fechar
+  const deslocado = useRef(0);
+  useEffect(() => {
+    const m = map.current;
+    if (!m || !pronto) return;
+    const d = deslocar - deslocado.current;
+    if (!d) return;
+    deslocado.current = deslocar;
+    m.panBy([d, 0], { duration: 750, easing: (t) => 1 - Math.pow(1 - t, 3) });
+  }, [deslocar, pronto]);
   const pending = useRef(points);
   const userMarker = useRef(null);
   const popup = useRef(null);

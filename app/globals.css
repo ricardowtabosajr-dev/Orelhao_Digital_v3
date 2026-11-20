@@ -773,7 +773,7 @@ button { font: inherit; color: inherit; cursor: pointer; background: none; borde
 /* com o painel aberto, o banner e o botão continuam acesos, por cima do escurecido */
 .app:has(.admin-painel) .banner-metodo { z-index: 21; }
 .app:has(.admin-painel) .topbar { z-index: 22; }
-.admin-painel { position: absolute; z-index: 21; top: var(--abaixo-banner, 6rem); right: 1rem; width: min(400px, calc(100vw - 2rem));
+.admin-painel { position: absolute; z-index: 21; top: var(--abaixo-banner, 6rem); right: 1rem; width: min(430px, calc(100vw - 2rem));
   max-height: calc(100dvh - var(--abaixo-banner, 6rem) - 1rem); overflow: auto; padding: 1.1rem 1.2rem 1.3rem; border-radius: 18px; color: #fff;
   background: rgba(10, 20, 36, 0.94); border: 1px solid rgba(92, 195, 197, 0.45); box-shadow: 0 18px 44px rgba(3, 8, 18, 0.6);
   backdrop-filter: blur(10px); animation: admin-entra 0.35s cubic-bezier(0.22, 1, 0.36, 1) both; }
@@ -784,17 +784,38 @@ button { font: inherit; color: inherit; cursor: pointer; background: none; borde
 .admin-x { flex-shrink: 0; width: 32px; height: 32px; border-radius: 50%; border: 1px solid rgba(92, 195, 197, 0.45); background: rgba(255, 255, 255, 0.06);
   color: #fff; font-size: 1.3rem; line-height: 1; cursor: pointer; }
 .admin-x:hover { background: rgba(92, 195, 197, 0.25); }
-.admin-grade { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0.6rem; }
-.admin-item { display: grid; gap: 0.2rem; text-align: left; padding: 0.85rem 0.9rem; border-radius: 12px; cursor: pointer; color: #fff; font: inherit;
-  background: rgba(92, 195, 197, 0.1); border: 1px solid rgba(92, 195, 197, 0.35); }
-.admin-item:hover { background: rgba(92, 195, 197, 0.2); }
-.admin-item small { color: #b9dcdd; font-size: 0.78rem; }
+/* cartões das funções: ícone ilustrado com a cor de cada um (mesmo estilo dos cartões de Propostas) */
+.admin-grade { display: grid; gap: 0.7rem; }
+.admin-item { --cor: #5cc3c5; --cor2: #2f9496; position: relative; overflow: hidden; display: flex; align-items: center; gap: 1rem; padding: 0.95rem 1rem;
+  text-align: left; font: inherit; color: #fff; cursor: pointer; border-radius: 16px;
+  background: radial-gradient(130% 160% at 0% 0%, color-mix(in srgb, var(--cor) 26%, transparent), transparent 60%), linear-gradient(160deg, rgba(14, 30, 50, 0.95), rgba(8, 16, 30, 0.95));
+  border: 1px solid color-mix(in srgb, var(--cor) 50%, transparent); box-shadow: 0 8px 22px rgba(2, 6, 14, 0.4);
+  transition: transform 0.25s cubic-bezier(0.22, 1, 0.36, 1), box-shadow 0.25s, border-color 0.25s;
+  animation: admin-cartao 0.45s cubic-bezier(0.22, 1, 0.36, 1) both; }
+.admin-item:nth-child(2) { animation-delay: 0.06s; } .admin-item:nth-child(3) { animation-delay: 0.12s; } .admin-item:nth-child(4) { animation-delay: 0.18s; }
+.admin-item::after { content: ''; position: absolute; top: 0; bottom: 0; left: -60%; width: 40%; pointer-events: none;
+  background: linear-gradient(100deg, transparent, rgba(255, 255, 255, 0.12), transparent); transform: skewX(-18deg); transition: left 0.7s ease; }
+.admin-item:hover { transform: translateY(-3px); border-color: var(--cor); box-shadow: 0 14px 32px rgba(2, 6, 14, 0.5), 0 0 26px color-mix(in srgb, var(--cor) 25%, transparent); }
+.admin-item:hover::after { left: 130%; }
+.admin-item:focus-visible { outline: 3px solid var(--cor); outline-offset: 2px; }
+.admin-icone { flex-shrink: 0; width: 60px; height: 60px; display: grid; place-items: center; border-radius: 16px;
+  background: linear-gradient(145deg, var(--cor), var(--cor2)); box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.35), 0 8px 18px color-mix(in srgb, var(--cor) 30%, transparent);
+  transition: transform 0.35s cubic-bezier(0.22, 1, 0.36, 1); }
+.admin-icone svg { width: 42px; height: 42px; filter: drop-shadow(0 3px 5px rgba(0, 0, 0, 0.25)); }
+.admin-item:hover .admin-icone { transform: rotate(-4deg) scale(1.06); }
+.admin-txt { flex: 1; min-width: 0; display: grid; gap: 0.2rem; }
+.admin-item b { font: 800 1.05rem/1.2 'Montserrat', var(--font-sans), sans-serif; color: #fff; }
+.admin-item small { color: #b9dcdd; font-size: 0.8rem; line-height: 1.35; }
+.admin-cadeado { position: absolute; top: 0.55rem; right: 0.6rem; display: inline-flex; align-items: center; gap: 0.2rem; padding: 0.1rem 0.45rem; border-radius: 999px;
+  font-style: normal; font-size: 0.62rem; font-weight: 800; letter-spacing: 0.08em; text-transform: uppercase; color: var(--cor);
+  background: color-mix(in srgb, var(--cor) 12%, transparent); border: 1px solid color-mix(in srgb, var(--cor) 40%, transparent); }
+.admin-cadeado svg { width: 11px; height: 11px; }
+@keyframes admin-cartao { from { opacity: 0; transform: translateX(14px); } to { opacity: 1; transform: none; } }
 .admin-vazio { display: grid; justify-items: center; gap: 0.4rem; padding: 1.6rem 1rem; text-align: center; border-radius: 14px;
   border: 1.5px dashed rgba(92, 195, 197, 0.4); color: #b9dcdd; }
 .admin-vazio svg { color: #5cc3c5; margin-bottom: 0.2rem; }
 .admin-vazio b { color: #fff; font-weight: 600; }
 .admin-vazio span { font-size: 0.82rem; }
-.admin-item b { font-size: 1rem; }
 /* ---------- Administração › Propostas ---------- */
 .app:has(.prop-tela) .banner-metodo { z-index: 21; }
 .prop-tela { position: absolute; z-index: 23; top: var(--abaixo-banner, 6rem); bottom: 1rem; left: 0; right: 0; margin: 0 auto;

@@ -187,10 +187,42 @@ const TV_TEMPO = {
 };
 
 // Funções do painel de administração: cada uma abre a sua tela (adminTela = id)
+// (cor = cor do cartão; senha = pede a senha do SDR)
 const ADMIN_FUNCOES = [
-  { id: 'propostas', nome: 'Propostas', desc: 'Gerar proposta Word e baixar materiais de apoio' },
-  { id: 'acao', nome: 'Ação TUPs', desc: 'Painel gerencial da ação comercial (SDR) · com senha' },
-  { id: 'sdr', nome: 'Ferramenta SDR', desc: 'Pesquisa coletiva por município: lousa, ligações e consultor · com senha' },
+  {
+    id: 'propostas', nome: 'Propostas', desc: 'Gerar proposta Word e baixar materiais de apoio', cor: '#5cc3c5', cor2: '#2f9496',
+    icone: (
+      <svg viewBox="0 0 64 64" fill="none" aria-hidden="true">
+        <path d="M16 7h22l11 11v36a2 2 0 0 1-2 2H16a2 2 0 0 1-2-2V9a2 2 0 0 1 2-2Z" fill="#fff" />
+        <path d="M38 7v9a2 2 0 0 0 2 2h9" fill="#cdeeee" />
+        <rect x="20" y="15" width="13" height="3" rx="1.5" fill="#2f9496" />
+        <rect x="20" y="24" width="23" height="2.4" rx="1.2" fill="#9cc9ca" /><rect x="20" y="30" width="19" height="2.4" rx="1.2" fill="#9cc9ca" />
+        <path d="M20 45c3-3 5 2 8-1s4-2 6 0" stroke="#0d3b3c" strokeWidth="2" strokeLinecap="round" />
+        <circle cx="41" cy="45" r="6.5" fill="#fbbf24" /><path d="M41 41l1.3 2.6 2.9.4-2.1 2 .5 2.9-2.6-1.4-2.6 1.4.5-2.9-2.1-2 2.9-.4z" fill="#fff7d6" />
+      </svg>
+    ),
+  },
+  {
+    id: 'acao', nome: 'Ação TUPs', desc: 'Painel gerencial da ação comercial: funil, propostas e equipe', cor: '#fbbf24', cor2: '#f97316', senha: true,
+    icone: (
+      <svg viewBox="0 0 64 64" fill="none" aria-hidden="true">
+        <rect x="9" y="9" width="46" height="46" rx="6" fill="#fff" />
+        <rect x="16" y="34" width="7" height="14" rx="1.5" fill="#fbbf24" /><rect x="28.5" y="26" width="7" height="22" rx="1.5" fill="#f97316" /><rect x="41" y="18" width="7" height="30" rx="1.5" fill="#0d3b3c" />
+        <path d="M16 27l12-8 8 4 12-9" stroke="#2f9496" strokeWidth="2.6" strokeLinecap="round" strokeLinejoin="round" /><circle cx="48" cy="14" r="2.6" fill="#2f9496" />
+      </svg>
+    ),
+  },
+  {
+    id: 'sdr', nome: 'Ferramenta SDR', desc: 'Pesquisa coletiva por município: lousa, ligações e consultor', cor: '#f472b6', cor2: '#a78bfa', senha: true,
+    icone: (
+      <svg viewBox="0 0 64 64" fill="none" aria-hidden="true">
+        <path d="M14 34v-4a18 18 0 0 1 36 0v4" stroke="#fff" strokeWidth="4.5" strokeLinecap="round" />
+        <rect x="9" y="32" width="11" height="17" rx="4" fill="#fff" /><rect x="44" y="32" width="11" height="17" rx="4" fill="#fff" />
+        <path d="M49.5 49c0 5-5 7-11 7" stroke="#fff" strokeWidth="3" strokeLinecap="round" /><rect x="31" y="53" width="9" height="6" rx="3" fill="#fff7d6" />
+        <circle cx="32" cy="26" r="5" fill="#fff7d6" /><path d="M25.5 40c1.5-4 4-6 6.5-6s5 2 6.5 6" stroke="#fff7d6" strokeWidth="3" strokeLinecap="round" />
+      </svg>
+    ),
+  },
 ];
 
 export default function Home({ regioes = false, novidades = false, tv = false }) {
@@ -964,7 +996,8 @@ export default function Home({ regioes = false, novidades = false, tv = false })
       <MapView points={pontosMapa} mode={mode} basemap={basemap} orbit={orbit && !!selected} onOrbitStop={() => setOrbit(false)} selected={selected} userPos={userPos} flyTarget={flyTarget} editing={editing} draft={draft} onDraft={marcarNoMapa} onSelect={(id) => { if (!editing) select(id, false); }}
         livre={!tv && mode === 'cluster' && !municipio && !q.trim() && !soOriginais && !selectedId && !userPos}
         regioes={mode === 'localizados' ? regioesInfoLoc : regioesInfo} caixasUf={caixasUf} ufFoco={uf} macro={macro?.nome ?? null} onMacro={escolherMacro} onMunicipio={escolherMunicipioRegiao} onFoco={onFocoMapa} teste={regioes}
-        enquadramento={novidades ? enqTeste : null} />
+        enquadramento={novidades ? enqTeste : null}
+        deslocar={admin && tela.w > 900 ? 230 : 0} />
 
       {/* Painel lateral */}
       {/* Em teste: a faixa Método vira um banner fixo sobre o mapa (e sai do painel lateral) */}
@@ -1232,9 +1265,13 @@ export default function Home({ regioes = false, novidades = false, tv = false })
           {ADMIN_FUNCOES.length ? (
             <div className="admin-grade">
               {ADMIN_FUNCOES.map((f) => (
-                <button key={f.id} id={`admin-${f.id}`} type="button" className="admin-item" onClick={() => { setAdmin(false); setAdminTela(f.id); }}>
-                  <b>{f.nome}</b>
-                  {f.desc && <small>{f.desc}</small>}
+                <button key={f.id} id={`admin-${f.id}`} type="button" className="admin-item" style={{ '--cor': f.cor, '--cor2': f.cor2 }} onClick={() => { setAdmin(false); setAdminTela(f.id); }}>
+                  <i className="admin-icone">{f.icone}</i>
+                  <span className="admin-txt">
+                    <b>{f.nome}</b>
+                    {f.desc && <small>{f.desc}</small>}
+                  </span>
+                  {f.senha && <em className="admin-cadeado" title="Pede a senha da equipe SDR"><svg viewBox="0 0 24 24" fill="none"><rect x="5" y="10.5" width="14" height="10" rx="2.2" stroke="currentColor" strokeWidth="2" /><path d="M8.5 10.5V8a3.5 3.5 0 0 1 7 0v2.5" stroke="currentColor" strokeWidth="2" /></svg>senha</em>}
                 </button>
               ))}
             </div>
