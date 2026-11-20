@@ -50,6 +50,9 @@ async function buscar(municipio, estado) {
   return null;
 }
 
+// (também usado pelo gerador de propostas, para achar o brasão quando a API não acha)
+export { buscar as buscarImagemMunicipio };
+
 // Busca (com cache) a imagem do município: { tipo: 'brasao' | 'foto', srcs, pagina } ou null.
 export function useImagemMunicipio(municipio, estado, ativo = true) {
   const chave = `${municipio}|${estado}`;

@@ -76,7 +76,7 @@ export default function MapView(props) {
   return <Mapa key={geracao} {...props} memoria={memoria} onRecriar={() => setGeracao((g) => g + 1)} />;
 }
 
-function Mapa({ points, mode, basemap = 'sat', orbit = false, onOrbitStop, editing = false, draft = null, onDraft, selected, userPos, flyTarget, onSelect, onReady, memoria, onRecriar, regioes, caixasUf = null, ufFoco, macro = null, onMacro, onMunicipio, onFoco, teste = false, enquadramento = null }) {
+function Mapa({ points, mode, basemap = 'sat', orbit = false, onOrbitStop, editing = false, draft = null, onDraft, selected, userPos, flyTarget, onSelect, onReady, memoria, onRecriar, regioes, caixasUf = null, ufFoco, macro = null, onMacro, onMunicipio, onFoco, teste = false, enquadramento = null, livre = false }) {
   // Margens ao enquadrar: "livre" = sem painel aberto (Brasil centralizado), "painel" = com o painel,
   // "voo" = ao voar até um orelhão. Sem a prop, o painel fixo da esquerda de sempre.
   const enq = useRef(null);
@@ -288,14 +288,18 @@ function Mapa({ points, mode, basemap = 'sat', orbit = false, onOrbitStop, editi
   const agrupa = mode === 'cluster' || localizados;
   const infoReg = agrupa && foco ? regioes?.[foco] ?? null : null;
   const nosCards = !!infoReg && !macro && selected?.uf?.toUpperCase() !== foco;
+  // Agrupado: no Brasil, no estado e na região, ampliar o mapa só aproxima a imagem, sem os grupos
+  // nem os ícones dos orelhões. Eles aparecem ao escolher um município (pop-up do card), numa busca
+  // ou com um orelhão aberto.
+  const soMapa = livre;
   // avisa o Home qual estado está em foco (ele carrega as regiões desse estado sob demanda)
   // (também avisa quando sai do estado: null)
   useEffect(() => { onFoco?.(foco || null); }, [foco, onFoco]);
   useEffect(() => {
-    const visiveis = nosCards ? [] : ufFiltro ? points.filter((p) => p.uf?.toUpperCase() === ufFiltro) : points;
+    const visiveis = nosCards || soMapa ? [] : ufFiltro ? points.filter((p) => p.uf?.toUpperCase() === ufFiltro) : points;
     pending.current = visiveis;
     if (loaded.current) map.current.getSource('orelhoes')?.setData(toGeoJSON(visiveis));
-  }, [points, ufFiltro, nosCards]);
+  }, [points, ufFiltro, nosCards, soMapa]);
 
   // Macrorregiões: áreas coloridas + um card por região com o total de orelhões
   useEffect(() => {

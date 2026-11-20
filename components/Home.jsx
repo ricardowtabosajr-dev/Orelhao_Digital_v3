@@ -7,6 +7,8 @@ import FotoMunicipio, { BrasaoMunicipio, useImagemMunicipio } from '@/components
 import { REGIOES, COR_REGIAO, UF_NOME, norm, haversine, fmt, bounds, destino, confirmado } from '@/lib/geo';
 import { MARCA_PENDENTE, TEM_STREET_VIEW_PROPRIO, linkRua } from '@/lib/marcar';
 import TvRua, { TV_RUA_MS } from '@/components/TvRua';
+// gerador de propostas (Administração): carregado só quando for aberto (inclui o gerador de Word)
+const Propostas = dynamic(() => import('@/components/Propostas'), { ssr: false });
 
 const ALTURA_CAMERA = 2.5; // metros, câmera do carro do Street View
 
@@ -181,6 +183,11 @@ const TV_TEMPO = {
   orelhaoVoo: 3000, orelhaoGiro: 4500,
   voltando: 2000,
 };
+
+// Funções do painel de administração: cada uma abre a sua tela (adminTela = id)
+const ADMIN_FUNCOES = [
+  { id: 'propostas', nome: 'Propostas', desc: 'Gerar proposta Word e baixar materiais de apoio' },
+];
 
 export default function Home({ regioes = false, novidades = false, tv = false }) {
   const [all, setAll] = useState([]);
@@ -810,7 +817,16 @@ export default function Home({ regioes = false, novidades = false, tv = false })
   const tvRua = useRef(null);
   tvAcoes.current = { irBrasil, irEstado, irRegiao, irMunicipio, select, setOrbit, setQ, setFlyTarget, setMode, all, macroDe };
   const [tvLegenda, setTvLegenda] = useState(null); // { etapa, titulo, sub, ms, n }
-  const [tvFrase, setTvFrase] = useState(false); // frase sobre o mapa de pontos (abertura do Brasil)
+  const [tvFrase, setTvFrase] = useState(false);
+  // painel de administração (botão no lugar do antigo "Perto de mim"); fecha com Esc
+  const [admin, setAdmin] = useState(false);
+  const [adminTela, setAdminTela] = useState(null); // tela aberta a partir do painel (ex.: 'propostas')
+  useEffect(() => {
+    if (!admin) return;
+    const esc = (e) => { if (e.key === 'Escape') setAdmin(false); };
+    addEventListener('keydown', esc);
+    return () => removeEventListener('keydown', esc);
+  }, [admin]); // frase sobre o mapa de pontos (abertura do Brasil)
   useEffect(() => {
     if (!tv || !booted) return;
     let vivo = true, wake = null, n = 0;
@@ -931,6 +947,7 @@ export default function Home({ regioes = false, novidades = false, tv = false })
       </div>
 
       <MapView points={pontosMapa} mode={mode} basemap={basemap} orbit={orbit && !!selected} onOrbitStop={() => setOrbit(false)} selected={selected} userPos={userPos} flyTarget={flyTarget} editing={editing} draft={draft} onDraft={marcarNoMapa} onSelect={(id) => { if (!editing) select(id, false); }}
+        livre={!tv && mode === 'cluster' && !municipio && !q.trim() && !soOriginais && !selectedId && !userPos}
         regioes={mode === 'localizados' ? regioesInfoLoc : regioesInfo} caixasUf={caixasUf} ufFoco={uf} macro={macro?.nome ?? null} onMacro={escolherMacro} onMunicipio={escolherMunicipioRegiao} onFoco={onFocoMapa} teste={regioes}
         enquadramento={novidades ? enqTeste : null} />
 
@@ -958,9 +975,11 @@ export default function Home({ regioes = false, novidades = false, tv = false })
         </button>
       )}
       {novidades && (
+        // com o painel aberto, o "Buscar" vira "Início": volta ao mapa do Brasil (todos os estados) e fecha o painel
         <button id="recolher-painel" className={`recolher-painel ${booted && mostrarPainel ? 'in' : ''}`}
-          onClick={() => setPainelPedido(false)} aria-label="Recolher painel" title="Recolher painel">
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="m9 5 7 7-7 7" stroke="currentColor" strokeWidth="2.6" strokeLinecap="round" strokeLinejoin="round" /></svg>
+          onClick={() => { setQ(''); irBrasil(); setPainelPedido(false); }} aria-label="Voltar ao início (mapa do Brasil)" title="Voltar ao início: todos os estados">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M4 10.5 12 4l8 6.5V19a1 1 0 0 1-1 1h-4.5v-5.5h-5V20H5a1 1 0 0 1-1-1v-8.5Z" stroke="currentColor" strokeWidth="2.1" strokeLinejoin="round" /></svg>
+          <span>Início</span>
         </button>
       )}
 
@@ -1177,11 +1196,47 @@ export default function Home({ regioes = false, novidades = false, tv = false })
             <button key={id} id={`base-${id}`} className={basemap === id ? 'on' : ''} onClick={() => setBasemap(id)}>{l}</button>
           ))}
         </div>
-        <button id="perto-de-mim" className={`cta ${locating ? 'busy' : ''}`} onClick={pertoDeMim}>
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="3" fill="currentColor" /><circle cx="12" cy="12" r="8" stroke="currentColor" strokeWidth="2" /><path d="M12 1v3M12 20v3M1 12h3M20 12h3" stroke="currentColor" strokeWidth="2" strokeLinecap="round" /></svg>
-          <span className="rotulo">{locating ? 'Localizando…' : 'Perto de mim'}</span>
+        {/* no lugar do antigo "Perto de mim": abre o painel de administração */}
+        <button id="admin" className={`cta ${admin ? 'aberto' : ''}`} onClick={() => setAdmin((v) => !v)} aria-expanded={admin} aria-controls="admin-painel">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><rect x="3.5" y="3.5" width="7" height="7" rx="1.6" stroke="currentColor" strokeWidth="2" /><rect x="13.5" y="3.5" width="7" height="7" rx="1.6" stroke="currentColor" strokeWidth="2" /><rect x="3.5" y="13.5" width="7" height="7" rx="1.6" stroke="currentColor" strokeWidth="2" /><rect x="13.5" y="13.5" width="7" height="7" rx="1.6" stroke="currentColor" strokeWidth="2" /></svg>
+          <span className="rotulo">Administração</span>
         </button>
       </div>
+
+      {/* Painel de administração: as funções entram em ADMIN_FUNCOES (cada uma vira um bloco) */}
+      {admin && <div className="admin-fundo" onClick={() => setAdmin(false)} />}
+      {admin && (
+        <section id="admin-painel" className="admin-painel" role="dialog" aria-label="Administração">
+          <header>
+            <div>
+              <span className="admin-selo">Área administrativa</span>
+              <h2>Administração</h2>
+            </div>
+            <button type="button" className="admin-x" onClick={() => setAdmin(false)} aria-label="Fechar" title="Fechar (Esc)">×</button>
+          </header>
+          {ADMIN_FUNCOES.length ? (
+            <div className="admin-grade">
+              {ADMIN_FUNCOES.map((f) => (
+                <button key={f.id} id={`admin-${f.id}`} type="button" className="admin-item" onClick={() => { setAdmin(false); setAdminTela(f.id); }}>
+                  <b>{f.nome}</b>
+                  {f.desc && <small>{f.desc}</small>}
+                </button>
+              ))}
+            </div>
+          ) : (
+            <div className="admin-vazio">
+              <svg width="30" height="30" viewBox="0 0 24 24" fill="none"><rect x="3.5" y="3.5" width="7" height="7" rx="1.6" stroke="currentColor" strokeWidth="1.8" /><rect x="13.5" y="3.5" width="7" height="7" rx="1.6" stroke="currentColor" strokeWidth="1.8" strokeDasharray="2.5 2" /><rect x="3.5" y="13.5" width="7" height="7" rx="1.6" stroke="currentColor" strokeWidth="1.8" strokeDasharray="2.5 2" /><rect x="13.5" y="13.5" width="7" height="7" rx="1.6" stroke="currentColor" strokeWidth="1.8" strokeDasharray="2.5 2" /></svg>
+              <b>As funções administrativas vão aparecer aqui.</b>
+              <span>Em construção.</span>
+            </div>
+          )}
+        </section>
+      )}
+      {adminTela === 'propostas' && (
+        <Propostas orelhoes={all}
+          contexto={selected ? { municipio: selected.municipio, uf: selected.uf } : municipio && uf ? { municipio, uf } : null}
+          onFechar={() => setAdminTela(null)} onVoltar={() => { setAdminTela(null); setAdmin(true); }} />
+      )}
 
       {/* Legenda (retirada no teste a pedido do usuário) */}
       {!regioes && <div className={`legend glass ${booted ? 'in' : ''}`}>
