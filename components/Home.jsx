@@ -6,6 +6,7 @@ import { useFotos, FotosEditor, VisorFotos } from '@/components/Fotos';
 import FotoMunicipio, { BrasaoMunicipio, useImagemMunicipio } from '@/components/FotoMunicipio';
 import { REGIOES, COR_REGIAO, UF_NOME, norm, haversine, fmt, bounds, destino, confirmado } from '@/lib/geo';
 import { MARCA_PENDENTE, TEM_STREET_VIEW_PROPRIO, linkRua } from '@/lib/marcar';
+import TvRua, { TV_RUA_MS } from '@/components/TvRua';
 
 const ALTURA_CAMERA = 2.5; // metros, câmera do carro do Street View
 
@@ -163,7 +164,25 @@ const ENQ_TESTE = {
 };
 
 // regioes: ajustes já aprovados (principal e /teste). novidades: só no /teste, até o usuário aprovar.
-export default function Home({ regioes = false, novidades = false }) {
+// Modo TV (teste): estados percorridos no loop (com orelhões localizados).
+// `id`: orelhão fixo daquele estado (senão, um localizado diferente a cada volta).
+const TV_ESTADOS = [
+  { uf: 'PA', id: 4195 }, // Porto Novo · Santarém (marcado no Street View)
+  { uf: 'BA', id: 499 },  // Cabeceira · Vitória da Conquista
+  { uf: 'MS', id: 3955 }, // Aldeia Buriti · Dois Irmãos do Buriti
+];
+// Tempos do roteiro (ms) — no máximo 50 s por estado. O "Na rua" fica em components/TvRua.jsx (TV_RUA_MS).
+const TV_TEMPO = {
+  brasilAntes: 1000, passeio: 7400, // Brasil: enquadra e faz o passeio em 3D (MapView, ~7,3 s)
+  pontos: 3500,                      // depois do giro: mapa de pontos com a frase
+  estado: 4000, regiao: 3000,
+  letra: 60, aposDigitar: 600,     // pesquisa: velocidade da digitação e pausa antes do Enter
+  municipio: 2500,
+  orelhaoVoo: 3000, orelhaoGiro: 4500,
+  voltando: 2000,
+};
+
+export default function Home({ regioes = false, novidades = false, tv = false }) {
   const [all, setAll] = useState([]);
   const [progress, setProgress] = useState(0);
   const [error, setError] = useState(null);
@@ -784,12 +803,123 @@ export default function Home({ regioes = false, novidades = false }) {
     </nav>
   ) : null);
 
+  // ---- Modo TV (/tv): o sistema se apresenta sozinho, em loop ----
+  // Brasil → estado → região → pesquisa do município → orelhão localizado (girando em 3D) → volta ao estado → próximo.
+  // Só lê: nada é gravado. Teste com 3 estados que têm orelhões localizados.
+  const tvAcoes = useRef(null);
+  const tvRua = useRef(null);
+  tvAcoes.current = { irBrasil, irEstado, irRegiao, irMunicipio, select, setOrbit, setQ, setFlyTarget, setMode, all, macroDe };
+  const [tvLegenda, setTvLegenda] = useState(null); // { etapa, titulo, sub, ms, n }
+  const [tvFrase, setTvFrase] = useState(false); // frase sobre o mapa de pontos (abertura do Brasil)
+  useEffect(() => {
+    if (!tv || !booted) return;
+    let vivo = true, wake = null, n = 0;
+    const timers = [];
+    const esperar = (ms) => new Promise((r) => { timers.push(setTimeout(r, ms)); });
+    const A = () => tvAcoes.current;
+    const legenda = (etapa, titulo, sub, ms) => setTvLegenda({ etapa, titulo, sub, ms, n: ++n });
+    // digita letra por letra pelo relógio: se a busca demorar a redesenhar, pula letras em vez de atrasar
+    const digitar = async (txt) => {
+      const t0 = performance.now(), fim = txt.length * TV_TEMPO.letra;
+      while (vivo) {
+        const t = performance.now() - t0;
+        A().setQ(txt.slice(0, Math.min(txt.length, Math.floor(t / TV_TEMPO.letra) + 1)));
+        if (t >= fim) break;
+        await esperar(TV_TEMPO.letra);
+      }
+    };
+    const pedirTela = () => navigator.wakeLock?.request('screen').then((w) => { wake = w; }).catch(() => {});
+    pedirTela();
+    const aoVoltar = () => { if (document.visibilityState === 'visible') pedirTela(); };
+    document.addEventListener('visibilitychange', aoVoltar);
+    const vez = {};
+    tvRua.current?.aquecer();
+    (async () => {
+      while (vivo) {
+        for (const { uf: u, id: fixo } of TV_ESTADOS) {
+          if (!vivo) return;
+          const todos = A().all;
+          const doUf = todos.filter((p) => p.uf === u);
+          const loc = doUf.filter(confirmado);
+          if (!loc.length) continue;
+          // 1. Brasil
+          // abre com as bandeiras dos estados e faz o passeio em 3D (inclina, gira e volta em pé ao centro)
+          A().setOrbit(false); A().setMode('cluster'); A().irBrasil();
+          legenda('Brasil', 'Mapa nacional de orelhões', '', TV_TEMPO.brasilAntes + TV_TEMPO.passeio + TV_TEMPO.pontos);
+          await esperar(TV_TEMPO.brasilAntes); if (!vivo) return;
+          A().setFlyTarget({ passeio: true, bounds: BRASIL, t: Date.now() });
+          await esperar(TV_TEMPO.passeio); if (!vivo) return;
+          // (teste) depois do giro: todos os pontos, com a frase sobre o mapa
+          A().setMode('points'); setTvFrase(true);
+          await esperar(TV_TEMPO.pontos); setTvFrase(false); if (!vivo) return;
+          // 2. Estado (volta ao agrupado: bandeira e regiões do estado)
+          A().setMode('cluster'); A().irEstado(u);
+          legenda('Estado', UF_NOME[u], `${fmt(doUf.length)} orelhões · ${loc.length} ${loc.length > 1 ? 'localizados' : 'localizado'}`, TV_TEMPO.estado);
+          // um orelhão localizado diferente a cada volta
+          vez[u] = ((vez[u] ?? -1) + 1) % loc.length;
+          const p = (fixo && doUf.find((x) => x.id === fixo)) || loc[vez[u]];
+          // a foto de rua do orelhão já começa a carregar escondida aqui (o Google às vezes demora
+          // vários segundos): assim fica pronta a tempo e o roteiro não passa dos 50 s
+          const temRua = fetchVista(p.id).catch(() => null).then((vista) => tvRua.current?.preparar({ lat: p.lat, lng: p.lng }, vista) ?? false);
+          await esperar(TV_TEMPO.estado); if (!vivo) return;
+          const reg = A().macroDe[u]?.get(chaveMun(p.municipio)) || null;
+          // 3. Região
+          if (reg) {
+            const nReg = doUf.filter((x) => A().macroDe[u]?.get(chaveMun(x.municipio)) === reg).length;
+            A().irRegiao(u, reg);
+            legenda('Região', `Região ${reg}`, `${UF_NOME[u]} · ${fmt(nReg)} orelhões`, TV_TEMPO.regiao);
+            await esperar(TV_TEMPO.regiao); if (!vivo) return;
+          }
+          // 4. Pesquisa: digita o município na busca, letra por letra
+          legenda('Pesquisa', `Buscando “${p.municipio}”`, `${UF_NOME[u]}`, p.municipio.length * TV_TEMPO.letra + TV_TEMPO.aposDigitar);
+          await digitar(p.municipio);
+          await esperar(TV_TEMPO.aposDigitar); if (!vivo) return;
+          A().irMunicipio(u, reg, p.municipio);
+          const nMun = doUf.filter((x) => x.municipio === p.municipio).length;
+          legenda('Município', p.municipio, `${fmt(nMun)} ${nMun > 1 ? 'orelhões' : 'orelhão'} · ${UF_NOME[u]}`, TV_TEMPO.municipio);
+          await esperar(TV_TEMPO.municipio); if (!vivo) return;
+          // 4b. Pesquisa da localidade dentro do município
+          legenda('Pesquisa', `Buscando “${p.localidade}”`, `${p.municipio} · ${UF_NOME[u]}`, p.localidade.length * TV_TEMPO.letra + TV_TEMPO.aposDigitar);
+          await digitar(p.localidade);
+          await esperar(TV_TEMPO.aposDigitar); if (!vivo) return;
+          // 5. Orelhão localizado: voa até ele e gira em 3D
+          A().select(p.id);
+          legenda('Orelhão localizado', p.localidade, `${p.municipio} · ${UF_NOME[u]} · posição confirmada`, TV_TEMPO.orelhaoVoo + TV_TEMPO.orelhaoGiro);
+          await esperar(TV_TEMPO.orelhaoVoo); if (!vivo) return;
+          A().setOrbit(true);
+          await esperar(TV_TEMPO.orelhaoGiro); if (!vivo) return;
+          // 6. Na rua: o próprio orelhão no Street View (vista salva na marcação, ou a foto de rua mais próxima).
+          // Se a foto ainda não chegou, espera no máximo 1,5 s e segue sem ela (não estoura o tempo).
+          A().setOrbit(false);
+          const pronta = await Promise.race([temRua, esperar(1500).then(() => false)]);
+          const viu = vivo && pronta && (await tvRua.current?.exibir());
+          if (viu && vivo) {
+            legenda('Na rua', p.localidade, `${p.municipio} · ${UF_NOME[u]} · Street View 360°`, TV_RUA_MS);
+            await esperar(TV_RUA_MS);
+            tvRua.current?.esconder();
+            if (!vivo) return;
+          }
+          // 7. Volta para o estado
+          A().irEstado(u);
+          legenda('Voltando', UF_NOME[u], 'próximo estado em instantes…', TV_TEMPO.voltando);
+          await esperar(TV_TEMPO.voltando);
+        }
+      }
+    })();
+    return () => { vivo = false; timers.forEach(clearTimeout); wake?.release?.(); tvRua.current?.esconder(); document.removeEventListener('visibilitychange', aoVoltar); };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [tv, booted]);
+  const tvPlacar = useMemo(() => (tv ? {
+    total: all.length, ufs: new Set(all.map((p) => p.uf)).size,
+    muns: new Set(all.map((p) => `${p.uf}|${p.municipio}`)).size,
+  } : null), [tv, all]);
+
   const limpar =() => { setRegiao(null); setUf(null); setMunicipio(null); setMacro(null); setQ(''); setSoOriginais(false); };
   const copy = (txt) => { navigator.clipboard.writeText(txt); notify('Copiado: ' + txt); };
   const maxRegiao = Math.max(1, ...porRegiaoStats.map((r) => r.n));
 
   return (
-    <main className={`app ${novidades ? 'com-banner' : ''} ${novidades && (mostrarPainel || selected) ? 'painel-aberto' : ''} ${soBusca && !q.trim() && !selected ? 'busca-compacta' : ''}`}>
+    <main className={`app ${tv ? 'modo-tv' : ''} ${novidades ? 'com-banner' : ''} ${novidades && (mostrarPainel || selected) ? 'painel-aberto' : ''} ${soBusca && !q.trim() && !selected ? 'busca-compacta' : ''}`}>
       <h1 className="sr-only">Orelhão Digital — mapa dos orelhões do Brasil</h1>
 
       {/* Splash */}
@@ -1235,7 +1365,36 @@ export default function Home({ regioes = false, novidades = false }) {
           streetViewUrl={linkStreetView(selected)} />
       )}
 
-      {toast && <div className="toast glass">{toast}</div>}
+      {toast && !tv && <div className="toast glass">{toast}</div>}
+
+      {tv && <TvRua ref={tvRua} />}
+      {/* Modo TV: placar fixo e legenda da etapa, grandes para ler de longe */}
+      {tv && tvPlacar && booted && (
+        <div className="tv-placar">
+          <div><b>{fmt(tvPlacar.total)}</b><small>orelhões</small></div>
+          <div><b>{tvPlacar.ufs}</b><small>estados</small></div>
+          <div className="loc"><b>{fmt(tvPlacar.muns)}</b><small>municípios</small></div>
+        </div>
+      )}
+      {tv && tvLegenda && (
+        <div className="tv-legenda" key={tvLegenda.n}>
+          <span className="tv-etapa">{tvLegenda.etapa}</span>
+          <strong>{tvLegenda.titulo}</strong>
+          {tvLegenda.sub && <small>{tvLegenda.sub}</small>}
+          <i className="tv-tempo" style={{ animationDuration: `${tvLegenda.ms}ms` }} />
+        </div>
+      )}
+      {/* Abertura do Brasil, depois do giro: frase sobre o mapa de pontos (no mar, à direita do país) */}
+      {tv && tvFrase && (
+        <div className="tv-frase" aria-live="polite">
+          <span className="tv-frase-seta" aria-hidden="true"><i /></span>
+          <div className="tv-frase-texto">
+            <span className="tv-frase-pontos" aria-hidden="true">{['#34d399', '#fbbf24', '#f472b6', '#60a5fa', '#a78bfa'].map((c, i) => <i key={c} style={{ background: c, animationDelay: `${0.5 + i * 0.12}s` }} />)}</span>
+            <p>Cada pontinho no mapa é um <b>orelhão</b> conectado ao</p>
+            <strong>BRASIL</strong>
+          </div>
+        </div>
+      )}
     </main>
   );
 }

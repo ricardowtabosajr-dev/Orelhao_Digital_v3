@@ -12,7 +12,7 @@ import { MARCA_PENDENTE } from '@/lib/marcar';
 
 const CHAVE = process.env.NEXT_PUBLIC_GOOGLE_MAPS_KEY;
 
-function carregarGoogle() {
+export function carregarGoogle() {
   if (window.google?.maps?.StreetViewPanorama) return Promise.resolve();
   if (!window.__carregandoGoogle) {
     window.__carregandoGoogle = new Promise((ok, erro) => {
@@ -28,7 +28,7 @@ function carregarGoogle() {
 }
 
 // direção (0–360°, a partir do norte) de a até b
-function rumo(a, b) {
+export function rumo(a, b) {
   const r = Math.PI / 180;
   const y = Math.sin((b.lng - a.lng) * r) * Math.cos(b.lat * r);
   const x = Math.cos(a.lat * r) * Math.sin(b.lat * r) - Math.sin(a.lat * r) * Math.cos(b.lat * r) * Math.cos((b.lng - a.lng) * r);

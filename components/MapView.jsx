@@ -669,17 +669,44 @@ function Mapa({ points, mode, basemap = 'sat', orbit = false, onOrbitStop, editi
     if (!flyTarget || !map.current) return;
     if (memoria) { if (memoria.current.fly === flyTarget) return; memoria.current.fly = flyTarget; } // recriado: não refaz o voo
     const m = map.current;
+    // Passeio (modo TV, abertura com o Brasil): inclina em 3D e gira devagar para um lado e para o
+    // outro; no fim volta em pé e centralizado (flyTarget.bounds) para o próximo cenário. ~10 s.
+    if (flyTarget.passeio) {
+      const suave = (t) => (t < 0.5 ? 2 * t * t : 1 - Math.pow(-2 * t + 2, 2) / 2);
+      const timers = [];
+      const z = m.getZoom();
+      m.easeTo({ pitch: 52, bearing: -22, zoom: z + 0.35, duration: 2600, easing: suave });
+      timers.push(setTimeout(() => m.easeTo({ bearing: 22, duration: 2900, easing: suave }), 2650));
+      timers.push(setTimeout(() => {
+        if (enquadramento) m.setPadding({ top: 0, bottom: 0, left: 0, right: 0 });
+        m.fitBounds(flyTarget.bounds, { padding: enq.current.livre, pitch: 0, bearing: 0, duration: 1700, easing: suave });
+      }, 5600));
+      return () => timers.forEach(clearTimeout);
+    }
     // o voo até um orelhão deixa a margem do painel gravada no mapa; ela se somaria a esta
     if (flyTarget.bounds && enquadramento) m.setPadding({ top: 0, bottom: 0, left: 0, right: 0 });
     // estado inteiro (trilha "‹ Voltar"): igual ao clique na bandeira — nunca abaixo de UF_ZOOM,
     // senão no celular o mapa se afasta demais e mostra a bandeira em vez dos cards das regiões
-    if (flyTarget.bounds && flyTarget.estado) {
-      const [[w, s], [e, n]] = flyTarget.bounds;
-      const cam = m.cameraForBounds(flyTarget.bounds, { padding: enq.current.painel });
-      m.easeTo({ center: [(w + e) / 2, (s + n) / 2], zoom: Math.max(cam?.zoom ?? 0, UF_ZOOM + 0.2), padding: enq.current.painel, duration: 1200 });
-      return;
+    if (flyTarget.bounds) {
+      // Mapa "em pé": se ficou inclinado/girado (3D, giro), primeiro endireita e só depois enquadra —
+      // senão o Brasil/estado volta deitado e torto.
+      let cancelado = false, timer = null;
+      const enquadrar = () => {
+        if (cancelado) return;
+        if (flyTarget.estado) {
+          const [[w, s], [e, n]] = flyTarget.bounds;
+          const cam = m.cameraForBounds(flyTarget.bounds, { padding: enq.current.painel });
+          m.easeTo({ center: [(w + e) / 2, (s + n) / 2], zoom: Math.max(cam?.zoom ?? 0, UF_ZOOM + 0.2), padding: enq.current.painel, pitch: 0, bearing: 0, duration: 1200 });
+        } else {
+          m.fitBounds(flyTarget.bounds, { padding: flyTarget.livre ? enq.current.livre : enq.current.painel, duration: 1400, maxZoom: flyTarget.maxZoom ?? 11, pitch: 0, bearing: 0 });
+        }
+      };
+      if (m.getPitch() > 0.5 || Math.abs(m.getBearing()) > 0.5) {
+        m.easeTo({ pitch: 0, bearing: 0, duration: 900 });
+        timer = setTimeout(enquadrar, 950);
+      } else enquadrar();
+      return () => { cancelado = true; clearTimeout(timer); };
     }
-    if (flyTarget.bounds) { m.fitBounds(flyTarget.bounds, { padding: flyTarget.livre ? enq.current.livre : enq.current.painel, duration: 1400, maxZoom: flyTarget.maxZoom ?? 11 }); return; }
     let cancelado = false;
     const voar = (zoom) => !cancelado && m.flyTo({ center: [flyTarget.lng, flyTarget.lat], zoom, pitch: flyTarget.pitch ?? 45, bearing: flyTarget.bearing ?? -15, duration: 2200, essential: true, padding: enq.current.voo });
     // comFoto: para no maior zoom em que a Esri tem foto naquele ponto (no máximo flyTarget.zoom)

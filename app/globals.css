@@ -983,3 +983,67 @@ button { font: inherit; color: inherit; cursor: pointer; background: none; borde
 .trilha li button { padding: 0; border: 0; background: none; cursor: pointer; font: inherit; color: #7fd6d8; text-decoration: underline; text-decoration-color: rgba(127, 214, 216, 0.35); text-underline-offset: 2px; }
 .trilha li button:hover { color: #fff; text-decoration-color: currentColor; }
 .trilha li span { color: #e6f4f4; font-weight: 600; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; max-width: 14rem; }
+
+/* ===== Modo TV (/tv): apresentação em loop numa tela grande =====
+   Sem botões nem cursor; placar fixo à esquerda e legenda da etapa embaixo, em letras grandes. */
+.modo-tv, .modo-tv * { cursor: none !important; }
+.modo-tv .topbar, .modo-tv .puxador-painel, .modo-tv .recolher-painel, .modo-tv .maplibregl-ctrl-bottom-right,
+.modo-tv .drawer .close, .modo-tv .trilha-voltar, .modo-tv .drawer .actions, .modo-tv .dica-marcar,
+.modo-tv .edit-toggle, .modo-tv .search kbd, .modo-tv .search .x { display: none !important; }
+.modo-tv .panel, .modo-tv .drawer { pointer-events: none; }
+.tv-placar { position: absolute; z-index: 8; left: 1rem; top: calc(var(--abaixo-banner) + 0.25rem); display: grid; gap: 0.6rem; }
+.tv-placar > div { display: grid; padding: 0.7rem 1.1rem 0.6rem; min-width: 9.5rem; border-radius: 14px; color: #fff;
+  background: rgba(8, 16, 30, 0.78); border: 1px solid rgba(92, 195, 197, 0.35); box-shadow: 0 10px 26px rgba(5, 12, 22, 0.45); backdrop-filter: blur(6px); }
+.tv-placar b { font: 800 2.1rem/1 'Montserrat', var(--font-sans), sans-serif; letter-spacing: 0.01em; color: #fbbf24; }
+.tv-placar small { margin-top: 0.3rem; font-size: 0.8rem; font-weight: 600; letter-spacing: 0.16em; text-transform: uppercase; color: #b8f0f1; }
+.tv-placar .loc b { color: #ff4d4d; }
+.tv-legenda { position: absolute; z-index: 8; left: 1rem; bottom: 1.4rem; max-width: min(62vw, 46rem); display: grid; gap: 0.3rem; overflow: hidden;
+  padding: 1rem 1.5rem 1.25rem; border-radius: 18px; color: #fff; background: rgba(8, 16, 30, 0.82); border: 1px solid rgba(92, 195, 197, 0.45);
+  box-shadow: 0 14px 34px rgba(5, 12, 22, 0.55); backdrop-filter: blur(8px); animation: tv-entra 0.6s cubic-bezier(0.22, 1, 0.36, 1); }
+.tv-etapa { justify-self: start; padding: 0.25rem 0.75rem; border-radius: 999px; font-size: 0.8rem; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase;
+  color: #0b1020; background: linear-gradient(180deg, #5cc3c5, #2f9496); }
+.tv-legenda strong { font: 800 2.2rem/1.1 'Montserrat', var(--font-sans), sans-serif; }
+.tv-legenda small { font-size: 1.1rem; color: #cfe9ea; }
+/* barrinha embaixo: quanto falta para a próxima etapa */
+.tv-tempo { position: absolute; left: 0; bottom: 0; height: 4px; width: 100%; background: linear-gradient(90deg, #5cc3c5, #fbbf24);
+  transform-origin: left; animation: tv-tempo linear forwards; }
+@keyframes tv-tempo { from { transform: scaleX(0); } to { transform: scaleX(1); } }
+@keyframes tv-entra { from { opacity: 0; transform: translateY(18px); } to { opacity: 1; transform: none; } }
+@media (max-width: 900px) {
+  .tv-placar { display: none; }
+  .tv-legenda { bottom: auto; top: calc(var(--abaixo-banner) + 0.25rem); right: 0.5rem; left: 0.5rem; max-width: none; padding: 0.6rem 0.9rem 0.8rem; }
+  .tv-legenda strong { font-size: 1.2rem; }
+  .tv-legenda small { font-size: 0.85rem; }
+}
+/* Modo TV, etapa "Na rua": Street View do orelhão ocupando a área do mapa (o cartão do orelhão segue à direita) */
+.tv-rua { position: absolute; z-index: 7; top: var(--abaixo-banner); left: 1rem; right: calc(400px + 2rem); bottom: 1rem;
+  border-radius: 18px; overflow: hidden; border: 1px solid rgba(92, 195, 197, 0.55); box-shadow: 0 18px 44px rgba(5, 12, 22, 0.6);
+  background: #070b18; opacity: 0; transform: scale(0.97); pointer-events: none; transition: opacity 0.8s ease, transform 0.9s cubic-bezier(0.22, 1, 0.36, 1); }
+.tv-rua.in { opacity: 1; transform: none; }
+.tv-rua-pano { position: absolute; inset: 0; }
+.tv-rua-selo { position: absolute; right: 0.8rem; top: 0.7rem; padding: 0.3rem 0.7rem; border-radius: 999px; font-size: 0.78rem; color: #d4f1f2;
+  background: rgba(8, 16, 30, 0.7); border: 1px solid rgba(184, 240, 241, 0.25); }
+.tv-rua.in ~ .tv-placar { opacity: 0; }
+/* Modo TV, abertura do Brasil: frase sobre o mapa de pontos, no mar à direita do país, com um traço apontando para ele */
+.tv-frase { position: absolute; z-index: 8; right: 3rem; top: 50%; display: flex; align-items: center; gap: 0.9rem; pointer-events: none;
+  animation: tv-frase-entra 1s cubic-bezier(0.22, 1, 0.36, 1) both; }
+.tv-frase-seta { position: relative; width: 6.5rem; height: 2px; background: linear-gradient(90deg, rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.15));
+  transform-origin: right; animation: tv-frase-seta 0.8s 0.35s cubic-bezier(0.22, 1, 0.36, 1) both; }
+.tv-frase-seta i { position: absolute; left: -6px; top: -5px; width: 12px; height: 12px; border-radius: 50%; background: #fff;
+  box-shadow: 0 0 0 0 rgba(92, 195, 197, 0.7); animation: tv-frase-pulso 1.6s 1s ease-out infinite; }
+.tv-frase-texto { max-width: 25rem; padding: 1rem 1.4rem 1.1rem; border-left: 3px solid #fbbf24; border-radius: 0 16px 16px 0;
+  background: linear-gradient(90deg, rgba(8, 16, 30, 0.74), rgba(8, 16, 30, 0.3)); backdrop-filter: blur(4px); }
+.tv-frase-pontos { display: flex; gap: 6px; }
+.tv-frase-pontos i { width: 10px; height: 10px; border-radius: 50%; box-shadow: 0 0 8px currentColor; animation: tv-frase-ponto 0.45s ease-out both; }
+.tv-frase-texto p { margin: 0.55rem 0 0.15rem; font: 600 1.5rem/1.3 'Montserrat', var(--font-sans), sans-serif; color: #e8f6f6; text-shadow: 0 2px 10px rgba(0, 0, 0, 0.6); }
+.tv-frase-texto p b { color: #5cc3c5; font-weight: 800; }
+.tv-frase-texto strong { display: block; font: 900 3.5rem/1 'Montserrat', var(--font-sans), sans-serif; letter-spacing: 0.08em;
+  background: linear-gradient(90deg, #34d399, #fbbf24); -webkit-background-clip: text; background-clip: text; color: transparent;
+  filter: drop-shadow(0 0 16px rgba(251, 191, 36, 0.35)); }
+@keyframes tv-frase-entra { from { opacity: 0; transform: translateX(2.5rem); } to { opacity: 1; transform: none; } }
+@keyframes tv-frase-seta { from { transform: scaleX(0); } to { transform: scaleX(1); } }
+@keyframes tv-frase-ponto { from { opacity: 0; transform: scale(0); } to { opacity: 1; transform: scale(1); } }
+@keyframes tv-frase-pulso { 0% { box-shadow: 0 0 0 0 rgba(92, 195, 197, 0.7); } 100% { box-shadow: 0 0 0 16px rgba(92, 195, 197, 0); } }
+@media (max-width: 900px) { .tv-frase { right: 0.75rem; left: 0.75rem; top: auto; bottom: 7rem; } .tv-frase-seta { display: none; } .tv-frase-texto strong { font-size: 2.4rem; } }
+.tv-placar { transition: opacity 0.6s ease; }
+@media (max-width: 900px) { .tv-rua { right: 0.5rem; left: 0.5rem; bottom: calc(var(--gaveta) + 1rem); } }
