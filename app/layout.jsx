@@ -7,6 +7,10 @@ const mono = JetBrains_Mono({ subsets: ['latin'], variable: '--font-mono' });
 export const metadata = {
   title: 'Orelhão Digital — Mapa dos TUPs do Brasil',
   description: 'Mapa interativo com a localização de mais de 6 mil orelhões (TUPs) distribuídos por 25 estados e 1.917 municípios brasileiros.',
+  applicationName: 'Orelhão Digital',
+  // instalado no iPhone/iPad: abre em tela cheia, com este nome e ícone
+  appleWebApp: { capable: true, title: 'Orelhão Digital', statusBarStyle: 'black-translucent' },
+  icons: { apple: '/app/apple-touch-icon.png' },
 };
 
 export const viewport = { themeColor: '#070b18' };

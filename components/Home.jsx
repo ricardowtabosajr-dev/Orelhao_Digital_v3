@@ -7,6 +7,7 @@ import FotoMunicipio, { BrasaoMunicipio, useImagemMunicipio } from '@/components
 import { REGIOES, COR_REGIAO, UF_NOME, norm, haversine, fmt, bounds, destino, confirmado } from '@/lib/geo';
 import { MARCA_PENDENTE, TEM_STREET_VIEW_PROPRIO, linkRua } from '@/lib/marcar';
 import TvRua, { TV_RUA_MS } from '@/components/TvRua';
+import InstalarApp from '@/components/InstalarApp';
 // gerador de propostas (Administração): carregado só quando for aberto (inclui o gerador de Word)
 const Propostas = dynamic(() => import('@/components/Propostas'), { ssr: false });
 const AcaoTups = dynamic(() => import('@/components/AcaoTups'), { ssr: false });
@@ -1030,6 +1031,8 @@ export default function Home({ regioes = false, novidades = false, tv = false })
           <span>Início</span>
         </button>
       )}
+      {/* botão flutuante "Instalar App" (canto inferior esquerdo do mapa); some com painel, ficha ou administração abertos */}
+      {!tv && <InstalarApp oculto={!booted || (novidades && mostrarPainel) || !!selected || admin} />}
 
       <aside className={`panel glass ${regioes ? 'tema-metodo' : ''} ${novidades ? 'painel-alterna' : ''} ${booted && mostrarPainel ? 'in' : ''}`} aria-hidden={!mostrarPainel}>
         {novidades ? null : regioes ? (
