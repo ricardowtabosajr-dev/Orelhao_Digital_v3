@@ -1,61 +1,67 @@
 'use client';
 
-// Administração › Ferramenta SDR: pesquisa coletiva por município (mesmo fluxo da plataforma CoLR
-// "campanha-contatos"): quem pesquisa, filtros por UF e nº de orelhões, lousa do contato, situação da
-// ligação com histórico, repasse ao consultor e consulta do município — tudo salvo no Supabase.
+// Ferramenta SDR (Pesquisa Municípios): cópia fiel da página "campanha-contatos" da plataforma CoLR,
+// com os dados no nosso banco (Supabase, migração 009) — coletivo: todos da equipe veem a cada 5 s.
+// Abre só pela Ação TUPs (botão "Ferramenta - SDR" e nome do município). Usa a senha da Ação TUPs.
 
 import { useEffect, useMemo, useRef, useState } from 'react';
+import { createPortal } from 'react-dom';
 import { acaoEntrar, acaoLer, sdrLer, sdrEntrar, sdrSalvar, sdrDesfazer } from '@/lib/supabase';
 import { UF_NOME } from '@/lib/geo';
-import { buscarImagemMunicipio } from '@/components/FotoMunicipio';
 import {
-  nk, chaveSdr, STATUS, STATUS_POR_ID, COR_VALIDO, rotuloStatus, TEVE_CONTATO, codigoDaPlanilha, CARGOS, CAMPANHA,
-  ESTAGIOS_CONS, pegaContatos, urlTse, URL_SGMU, urlPortal, anatelDoMunicipio, coberturaDoMunicipio, prefeiturasDaUf, municipiosBase,
+  nk, chaveSdr, STATUS, STATUS_POR_ID, rotuloStatus, TEVE_CONTATO, codigoDaPlanilha, CARGOS, CAMPANHA,
+  ESTAGIOS_CONS, urlTse, URL_SGMU, urlPortal, anatelDoMunicipio, coberturaDoMunicipio, prefeiturasDaUf, municipiosBase,
 } from '@/lib/sdr';
 import { chaveMun } from '@/lib/acaoTups';
 
 const SESSAO = 'acaoTupsSenha'; // mesma sessão da Ação TUPs (a senha é a mesma)
+const NOME_KEY = 'sdrNome';
 const ler = (k, d = '') => { try { return localStorage.getItem(k) ?? d; } catch { return d; } };
-const grava = (k, v) => { try { localStorage.setItem(k, v); } catch {} };
+const grava = (k, v) => { try { if (v) localStorage.setItem(k, v); else localStorage.removeItem(k); } catch {} };
 const fmtData = (s) => { const d = new Date(s); return Number.isNaN(d.getTime()) ? '' : d.toLocaleString('pt-BR', { day: '2-digit', month: '2-digit', hour: '2-digit', minute: '2-digit' }); };
-const MAX_LISTA = 150;
+const ROTULO_PLAN = { andamento: 'Andamento', incontatavel: 'Incontatável', agendada: 'Agendado', agendado: 'Agendado', perdido: 'Perdido', interessante: 'Interessante', retornar: 'Retornar' };
+// estágio liberado para o consultor só depois de uma ligação com interação
+const PARA_CONSULTOR = new Set(['retorno', 'agenda', 'sem_interesse', 'retornar']);
+const ultimoStatus = (reg) => [...(reg?.acoes || [])].filter((a) => a.tipo === 'status' && STATUS_POR_ID[a.status]).pop()?.status || '';
+const teveContato = (reg) => (reg?.acoes || []).some((a) => a.tipo === 'status' && TEVE_CONTATO.has(a.status));
 
-export default function FerramentaSdr({ onFechar, onVoltar, orelhoes = [], inicial = null, onVerMunicipio }) {
+export default function FerramentaSdr({ onFechar, onVoltarPainel, onMenu, orelhoes = [], inicial = null, onVerMunicipio }) {
   const [senha, setSenha] = useState(() => { try { return sessionStorage.getItem(SESSAO) || ''; } catch { return ''; } });
   const [ok, setOk] = useState(false);
-  const [nome, setNome] = useState(() => ler('sdrNome'));
-  const [papel, setPapel] = useState(() => ler('sdrPapel', 'sdr'));
-  const [identificado, setIdentificado] = useState(false);
+  const [slot, setSlot] = useState(null);
+  useEffect(() => { setSlot(document.getElementById('topbar-acao')); }, []);
   useEffect(() => {
-    const esc = (e) => { if (e.key === 'Escape') onFechar(); };
+    const esc = (e) => { if (e.key === 'Escape' && !document.querySelector('.s2-modal-fundo')) onFechar(); };
     addEventListener('keydown', esc);
     return () => removeEventListener('keydown', esc);
   }, [onFechar]);
   useEffect(() => { if (senha) acaoEntrar(senha).then((r) => r === 'ok' && setOk(true)).catch(() => {}); /* eslint-disable-next-line */ }, []);
-  useEffect(() => { if (ok && nome) sdrEntrar(senha, nome, papel).then(() => setIdentificado(true)).catch(() => {}); /* eslint-disable-next-line */ }, [ok]);
+  const sair = () => { grava(NOME_KEY, ''); onMenu(); };
 
   return (
     <>
       <div className="admin-fundo prop-fundo" onClick={onFechar} />
-      <section className="prop-tela acao-tela sdr-tela" role="dialog" aria-label="Ferramenta SDR">
-        <header className="prop-topo">
-          <button type="button" className="prop-voltar" onClick={onVoltar}>‹ {inicial?.de === 'acao' ? 'Ação TUPs' : 'Administração'}</button>
-          <div className="prop-titulo">
-            <span className="admin-selo">Administração · SDR</span>
-            <h2>Ferramenta SDR</h2>
-            <p>Pesquisa coletiva de e-mail, telefone e nome — todos da equipe veem</p>
-          </div>
-          {identificado && (
-            <div className="sdr-quem">
-              <span>{papel === 'consultor' ? '💼 Consultor' : '🎧 SDR'}</span><b>{nome}</b>
-              <button type="button" className="prop-link" onClick={() => setIdentificado(false)}>trocar</button>
-            </div>
-          )}
-          <button type="button" className="admin-x" onClick={onFechar} aria-label="Fechar" title="Fechar (Esc)">×</button>
-        </header>
-        {!ok ? <Senha onOk={(s) => { try { sessionStorage.setItem(SESSAO, s); } catch {} setSenha(s); setOk(true); }} />
-          : !identificado ? <Identificar senha={senha} nome={nome} papel={papel} onOk={(n, p) => { grava('sdrNome', n); grava('sdrPapel', p); setNome(n); setPapel(p); setIdentificado(true); }} />
-            : <Pesquisa senha={senha} nome={nome} papel={papel} orelhoes={orelhoes} inicial={inicial} onVerMunicipio={onVerMunicipio} />}
+      <section className="prop-tela acao-tela a2-tela s2-tela" role="dialog" aria-label="Pesquisa Municípios">
+        {slot && createPortal(
+          <>
+            <button type="button" className="cta" onClick={onVoltarPainel} title="Voltar ao painel da Ação TUPs">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M15 6l-6 6 6 6" stroke="currentColor" strokeWidth="2.4" strokeLinecap="round" strokeLinejoin="round" /></svg>
+              <span className="rotulo">Voltar ao painel</span>
+            </button>
+            <button type="button" className="cta" onClick={sair} title="Sair (desmarca o seu nome)">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M14 4h4a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2h-4M9 8l-4 4 4 4M5 12h10" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" /></svg>
+              <span className="rotulo">Sair</span>
+            </button>
+            <button type="button" className="cta" onClick={onMenu} title="Voltar ao mapa">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M4 10.5 12 4l8 6.5V19a1 1 0 0 1-1 1h-4.5v-5.5h-5V20H5a1 1 0 0 1-1-1v-8.5Z" stroke="currentColor" strokeWidth="2.1" strokeLinejoin="round" /></svg>
+              <span className="rotulo">Menu</span>
+            </button>
+          </>,
+          slot,
+        )}
+        {ok
+          ? <Pesquisa senha={senha} orelhoes={orelhoes} inicial={inicial} onVerMunicipio={onVerMunicipio} onVoltarPainel={onVoltarPainel} />
+          : <Senha onOk={(s) => { try { sessionStorage.setItem(SESSAO, s); } catch {} setSenha(s); setOk(true); }} />}
       </section>
     </>
   );
@@ -69,56 +75,36 @@ function Senha({ onOk }) {
     setIndo(false);
   };
   return (
-    <form className="acao-entrada" onSubmit={entrar}>
-      <div className="acao-cadeado" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><rect x="5" y="10.5" width="14" height="10" rx="2.2" stroke="currentColor" strokeWidth="1.8" /><path d="M8.5 10.5V8a3.5 3.5 0 0 1 7 0v2.5" stroke="currentColor" strokeWidth="1.8" /><circle cx="12" cy="15.5" r="1.5" fill="currentColor" /></svg></div>
-      <b>Acesso só para quem trabalha no SDR</b>
-      <span>Informe a senha da equipe.</span>
-      <input type="password" value={s} onChange={(e) => setS(e.target.value)} placeholder="Senha" autoFocus />
-      {erro && <p className="prop-erro">{erro}</p>}
-      <button type="submit" className="prop-btn grande" disabled={!s || indo}>{indo ? 'Conferindo…' : 'Entrar'}</button>
-    </form>
+    <div className="a2-gate">
+      <form className="a2-gate-box" onSubmit={entrar} autoComplete="off">
+        <h2>Pesquisa Municípios</h2>
+        <p>Acesso só para quem trabalha no SDR. Informe a senha.</p>
+        <input type="password" value={s} onChange={(e) => setS(e.target.value)} placeholder="Senha" autoFocus />
+        <div className="a2-gate-err">{erro}</div>
+        <button type="submit" disabled={!s || indo}>{indo ? 'Conferindo…' : 'Entrar'}</button>
+      </form>
+    </div>
   );
 }
 
-function Identificar({ senha, nome: nome0, papel: papel0, onOk }) {
-  const [nome, setNome] = useState(nome0); const [papel, setPapel] = useState(papel0 || 'sdr');
-  const [lista, setLista] = useState([]); const [erro, setErro] = useState(''); const [indo, setIndo] = useState(false);
-  useEffect(() => { sdrLer(senha, new Date().toISOString()).then((d) => setLista(d?.atendentes || [])).catch((e) => setErro(e.message)); }, [senha]);
-  const confirmar = async (e) => {
-    e.preventDefault(); const n = nome.replace(/\s+/g, ' ').trim(); if (!n) return;
-    setIndo(true); setErro('');
-    try { await sdrEntrar(senha, n, papel); onOk(n, papel); } catch (err) { setErro(err.message || String(err)); }
-    setIndo(false);
+function Pesquisa({ senha, orelhoes, inicial, onVerMunicipio, onVoltarPainel }) {
+  // ---------- quem está pesquisando ----------
+  const [nome, setNome] = useState(() => ler(NOME_KEY));
+  const [digitado, setDigitado] = useState(() => ler(NOME_KEY));
+  const [ajuda, setAjuda] = useState(false);
+  const ehConsultor = !!nome && nk(nome) !== 'marco';
+  const confirmarNome = async (e) => {
+    e.preventDefault();
+    const n = digitado.replace(/\s+/g, ' ').trim(); if (!n) return;
+    try { await sdrEntrar(senha, n, nk(n) === 'marco' ? 'sdr' : 'consultor'); } catch {}
+    grava(NOME_KEY, n); setNome(n);
   };
-  return (
-    <form className="acao-entrada sdr-ident" onSubmit={confirmar}>
-      <b>Quem está pesquisando?</b>
-      <span>Escreva o seu nome igual ao do Webex. Ele fica marcado em tudo que você registrar.</span>
-      <input list="sdr-atendentes" value={nome} onChange={(e) => { setNome(e.target.value); const a = lista.find((x) => nk(x.nome) === nk(e.target.value)); if (a) setPapel(a.papel); }} placeholder="Seu nome no Webex" maxLength={60} autoFocus />
-      <datalist id="sdr-atendentes">{lista.map((a) => <option key={a.nome} value={a.nome} />)}</datalist>
-      <div className="sdr-papel">
-        <button type="button" className={papel === 'sdr' ? 'on' : ''} onClick={() => setPapel('sdr')}><b>🎧 SDR</b><small>pesquisa e liga para as prefeituras</small></button>
-        <button type="button" className={papel === 'consultor' ? 'on' : ''} onClick={() => setPapel('consultor')}><b>💼 Consultor</b><small>recebe o contato, estágio e Ploomes</small></button>
-      </div>
-      {erro && <p className="prop-erro">{erro}</p>}
-      <button type="submit" className="prop-btn grande" disabled={!nome.trim() || indo}>{indo ? 'Entrando…' : 'Começar'}</button>
-    </form>
-  );
-}
+  const desmarcar = () => { grava(NOME_KEY, ''); setNome(''); setDigitado(''); };
 
-function Pesquisa({ senha, nome, papel, orelhoes, inicial, onVerMunicipio }) {
-  const [registros, setRegistros] = useState({}); // chave -> registro do banco
-  const [sync, setSync] = useState('carregando'); // carregando | ok | erro
-  const [erro, setErro] = useState('');
-  const [planilha, setPlanilha] = useState(null);
-  const [uf, setUf] = useState(inicial?.uf || '');
-  const [qtd, setQtd] = useState('');
-  const [busca, setBusca] = useState(inicial?.mun || '');
-  const [carteira, setCarteira] = useState(false);
-  const [sel, setSel] = useState(null); // { uf, mun, n }
+  // ---------- registros do banco (coletivo) ----------
+  const [registros, setRegistros] = useState({});
+  const [sync, setSync] = useState('');
   const desde = useRef(null);
-
-  // registros do banco: carga inicial e atualização a cada 5 s (só o que mudou)
   useEffect(() => {
     let vivo = true;
     const puxar = async () => {
@@ -128,22 +114,18 @@ function Pesquisa({ senha, nome, papel, orelhoes, inicial, onVerMunicipio }) {
         if (!vivo) return;
         desde.current = d.agora;
         if (d.registros?.length) setRegistros((o) => { const n = { ...o }; d.registros.forEach((r) => { n[r.chave] = r; }); return n; });
-        setSync('ok'); setErro('');
-      } catch (e) { if (vivo) { setSync('erro'); setErro(e.message || String(e)); } }
+        setSync('ok');
+      } catch { if (vivo) setSync('aviso'); }
     };
     puxar();
     const t = setInterval(puxar, 5000);
     return () => { vivo = false; clearInterval(t); };
   }, [senha]);
-  useEffect(() => { acaoLer(senha).then((r) => setPlanilha(r?.dados || null)).catch(() => {}); }, [senha]);
+  const salvo = (r) => setRegistros((o) => ({ ...o, [r.chave]: r }));
 
-  // municípios = base de orelhões do Orelhão Digital (o mesmo do mapa)
-  const municipios = useMemo(() => {
-    const m = new Map();
-    orelhoes.forEach((p) => { const k = chaveSdr(p.uf, p.municipio); const x = m.get(k) || { uf: p.uf, mun: p.municipio, n: 0 }; x.n += 1; m.set(k, x); });
-    return [...m.values()];
-  }, [orelhoes]);
-  // planilha: situação, observação e contatos de cada município
+  // ---------- planilha da Ação TUPs ----------
+  const [planilha, setPlanilha] = useState(null);
+  useEffect(() => { acaoLer(senha).then((r) => setPlanilha(r?.dados || null)).catch(() => {}); }, [senha]);
   const idxPlan = useMemo(() => {
     const idx = {};
     if (!planilha) return idx;
@@ -152,95 +134,333 @@ function Pesquisa({ senha, nome, papel, orelhoes, inicial, onVerMunicipio }) {
     (planilha.municipios || []).forEach((r) => { (idx[chaveMun(r.uf, r.municipio)] ??= {}).base = r; });
     return idx;
   }, [planilha]);
-  const nomesConsultores = useMemo(() => [...new Set([...(planilha?.consultores || []).map((r) => r.consultor), ...(planilha?.municipios || []).map((r) => r.consultor)].map((s) => String(s || '').trim()).filter((s) => s && !/^a definir$/i.test(s)))].sort((a, b) => a.localeCompare(b, 'pt-BR')), [planilha]);
-  const carteiraLista = useMemo(() => (planilha?.carteira || planilha?.municipios?.filter((r) => r.carteira) || []), [planilha]);
+  const hitDe = (m) => (m ? idxPlan[chaveMun(m.uf, m.mun)] || null : null);
+  const nomesConsultores = useMemo(() => [...new Set([...(planilha?.consultores || []).map((r) => r.consultor)].map((s) => String(s || '').replace(/\s+/g, ' ').trim()).filter(Boolean))].sort((a, b) => a.localeCompare(b, 'pt')), [planilha]);
+  const estagios = useMemo(() => {
+    const mapa = {};
+    ESTAGIOS_CONS.forEach((n) => { mapa[nk(n)] = n; });
+    (planilha?.consultores || []).forEach((r) => { const n = String(r?.estagio || '').replace(/\s+/g, ' ').trim(); if (n) mapa[nk(n)] = n; });
+    return Object.values(mapa).sort((a, b) => a.localeCompare(b, 'pt'));
+  }, [planilha]);
+
+  // ---------- municípios (base de orelhões do mapa) ----------
+  const municipios = useMemo(() => {
+    const m = new Map();
+    orelhoes.forEach((p) => { const k = chaveSdr(p.uf, p.municipio); const x = m.get(k) || { uf: p.uf, mun: p.municipio, n: 0 }; x.n += 1; m.set(k, x); });
+    return [...m.values()];
+  }, [orelhoes]);
+  const ufs = useMemo(() => Object.keys(UF_NOME).filter((u) => municipios.some((m) => m.uf === u)), [municipios]);
+
+  // ---------- filtros e lista ----------
+  const [uf, setUf] = useState('');
+  const [qtd, setQtd] = useState('');
+  const [listaAtual, setListaAtual] = useState(null); // null = ainda não listou
+  const [carteira, setCarteira] = useState(false);
+  const [meta, setMeta] = useState('');
+  const [escopo, setEscopo] = useState('A pesquisa começa pela quantidade de orelhões. Sem estado, a lista é o Brasil inteiro. Com a UF, fica só aquele estado. Depois abra a lousa do município.');
+  const [teclado, setTeclado] = useState('');
+  const [sel, setSel] = useState(null);
+  const [consultaMun, setConsultaMun] = useState(null);
+  const consultaRef = useRef(null);
+  const quadroRef = useRef(null);
+  const qtdN = (v = qtd) => { const n = parseInt(v, 10); return Number.isFinite(n) && n > 0 ? n : 0; };
+
+  const clientesCarteira = (u = uf) => {
+    const origem = (planilha?.carteira?.length ? planilha.carteira : (planilha?.municipios || []).filter((r) => r.carteira));
+    const porChave = new Map(municipios.map((m) => [chaveSdr(m.uf, m.mun), m]));
+    const vistos = new Set();
+    return origem.map((r) => {
+      const b = porChave.get(chaveSdr(r.uf, r.municipio));
+      const n = Number(r.orelhoes) || (b ? b.n : 0);
+      return b ? { mun: b.mun, uf: b.uf, n } : { mun: r.municipio, uf: String(r.uf || '').toUpperCase(), n };
+    }).filter((m) => { const k = chaveSdr(m.uf, m.mun); if (vistos.has(k)) return false; vistos.add(k); return !u || m.uf === u; })
+      .sort((a, b) => (!u && a.uf !== b.uf ? a.uf.localeCompare(b.uf) : a.mun.localeCompare(b.mun, 'pt-BR')));
+  };
+  const nCarteira = useMemo(() => clientesCarteira('').length, [planilha, municipios]); // eslint-disable-line react-hooks/exhaustive-deps
+
+  const listar = (u = uf, q = qtd) => {
+    setCarteira(false); setTeclado('');
+    const n = qtdN(q);
+    const lista = municipios.filter((m) => (!u || m.uf === u) && (!n || m.n === n))
+      .sort((a, b) => (!u && a.uf !== b.uf ? a.uf.localeCompare(b.uf) : a.mun.localeCompare(b.mun, 'pt-BR')));
+    setMeta(`${lista.length} município(s) ${u ? 'em ' + UF_NOME[u] : 'no Brasil'}${n ? ` com exatamente ${n} orelh${n === 1 ? 'ão' : 'ões'}` : ''}`);
+    setEscopo(n ? `Lista: ${u ? UF_NOME[u] : 'Brasil'} com exatamente ${n} orelhões.` : `0 mostra todos os municípios${u ? ' de ' + UF_NOME[u] : ''}. 1 mostra só quem tem 1 orelhão.`);
+    setListaAtual(lista);
+    if (sel && !lista.some((m) => chaveSdr(m.uf, m.mun) === chaveSdr(sel.uf, sel.mun))) setSel(null);
+    return lista;
+  };
+  const listarCarteira = () => {
+    setCarteira(true); setTeclado('');
+    const lista = clientesCarteira();
+    setMeta(`${lista.length} cliente(s) de carteira${uf ? ' em ' + UF_NOME[uf] : ''}`);
+    setEscopo(uf ? `Clientes de carteira em ${UF_NOME[uf]}. Clique em Lousa para pesquisar este município.` : 'Clientes de carteira no Brasil. Clique em Lousa para pesquisar este município.');
+    setListaAtual(lista);
+    if (sel && !lista.some((m) => chaveSdr(m.uf, m.mun) === chaveSdr(sel.uf, sel.mun))) setSel(null);
+  };
+  const chips = useMemo(() => {
+    if (listaAtual === null) return [];
+    const d = {}; municipios.forEach((m) => { if (!uf || m.uf === uf) d[m.n] = (d[m.n] || 0) + 1; });
+    const n = qtdN();
+    return Object.keys(d).map(Number).sort((a, b) => a - b).filter((x) => !n || x === n).map((x) => ({ n: x, muns: d[x] }));
+  }, [listaAtual, municipios, uf, qtd]); // eslint-disable-line react-hooks/exhaustive-deps
+
+  // abrir a lousa de um município
+  const ativar = (m, rolar = false) => {
+    setSel(m); setConsultaMun(m);
+    if (rolar) setTimeout(() => quadroRef.current?.scrollIntoView({ behavior: 'smooth', block: 'start' }), 60);
+  };
+  // veio da Ação TUPs com um município: UF e CHAVE preenchidas, lista, lousa e consulta abertas
+  const abriu = useRef(false);
+  useEffect(() => {
+    if (abriu.current || !inicial?.mun || !municipios.length || !nome) return;
+    abriu.current = true;
+    const achado = municipios.find((x) => x.uf === inicial.uf && nk(x.mun) === nk(inicial.mun));
+    const n = achado?.n || Number(inicial.qtd) || 0;
+    const u = (inicial.uf || '').toUpperCase();
+    setUf(u); setQtd(n ? String(n) : '');
+    const lista = listar(u, n ? String(n) : '');
+    const m = lista.find((x) => nk(x.mun) === nk(inicial.mun)) || achado || { uf: u, mun: inicial.mun, n };
+    ativar(m);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [municipios.length, nome]);
+
+  // filtro por teclado (letras fora dos campos filtram a lista pelo começo do nome)
+  useEffect(() => {
+    const h = (ev) => {
+      if (!listaAtual?.length) return;
+      const t = ev.target, tag = t?.tagName?.toUpperCase();
+      if (tag === 'TEXTAREA' || tag === 'SELECT' || tag === 'INPUT' || t?.isContentEditable) return;
+      if (ev.ctrlKey || ev.metaKey || ev.altKey) return;
+      if (ev.key === 'Escape') { if (!teclado) return; setTeclado(''); ev.preventDefault(); ev.stopPropagation(); return; }
+      if (ev.key === 'Backspace') { if (!teclado) return; setTeclado((x) => x.slice(0, -1)); ev.preventDefault(); return; }
+      if (ev.key.length === 1 && /^[\p{L}\p{N}\s]$/u.test(ev.key)) { setTeclado((x) => x + ev.key); ev.preventDefault(); }
+    };
+    document.addEventListener('keydown', h, true);
+    return () => document.removeEventListener('keydown', h, true);
+  }, [listaAtual, teclado]);
 
   const situacao = (m) => {
     const r = registros[chaveSdr(m.uf, m.mun)];
     if (r?.status) return r.status;
-    const h = idxPlan[chaveMun(m.uf, m.mun)];
+    const h = hitDe(m);
     return codigoDaPlanilha(h?.sdr?.status) || codigoDaPlanilha(h?.cons?.status) || '';
   };
-
-  const ufs = useMemo(() => [...new Set(municipios.map((m) => m.uf))].sort(), [municipios]);
-  const doUf = useMemo(() => municipios.filter((m) => !uf || m.uf === uf), [municipios, uf]);
-  const chips = useMemo(() => { const b = {}; doUf.forEach((m) => { b[m.n] = (b[m.n] || 0) + 1; }); return Object.entries(b).map(([n, c]) => ({ n: Number(n), c })).sort((a, b) => a.n - b.n); }, [doUf]);
-  const lista = useMemo(() => {
-    let l;
-    if (carteira) {
-      const k = new Set(carteiraLista.map((r) => chaveSdr(r.uf, r.municipio)));
-      l = municipios.filter((m) => k.has(chaveSdr(m.uf, m.mun)) && (!uf || m.uf === uf));
-    } else {
-      const q = nk(busca);
-      l = doUf.filter((m) => (!qtd || m.n === Number(qtd)) && (!q || nk(m.mun).includes(q)));
-    }
-    return l.sort((a, b) => (uf ? 0 : a.uf.localeCompare(b.uf)) || a.mun.localeCompare(b.mun, 'pt-BR'));
-  }, [carteira, carteiraLista, municipios, doUf, uf, qtd, busca]);
-
-  // abre direto o município pedido (vindo da Ação TUPs)
-  useEffect(() => {
-    if (!inicial?.mun || !municipios.length) return;
-    const m = municipios.find((x) => x.uf === inicial.uf && nk(x.mun) === nk(inicial.mun));
-    setSel(m || { uf: inicial.uf, mun: inicial.mun, n: Number(inicial.qtd) || 0 });
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [municipios.length]);
-
-  const salvarRegistro = (r) => setRegistros((o) => ({ ...o, [r.chave]: r }));
-  const resumo = useMemo(() => {
-    const c = { total: 0 }; Object.values(registros).forEach((r) => { if (r.status) { c[r.status] = (c[r.status] || 0) + 1; c.total += 1; } });
-    return c;
-  }, [registros]);
+  const base = listaAtual === null ? [] : carteira ? listaAtual : (qtdN() ? listaAtual.filter((m) => m.n === qtdN() || !m.n) : listaAtual);
+  const visiveis = teclado ? base.filter((m) => nk(m.mun).startsWith(nk(teclado))) : base;
+  const listaRef = useRef(null);
+  useEffect(() => { if (teclado) listaRef.current?.querySelector('.s2-mun-item')?.scrollIntoView({ block: 'nearest' }); }, [teclado]);
+  const regSel = sel ? registros[chaveSdr(sel.uf, sel.mun)] : null;
 
   return (
-    <div className="sdr-corpo">
-      <div className="sdr-esq">
-        <div className={`sdr-sync ${sync}`}>{sync === 'ok' ? '● Coletivo · todos veem' : sync === 'erro' ? `● Sem conexão com o banco — ${erro}` : '● Conectando…'}</div>
-        <div className="sdr-filtros">
-          <select value={uf} onChange={(e) => { setUf(e.target.value); setQtd(''); setCarteira(false); }}>
-            <option value="">Brasil inteiro</option>{ufs.map((u) => <option key={u} value={u}>{u} — {UF_NOME[u] || u}</option>)}
-          </select>
-          <input type="number" min="1" value={qtd} onChange={(e) => { setQtd(e.target.value); setCarteira(false); }} placeholder="Nº de orelhões" title="CHAVE (pontos): quantidade exata de orelhões no município" />
+    <main className="s2">
+      <section className="s2-painel s2-painel-nome">
+        <div className="s2-nome-cabeca">
+          <label htmlFor="s2-nome">Quem está pesquisando</label>
+          <button type="button" className="s2-btn-ajuda" onClick={() => setAjuda((v) => !v)} aria-label="Por que este campo">?</button>
+          <i className={`s2-coletivo ${sync}`}>{sync === 'ok' ? 'Coletivo · todos veem' : sync === 'aviso' ? 'Sem conexão com o banco' : 'Coletivo'}</i>
         </div>
-        <input type="search" className="acao-busca" value={busca} onChange={(e) => { setBusca(e.target.value); setCarteira(false); }} placeholder="Buscar município…" />
-        <div className="sdr-chips">
-          {carteiraLista.length > 0 && <button type="button" className={`cart ${carteira ? 'on' : ''}`} onClick={() => { setCarteira((v) => !v); setQtd(''); setBusca(''); }}>Clientes de carteira · {carteiraLista.length}</button>}
-          {!carteira && (qtd ? chips.filter((c) => c.n === Number(qtd)) : chips.slice(0, 14)).map((c) => (
-            <button key={c.n} type="button" className={Number(qtd) === c.n ? 'on' : ''} onClick={() => setQtd(Number(qtd) === c.n ? '' : String(c.n))}>{c.n} orelhã{c.n === 1 ? 'o' : 'os'} · {c.c} mun.</button>
+        {ajuda && <p className="s2-ajuda-nome">Este nome marca quem fez a pesquisa no município. Toda vez que você alterar aquele município, fica registrado quem mexeu. O nome tem que ser o mesmo que você usa no Webex. Ele fica neste acesso até você sair.</p>}
+        <form className="s2-form-nome" onSubmit={confirmarNome} autoComplete="off">
+          <input id="s2-nome" type="text" maxLength={60} value={nome || digitado} disabled={!!nome} onChange={(e) => setDigitado(e.target.value)} placeholder="Seu nome no Webex" autoComplete="name" />
+          {!nome && <button type="submit" className="s2-btn primario">Confirmar</button>}
+        </form>
+        <p className="s2-atend-hint">{nome ? `Nome marcado: ${nome}. Fica neste acesso enquanto você estiver logado.` : 'Escreva o seu nome, igual ao do Webex, para liberar a pesquisa.'}</p>
+        {nome && <button type="button" className="s2-btn" onClick={desmarcar}>Desmarcar nome</button>}
+      </section>
+
+      {inicial?.de === 'acao' && (
+        <div className="s2-volta-origem">
+          <span>Você veio de Painel da ação. A pesquisa deste município está nesta tela.</span>
+          <button type="button" className="s2-btn-volta" onClick={onVoltarPainel}>Voltar ao painel da ação</button>
+        </div>
+      )}
+
+      <section className={`s2-filtros ${nome ? '' : 'sem-nome'}`}>
+        <h1 className="s2-titulo-controle">Pesquisa Municípios</h1>
+        <div className="s2-consulta-embutida" ref={consultaRef}>
+          <div className="s2-painel-cabeca"><h2>Gestão municipal</h2><small>Prefeito, CNPJ, telefone e e-mail deste município</small></div>
+          <Consulta m={consultaMun} setM={setConsultaMun} municipios={municipios} orelhoes={orelhoes} hitDe={hitDe} registros={registros} onVerMunicipio={onVerMunicipio} />
+        </div>
+        <h2>Escolha a quantidade de orelhões e o município</h2>
+        <div className="s2-filtros-row">
+          <div className="s2-campo">
+            <label htmlFor="s2-uf">UF</label>
+            <select id="s2-uf" value={uf} disabled={!nome} onChange={(e) => { setUf(e.target.value); if (listaAtual !== null) listar(e.target.value, qtd); }}>
+              <option value="">Selecione a UF</option>
+              {ufs.map((u) => <option key={u} value={u}>{u} — {UF_NOME[u]}</option>)}
+            </select>
+          </div>
+          <div className="s2-campo">
+            <label htmlFor="s2-qtd">CHAVE (pontos)</label>
+            <input id="s2-qtd" className="s2-qtd" type="number" min="0" step="1" value={qtd} disabled={!nome} onChange={(e) => setQtd(e.target.value)} onKeyDown={(e) => { if (e.key === 'Enter') listar(); }} />
+          </div>
+          <button type="button" className="s2-btn primario" disabled={!nome} onClick={() => listar()}>Listar municípios</button>
+        </div>
+        <div className="s2-chips-linha">
+          <button type="button" className={`s2-chip carteira ${carteira ? 'ativo' : ''}`} onClick={listarCarteira}>Clientes de carteira{nCarteira ? ` · ${nCarteira}` : ''}</button>
+          {chips.map((c) => (
+            <button key={c.n} type="button" className={`s2-chip ${qtdN() === c.n ? 'ativo' : ''}`} disabled={!nome} onClick={() => { setQtd(String(c.n)); listar(uf, String(c.n)); }}>
+              {c.n} {c.n === 1 ? 'orelhão' : 'orelhões'} · {c.muns} mun.
+            </button>
           ))}
         </div>
-        <div className="sdr-legenda">{STATUS.map((s) => <span key={s.id}><i style={{ background: s.cor }} />{s.rotulo} {resumo[s.id] ? <b>{resumo[s.id]}</b> : null}</span>)}<span><i style={{ background: COR_VALIDO }} />Contatos válidos</span></div>
-        <p className="sdr-conta">{carteira ? `${lista.length} clientes de carteira` : `${lista.length} município(s)${qtd ? ` com ${qtd} orelhão(ões)` : ''}${uf ? ` em ${UF_NOME[uf] || uf}` : ''}`}</p>
-        <ul className="sdr-lista">
-          {lista.slice(0, MAX_LISTA).map((m) => {
-            const k = chaveSdr(m.uf, m.mun), r = registros[k], st = situacao(m);
-            return (
-              <li key={k}>
-                <button type="button" className={`${sel && chaveSdr(sel.uf, sel.mun) === k ? 'on' : ''}`} style={{ '--st': r?.dados?.contatosValidos ? COR_VALIDO : STATUS_POR_ID[st]?.cor || 'transparent' }} onClick={() => setSel(m)}>
-                  <span className="sdr-li-nome">{m.mun}{!uf && <small> ({m.uf})</small>}</span>
-                  <span className="sdr-li-info">{m.n} orelhã{m.n === 1 ? 'o' : 'os'}{st ? ` · ${rotuloStatus(st)}` : ''}{r?.atendente ? ` · ${r.atendente}` : ''}</span>
-                </button>
-              </li>
-            );
-          })}
-          {lista.length > MAX_LISTA && <li className="sdr-mais">+ {lista.length - MAX_LISTA} municípios — use a UF, o nº de orelhões ou a busca para filtrar</li>}
-          {!lista.length && <li className="acao-vazio">Nenhum município neste recorte.</li>}
-        </ul>
+        <p className="s2-note">{nome ? escopo : 'Sem o seu nome, a pesquisa e a lousa ficam fechadas.'}</p>
+      </section>
+
+      <section className="s2-layout" ref={quadroRef}>
+        <div className="s2-col-esq">
+          <article className="s2-painel s2-painel-muns">
+            <div className="s2-painel-cabeca"><h2>Municípios</h2><small>{nome ? (meta || 'Nenhum filtro ainda') : 'Escreva o seu nome para pesquisar'}</small></div>
+            {teclado && <p className="s2-filtro-teclado">Teclado: “{teclado}” · {visiveis.length} de {base.length} · Esc limpa · Backspace apaga letra</p>}
+            <div className="s2-lista-mun" ref={listaRef}>
+              {!nome ? <div className="s2-vazio">Escreva o seu nome para listar os municípios.</div>
+                : !base.length ? <div className="s2-vazio">{carteira ? 'Nenhum cliente de carteira neste recorte.' : 'Nenhum município neste recorte. Informe a quantidade — ou clique num chip acima.'}</div>
+                  : !visiveis.length ? <div className="s2-vazio">Nenhum município começa com “{teclado}”. Esc para limpar o filtro.</div>
+                    : visiveis.map((m) => {
+                      const k = chaveSdr(m.uf, m.mun), r = registros[k], st = situacao(m);
+                      const eSel = sel && chaveSdr(sel.uf, sel.mun) === k;
+                      return (
+                        <div key={k} className={`s2-mun-item ${st} ${r?.dados?.contatosValidos ? 'valido' : ''} ${eSel ? 'selecionado' : ''}`}>
+                          <div className="s2-mun-corpo">
+                            <a href="#" className="s2-mun-nome" title="Abrir a pesquisa deste município" onClick={(e) => { e.preventDefault(); ativar(m); }}>{uf ? m.mun : `${m.mun} (${m.uf})`}</a>
+                            {r?.atendente && <div className="s2-quem">Pesquisa feita por {r.atendente}</div>}
+                            {(eSel || visiveis.length === 1) && <InfoMunicipio m={m} r={r} hit={hitDe(m)} st={st} />}
+                          </div>
+                          {m.n ? <span className="s2-mun-qtd">{m.n === 1 ? '1 orelhão' : `${m.n} orelhões`}</span> : <span />}
+                          <button type="button" className="s2-btn-lousa" onClick={() => ativar(m)}>Lousa</button>
+                        </div>
+                      );
+                    })}
+            </div>
+            <div className="s2-legenda">
+              {STATUS.map((s) => <span key={s.id}><i style={{ background: s.cor }} />{s.rotulo}</span>)}
+              <span><i style={{ background: '#bef264' }} />Contatos válidos</span>
+            </div>
+          </article>
+          <StatusLigacao m={sel} reg={regSel} hit={hitDe(sel)} nome={nome} senha={senha} onSalvo={salvo} />
+        </div>
+        <div className="s2-col-dir">
+          {sel
+            ? <Lousa key={chaveSdr(sel.uf, sel.mun)} m={sel} reg={regSel} hit={hitDe(sel)} senha={senha} nome={nome} ehConsultor={ehConsultor}
+              nomesConsultores={nomesConsultores} estagios={estagios} onSalvo={salvo}
+              onConsulta={() => { setConsultaMun(sel); consultaRef.current?.scrollIntoView({ behavior: 'smooth', block: 'start' }); }} />
+            : <LousaVazia />}
+        </div>
+      </section>
+    </main>
+  );
+}
+
+// dados do município (aparece no item selecionado da lista)
+function InfoMunicipio({ m, r, hit, st }) {
+  const d = r?.dados || {}, s = hit?.sdr;
+  const linhas = [
+    d.contatosValidos ? ['Contatos válidos', 'Gravados neste município'] : null,
+    ['Situação', st ? rotuloStatus(st) : ''],
+    ['Orelhões', m.n ? String(m.n) : ''],
+    ['CNPJ', hit?.base?.cnpj || ''],
+    ['E-mail', d.email || s?.email || ''],
+    ['Telefone', d.telefone || s?.contato || ''],
+    ['Nome', [d.nomeContato || s?.nome || '', d.cargoContato || ''].filter(Boolean).join(' — ')],
+    ['Observação', d.notas || s?.obs || hit?.cons?.contato || ''],
+    ['Pesquisa feita por', r?.atendente || ''],
+  ].filter((x) => x && String(x[1] || '').trim());
+  if (!linhas.length) return null;
+  return <div className="s2-mun-dados">{linhas.map(([a, b]) => <span key={a}><b>{a}</b> {String(b).replace(/\s+/g, ' ').trim()}</span>)}</div>;
+}
+
+// status da ligação (rádios) — grava no banco e fica no histórico
+function StatusLigacao({ m, reg, hit, nome, senha, onSalvo }) {
+  const marcado = m ? (ultimoStatus(reg) || reg?.status || codigoDaPlanilha(hit?.sdr?.status) || codigoDaPlanilha(hit?.cons?.status) || '') : '';
+  const bloqueiaSem = teveContato(reg);
+  const [erro, setErro] = useState('');
+  const marcar = async (id) => {
+    if (!m || !nome) return;
+    if (id === 'sem_contato' && bloqueiaSem) return;
+    setErro('');
+    try { onSalvo(await sdrSalvar(senha, chaveSdr(m.uf, m.mun), m.uf, m.mun, { qtd: m.n }, nome, id)); } catch (e) { setErro(e.message || String(e)); }
+  };
+  return (
+    <div className="s2-quadro-ligacao">
+      <p>Status da ligação</p>
+      <div className="s2-status-ops">
+        {STATUS.map((s) => {
+          const bloq = s.id === 'sem_contato' && bloqueiaSem;
+          return (
+            <label key={s.id} className={`s2-status-opt ${s.id} ${marcado === s.id ? 'ativo' : ''} ${bloq ? 'bloqueado' : ''}`}>
+              <input type="radio" name="s2-status" value={s.id} checked={marcado === s.id} disabled={!m || !nome || bloq} onChange={() => marcar(s.id)} /> {s.rotulo}
+            </label>
+          );
+        })}
       </div>
-      <div className="sdr-dir">
-        {sel ? <Municipio key={chaveSdr(sel.uf, sel.mun)} m={sel} reg={registros[chaveSdr(sel.uf, sel.mun)]} plan={idxPlan[chaveMun(sel.uf, sel.mun)]}
-          senha={senha} nome={nome} papel={papel} nomesConsultores={nomesConsultores} orelhoes={orelhoes} onSalvo={salvarRegistro} onVerMunicipio={onVerMunicipio} />
-          : <div className="sdr-vazio"><b>Escolha um município na lista</b><span>Filtre pela UF e pelo número de orelhões (a “chave” da campanha) ou busque pelo nome.</span></div>}
-      </div>
+      {erro && <p className="s2-erro">{erro}</p>}
     </div>
   );
 }
 
-function Municipio({ m, reg, plan, senha, nome, papel, nomesConsultores, orelhoes, onSalvo, onVerMunicipio }) {
+function LousaVazia() {
+  return (
+    <>
+      <article className="s2-painel s2-painel-lousa">
+        <div className="s2-painel-cabeca"><h2>Lousa do contato <span className="s2-mem-marca">0 KB</span></h2><small>Escolha um município</small></div>
+        <div className="s2-lousa-moldura">
+          <div className="s2-lousa-titulo">Quadro livre — escreva o que quiser sobre este contato</div>
+          <label className="s2-campo-rotulo">Observação<textarea className="s2-lousa" placeholder="Anote e-mails, telefones, nomes e o que encontrar neste município." disabled /></label>
+          <div className="s2-status-box">
+            <label className="s2-nome-contato">E-mail<input placeholder="E-mail do contato" disabled /></label>
+            <label className="s2-nome-contato">Contato<input placeholder="Telefones encontrados" disabled /></label>
+            <div className="s2-nome-contato s2-nome-largo"><span>Nome</span><div className="s2-nome-par"><select disabled><option>Ainda procurando</option></select><input placeholder="Nome encontrado" disabled /></div></div>
+            <button type="button" className="s2-btn-limpar">Apagar texto da lousa</button>
+          </div>
+        </div>
+      </article>
+      <div className="s2-bloco-pos-lousa">
+        <div className="s2-lousa-acoes">
+          <button type="button" className="s2-btn primario" disabled>✏️ Editar lousa</button>
+          <button type="button" className="s2-btn primario" disabled>Ver consulta deste município</button>
+        </div>
+      </div>
+    </>
+  );
+}
+
+// resumo da Ação TUPs para o município (cartão roxo da lousa e cartão da consulta)
+function resumoAcao(hit) {
+  if (!hit || (!hit.base && !hit.sdr && !hit.cons)) return { naPlanilha: false };
+  const b = hit.base || {};
+  const valido = (n) => { const k = nk(n); return !!k && k !== 'a definir' && k !== '—' && k !== '-'; };
+  let consultor = String(b.consultor || '').trim();
+  if (!valido(consultor) && hit.cons) consultor = String(hit.cons.consultor || '').trim();
+  const sem = !valido(consultor);
+  let sdr = String(b.sdr || '').trim(), sdrStatus = '';
+  if (hit.sdr) { if (!sdr) sdr = String(hit.sdr.sdr || '').trim(); if (hit.sdr.status) sdrStatus = ROTULO_PLAN[hit.sdr.status] || hit.sdr.status; }
+  const temValor = !!String(b.valorContratualTexto || '').trim() || (typeof b.valorContratual === 'number' && !Number.isNaN(b.valorContratual));
+  const est = String(b.estagio || '').trim(), st = String(b.statusOrig || '').trim();
+  let situacao, proposta;
+  if (temValor) { situacao = 'Proposta encaminhada'; proposta = 'Proposta encaminhada'; } else {
+    situacao = est || st || '—';
+    proposta = nk(est).includes('enviar proposta') ? 'Enviar proposta' : nk(est).includes('proposta') && est ? est : 'Sem proposta registrada';
+  }
+  return {
+    naPlanilha: true, semConsultor: sem, consultor: sem ? '' : consultor, sdr, sdrStatus, regional: String(b.regional || '').trim(), situacao, proposta,
+    estagio: est, statusOrig: st, temperatura: String(b.temperatura || '').trim(), tupsOferecidos: b.orelhoes ?? null, tupsPretendida: b.qtdPretendida ?? null,
+    valor: String(b.valorContratualTexto || '').trim(), carteira: !!b.carteira, obs: String(b.obs || '').trim(),
+  };
+}
+function textoPlanilha(hit) {
+  if (!hit) return '';
+  const p = [];
+  if (hit.sdr) p.push('Atuação SDR · ' + (ROTULO_PLAN[hit.sdr.status] || 'sem status'));
+  if (hit.cons) p.push('Consultor ' + (hit.cons.consultor || 'sem nome') + ' · ' + (ROTULO_PLAN[hit.cons.status] || 'sem status'));
+  if (!hit.sdr && !hit.cons && hit.base?.statusOrig) p.push('Municípios · ' + hit.base.statusOrig);
+  return p.join(' · ');
+}
+
+// ---------- lousa do contato ----------
+function Lousa({ m, reg, hit, senha, nome, ehConsultor, nomesConsultores, estagios, onSalvo, onConsulta }) {
   const k = chaveSdr(m.uf, m.mun);
-  const [aba, setAba] = useState('lousa');
   const d = reg?.dados || {};
-  const sdrP = plan?.sdr, consP = plan?.cons, baseP = plan?.base;
-  // campos da lousa: o que está no banco; senão, o que veio da planilha
+  const sdrP = hit?.sdr, consP = hit?.cons;
   const inicial = () => ({
     notas: d.notas ?? sdrP?.obs ?? consP?.contato ?? '',
     email: d.email ?? sdrP?.email ?? '',
@@ -249,152 +469,173 @@ function Municipio({ m, reg, plan, senha, nome, papel, nomesConsultores, orelhoe
     cargoContato: d.cargoContato ?? '',
   });
   const [f, setF] = useState(inicial);
-  const [salvando, setSalvando] = useState('');
   const [erro, setErro] = useState('');
+  const [confirmar, setConfirmar] = useState(false);
   const editando = useRef(false);
   const timer = useRef(null);
-  // outro colega mudou: atualiza os campos (menos enquanto você digita)
-  useEffect(() => { if (!editando.current) setF(inicial()); /* eslint-disable-next-line */ }, [reg?.atualizadoEm]);
-
-  const enviar = async (campos, status = null) => {
-    setSalvando('salvando…'); setErro('');
-    try {
-      const r = await sdrSalvar(senha, k, m.uf, m.mun, { ...campos, qtd: m.n }, nome, status);
-      onSalvo(r); setSalvando('✔ salvo ' + new Date().toLocaleTimeString('pt-BR', { hour: '2-digit', minute: '2-digit' }));
-    } catch (e) { setErro(e.message || String(e)); setSalvando(''); }
+  const texto = useRef(null);
+  // outro colega mudou (ou a planilha terminou de carregar): atualiza os campos, menos enquanto você digita
+  useEffect(() => { if (!editando.current) setF(inicial()); /* eslint-disable-next-line */ }, [reg?.atualizadoEm, hit]);
+  useEffect(() => () => clearTimeout(timer.current), []);
+  const enviar = async (campos) => {
+    if (!nome) return;
+    setErro('');
+    try { onSalvo(await sdrSalvar(senha, k, m.uf, m.mun, { ...campos, qtd: m.n }, nome, null)); } catch (e) { setErro(e.message || String(e)); }
   };
   const muda = (campo) => (e) => {
     const v = e.target.value;
     setF((o) => ({ ...o, [campo]: v })); editando.current = true;
     clearTimeout(timer.current);
-    timer.current = setTimeout(() => { editando.current = false; enviar({ [campo]: v }); }, 700);
+    timer.current = setTimeout(() => { editando.current = false; enviar({ [campo]: v }); }, 250);
   };
-  useEffect(() => () => clearTimeout(timer.current), []);
+  const desabilitado = !nome;
+  const resumo = resumoAcao(hit);
+  const aviso = textoPlanilha(hit);
+  const kb = reg ? Math.max(1, Math.round(new Blob([JSON.stringify(reg)]).size / 1024)) : 0;
 
-  const status = reg?.status || codigoDaPlanilha(sdrP?.status) || '';
-  const teveContato = (reg?.acoes || []).some((a) => a.tipo === 'status' && TEVE_CONTATO.has(a.status));
-  const marcar = (st) => enviar({ ...f }, st);
-
-  const pega = () => {
-    const c = pegaContatos(f.notas);
-    if (!c.emails.length && !c.telefones.length && !c.prefeito) { setErro('Não achei telefone, e-mail ou prefeito no texto da lousa.'); return; }
-    const novo = {
-      email: [...new Set([...String(f.email || '').split(/[;,\s]+/).filter(Boolean), ...c.emails])].join('; '),
-      telefone: [...new Set([...String(f.telefone || '').split(/\s*(?:\/\/|\/|;)\s*/).filter(Boolean), ...c.telefones])].join(' // '),
-    };
-    setF((o) => ({ ...o, ...novo })); enviar({ ...novo, ...(c.prefeito ? { prefeitoInformado: c.prefeito } : {}) });
-  };
-
+  // histórico (só do nosso sistema): marcações de status com "desfazer"
   const historico = [...(reg?.acoes || [])].reverse();
   return (
-    <div className="sdr-mun">
-      <div className="sdr-mun-topo">
-        <div>
-          <h3>{m.mun} <small>{m.uf}</small></h3>
-          <span>{m.n} orelhã{m.n === 1 ? 'o' : 'os'} no mapa{status ? ` · ${rotuloStatus(status)}` : ''}{reg?.atendente ? ` · pesquisa de ${reg.atendente}` : ''}</span>
+    <>
+      <article className="s2-painel s2-painel-lousa">
+        <div className="s2-painel-cabeca">
+          <h2>Lousa do contato <span className="s2-mem-marca" title="Tamanho dos dados deste município no banco">{kb} KB</span></h2>
+          <small>{m.mun} ({m.uf}){reg?.atendente ? ` · pesquisa de ${reg.atendente}` : ''}</small>
         </div>
-        <div className="prop-linha">
-          {onVerMunicipio && <button type="button" className="prop-btn sec peq" onClick={() => onVerMunicipio(m.uf, m.mun)}>🗺️ Ver no mapa</button>}
+        <div className="s2-lousa-moldura">
+          <div className="s2-lousa-titulo">Lousa — {m.mun}/{m.uf}</div>
+          {aviso && <p className="s2-aviso-planilha">{aviso}</p>}
+          <div className="s2-card-acao">
+            {!resumo.naPlanilha ? <span>Sem registro na planilha Ação TUPs.</span> : (
+              <div>
+                {resumo.semConsultor ? <><strong className="destaque">Sem consultor</strong> na planilha.</> : <><strong>Consultor:</strong> {resumo.consultor}</>}
+                {' · '}<strong>Situação:</strong> {resumo.situacao}{' · '}<strong>Proposta:</strong> {resumo.proposta}
+                {resumo.sdr ? <>{' · '}<strong>SDR:</strong> {resumo.sdr}{resumo.sdrStatus ? ` (${resumo.sdrStatus})` : ''}</> : null}
+                {' '}<a href="#" className="s2-card-acao-link" onClick={(e) => { e.preventDefault(); onConsulta(); }}>Detalhes na consulta</a>
+              </div>
+            )}
+          </div>
+          <label className="s2-campo-rotulo">Observação
+            <textarea ref={texto} className="s2-lousa" value={f.notas} onChange={muda('notas')} disabled={desabilitado} placeholder="Anote e-mails, telefones, nomes e o que encontrar neste município." />
+          </label>
+          <div className="s2-status-box">
+            <label className="s2-nome-contato">E-mail<input value={f.email} onChange={muda('email')} maxLength={180} placeholder="E-mail do contato" disabled={desabilitado} autoComplete="off" /></label>
+            <label className="s2-nome-contato">Contato<input value={f.telefone} onChange={muda('telefone')} maxLength={240} placeholder="Telefones encontrados" disabled={desabilitado} autoComplete="off" /></label>
+            <div className="s2-nome-contato s2-nome-largo">
+              <span>Nome</span>
+              <div className="s2-nome-par">
+                <select value={f.cargoContato} disabled={desabilitado} onChange={(e) => { setF((o) => ({ ...o, cargoContato: e.target.value })); enviar({ cargoContato: e.target.value }); }}>
+                  {CARGOS.map((c) => <option key={c} value={c}>{c || 'Ainda procurando'}</option>)}
+                </select>
+                <input value={f.nomeContato} onChange={muda('nomeContato')} maxLength={80} placeholder="Nome encontrado" disabled={desabilitado} autoComplete="off" />
+              </div>
+            </div>
+            <button type="button" className="s2-btn-limpar" onClick={() => nome && setConfirmar(true)}>Apagar texto da lousa</button>
+          </div>
+          {erro && <p className="s2-erro">{erro}</p>}
+        </div>
+      </article>
+      <div className="s2-bloco-pos-lousa">
+        {ehConsultor && <Consultor key={k} reg={reg} d={d} nome={nome} nomesConsultores={nomesConsultores} estagios={estagios} enviar={enviar} />}
+        <div className="s2-lousa-acoes">
+          <button type="button" className="s2-btn primario" disabled={!nome} onClick={() => texto.current?.focus()}>✏️ Editar lousa</button>
+          <button type="button" className="s2-btn primario" onClick={onConsulta}>Ver consulta deste município</button>
         </div>
       </div>
-      <nav className="acao-abas sdr-abas">
-        <button className={aba === 'lousa' ? 'on' : ''} onClick={() => setAba('lousa')}>📝 Lousa do contato</button>
-        <button className={aba === 'consulta' ? 'on' : ''} onClick={() => setAba('consulta')}>🏛️ Consulta do município</button>
-      </nav>
-      {aba === 'lousa' ? (
-        <div className="sdr-lousa">
-          {(sdrP || consP) && (
-            <p className="sdr-plan">📋 Na planilha: {sdrP ? `Atuação SDR · ${rotuloStatus(codigoDaPlanilha(sdrP.status)) || 'sem status'}` : ''}{consP ? ` · Consultor ${consP.consultor || '—'} · ${consP.estagio || rotuloStatus(codigoDaPlanilha(consP.status))}` : ''}{baseP?.estagio ? ` · Estágio: ${baseP.estagio}` : ''}</p>
-          )}
-          <label className="prop-campo"><span>Observação <small>(salva sozinha)</small></span>
-            <textarea rows={6} value={f.notas} onChange={muda('notas')} placeholder="Anote e-mails, telefones, nomes e o que encontrar…" />
-          </label>
-          <div className="prop-linha">
-            <button type="button" className="prop-btn sec peq" onClick={pega} title="Separa telefones e e-mails escritos na observação">📞 Pega telefone</button>
-            {f.notas && <button type="button" className="prop-link" onClick={() => { if (confirm('Apagar o texto da lousa?')) { setF((o) => ({ ...o, notas: '' })); enviar({ notas: '' }); } }}>Apagar texto da lousa</button>}
-            <span className="sdr-salvo">{salvando}</span>
-          </div>
-          <div className="prop-grade">
-            <label className="prop-campo"><span>E-mail</span><input value={f.email} onChange={muda('email')} placeholder="E-mail do contato" /></label>
-            <label className="prop-campo"><span>Contato (telefone)</span><input value={f.telefone} onChange={muda('telefone')} placeholder="Telefones encontrados" /></label>
-            <label className="prop-campo"><span>Cargo</span><select value={f.cargoContato} onChange={(e) => { setF((o) => ({ ...o, cargoContato: e.target.value })); enviar({ cargoContato: e.target.value }); }}>{CARGOS.map((c) => <option key={c} value={c}>{c || 'Ainda procurando'}</option>)}</select></label>
-            <label className="prop-campo"><span>Nome</span><input value={f.nomeContato} onChange={muda('nomeContato')} placeholder="Nome encontrado" /></label>
-          </div>
-          <label className="prop-check sdr-valido">
-            <input type="checkbox" checked={!!d.contatosValidos} disabled={!!d.contatosValidos || (!f.telefone && !f.email)} onChange={() => enviar({ contatosValidos: true, telefone: f.telefone, email: f.email })} />
-            Contatos válidos (telefone/e-mail conferidos) {d.contatosValidos && <small>— marcado</small>}
-          </label>
-          {erro && <p className="prop-erro">{erro}</p>}
-
-          <h4 className="sdr-tit">Situação da ligação</h4>
-          <div className="sdr-status">
-            {STATUS.map((s) => {
-              const bloq = s.id === 'sem_contato' && teveContato;
-              return (
-                <button key={s.id} type="button" disabled={bloq} title={bloq ? 'Já houve contato com este município' : ''} className={status === s.id ? 'on' : ''} style={{ '--c': s.cor }} onClick={() => marcar(s.id)}>
-                  <i />{s.rotulo}
-                </button>
-              );
-            })}
-          </div>
-
-          {papel === 'consultor' && <Consultor k={k} d={d} nome={nome} status={status} nomesConsultores={nomesConsultores} enviar={enviar} />}
-
-          {historico.length > 0 && (
-            <>
-              <h4 className="sdr-tit">Histórico</h4>
-              <ul className="sdr-hist">
-                {historico.map((a) => (
-                  <li key={a.id}>
-                    <span className="sdr-hist-st" style={{ '--c': STATUS_POR_ID[a.status]?.cor || '#64748b' }}>{a.tipo === 'status' ? rotuloStatus(a.status) : 'Pesquisa'}</span>
-                    <span>{a.atendente || '—'}</span><small>{fmtData(a.em)}</small>
-                    {a.tipo === 'status' && <button type="button" className="prop-link" onClick={async () => { if (!confirm('Desfazer esta marcação?')) return; try { onSalvo(await sdrDesfazer(senha, a.id, nome)); } catch (e) { setErro(e.message); } }}>desfazer</button>}
-                  </li>
-                ))}
-              </ul>
-            </>
-          )}
+      {historico.length > 0 && (
+        <div className="s2-historico">
+          <p>Histórico</p>
+          <ul>
+            {historico.map((a) => (
+              <li key={a.id}>
+                <span className="st" style={{ '--c': STATUS_POR_ID[a.status]?.cor || '#64748b' }}>{a.tipo === 'status' ? rotuloStatus(a.status) : 'Pesquisa'}</span>
+                <span>{a.atendente || '—'}</span><small>{fmtData(a.em)}</small>
+                {a.tipo === 'status' && <button type="button" className="s2-link" onClick={async () => { if (!confirm('Desfazer esta marcação?')) return; try { onSalvo(await sdrDesfazer(senha, a.id, nome)); } catch (e) { setErro(e.message); } }}>desfazer</button>}
+              </li>
+            ))}
+          </ul>
         </div>
-      ) : <Consulta m={m} plan={plan} reg={reg} orelhoes={orelhoes} />}
-    </div>
+      )}
+      {confirmar && (
+        <div className="s2-modal-fundo" onClick={(e) => { if (e.target === e.currentTarget) setConfirmar(false); }}>
+          <div className="s2-modal-caixa">
+            <h3>Confirmar</h3>
+            <p>Apagar o texto desta lousa?</p>
+            <div className="s2-modal-btns">
+              <button type="button" className="s2-modal-cancelar" onClick={() => setConfirmar(false)}>Cancelar</button>
+              <button type="button" className="s2-modal-confirmar" onClick={() => { setConfirmar(false); setF((o) => ({ ...o, notas: '' })); enviar({ notas: '' }); }}>Confirmar</button>
+            </div>
+          </div>
+        </div>
+      )}
+    </>
   );
 }
 
-function Consultor({ d, nome, status, nomesConsultores, enviar }) {
-  const padrao = d.consultorNome || nomesConsultores.find((n) => nk(n) === nk(nome)) || '';
-  const [cons, setCons] = useState(padrao);
+// registro no painel · consultores (aparece para todos, menos o SDR Marco)
+function Consultor({ reg, d, nome, nomesConsultores, estagios, enviar }) {
+  const sugerido = d.consultorNome || nomesConsultores.find((n) => nk(n) === nk(nome)) || nome;
+  const [cons, setCons] = useState(sugerido);
   const [ploomes, setPloomes] = useState(d.ploomesId || '');
-  const interagiu = ['retorno', 'agenda', 'sem_interesse', 'retornar', 'interessante'].includes(status);
-  const salvarCons = (v) => enviar({ consultorNome: v, campanha: CAMPANHA });
+  const [abreP, setAbreP] = useState(!!d.ploomesId);
+  const [sug, setSug] = useState(false);
+  const timer = useRef(null);
+  useEffect(() => () => clearTimeout(timer.current), []);
+  const liberado = PARA_CONSULTOR.has(ultimoStatus(reg));
+  const salvarCons = (v) => { clearTimeout(timer.current); timer.current = setTimeout(() => enviar({ consultorNome: v.trim(), campanha: CAMPANHA }), 250); };
+  const filtrados = nomesConsultores.filter((n) => !cons || nk(n).includes(nk(cons))).slice(0, 12);
+  const estagio = estagios.find((n) => nk(n) === nk(d.estagio || '')) || '';
   return (
-    <div className="sdr-cons">
-      <h4 className="sdr-tit">💼 Consultor</h4>
-      <div className="prop-grade">
-        <label className="prop-campo"><span>Campanha</span><input value={CAMPANHA} readOnly /></label>
-        <label className="prop-campo"><span>Consultor</span>
-          <input list="sdr-consultores" value={cons} onChange={(e) => setCons(e.target.value)} onBlur={() => cons !== (d.consultorNome || '') && salvarCons(cons.trim())} placeholder="Comece a digitar o nome" />
-          <datalist id="sdr-consultores">{nomesConsultores.map((n) => <option key={n} value={n} />)}</datalist>
-        </label>
-        <label className="prop-campo"><span>Estágio da conversa</span>
-          <select value={d.estagio || ''} disabled={!interagiu} title={interagiu ? '' : 'Marque a situação da ligação primeiro'} onChange={(e) => enviar({ estagio: e.target.value, consultorNome: cons.trim(), campanha: CAMPANHA })}>
-            <option value="">{interagiu ? 'Escolha o estágio' : 'Depois da 1ª ligação'}</option>
-            {ESTAGIOS_CONS.map((e) => <option key={e}>{e}</option>)}
+    <div className="s2-quadro-consultor">
+      <p>Registro no painel · Consultores</p>
+      <label className="s2-campo-rotulo">Campanha<input type="text" readOnly value={CAMPANHA} /></label>
+      <label className="s2-campo-rotulo">Consultor
+        <span className="s2-campo-busca">
+          <input type="text" maxLength={80} value={cons} placeholder="Comece a digitar o nome" autoComplete="off"
+            onChange={(e) => { setCons(e.target.value); setSug(true); salvarCons(e.target.value); }} onFocus={() => setSug(true)} onBlur={() => setTimeout(() => setSug(false), 120)} />
+          {sug && filtrados.length > 0 && (
+            <ul className="s2-sugestoes">{filtrados.map((n) => <li key={n} onMouseDown={() => { setCons(n); setSug(false); salvarCons(n); }}>{n}</li>)}</ul>
+          )}
+        </span>
+      </label>
+      {liberado && (
+        <div className="s2-campo-estagio">
+          <span>Estágio da Conversa</span>
+          <select value={estagio} onChange={(e) => {
+            if (e.target.value === '__ploomes__') { setAbreP(true); return; }
+            enviar({ estagio: e.target.value, consultorNome: cons.trim(), campanha: CAMPANHA });
+          }}>
+            <option value="">Escolha o estágio</option>
+            {estagios.map((n) => <option key={n} value={n}>{n}</option>)}
+            <option value="__ploomes__">ID Ploomes</option>
           </select>
-        </label>
-        <label className="prop-campo"><span>ID Ploomes</span><input value={ploomes} onChange={(e) => setPloomes(e.target.value)} onBlur={() => ploomes !== (d.ploomesId || '') && enviar({ ploomesId: ploomes.trim() })} placeholder="Se não tiver, deixe em branco" /></label>
-      </div>
+          {abreP && (
+            <label className="s2-campo-rotulo s2-campo-ploomes">ID Ploomes
+              <input type="text" maxLength={40} value={ploomes} placeholder="Se não tiver, deixe em branco" autoComplete="off" autoFocus
+                onChange={(e) => { setPloomes(e.target.value); clearTimeout(timer.current); const v = e.target.value; timer.current = setTimeout(() => enviar({ ploomesId: v.trim() }), 250); }} />
+            </label>
+          )}
+        </div>
+      )}
     </div>
   );
 }
 
-function Consulta({ m, plan, reg, orelhoes }) {
+// ---------- consulta do município (Gestão municipal, Orelhões, 4G, Carteira e ação comercial) ----------
+const CORES_OP = { Claro: '#ef4444', TIM: '#003399', Vivo: '#7c3aed', Oi: '#f59e0b', Algar: '#22c55e', Sercomtel: '#0ea5e9' };
+function Consulta({ m, setM, municipios, orelhoes, hitDe, onVerMunicipio }) {
+  const [busca, setBusca] = useState('');
+  const [msg, setMsg] = useState('');
   const [pref, setPref] = useState(undefined);
   const [anatel, setAnatel] = useState(undefined);
   const [cob, setCob] = useState(undefined);
-  const [brasao, setBrasao] = useState(null);
   const [ibge, setIbge] = useState('');
+  const [cnpj, setCnpj] = useState(null); // null | { carregando } | { razao, numero } | { erro }
+  useEffect(() => { setBusca(m ? `${m.mun} - ${m.uf}` : ''); setMsg(''); }, [m]);
   useEffect(() => {
+    if (!m) { setPref(undefined); setAnatel(undefined); setCob(undefined); setIbge(''); setCnpj(null); return undefined; }
     let vivo = true;
+    setPref(undefined); setAnatel(undefined); setCob(undefined); setCnpj(null);
     prefeiturasDaUf(m.uf).then((d) => { if (vivo) setPref(Object.entries(d || {}).find(([n]) => nk(n) === nk(m.mun))?.[1] || null); });
     anatelDoMunicipio(m.uf, m.mun).then((a) => vivo && setAnatel(a));
     municipiosBase().then((b) => {
@@ -403,62 +644,162 @@ function Consulta({ m, plan, reg, orelhoes }) {
       setIbge(x?.ibge || '');
       if (x?.ibge) coberturaDoMunicipio(x.ibge).then((c) => vivo && setCob(c)); else setCob(null);
     });
-    buscarImagemMunicipio(m.mun, UF_NOME[m.uf] || '').then((r) => vivo && setBrasao(r?.tipo === 'brasao' ? r.srcs?.[0] : null)).catch(() => {});
     return () => { vivo = false; };
-  }, [m.uf, m.mun]);
-  const prefeito = pref?.oficial?.nome || pref?.prefeito || '';
-  const cnpj = plan?.base?.cnpj || plan?.cons?.cnpj || '';
-  const noMapa = orelhoes.filter((p) => p.uf === m.uf && nk(p.municipio) === nk(m.mun));
+  }, [m]);
+  // pesquisa: município ou localidade (sem precisar do estado)
+  const opcoes = useMemo(() => municipios.map((x) => `${x.mun} - ${x.uf}`).sort((a, b) => a.localeCompare(b, 'pt-BR')), [municipios]);
+  const consultar = () => {
+    const t = busca.trim(); if (!t) return;
+    const mm = t.match(/^(.*?)\s*[-–/]\s*([A-Za-z]{2})$/);
+    const alvo = nk(mm ? mm[1] : t), ufAlvo = mm ? mm[2].toUpperCase() : '';
+    let achado = municipios.find((x) => nk(x.mun) === alvo && (!ufAlvo || x.uf === ufAlvo));
+    if (!achado) {
+      const p = orelhoes.find((o) => nk(o.localidade) === alvo && (!ufAlvo || o.uf === ufAlvo)) || orelhoes.find((o) => nk(o.localidade).includes(alvo) && (!ufAlvo || o.uf === ufAlvo));
+      if (p) achado = municipios.find((x) => x.uf === p.uf && nk(x.mun) === nk(p.municipio));
+    }
+    if (!achado) achado = municipios.find((x) => nk(x.mun).startsWith(alvo) && (!ufAlvo || x.uf === ufAlvo));
+    if (achado) setM(achado); else setMsg('Município ou localidade não encontrado.');
+  };
+  const limpar = () => { setM(null); setBusca(''); setMsg(''); };
+  const buscarCnpj = async () => {
+    if (!ibge) { setCnpj({ erro: 'Faça a consulta do município primeiro.' }); return; }
+    setCnpj({ carregando: true });
+    try {
+      const q = encodeURIComponent(JSON.stringify({ cod_ibge: { $eq: Number(ibge) } }));
+      const t = await fetch(`https://apidatalake.tesouro.gov.br/ords/siconfi/tt/entes?q=${q}&limit=5`).then((r) => (r.ok ? r.json() : null));
+      const item = t?.items?.[0];
+      const num = String(item?.cnpj || hitDe(m)?.base?.cnpj || '').replace(/\D/g, '');
+      if (num.length !== 14) throw new Error('vazio');
+      let razao = '';
+      try { const rec = await fetch('https://brasilapi.com.br/api/cnpj/v1/' + num).then((r) => (r.ok ? r.json() : null)); razao = rec?.razao_social || ''; } catch {}
+      setCnpj({ razao: razao || 'MUNICIPIO DE ' + String(item?.ente || m.mun).toUpperCase(), numero: num.replace(/^(\d{2})(\d{3})(\d{3})(\d{4})(\d{2})$/, '$1.$2.$3/$4-$5') });
+    } catch { setCnpj({ erro: 'Não encontrei o CNPJ deste município.' }); }
+  };
+  const prefeito = pref?.oficial?.nome ? `${pref.oficial.nome}${pref.oficial.partido ? ` (${pref.oficial.partido})` : ''}` : pref === undefined ? '' : 'Gabinete do Executivo Municipal';
+  const resumo = m ? resumoAcao(hitDe(m)) : null;
+  const linha = (rot, val, dest) => <div className={`s2-acao-linha ${dest ? 'destaque' : ''}`}><span className="rot">{rot}</span><span className="val">{val != null && String(val).trim() !== '' ? String(val) : '—'}</span></div>;
   return (
-    <div className="sdr-consulta">
-      <div className="sdr-cons-grade">
-        <section className="prop-bloco">
-          <h3>🏛️ Gestão municipal</h3>
-          <div className="sdr-gestao">
-            <div className="sdr-brasao">{brasao ? <img src={brasao} alt={`Brasão de ${m.mun}`} /> : <span>🏛️</span>}</div>
-            <dl className="prop-resumo">
-              <dt>Município</dt><dd>{m.mun} — {UF_NOME[m.uf] || m.uf}{ibge ? <small> · IBGE {ibge}</small> : null}</dd>
-              <dt>Prefeito(a)</dt><dd>{pref === undefined ? '…' : prefeito ? <>{prefeito}{pref?.oficial?.partido ? ` · ${pref.oficial.partido}` : ''}<small> {pref?.oficial?.obs || ''}</small></> : 'Gabinete do Executivo Municipal'}</dd>
-              <dt>CNPJ</dt><dd>{cnpj || '—'}</dd>
-              <dt>Telefone</dt><dd>{pref?.telefone || reg?.dados?.telefone || '—'}</dd>
-              <dt>E-mail</dt><dd>{reg?.dados?.email || '—'}</dd>
-            </dl>
-          </div>
-          <div className="prop-linha">
-            <a className="prop-btn sec peq" href={pref?.site || urlPortal(m.mun, m.uf)} target="_blank" rel="noreferrer">Portal oficial ↗</a>
-            <a className="prop-btn sec peq" href={`https://www.google.com/search?q=${encodeURIComponent(`gabinete prefeito ${m.mun} ${m.uf} telefone`)}`} target="_blank" rel="noreferrer">Gabinete ↗</a>
-            <a className="prop-btn sec peq" href={urlTse(m.uf)} target="_blank" rel="noreferrer">TSE ↗</a>
-          </div>
-        </section>
-        <section className="prop-bloco">
-          <h3>📡 Cobertura 4G</h3>
-          {cob === undefined ? <p className="prop-nota">Carregando…</p> : cob === null ? (
-            <p className="sdr-impacto obrig">🔴 Sem registro de cobertura móvel — orelhão OBRIGATÓRIO.</p>
-          ) : (
-            <>
-              <div className="sdr-ops">{cob.ops.map((o) => <span key={o.op} className={o.tem4G ? 'g4' : ''}>{o.op} · {o.techs.join('/')}</span>)}</div>
-              <p className={`sdr-impacto ${cob.tem4G ? 'pode' : 'deve'}`}>{cob.tem4G ? '🟢 Município com 4G — orelhão PODE ser retirado até 2028.' : '🟡 Só 2G/3G — orelhão DEVE ser mantido.'}</p>
-            </>
-          )}
-          <p className="prop-nota">Base SMP da Anatel (operadoras e tecnologias por município).</p>
-        </section>
-      </div>
-      <section className="prop-bloco">
-        <h3>☎️ Orelhões públicos (TUP){anatel?.fora ? <span className="sdr-fora">{anatel.fora} fora de operação</span> : null}</h3>
-        <p className="acao-sub">{noMapa.length} no mapa do Orelhão Digital · {anatel ? `${anatel.tups.length} na base TUP Oi/Anatel (atualização ${anatel.ref})` : anatel === null ? 'sem registro na base TUP Oi/Anatel' : 'carregando a base da Anatel…'}</p>
-        {anatel?.tups?.length > 0 && (
-          <div className="acao-rolagem curta">
-            <table className="acao-tabela">
-              <thead><tr><th>Localidade</th><th>TUP</th><th>CN</th><th>Anatel</th><th>Situação</th><th>Última leitura</th></tr></thead>
-              <tbody>{anatel.tups.map((t) => {
-                const ruim = nk(t.status) !== 'ativo', manut = nk(t.anatel).includes('manuten');
-                return <tr key={t.tup + t.loc}><td>{t.loc}</td><td>{t.tup}</td><td>{t.cn}</td><td>{manut ? <span className="acao-temp morno">{t.anatel}</span> : t.anatel}</td><td>{ruim ? <span className="acao-temp quente">{t.status}</span> : <span className="acao-sim">{t.status}</span>}</td><td>{t.leitura}</td></tr>;
-              })}</tbody>
-            </table>
-          </div>
-        )}
-        <div className="prop-linha"><a className="prop-btn sec peq" href={URL_SGMU} target="_blank" rel="noreferrer">📊 Auditoria SGMU Anatel ↗</a></div>
+    <div className="s2-consulta">
+      <section className="s2-search">
+        <div className="s2-search-title">Digite o município ou a localidade:</div>
+        <div className="s2-search-bar">
+          <input className="s2-search-input" list="s2-lista-mun" value={busca} onChange={(e) => setBusca(e.target.value)} onKeyDown={(e) => { if (e.key === 'Enter') consultar(); }}
+            placeholder="Município ou localidade, sem precisar do estado (Ex: Santa Joana, Buritis)" />
+          <datalist id="s2-lista-mun">{busca.trim().length >= 2 && opcoes.filter((o) => nk(o).startsWith(nk(busca))).slice(0, 30).map((o) => <option key={o} value={o} />)}</datalist>
+          <button type="button" className="s2-search-btn" onClick={consultar}>🔍 Consultar</button>
+          <button type="button" className="s2-search-btn clear" onClick={limpar}>Limpar consulta</button>
+        </div>
+        {msg && <p className="s2-search-msg">{msg}</p>}
       </section>
+      <div className="s2-grid">
+        <div className="s2-card">
+          <div className="s2-card-head">
+            <div className="s2-card-head-tit"><h2>🏛️ Gestão Municipal</h2>{m && onVerMunicipio && <button type="button" className="s2-btn-link teal" onClick={() => onVerMunicipio(m.uf, m.mun)}>🗺️ Ver no mapa da rota</button>}</div>
+            <span className="s2-badge warning">{m ? m.uf : 'UF'}</span>
+          </div>
+          <div className="s2-gestao">
+            <div className="s2-item"><span className="s2-label">Município</span>
+              <div className="s2-mun-linha"><span className="s2-valor destaque">{m ? `${m.mun} (${m.uf})` : 'Aguardando pesquisa...'}</span><button type="button" className="s2-btn-limpar-mun" onClick={limpar}>Limpar consulta</button></div>
+            </div>
+            <div className="s2-item"><span className="s2-label">Prefeito(a)</span><div className="s2-valor">{!m ? '-' : pref === undefined ? <em>Consultando TSE...</em> : prefeito}</div></div>
+            <aside className="s2-caixa-cnpj">
+              <span className="tit">CNPJ da prefeitura</span>
+              {cnpj?.numero ? <><div className="razao">{cnpj.razao}</div><div className="numero">{cnpj.numero}</div></>
+                : <div className="vazio">{cnpj?.carregando ? 'Consultando cadastro da Receita...' : cnpj?.erro || 'Clique em Busca CNPJ para trazer o nome completo e o CNPJ.'}</div>}
+            </aside>
+            <div className="s2-item"><span className="s2-label">Consultas</span>
+              <div className="s2-btn-group">
+                {m ? (
+                  <>
+                    <a className="s2-btn-link" href={pref?.site || urlPortal(m.mun, m.uf)} target="_blank" rel="noreferrer">Portal Oficial</a>
+                    <a className="s2-btn-link" href={`https://www.google.com/search?q=prefeito+telefone+gabinete+prefeitura+de+${encodeURIComponent(m.mun)}+${m.uf}`} target="_blank" rel="noreferrer">Gabinete</a>
+                    <a className="s2-btn-link verde" href={urlTse(m.uf)} target="_blank" rel="noreferrer">TSE</a>
+                    <button type="button" className="s2-btn-link amarelo" disabled={cnpj?.carregando} onClick={buscarCnpj}>Busca CNPJ</button>
+                  </>
+                ) : <span className="s2-dica">Faça uma consulta para abrir os canais oficiais.</span>}
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="s2-card tup">
+          <div className="s2-card-head"><h2>☎️ Orelhões Públicos (TUP)</h2>
+            {!m || anatel === undefined ? <span className="s2-badge warning">Aguardando</span> : !anatel ? <span className="s2-badge warning">Falta de informação</span>
+              : anatel.fora ? <span className="s2-badge danger">{anatel.fora} fora de operação</span> : <span className="s2-badge success">Ativo na base de dados</span>}
+          </div>
+          <div className="s2-item"><span className="s2-label">Presença no Município</span>
+            <span className="s2-valor">{!m || anatel === undefined ? '-' : anatel ? `Sim · ${anatel.tups.length} terminal(is) na base de dados TUP OI` : 'Não existe dados deste município na base de dados TUP OI'}</span></div>
+          <div className="s2-item s2-qtd-data">
+            <div><span className="s2-label">Quantidade de Terminais Identificados</span><span className="s2-valor destaque">{!m || anatel === undefined ? '-' : anatel ? anatel.tups.length : 'Falta de informação na base de dados'}</span></div>
+            <div className="s2-atualizacao"><span className="s2-label">Atualização</span><span className="s2-data-grande">{!m || anatel === undefined ? '-' : anatel?.ref || 'Falta de informação na base de dados'}</span></div>
+          </div>
+          <div className="s2-item">
+            <div className="s2-relacao-head"><span className="s2-label">Relação de Terminais</span><span className="s2-label">Situação Cadastrada</span></div>
+            <div className="s2-subcard">
+              {!m ? <div className="s2-dica">Digite o nome da cidade acima para carregar os orelhões.</div>
+                : anatel === undefined ? <div className="s2-dica">Carregando…</div>
+                  : !anatel ? <div className="s2-dica">Não existe dados na base de dados TUP OI para {m.mun} ({m.uf}).</div>
+                    : anatel.tups.map((t) => {
+                      const prob = nk(t.status) !== 'ativo' || nk(t.anatel) !== 'ativo';
+                      const cls = !prob ? 'success' : nk(t.anatel) === 'em manutencao' ? 'warning' : 'danger';
+                      return (
+                        <div key={t.tup + t.loc} className="s2-terminal">
+                          <div><span className="loc">{t.loc}</span><div className="det">TUP {t.tup} · CN {t.cn} · Anatel: {t.anatel} · Última leitura: {t.leitura}</div></div>
+                          <span className={`s2-badge ${cls}`}>{t.status}</span>
+                        </div>
+                      );
+                    })}
+            </div>
+          </div>
+          <div className="s2-item"><span className="s2-label">Auditoria Externa (Anatel)</span>
+            {m ? <a className="s2-btn-link verde largo" href={URL_SGMU} target="_blank" rel="noreferrer">📊 Abrir Auditoria SGMU Anatel ({m.mun}-{m.uf})</a> : <div>-</div>}
+          </div>
+        </div>
+
+        <div className="s2-card g4">
+          <div className="s2-card-head"><div className="s2-tit-4g"><h2>📡 Cobertura 4G no Município</h2>
+            {!m || cob === undefined ? <span className="s2-badge warning">Aguardando</span> : cob?.tem4G ? <span className="s2-badge success">✅ 4G Confirmado</span> : cob ? <span className="s2-badge warning">⚠️ Sem 4G</span> : <span className="s2-badge danger">❌ Sem 4G</span>}
+          </div></div>
+          <div className="s2-item"><span className="s2-label">Status da Cobertura 4G</span>
+            <span className="s2-valor">{!m || cob === undefined ? 'Faça uma consulta para verificar o 4G'
+              : cob?.tem4G ? `Cobertura 4G confirmada - IBGE: ${ibge} (${cob.ops.filter((o) => o.tem4G).length} operadora${cob.ops.filter((o) => o.tem4G).length > 1 ? 's' : ''})`
+                : cob ? `Município IBGE ${ibge} possui cobertura móvel, mas SEM 4G` : `Município IBGE ${ibge || '—'} NÃO consta na base SMP da Anatel — sem cobertura móvel 4G`}</span></div>
+          <div className="s2-item"><span className="s2-label">Operadoras com 4G no Município</span>
+            <div className="s2-chip-container">
+              {!m || cob === undefined ? <span className="s2-chip-op">Aguardando consulta...</span>
+                : cob ? (cob.tem4G ? cob.ops.filter((o) => o.tem4G) : cob.ops).map((o) => (
+                  <span key={o.op} className="s2-chip-op" style={{ borderColor: CORES_OP[o.op] || '#38bdf8', color: CORES_OP[o.op] || '#38bdf8', opacity: cob.tem4G ? 1 : 0.5 }}>{cob.tem4G ? `📡 ${o.op} (4G)` : `📱 ${o.op} (sem 4G)`}</span>
+                )) : <span className="s2-chip-op">Nenhuma operadora</span>}
+            </div>
+          </div>
+          <div className="s2-item"><span className="s2-label">Impacto na Obrigatoriedade do Orelhão (até 2028)</span>
+            <span className="s2-valor impacto">{!m || cob === undefined ? '-' : cob?.tem4G ? <span style={{ color: '#4ade80' }}>🟢 Orelhão PODE ser retirado até 2028 (município com cobertura 4G)</span>
+              : cob ? <span style={{ color: '#fbbf24' }}>🟡 Orelhão DEVE ser mantido até 2028 (município sem cobertura 4G)</span> : <span style={{ color: '#f87171' }}>🔴 Orelhão OBRIGATÓRIO até 2028 (município sem cobertura 4G)</span>}</span></div>
+        </div>
+
+        <div className="s2-card acao">
+          <div className="s2-card-head"><h2>Carteira e ação comercial</h2></div>
+          <div className="s2-acao-corpo">
+            {!m ? <p className="s2-acao-aviso">Faça uma consulta para ver consultor, estágio e proposta.</p>
+              : !resumo.naPlanilha ? <><p className="s2-acao-aviso">Este município não consta na planilha Ação TUPs (leitura publicada).</p><p className="s2-acao-fonte">Fonte: planilha Ação TUPs</p></>
+                : (
+                  <>
+                    {resumo.semConsultor ? <p className="s2-acao-sem-cons">Município ainda sem consultor na planilha da ação.</p> : linha('Consultor', resumo.consultor, true)}
+                    {linha('SDR', resumo.sdr + (resumo.sdrStatus ? ' · ' + resumo.sdrStatus : ''))}
+                    {linha('Regional', resumo.regional)}
+                    {linha('Situação comercial', resumo.situacao, true)}
+                    {linha('Proposta', resumo.proposta, true)}
+                    {(resumo.estagio || resumo.statusOrig) && linha('Estágio / status', [resumo.estagio, resumo.statusOrig].filter(Boolean).join(' · '))}
+                    {resumo.temperatura && linha('Temperatura', resumo.temperatura)}
+                    {linha('TUPs (base / pretenda)', `${resumo.tupsOferecidos ?? '—'} / ${resumo.tupsPretendida ?? '—'}`)}
+                    {resumo.valor && linha('Valor contratual', resumo.valor)}
+                    {linha('Carteira', resumo.carteira ? 'Sim' : 'Não')}
+                    {resumo.obs && <div className="s2-acao-linha obs"><span className="rot">Observação</span><span className="val" title={resumo.obs}>{resumo.obs.length > 140 ? resumo.obs.slice(0, 137) + '…' : resumo.obs}</span></div>}
+                  </>
+                )}
+          </div>
+        </div>
+      </div>
     </div>
   );
 }

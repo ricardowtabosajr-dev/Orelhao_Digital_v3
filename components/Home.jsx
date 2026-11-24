@@ -213,17 +213,6 @@ const ADMIN_FUNCOES = [
       </svg>
     ),
   },
-  {
-    id: 'sdr', nome: 'Ferramenta SDR', desc: 'Pesquisa coletiva por município: lousa, ligações e consultor', cor: '#f472b6', cor2: '#a78bfa', senha: true,
-    icone: (
-      <svg viewBox="0 0 64 64" fill="none" aria-hidden="true">
-        <path d="M14 34v-4a18 18 0 0 1 36 0v4" stroke="#fff" strokeWidth="4.5" strokeLinecap="round" />
-        <rect x="9" y="32" width="11" height="17" rx="4" fill="#fff" /><rect x="44" y="32" width="11" height="17" rx="4" fill="#fff" />
-        <path d="M49.5 49c0 5-5 7-11 7" stroke="#fff" strokeWidth="3" strokeLinecap="round" /><rect x="31" y="53" width="9" height="6" rx="3" fill="#fff7d6" />
-        <circle cx="32" cy="26" r="5" fill="#fff7d6" /><path d="M25.5 40c1.5-4 4-6 6.5-6s5 2 6.5 6" stroke="#fff7d6" strokeWidth="3" strokeLinecap="round" />
-      </svg>
-    ),
-  },
 ];
 
 export default function Home({ regioes = false, novidades = false, tv = false }) {
@@ -1009,8 +998,9 @@ export default function Home({ regioes = false, novidades = false, tv = false })
             <span className="metodo-frase">Conectando o Brasil</span>
           </div>
           <div className="banner-titulo">
-            <h1>Orelhão Digital</h1>
-            <span>Mapa nacional de TUPs · v2</span>
+            {/* com a Ação TUPs aberta, a faixa principal vira o cabeçalho dela */}
+            <h1>{adminTela === 'acao' ? 'Ação TUPs' : adminTela === 'sdr' ? 'Pesquisa Municípios' : 'Orelhão Digital'}</h1>
+            <span>{adminTela === 'acao' ? 'Apresentação executiva' : adminTela === 'sdr' ? 'Pesquisa de e-mail, telefone e nome · Coletivo' : 'Mapa nacional de TUPs · v2'}</span>
           </div>
         </header>
       )}
@@ -1237,6 +1227,9 @@ export default function Home({ regioes = false, novidades = false, tv = false })
 
       {/* Controles superiores */}
       <div className={`topbar ${booted ? 'in' : ''}`}>
+        {/* Ação TUPs aberta: os botões dela entram aqui (Ferramenta - SDR, Menu, Sair, Fechar) */}
+        {(adminTela === 'acao' || adminTela === 'sdr') && <div key={adminTela} id="topbar-acao" className="topbar-acao" />}
+        {adminTela !== 'acao' && adminTela !== 'sdr' && <>
         <div className="seg glass">
           {[['cluster', 'Agrupado'], ['points', 'Pontos'], ['localizados', 'Localizados']].map(([id, l]) => (
             <button key={id} id={`modo-${id}`} className={mode === id ? 'on' : ''} onClick={() => trocarModo(id)}>{l}</button>
@@ -1252,6 +1245,7 @@ export default function Home({ regioes = false, novidades = false, tv = false })
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><rect x="3.5" y="3.5" width="7" height="7" rx="1.6" stroke="currentColor" strokeWidth="2" /><rect x="13.5" y="3.5" width="7" height="7" rx="1.6" stroke="currentColor" strokeWidth="2" /><rect x="3.5" y="13.5" width="7" height="7" rx="1.6" stroke="currentColor" strokeWidth="2" /><rect x="13.5" y="13.5" width="7" height="7" rx="1.6" stroke="currentColor" strokeWidth="2" /></svg>
           <span className="rotulo">Administração</span>
         </button>
+        </>}
       </div>
 
       {/* Painel de administração: as funções entram em ADMIN_FUNCOES (cada uma vira um bloco) */}
@@ -1307,7 +1301,8 @@ export default function Home({ regioes = false, novidades = false, tv = false })
       {adminTela === 'sdr' && (
         <FerramentaSdr orelhoes={all} inicial={sdrInicial} onVerMunicipio={verMunicipioAcao}
           onFechar={() => { setAdminTela(null); setSdrInicial(null); }}
-          onVoltar={() => { const de = sdrInicial?.de; setSdrInicial(null); setAdminTela(de || null); if (!de) setAdmin(true); }} />
+          onMenu={() => { setAdminTela(null); setSdrInicial(null); setAdmin(false); }}
+          onVoltarPainel={() => { setSdrInicial(null); setAdminTela('acao'); }} />
       )}
 
       {/* Legenda (retirada no teste a pedido do usuário) */}
