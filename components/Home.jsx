@@ -998,7 +998,7 @@ export default function Home({ regioes = false, novidades = false, tv = false })
         livre={!tv && mode === 'cluster' && !municipio && !q.trim() && !soOriginais && !selectedId && !userPos}
         regioes={mode === 'localizados' ? regioesInfoLoc : regioesInfo} caixasUf={caixasUf} ufFoco={uf} macro={macro?.nome ?? null} onMacro={escolherMacro} onMunicipio={escolherMunicipioRegiao} onFoco={onFocoMapa} teste={regioes}
         enquadramento={novidades ? enqTeste : null}
-        deslocar={admin && tela.w > 900 ? 230 : 0} />
+        deslocar={tela.w > 900 && (admin || (novidades && mostrarPainel && !temFoco && !selected)) ? 230 : 0} />
 
       {/* Painel lateral */}
       {/* Em teste: a faixa Método vira um banner fixo sobre o mapa (e sai do painel lateral) */}

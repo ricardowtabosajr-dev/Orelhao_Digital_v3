@@ -93,7 +93,15 @@ function Mapa({ points, mode, basemap = 'sat', orbit = false, onOrbitStop, editi
     const d = deslocar - deslocado.current;
     if (!d) return;
     deslocado.current = deslocar;
-    m.panBy([d, 0], { duration: 750, easing: (t) => 1 - Math.pow(1 - t, 3) });
+    // ao voltar, se o mapa já está voando (ex.: escolheu um estado no painel ou "Início"), o voo já enquadra certo:
+    // não puxa de volta para não interromper o voo
+    let feito = false;
+    const t = setTimeout(() => {
+      feito = true;
+      if (d < 0 && m.isMoving()) return;
+      m.panBy([d, 0], { duration: 750, easing: (x) => 1 - Math.pow(1 - x, 3) });
+    }, d < 0 ? 60 : 0);
+    return () => { clearTimeout(t); if (!feito) deslocado.current -= d; };
   }, [deslocar, pronto]);
   const pending = useRef(points);
   const userMarker = useRef(null);
