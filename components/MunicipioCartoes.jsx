@@ -4,7 +4,7 @@
 // Usados na consulta da Ferramenta SDR e no cartão do orelhão (painel lateral do mapa).
 
 import { useEffect, useState } from 'react';
-import { acaoLer } from '@/lib/supabase';
+import { acaoLer, acaoConsultores } from '@/lib/supabase';
 import { nk, urlTse, URL_SGMU, urlPortal, anatelDoMunicipio, coberturaDoMunicipio, prefeiturasDaUf, municipiosBase } from '@/lib/sdr';
 import { chaveMun } from '@/lib/acaoTups';
 
@@ -45,24 +45,43 @@ export function indicePlanilha(planilha) {
   return idx;
 }
 
-// planilha da Ação TUPs para o cartão do orelhão: só com o acesso da Ação TUPs aberto nesta aba
+// resumo público por município, sem senha (migração 010): consultor, SDR, situação comercial,
+// temperatura e TUPs. Mesmo formato do índice da planilha ({ base, cons, sdr }), só com esses campos.
+export function indicePublico(lista) {
+  const idx = {};
+  (lista || []).forEach((r) => {
+    const k = chaveMun(r.uf, r.municipio);
+    if (r.fonte === 'base') (idx[k] ??= {}).base = r;
+    else if (r.fonte === 'consultores') (idx[k] ??= {}).cons = r;
+    else if (r.fonte === 'atuacao') { const cur = idx[k]?.sdr; if (!cur || (r.status && (!cur.status || r.aba > cur.aba))) (idx[k] ??= {}).sdr = r; }
+  });
+  return idx;
+}
+
+// planilha da Ação TUPs para o cartão do orelhão.
+// Com o acesso da Ação TUPs aberto nesta aba: a carteira completa. Sem senha: só o consultor do município.
 let cachePlan = null; // { senha, idx }
+let cacheCons = null; // Promise<{ idx } | null>
 export function usePlanilhaAcao(ativo) {
-  const [estado, setEstado] = useState({ idx: null, liberado: false });
+  const [estado, setEstado] = useState({ idx: null, liberado: false, consultores: undefined });
   useEffect(() => {
     if (!ativo) return undefined;
     let senha = '';
     try { senha = sessionStorage.getItem('acaoTupsSenha') || ''; } catch {}
-    if (!senha) { setEstado({ idx: null, liberado: false }); return undefined; }
-    if (cachePlan?.senha === senha) { setEstado({ idx: cachePlan.idx, liberado: true }); return undefined; }
     let vivo = true;
-    acaoLer(senha).then((r) => { const idx = indicePlanilha(r?.dados || null); cachePlan = { senha, idx }; if (vivo) setEstado({ idx, liberado: true }); }).catch(() => vivo && setEstado({ idx: null, liberado: false }));
+    const soConsultor = () => {
+      cacheCons ??= acaoConsultores().then((l) => (l ? indicePublico(l) : null)).catch(() => { cacheCons = null; return null; });
+      cacheCons.then((c) => vivo && setEstado({ idx: null, liberado: false, consultores: c }));
+    };
+    if (!senha) { soConsultor(); return () => { vivo = false; }; }
+    if (cachePlan?.senha === senha) { setEstado({ idx: cachePlan.idx, liberado: true }); return undefined; }
+    acaoLer(senha).then((r) => { const idx = indicePlanilha(r?.dados || null); cachePlan = { senha, idx }; if (vivo) setEstado({ idx, liberado: true }); }).catch(() => vivo && soConsultor());
     return () => { vivo = false; };
   }, [ativo]);
   return estado;
 }
 
-export default function MunicipioCartoes({ m, hit, onVerMunicipio, compacto = false, semPrefeito = false, semCarteira = '' }) {
+export default function MunicipioCartoes({ m, hit, onVerMunicipio, compacto = false, semPrefeito = false, semCarteira = '', publico }) {
   const [pref, setPref] = useState(undefined);
   const [anatel, setAnatel] = useState(undefined);
   const [cob, setCob] = useState(undefined);
@@ -190,6 +209,19 @@ export default function MunicipioCartoes({ m, hit, onVerMunicipio, compacto = fa
       <div className="s2-card-head"><h2>Carteira e ação comercial</h2></div>
       <div className="s2-acao-corpo">
         {!m ? <p className="s2-acao-aviso">Faça uma consulta para ver consultor, estágio e proposta.</p>
+              : publico !== undefined ? (() => {
+                if (!publico) return <><p className="s2-acao-aviso">Este município não consta na planilha Ação TUPs (leitura publicada).</p><p className="s2-acao-fonte">Fonte: planilha Ação TUPs</p></>;
+                const r = resumoAcao(publico);
+                return (
+                  <>
+                    {r.semConsultor ? <p className="s2-acao-sem-cons">Município ainda sem consultor na planilha da ação.</p> : linha('Consultor', r.consultor, true)}
+                    {linha('SDR', r.sdr + (r.sdrStatus ? ' · ' + r.sdrStatus : ''))}
+                    {linha('Situação comercial', publico.base?.situacao || '—', true)}
+                    {linha('Temperatura', r.temperatura)}
+                    {linha('TUPs (base / pretenda)', `${r.tupsOferecidos ?? '—'} / ${r.tupsPretendida ?? '—'}`)}
+                  </>
+                );
+              })()
               : semCarteira ? <p className="s2-acao-aviso">{semCarteira}</p>
           : !resumo.naPlanilha ? <><p className="s2-acao-aviso">Este município não consta na planilha Ação TUPs (leitura publicada).</p><p className="s2-acao-fonte">Fonte: planilha Ação TUPs</p></>
             : (

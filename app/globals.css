@@ -1975,3 +1975,8 @@ button { font: inherit; color: inherit; cursor: pointer; background: none; borde
 .s2-grid.compacto .s2-btn-group { flex-wrap: wrap; }
 .s2-grid.compacto .s2-qtd-data { gap: 8px; }
 .s2-grid.compacto .s2-data-grande { font-size: 18px; }
+/* "‹ Voltar" flutuante ao lado do detalhe do orelhão (aparece quando o painel é rolado para baixo) */
+.voltar-flutua { position: fixed; z-index: 21; height: 34px; padding: 0 0.9rem; font-size: 0.85rem; box-shadow: 0 6px 18px rgba(0, 0, 0, .45); animation: voltar-entra .25s ease-out; }
+.voltar-flutua.fora { transform: translateX(-100%); }
+@keyframes voltar-entra { from { opacity: 0; } to { opacity: 1; } }
+.modo-tv .voltar-flutua { display: none; }

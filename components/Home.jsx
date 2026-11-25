@@ -836,6 +836,19 @@ export default function Home({ regioes = false, novidades = false, tv = false })
     if (selected) t.push({ id: 'orelhao', rotulo: selected.localidade });
     return t;
   })();
+  // "‹ Voltar" flutuante: ao rolar o detalhe do orelhão para baixo, o botão sai do painel e fica na lateral,
+  // acompanhando a rolagem; ao clicar, faz o mesmo que o botão de dentro e volta para o lugar.
+  const drawerRef = useRef(null);
+  const [voltarFlutua, setVoltarFlutua] = useState(null); // { top, left, fora } | null
+  const rolouDrawer = () => {
+    const d = drawerRef.current, t = d?.querySelector('.trilha');
+    if (!d || !t) { setVoltarFlutua(null); return; }
+    const r = d.getBoundingClientRect(), tr = t.getBoundingClientRect();
+    if (tr.bottom > r.top + 4) { setVoltarFlutua(null); return; }
+    const fora = r.left > 110; // há espaço ao lado do painel (no celular fica por dentro, no canto)
+    setVoltarFlutua((v) => (v && v.top === r.top + 12 && v.fora === fora ? v : { top: r.top + 12, left: fora ? r.left - 10 : r.left + 12, fora }));
+  };
+  useEffect(() => { setVoltarFlutua(null); }, [selectedId]);
   const Trilha = () => (trilha.length > 1 ? (
     <nav className="trilha" aria-label="Voltar para">
       <button type="button" className="trilha-voltar" onClick={trilha[trilha.length - 2].ir} title={`Voltar para ${trilha[trilha.length - 2].rotulo}`}>‹ Voltar</button>
@@ -1319,7 +1332,7 @@ export default function Home({ regioes = false, novidades = false, tv = false })
       </div>}
 
       {/* Detalhe */}
-      <aside className={`drawer glass ${temaDetalhe ? 'tema-metodo' : ''} ${novidades ? 'drawer-alterna' : ''} ${selected ? 'open' : ''}`} aria-hidden={!selected}>
+      <aside className={`drawer glass ${temaDetalhe ? 'tema-metodo' : ''} ${novidades ? 'drawer-alterna' : ''} ${selected ? 'open' : ''}`} aria-hidden={!selected} ref={drawerRef} onScroll={rolouDrawer}>
         {selected && (
           <>
             <button className="close" onClick={() => setSelectedId(null)} aria-label="Fechar">×</button>
@@ -1447,7 +1460,8 @@ export default function Home({ regioes = false, novidades = false, tv = false })
                 <div className="loc-titulo">Município · {selected.municipio} ({ufSel})</div>
                 <MunicipioCartoes m={munSel} compacto semPrefeito={!!(prefDetalhe?.oficial || prefDetalhe?.prefeito)}
                   hit={planAcao.idx ? planAcao.idx[chaveMunAcao(munSel.uf, munSel.mun)] || null : null}
-                  semCarteira={planAcao.liberado ? '' : 'Entre na Ação TUPs (Administração) para ver consultor, estágio e proposta.'} />
+                  publico={!planAcao.liberado && planAcao.consultores ? (planAcao.consultores[chaveMunAcao(munSel.uf, munSel.mun)] || null) : undefined}
+                  semCarteira={planAcao.liberado ? '' : planAcao.consultores === undefined ? 'Carregando…' : 'Entre na Ação TUPs (Administração) para ver consultor, estágio e proposta.'} />
               </div>
             )}
 
@@ -1475,6 +1489,11 @@ export default function Home({ regioes = false, novidades = false, tv = false })
           </>
         )}
       </aside>
+      {selected && voltarFlutua && trilha.length > 1 && (
+        <button type="button" className={`trilha-voltar voltar-flutua ${voltarFlutua.fora ? 'fora' : ''}`} style={{ top: voltarFlutua.top, left: voltarFlutua.left }}
+          title={`Voltar para ${trilha[trilha.length - 2].rotulo}`}
+          onClick={() => { setVoltarFlutua(null); if (drawerRef.current) drawerRef.current.scrollTop = 0; trilha[trilha.length - 2].ir(); }}>‹ Voltar</button>
+      )}
 
       {/* Perto de mim */}
       <aside className={`drawer glass ${proximos && !selected ? 'open' : ''}`} aria-hidden={!proximos}>
