@@ -40,7 +40,7 @@ export default function FerramentaSdr({ onFechar, onVoltarPainel, onMenu, orelho
 
   return (
     <>
-      <div className="admin-fundo prop-fundo" onClick={onFechar} />
+      <div className="admin-fundo prop-fundo" /* clicar fora não fecha: só pelos botões (evita perder o que está sendo feito) */ />
       <section className="prop-tela acao-tela a2-tela s2-tela" role="dialog" aria-label="Pesquisa Municípios">
         {slot && createPortal(
           <>

@@ -71,7 +71,7 @@ export default function Propostas({ onFechar, onVoltar, contexto = null, orelhoe
   const rotuloVoltar = inicial?.de === 'acao' ? 'Ação TUPs' : tela === 'inicio' ? 'Administração' : 'Propostas';
   return (
     <>
-      <div className="admin-fundo prop-fundo" onClick={onFechar} />
+      <div className="admin-fundo prop-fundo" /* clicar fora não fecha: só pelos botões (evita perder o que está sendo feito) */ />
       <section className="prop-tela" role="dialog" aria-label="Propostas">
         <header className="prop-topo">
           <button type="button" className="prop-voltar" onClick={voltar}>‹ {rotuloVoltar}</button>

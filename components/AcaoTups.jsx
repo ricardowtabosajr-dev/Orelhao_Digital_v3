@@ -48,7 +48,7 @@ export default function AcaoTups({ onFechar, onVoltar, onAbrirSdr }) {
 
   return (
     <>
-      <div className="admin-fundo prop-fundo" onClick={onFechar} />
+      <div className="admin-fundo prop-fundo" /* clicar fora não fecha: só pelos botões (evita perder o que está sendo feito) */ />
       <section className="prop-tela acao-tela a2-tela" role="dialog" aria-label="Ação TUPs">
         {slot && createPortal(
           <>
