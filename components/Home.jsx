@@ -217,6 +217,38 @@ const ADMIN_FUNCOES = [
   },
 ];
 
+// ---- Busca tolerante (geral e dentro do estado): sem acento, sem pontuação, pelo começo de
+// qualquer palavra e, se nada bater, aceitando 1–2 letras erradas ("santaren" acha Santarém) ----
+const chaveBusca = (s = '') => norm(s).replace(/[^a-z0-9]+/g, ' ').trim();
+// distância de edição com limite (para cedo quando passa do limite)
+function distLim(a, b, lim) {
+  if (Math.abs(a.length - b.length) > lim) return lim + 1;
+  let ant = Array.from({ length: b.length + 1 }, (_, j) => j);
+  for (let i = 1; i <= a.length; i++) {
+    const cur = [i]; let menor = i;
+    for (let j = 1; j <= b.length; j++) {
+      cur[j] = Math.min(ant[j] + 1, cur[j - 1] + 1, ant[j - 1] + (a[i - 1] === b[j - 1] ? 0 : 1));
+      if (cur[j] < menor) menor = cur[j];
+    }
+    if (menor > lim) return lim + 1;
+    ant = cur;
+  }
+  return ant[b.length];
+}
+const tolerancia = (nq) => (nq.length < 4 ? 0 : nq.length < 8 ? 1 : 2);
+// quão perto o texto está do nome: 0 exato · 1 começa · 2 começo de palavra · 3 parecido · 9 não
+function nivelBusca(nq, nome) {
+  if (!nq || !nome) return 9;
+  if (nome === nq) return 0;
+  if (nome.startsWith(nq)) return 1;
+  if ((' ' + nome).includes(' ' + nq)) return 2;
+  const tol = tolerancia(nq);
+  if (!tol) return 9;
+  // nome inteiro parecido (até tol letras) ou começo do nome parecido (só 1 letra, enquanto digita)
+  const d = Math.min(distLim(nq, nome, tol), distLim(nq, nome.slice(0, nq.length), 1) <= 1 ? 1 : tol + 1);
+  return d <= tol ? 3 + d / 10 : 9; // 3.1, 3.2: quanto menor, mais parecido
+}
+
 export default function Home({ regioes = false, novidades = false, tv = false }) {
   const [all, setAll] = useState([]);
   const [progress, setProgress] = useState(0);
@@ -378,10 +410,19 @@ export default function Home({ regioes = false, novidades = false, tv = false })
     );
     if (!nq) return base;
     if (!novidades) return base.filter((p) => norm(p.localidade).includes(nq) || norm(p.municipio).includes(nq) || p.cod_localidade?.includes(nq));
-    // nome exato primeiro ("Formoso" não traz "Campo Formoso"); sem nome exato, os que começam com o texto
-    const exatos = base.filter((p) => norm(p.localidade) === nq || norm(p.municipio) === nq || p.cod_localidade === nq);
-    if (exatos.length) return exatos;
-    return base.filter((p) => norm(p.localidade).startsWith(nq) || norm(p.municipio).startsWith(nq) || p.cod_localidade?.startsWith(nq));
+    // nome exato primeiro ("Formoso" não traz "Campo Formoso"); senão os que começam com o texto,
+    // depois começo de qualquer palavra e, por último, nomes parecidos (letra errada) — geral e no estado
+    const cq = chaveBusca(q);
+    if (!cq) return base;
+    const nivel = new Map(); // nome -> nível (calcula uma vez por nome)
+    const niv = (nome) => { let v = nivel.get(nome); if (v === undefined) { v = nivelBusca(cq, chaveBusca(nome)); nivel.set(nome, v); } return v; };
+    const nivelDe = (p) => (p.cod_localidade === nq ? 0 : p.cod_localidade?.startsWith(nq) ? 1 : Math.min(niv(p.localidade), niv(p.municipio)));
+    let melhor = 9; const comNivel = [];
+    base.forEach((p) => { const v = nivelDe(p); if (v < 9) { comNivel.push([p, v]); if (v < melhor) melhor = v; } });
+    if (melhor === 9) return [];
+    // exato sozinho; "começa" junto com "começo de palavra"; parecido só quando nada melhor existe
+    const corte = melhor === 0 ? 0 : melhor <= 2 ? 2 : melhor; // parecidos: só os mais parecidos
+    return comNivel.filter(([, v]) => v <= corte).sort((a, b) => a[1] - b[1]).map(([p]) => p);
   }, [porMacro, municipio, soOriginais, q, novidades, ufFocoBusca, mode]);
 
   // Com uma macrorregião escolhida, a lista vem agrupada por município
@@ -516,6 +557,14 @@ export default function Home({ regioes = false, novidades = false, tv = false })
     });
     return [...m.values()];
   }, [all]);
+  const [semTups, setSemTups] = useState(null); // { nome, uf }: município pesquisado sem orelhões na base
+  useEffect(() => {
+    if (!semTups) return undefined;
+    const esc = (e) => { if (e.key === 'Escape' || e.key === 'Enter') { e.preventDefault(); setSemTups(null); } };
+    // o Enter da busca não pode fechar o aviso: o foco e o teclado só valem depois de um instante
+    const t = setTimeout(() => { addEventListener('keydown', esc); document.querySelector('.sem-tups .btn')?.focus(); }, 350);
+    return () => { clearTimeout(t); removeEventListener('keydown', esc); };
+  }, [semTups]);
   const irParaMunicipio = () => {
     let nq = norm(q.trim());
     if (!nq) return;
@@ -524,17 +573,26 @@ export default function Home({ regioes = false, novidades = false, tv = false })
     if (ufBusca) nq = nq.slice(0, -3).trim();
     const ufAlvo = ufBusca || ufFocoBusca; // com um estado em foco, só municípios dele
     const daUf = (m) => !ufAlvo || m.uf === ufAlvo;
-    const exatos = municipiosIdx.filter((m) => daUf(m) && norm(m.municipio) === nq);
-    const cand = exatos.length ? exatos : municipiosIdx.filter((m) => daUf(m) && norm(m.municipio).startsWith(nq));
+    // município: exato → começa com → nome parecido (letra errada / sem acento / sem hífen)
+    const cq = chaveBusca(nq);
+    const exatos = municipiosIdx.filter((m) => daUf(m) && chaveBusca(m.municipio) === cq);
+    let cand = exatos.length ? exatos : municipiosIdx.filter((m) => daUf(m) && chaveBusca(m.municipio).startsWith(cq));
+    let aproximado = false;
+    // nome parecido de município, se nenhuma localidade bate de verdade com o texto (sem erro de letra)
+    if (!cand.length && !filtered.some((p) => nivelBusca(cq, chaveBusca(p.localidade)) <= 2)) {
+      const tol = tolerancia(cq);
+      const perto = tol ? municipiosIdx.filter((m) => daUf(m)).map((m) => [m, distLim(cq, chaveBusca(m.municipio), tol)]).filter(([, d]) => d <= tol) : [];
+      if (perto.length) { const dMin = Math.min(...perto.map(([, d]) => d)); cand = perto.filter(([, d]) => d === dMin).map(([m]) => m); aproximado = true; }
+    }
     if (!cand.length) {
       if (filtered.length === 1) select(filtered[0].id);
-      else if (!filtered.length) notify(ufFocoBusca ? `Nada com esse nome em ${UF_NOME[ufFocoBusca]}` : 'Nenhum município com esse nome na base');
+      else if (!filtered.length) setSemTups({ nome: q.trim(), uf: ufAlvo ? UF_NOME[ufAlvo] : '' }); // aviso grande, no centro da tela
       return;
     }
     const m = [...cand].sort((a, b) => b.n - a.n)[0];
     setRegiao(null); setUf(m.uf); setMunicipio(m.municipio); setQ(''); setSelectedId(null); setProximos(null);
     const outros = cand.length - 1;
-    notify(`${m.municipio} (${m.uf}): ${m.n} ${m.n > 1 ? 'orelhões' : 'orelhão'}`
+    notify((aproximado ? `Você digitou “${q.trim()}” · ` : '') + `${m.municipio} (${m.uf}): ${m.n} ${m.n > 1 ? 'orelhões' : 'orelhão'}`
       + (outros ? ` · ${outros} outro${outros > 1 ? 's' : ''} município${outros > 1 ? 's' : ''} com nome parecido — digite a UF no fim` : ''));
   };
   const resumoMunicipio = useMemo(() => {
@@ -1528,6 +1586,17 @@ export default function Home({ regioes = false, novidades = false, tv = false })
       )}
 
       {toast && !tv && <div className="toast glass">{toast}</div>}
+      {semTups && !tv && (
+        <div className="sem-tups-fundo" onClick={() => setSemTups(null)}>
+          <div className="sem-tups glass" role="alertdialog" aria-labelledby="sem-tups-tit" onClick={(e) => e.stopPropagation()}>
+            <div className="sem-tups-icone" aria-hidden><PhoneIcon size={30} /></div>
+            <h3 id="sem-tups-tit">Município não possui TUPs</h3>
+            <p><b>“{semTups.nome}”</b> não tem orelhões (TUPs) na nossa base de dados{semTups.uf ? ` em ${semTups.uf}` : ''}.</p>
+            <small>Confira se o nome está escrito certo ou pesquise outro município.</small>
+            <button type="button" className="btn primary" onClick={() => setSemTups(null)}>Entendi</button>
+          </div>
+        </div>
+      )}
 
       {tv && <TvRua ref={tvRua} />}
       {/* Modo TV: placar fixo e legenda da etapa, grandes para ler de longe */}

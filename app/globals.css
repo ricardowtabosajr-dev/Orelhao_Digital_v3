@@ -1982,3 +1982,18 @@ button { font: inherit; color: inherit; cursor: pointer; background: none; borde
 .modo-tv .voltar-flutua { display: none; }
 /* orelhão sem Street View (migração 011): botão travado */
 .btn.sem-sv:disabled { cursor: not-allowed; opacity: .6; filter: grayscale(.6); }
+/* aviso de município sem TUPs (busca): cartão no centro, responsivo */
+.sem-tups-fundo { position: fixed; inset: 0; z-index: 1100; display: grid; place-items: center; padding: 1rem; background: rgba(3, 7, 15, 0.55); animation: admin-fade 0.2s ease both; }
+.sem-tups { width: min(440px, 100%); padding: 1.6rem 1.5rem 1.3rem; border-radius: var(--radius-lg, 18px); text-align: center; display: grid; justify-items: center; gap: 0.6rem;
+  border: 1px solid rgba(251, 191, 36, 0.55); box-shadow: 0 20px 50px rgba(0, 0, 0, 0.55); animation: sem-tups-entra 0.25s cubic-bezier(0.16, 1, 0.3, 1) both; }
+.sem-tups-icone { width: 58px; height: 58px; border-radius: 50%; display: grid; place-items: center; color: #fbbf24; background: rgba(251, 191, 36, 0.14); border: 2px solid rgba(251, 191, 36, 0.6); }
+.sem-tups h3 { font-size: 1.25rem; color: #fde68a; margin: 0.2rem 0 0; }
+.sem-tups p { font-size: 0.98rem; line-height: 1.45; color: #e6f4f4; margin: 0; }
+.sem-tups small { color: var(--text-muted); font-size: 0.85rem; }
+.sem-tups .btn { margin-top: 0.5rem; min-width: 9rem; justify-content: center; }
+@keyframes sem-tups-entra { from { opacity: 0; transform: translateY(12px) scale(0.97); } to { opacity: 1; transform: none; } }
+@media (max-width: 480px) { .sem-tups { padding: 1.3rem 1.1rem 1.1rem; } .sem-tups h3 { font-size: 1.1rem; } .sem-tups p { font-size: 0.92rem; } }
+@media (min-width: 1800px) { .sem-tups { width: 520px; } .sem-tups h3 { font-size: 1.45rem; } .sem-tups p { font-size: 1.08rem; } }
+.sem-tups.glass { background: rgba(10, 17, 30, 0.97); }
+.sem-tups .btn { color: #fff; background: linear-gradient(180deg, #2f9496, #237a7c); border: 1px solid rgba(92, 195, 197, 0.6); }
+.sem-tups .btn:hover, .sem-tups .btn:focus-visible { background: linear-gradient(180deg, #34a1a3, #2a8a8c); outline: 2px solid rgba(92, 195, 197, 0.7); outline-offset: 2px; }
