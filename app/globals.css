@@ -1847,7 +1847,7 @@ button { font: inherit; color: inherit; cursor: pointer; background: none; borde
 .s2-col-esq, .s2-col-dir { display: flex; flex-direction: column; gap: 16px; min-width: 0; }
 .s2-painel-muns { display: flex; flex-direction: column; }
 .s2 .s2-filtro-teclado { margin: 0 0 8px; font-size: 11px; font-weight: 600; color: #38bdf8; line-height: 1.35; }
-.s2-lista-mun { display: flex; flex-direction: column; gap: 6px; max-height: min(46vh, 420px); overflow-y: auto; min-height: 120px; }
+.s2-lista-mun { display: flex; flex-direction: column; gap: 6px; max-height: min(72vh, 660px); overflow-y: auto; min-height: 120px; }
 .s2-vazio { color: #94a3b8; font-size: 13px; padding: 18px 8px; }
 .s2-mun-item { display: grid; grid-template-columns: 1fr auto auto; gap: 8px; align-items: center; background: #0f172a; border: 1px solid #334155; border-left: 5px solid #64748b; border-radius: 8px; padding: 9px 10px; }
 .s2-mun-item.agenda { border-left-color: var(--cor-agenda); background: rgba(74, 222, 128, .12); }
@@ -1954,4 +1954,11 @@ button { font: inherit; color: inherit; cursor: pointer; background: none; borde
   .s2-grid { grid-template-columns: 1fr; }
   .s2-search-bar { flex-direction: column; }
   .s2-search-btn { padding: 12px; }
+}
+/* SDR sem o quadro de status: a lista de municípios ocupa toda a altura da coluna da lousa */
+@media (min-width: 901px) {
+  .s2-layout { align-items: stretch; }
+  .s2-col-esq { position: relative; min-height: 560px; }
+  .s2-col-esq > .s2-painel-muns { position: absolute; inset: 0; }
+  .s2-col-esq .s2-lista-mun { flex: 1; max-height: none; }
 }

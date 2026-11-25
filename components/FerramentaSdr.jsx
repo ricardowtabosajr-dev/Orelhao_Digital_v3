@@ -268,13 +268,6 @@ function Pesquisa({ senha, orelhoes, inicial, onVerMunicipio, onVoltarPainel }) 
         {nome && <button type="button" className="s2-btn" onClick={desmarcar}>Desmarcar nome</button>}
       </section>
 
-      {inicial?.de === 'acao' && (
-        <div className="s2-volta-origem">
-          <span>Você veio de Painel da ação. A pesquisa deste município está nesta tela.</span>
-          <button type="button" className="s2-btn-volta" onClick={onVoltarPainel}>Voltar ao painel da ação</button>
-        </div>
-      )}
-
       <section className={`s2-filtros ${nome ? '' : 'sem-nome'}`}>
         <h1 className="s2-titulo-controle">Pesquisa Municípios</h1>
         <div className="s2-consulta-embutida" ref={consultaRef}>
@@ -337,7 +330,6 @@ function Pesquisa({ senha, orelhoes, inicial, onVerMunicipio, onVoltarPainel }) 
               <span><i style={{ background: '#bef264' }} />Contatos válidos</span>
             </div>
           </article>
-          <StatusLigacao m={sel} reg={regSel} hit={hitDe(sel)} nome={nome} senha={senha} onSalvo={salvo} />
         </div>
         <div className="s2-col-dir">
           {sel
@@ -369,34 +361,6 @@ function InfoMunicipio({ m, r, hit, st }) {
   return <div className="s2-mun-dados">{linhas.map(([a, b]) => <span key={a}><b>{a}</b> {String(b).replace(/\s+/g, ' ').trim()}</span>)}</div>;
 }
 
-// status da ligação (rádios) — grava no banco e fica no histórico
-function StatusLigacao({ m, reg, hit, nome, senha, onSalvo }) {
-  const marcado = m ? (ultimoStatus(reg) || reg?.status || codigoDaPlanilha(hit?.sdr?.status) || codigoDaPlanilha(hit?.cons?.status) || '') : '';
-  const bloqueiaSem = teveContato(reg);
-  const [erro, setErro] = useState('');
-  const marcar = async (id) => {
-    if (!m || !nome) return;
-    if (id === 'sem_contato' && bloqueiaSem) return;
-    setErro('');
-    try { onSalvo(await sdrSalvar(senha, chaveSdr(m.uf, m.mun), m.uf, m.mun, { qtd: m.n }, nome, id)); } catch (e) { setErro(e.message || String(e)); }
-  };
-  return (
-    <div className="s2-quadro-ligacao">
-      <p>Status da ligação</p>
-      <div className="s2-status-ops">
-        {STATUS.map((s) => {
-          const bloq = s.id === 'sem_contato' && bloqueiaSem;
-          return (
-            <label key={s.id} className={`s2-status-opt ${s.id} ${marcado === s.id ? 'ativo' : ''} ${bloq ? 'bloqueado' : ''}`}>
-              <input type="radio" name="s2-status" value={s.id} checked={marcado === s.id} disabled={!m || !nome || bloq} onChange={() => marcar(s.id)} /> {s.rotulo}
-            </label>
-          );
-        })}
-      </div>
-      {erro && <p className="s2-erro">{erro}</p>}
-    </div>
-  );
-}
 
 function LousaVazia() {
   return (
@@ -699,7 +663,7 @@ function Consulta({ m, setM, municipios, orelhoes, hitDe, onVerMunicipio }) {
           </div>
           <div className="s2-gestao">
             <div className="s2-item"><span className="s2-label">Município</span>
-              <div className="s2-mun-linha"><span className="s2-valor destaque">{m ? `${m.mun} (${m.uf})` : 'Aguardando pesquisa...'}</span><button type="button" className="s2-btn-limpar-mun" onClick={limpar}>Limpar consulta</button></div>
+              <div className="s2-mun-linha"><span className="s2-valor destaque">{m ? `${m.mun} (${m.uf})` : 'Aguardando pesquisa...'}</span></div>
             </div>
             <div className="s2-item"><span className="s2-label">Prefeito(a)</span><div className="s2-valor">{!m ? '-' : pref === undefined ? <em>Consultando TSE...</em> : prefeito}</div></div>
             <aside className="s2-caixa-cnpj">
