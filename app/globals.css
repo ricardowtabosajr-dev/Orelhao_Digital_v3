@@ -1962,3 +1962,16 @@ button { font: inherit; color: inherit; cursor: pointer; background: none; borde
   .s2-col-esq > .s2-painel-muns { position: absolute; inset: 0; }
   .s2-col-esq .s2-lista-mun { flex: 1; max-height: none; }
 }
+/* cartões do município no detalhe do orelhão (mesmos da consulta da Ferramenta SDR), em uma coluna */
+.mun-cartoes { display: grid; gap: 0.6rem; }
+.s2-grid.compacto { grid-template-columns: 1fr; gap: 10px; }
+.s2-grid.compacto .s2-card { padding: 12px; gap: 9px; border-radius: var(--radius, 12px); }
+.s2-grid.compacto .s2-card-head h2 { font-size: 14px; }
+.s2-grid.compacto .s2-valor.destaque { font-size: 16px; }
+.s2-grid.compacto .s2-subcard { max-height: 230px; }
+.s2-grid.compacto .s2-caixa-cnpj .vazio { font-size: 13.5px; }
+.s2-grid.compacto .s2-caixa-cnpj .razao { font-size: 16px; }
+.s2-grid.compacto .s2-caixa-cnpj .numero { font-size: 17px; letter-spacing: .08em; }
+.s2-grid.compacto .s2-btn-group { flex-wrap: wrap; }
+.s2-grid.compacto .s2-qtd-data { gap: 8px; }
+.s2-grid.compacto .s2-data-grande { font-size: 18px; }

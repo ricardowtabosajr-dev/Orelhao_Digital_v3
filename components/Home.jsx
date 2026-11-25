@@ -8,6 +8,8 @@ import { REGIOES, COR_REGIAO, UF_NOME, norm, haversine, fmt, bounds, destino, co
 import { MARCA_PENDENTE, TEM_STREET_VIEW_PROPRIO, linkRua } from '@/lib/marcar';
 import TvRua, { TV_RUA_MS } from '@/components/TvRua';
 import InstalarApp from '@/components/InstalarApp';
+import MunicipioCartoes, { usePlanilhaAcao } from '@/components/MunicipioCartoes';
+import { chaveMun as chaveMunAcao } from '@/lib/acaoTups';
 // gerador de propostas (Administração): carregado só quando for aberto (inclui o gerador de Word)
 const Propostas = dynamic(() => import('@/components/Propostas'), { ssr: false });
 const AcaoTups = dynamic(() => import('@/components/AcaoTups'), { ssr: false });
@@ -436,6 +438,10 @@ export default function Home({ regioes = false, novidades = false, tv = false })
     const salva = (d) => setPrefeituras((p) => ({ ...p, [ufSel]: d }));
     fetch(`/dados/prefeituras/${ufSel}.json`).then((r) => (r.ok ? r.json() : {})).then(salva).catch(() => salva({}));
   }, [temaDetalhe, ufSel, prefeituras]);
+  // cartões do município no detalhe do orelhão (os mesmos da consulta da Ferramenta SDR)
+  const munSel = useMemo(() => (selected ? { uf: ufSel, mun: selected.municipio } : null), [selected?.municipio, ufSel]); // eslint-disable-line react-hooks/exhaustive-deps
+  const planAcao = usePlanilhaAcao(selected?.id);
+  const prefDetalhe = temaDetalhe ? prefeituras[ufSel]?.[selected.municipio] : null;
   // Sem brasão na página da Wikipédia: usa o brasão achado no Wikidata/Commons ou no site da prefeitura
   // (este salvo em public/brasoes/<UF>/), conforme public/dados/prefeituras.
   const dadosMun = temaDetalhe ? prefeituras[ufSel]?.[selected.municipio] : null;
@@ -1433,6 +1439,15 @@ export default function Home({ regioes = false, novidades = false, tv = false })
                 <div><span>Cód. IBGE 2022</span><b className="mono">{selected.cod_ibge || '—'}</b></div>
                 <div><span>Status</span><b>{selected.status || <em>aguardando dados</em>}</b></div>
                 <div><span>Cód. TUP</span><b className="mono">{selected.cod_tup || '—'}</b></div>
+              </div>
+            )}
+
+            {!editing && munSel && (
+              <div className="mun-cartoes">
+                <div className="loc-titulo">Município · {selected.municipio} ({ufSel})</div>
+                <MunicipioCartoes m={munSel} compacto semPrefeito={!!(prefDetalhe?.oficial || prefDetalhe?.prefeito)}
+                  hit={planAcao.idx ? planAcao.idx[chaveMunAcao(munSel.uf, munSel.mun)] || null : null}
+                  semCarteira={planAcao.liberado ? '' : 'Entre na Ação TUPs (Administração) para ver consultor, estágio e proposta.'} />
               </div>
             )}
 
