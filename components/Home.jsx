@@ -634,6 +634,7 @@ export default function Home({ regioes = false, novidades = false, tv = false })
   const receberMarca = useRef(null);
   receberMarca.current = (m) => {
     if (!m) return;
+    if (m.tipo === 'sem-sv') { setAll((arr) => arr.map((p) => (p.id === m.id ? { ...p, sem_street_view: true } : p))); return; }
     if (m.n) {
       if (m.n <= ultimaMarca.current || Date.now() - m.n > 30 * 60 * 1000) return;
       if (m.id != null && !byId.get(m.id)) return; // orelhões ainda carregando: tenta de novo depois
@@ -653,7 +654,10 @@ export default function Home({ regioes = false, novidades = false, tv = false })
     // marcação guardada no navegador: a aba do mapa pode ter ficado congelada (celular)
     const verPendente = () => { try { const s = localStorage.getItem(MARCA_PENDENTE); if (s) receberMarca.current?.(JSON.parse(s)); } catch {} };
     const aoVoltar = () => { if (document.visibilityState === 'visible') verPendente(); };
-    const aoGuardar = (e) => { if (e.key === MARCA_PENDENTE) verPendente(); };
+    const aoGuardar = (e) => {
+      if (e.key === MARCA_PENDENTE) verPendente();
+      if (e.key === 'orelhao-sem-sv' && e.newValue) { try { receberMarca.current?.({ tipo: 'sem-sv', id: JSON.parse(e.newValue).id }); } catch {} }
+    };
     let bc = null;
     if (typeof BroadcastChannel !== 'undefined') {
       bc = new BroadcastChannel('orelhao-marcar');
@@ -1352,7 +1356,9 @@ export default function Home({ regioes = false, novidades = false, tv = false })
               {fotosSel.fotos.length > 0 ? (
                 <button id="btn-street-main" className="btn primary" onClick={() => setVisor(true)}>📷 Ver na rua ({fotosSel.fotos.length} foto{fotosSel.fotos.length > 1 ? 's' : ''})</button>
               ) : (
-                <a id="btn-street-main" className="btn primary" target="_blank" rel="noreferrer" href={linkStreetView(selected)} onClick={abrirRua}>📍 Ver na rua (Street View)</a>
+                selected.sem_street_view
+                  ? <button id="btn-street-main" className="btn primary sem-sv" disabled title="O Google não tem fotos de rua perto deste orelhão">🚫 Sem Street View aqui</button>
+                  : <a id="btn-street-main" className="btn primary" target="_blank" rel="noreferrer" href={linkStreetView(selected)} onClick={abrirRua}>📍 Ver na rua (Street View)</a>
               )}
               <button id="btn-orbit" className="btn" onClick={() => setOrbit((o) => !o)}>{orbit ? '⏸ Parar giro' : '🔄 Girar em 3D'}</button>
             </div>

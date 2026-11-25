@@ -41,7 +41,7 @@ const toGeoJSON = (points) => ({
   features: points.map((p) => ({
     type: 'Feature', id: p.id,
     geometry: { type: 'Point', coordinates: [p.lng, p.lat] },
-    properties: { id: p.id, localidade: p.localidade, municipio: p.municipio, uf: p.uf, regiao: p.regiao, origem: p.origem, confirmado: confirmado(p) },
+    properties: { id: p.id, localidade: p.localidade, municipio: p.municipio, uf: p.uf, regiao: p.regiao, origem: p.origem, confirmado: confirmado(p), semSv: !!p.sem_street_view && !confirmado(p) },
   })),
 });
 // pulso vermelho dos confirmados: um anel que cresce e some, embaixo do ícone
@@ -250,7 +250,7 @@ function Mapa({ points, mode, basemap = 'sat', orbit = false, onOrbitStop, editi
         paint: {
           'circle-color': 'rgba(0,0,0,0)',
           'circle-radius': raioAnel(testeRef.current),
-          'circle-stroke-width': 2.5,
+          'circle-stroke-width': ['case', ['==', ['get', 'semSv'], true], 0, 2.5], // sem Street View: só o ícone, sem contorno
           'circle-stroke-color': ['case', ['==', ['get', 'confirmado'], true], PULSO_COR, ['==', ['get', 'origem'], 'estimada'], '#ef4444', REGION_COLOR],
         },
       });
@@ -584,10 +584,12 @@ function Mapa({ points, mode, basemap = 'sat', orbit = false, onOrbitStop, editi
   useEffect(() => {
     if (!loaded.current) return;
     const src = map.current.getSource('selected');
-    src.setData({ type: 'FeatureCollection', features: selected ? [{ type: 'Feature', geometry: { type: 'Point', coordinates: [selected.lng, selected.lat] }, properties: {} }] : [] });
+    const semSv = selected?.sem_street_view && !confirmado(selected); // sem Street View: sem marcação amarela
+    src.setData({ type: 'FeatureCollection', features: selected && !semSv ? [{ type: 'Feature', geometry: { type: 'Point', coordinates: [selected.lng, selected.lat] }, properties: {} }] : [] });
 
     // Pulso piscando: animação em CSS num marcador HTML, sem redesenhar o mapa a cada quadro.
-    if (!selected) { pulseMarker.current?.remove(); return; }
+    // sem Street View (migração 011): sem pulso amarelo, fica só o ícone
+    if (!selected || semSv) { pulseMarker.current?.remove(); return; }
     if (!pulseMarker.current) {
       const el = document.createElement('div');
       el.className = 'sel-pulse';

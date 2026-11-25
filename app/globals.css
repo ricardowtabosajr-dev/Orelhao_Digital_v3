@@ -1980,3 +1980,5 @@ button { font: inherit; color: inherit; cursor: pointer; background: none; borde
 .voltar-flutua.fora { transform: translateX(-100%); }
 @keyframes voltar-entra { from { opacity: 0; } to { opacity: 1; } }
 .modo-tv .voltar-flutua { display: none; }
+/* orelhão sem Street View (migração 011): botão travado */
+.btn.sem-sv:disabled { cursor: not-allowed; opacity: .6; filter: grayscale(.6); }

@@ -9,6 +9,7 @@
 import { useEffect, useRef, useState } from 'react';
 import { useSearchParams } from 'next/navigation';
 import { MARCA_PENDENTE } from '@/lib/marcar';
+import { marcarSemStreetView } from '@/lib/supabase';
 
 const CHAVE = process.env.NEXT_PUBLIC_GOOGLE_MAPS_KEY;
 
@@ -58,6 +59,18 @@ export default function Rua() {
   const [estado, setEstado] = useState('carregando'); // carregando | pronto | sem | erro
   const [erro, setErro] = useState('');
   const [marcando, setMarcando] = useState(false);
+  // Sem Street View: ao fechar, marca o orelhão para todos (pulso amarelo some e o botão trava no mapa)
+  const [fechando, setFechando] = useState(false);
+  const fecharSemStreetView = async () => {
+    setFechando(true);
+    if (id != null) {
+      try { await Promise.race([marcarSemStreetView(id), new Promise((r) => setTimeout(r, 4000))]); } catch {}
+      try { const bc = new BroadcastChannel('orelhao-marcar'); bc.postMessage({ tipo: 'sem-sv', id }); bc.close(); } catch {}
+      try { localStorage.setItem('orelhao-sem-sv', JSON.stringify({ id, n: Date.now() })); } catch {}
+    }
+    window.close();
+    setFechando(false);
+  };
   const [envio, setEnvio] = useState(null); // null | 'ok' | 'erro'
 
   useEffect(() => {
@@ -132,7 +145,7 @@ export default function Rua() {
         <div className="rua-aviso">
           <b>Sem Street View perto deste orelhão.</b>
           <span>O Google não tem fotos de rua a até 250 m daqui. Use o pino no mapa ou as fotos do local.</span>
-          <button type="button" onClick={() => window.close()}>Fechar esta aba</button>
+          <button type="button" disabled={fechando} onClick={fecharSemStreetView}>{fechando ? 'Fechando…' : 'Fechar esta aba'}</button>
         </div>
       )}
       {estado === 'erro' && (
