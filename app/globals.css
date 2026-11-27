@@ -1997,3 +1997,28 @@ button { font: inherit; color: inherit; cursor: pointer; background: none; borde
 .sem-tups.glass { background: rgba(10, 17, 30, 0.97); }
 .sem-tups .btn { color: #fff; background: linear-gradient(180deg, #2f9496, #237a7c); border: 1px solid rgba(92, 195, 197, 0.6); }
 .sem-tups .btn:hover, .sem-tups .btn:focus-visible { background: linear-gradient(180deg, #34a1a3, #2a8a8c); outline: 2px solid rgba(92, 195, 197, 0.7); outline-offset: 2px; }
+
+/* Discador por QR Code (/telefone) */
+.tel-wrap { --tel-bg:#0a1220; --tel-card:#101d31; --tel-linha:#1e3350; --tel-txt:#e6f2f2; --tel-sub:#90b2b3; --tel-verde:#16a34a; --tel-vermelho:#dc2626;
+  min-height:100dvh; display:flex; align-items:center; justify-content:center; padding:16px; background:var(--tel-bg); color:var(--tel-txt);
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif; }
+.tel-fone { width:100%; max-width:380px; background:var(--tel-card); border:1px solid var(--tel-linha); border-radius:20px; padding:20px; }
+.tel-fone h1 { font-size:1.3rem; margin:0 0 14px; text-align:center; }
+.tel-status { display:flex; align-items:center; gap:8px; font-size:.9rem; font-weight:600; padding:9px 12px; border-radius:10px; background:#0c1728; margin-bottom:12px; }
+.tel-dot { width:10px; height:10px; border-radius:50%; flex:none; }
+.tel-visor-linha { position:relative; }
+.tel-visor { width:100%; font-size:1.7rem; letter-spacing:1px; text-align:center; padding:12px 44px; border-radius:12px; border:1px solid var(--tel-linha); background:#0c1728; color:var(--tel-txt); }
+.tel-apagar { position:absolute; right:8px; top:50%; transform:translateY(-50%); background:none; border:0; color:var(--tel-sub); font-size:1.3rem; cursor:pointer; padding:6px; }
+.tel-teclado { display:grid; grid-template-columns:repeat(3,1fr); gap:10px; margin:12px 0; }
+.tel-tecla { padding:14px 0; font-size:1.35rem; border-radius:12px; border:1px solid var(--tel-linha); background:#132339; color:var(--tel-txt); cursor:pointer; }
+.tel-tecla:active { background:#1c3351; }
+.tel-tecla small { display:block; font-size:.6rem; color:var(--tel-sub); letter-spacing:2px; height:.7rem; }
+.tel-btn { width:100%; padding:15px; font-size:1.05rem; font-weight:700; border:0; border-radius:14px; cursor:pointer; color:#fff; }
+.tel-btn.ligar { background:var(--tel-verde); } .tel-btn.desligar { background:var(--tel-vermelho); }
+.tel-btn:disabled { opacity:.45; cursor:not-allowed; }
+.tel-aviso { font-size:.72rem; color:#f59e0b; margin:10px 0 0; text-align:center; }
+.tel-invalido { text-align:center; color:#fca5a5; line-height:1.5; padding:18px 4px; }
+.tel-fim { text-align:center; display:grid; gap:8px; padding:14px 4px; }
+.tel-fim-ic { width:54px; height:54px; margin:0 auto; border-radius:50%; background:rgba(22,163,74,.15); color:var(--tel-verde); font-size:1.6rem; display:flex; align-items:center; justify-content:center; }
+.tel-fim p { margin:0; font-weight:700; } .tel-fim small { color:var(--tel-sub); }
+.tel-fim .tel-btn { margin-top:8px; }
