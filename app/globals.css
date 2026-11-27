@@ -2022,3 +2022,38 @@ button { font: inherit; color: inherit; cursor: pointer; background: none; borde
 .tel-fim-ic { width:54px; height:54px; margin:0 auto; border-radius:50%; background:rgba(22,163,74,.15); color:var(--tel-verde); font-size:1.6rem; display:flex; align-items:center; justify-content:center; }
 .tel-fim p { margin:0; font-weight:700; } .tel-fim small { color:var(--tel-sub); }
 .tel-fim .tel-btn { margin-top:8px; }
+
+/* ===== Log do discador (/telefone/log) ===== */
+.tlog-wrap { --tl-bg:#0a1220; --tl-card:#101d31; --tl-linha:#1e3350; --tl-txt:#e6f2f2; --tl-sub:#90b2b3;
+  --tl-verde:#22c55e; --tl-vermelho:#f87171; --tl-amarelo:#fbbf24; --tl-cinza:#64748b;
+  /* o body do site tem overflow:hidden (por causa do mapa): a tela do log rola por conta própria */
+  height:100dvh; overflow-y:auto; -webkit-overflow-scrolling:touch; overscroll-behavior:contain;
+  background:var(--tl-bg); color:var(--tl-txt); padding:16px; font-family:var(--font-sans), system-ui, sans-serif; }
+.tlog-wrap h1 { font-size:1.25rem; margin:0; }
+.tlog-wrap button { font:inherit; cursor:pointer; }
+.tlog-entrar { max-width:360px; margin:12vh auto 0; background:var(--tl-card); border:1px solid var(--tl-linha); border-radius:16px; padding:22px; display:grid; gap:12px; }
+.tlog-entrar p { margin:0; color:var(--tl-sub); font-size:.9rem; }
+.tlog-entrar input { padding:11px 12px; border-radius:10px; border:1px solid var(--tl-linha); background:#0c1728; color:var(--tl-txt); font-size:1rem; }
+.tlog-entrar button, .tlog-acoes button, .tlog-corpo-acoes button { padding:9px 14px; border-radius:10px; border:1px solid var(--tl-linha); background:#16304f; color:var(--tl-txt); }
+.tlog-entrar button:disabled { opacity:.5; cursor:default; }
+.tlog-erro { color:var(--tl-vermelho); font-size:.9rem; margin:8px 0; }
+.tlog-topo { max-width:900px; margin:0 auto; display:flex; align-items:center; justify-content:space-between; gap:12px; flex-wrap:wrap; }
+.tlog-acoes { display:flex; align-items:center; gap:12px; font-size:.9rem; color:var(--tl-sub); }
+.tlog-sub, .tlog-vazio { max-width:900px; margin:6px auto 14px; color:var(--tl-sub); font-size:.85rem; }
+.tlog-sessao { max-width:900px; margin:0 auto 10px; background:var(--tl-card); border:1px solid var(--tl-linha); border-left:4px solid var(--tl-cinza); border-radius:12px; overflow:hidden; }
+.tlog-sessao.verde { border-left-color:var(--tl-verde); } .tlog-sessao.vermelho { border-left-color:var(--tl-vermelho); } .tlog-sessao.amarelo { border-left-color:var(--tl-amarelo); }
+.tlog-cab { display:block; width:100%; text-align:left; background:none; border:0; color:inherit; padding:12px 14px; }
+.tlog-linha1 { display:flex; align-items:center; gap:10px; flex-wrap:wrap; }
+.tlog-hora { font-weight:700; } .tlog-dur { color:var(--tl-sub); font-size:.85rem; }
+.tlog-selo { margin-left:auto; font-size:.75rem; font-weight:700; padding:3px 9px; border-radius:99px; background:rgba(100,116,139,.2); color:var(--tl-sub); }
+.tlog-selo.verde { background:rgba(34,197,94,.15); color:var(--tl-verde); } .tlog-selo.vermelho { background:rgba(248,113,113,.15); color:var(--tl-vermelho); } .tlog-selo.amarelo { background:rgba(251,191,36,.15); color:var(--tl-amarelo); }
+.tlog-linha2 { color:var(--tl-sub); font-size:.85rem; margin-top:4px; overflow-wrap:anywhere; }
+.tlog-linha3 { font-size:.88rem; margin-top:4px; } .tlog-linha3.ruim { color:var(--tl-vermelho); }
+.tlog-corpo { border-top:1px solid var(--tl-linha); padding:10px 14px 14px; }
+.tlog-corpo-acoes { display:flex; align-items:center; justify-content:space-between; gap:8px; color:var(--tl-sub); font-size:.8rem; margin-bottom:8px; }
+.tlog-eventos { list-style:none; margin:0; padding:0; font-family:var(--font-mono), ui-monospace, monospace; font-size:.78rem; }
+.tlog-eventos li { display:grid; grid-template-columns:62px minmax(120px, 220px) 1fr; gap:8px; padding:5px 0; border-bottom:1px solid rgba(30,51,80,.6); }
+.tlog-eventos li.ruim { color:var(--tl-vermelho); background:rgba(248,113,113,.06); }
+.tlog-t { color:var(--tl-sub); } .tlog-tipo { font-weight:600; } .tlog-dados { overflow-wrap:anywhere; color:#b9cfd0; }
+.tlog-eventos li.ruim .tlog-dados { color:var(--tl-vermelho); }
+@media (max-width:560px) { .tlog-eventos li { grid-template-columns:52px 1fr; } .tlog-dados { grid-column:1 / -1; padding-left:60px; } }
