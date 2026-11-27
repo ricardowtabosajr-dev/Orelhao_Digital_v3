@@ -35,6 +35,7 @@ export default function Telefone() {
   const audioRef = useRef(null);
   const ringRef = useRef({ ctx: null, timer: null });
   const numeroRef = useRef('');
+  const ocupadoRef = useRef(false); // true enquanto está discando / em ligação
   useEffect(() => { numeroRef.current = numero; }, [numero]);
 
   const log = (m) => setLogs((xs) => [...xs.slice(-40), new Date().toLocaleTimeString('pt-BR') + '  ' + m]);
@@ -108,6 +109,21 @@ export default function Telefone() {
     };
   }, []);
 
+  // Saiu da tela SEM estar em ligação (trocou de app ou de aba, bloqueou a tela): desconecta o
+  // ramal e troca a página por uma em branco, na hora. Assim uma aba esquecida não reconecta
+  // sozinha quando o celular a recarregar depois. Durante a ligação nada muda: a chamada continua.
+  useEffect(() => {
+    const aoEsconder = () => {
+      if (document.visibilityState !== 'hidden' || ocupadoRef.current) return;
+      ocupadoRef.current = true; // não repete
+      pararChamando();
+      try { uaRef.current?.stop?.(); } catch {}
+      try { window.location.replace('about:blank'); } catch {}
+    };
+    document.addEventListener('visibilitychange', aoEsconder);
+    return () => document.removeEventListener('visibilitychange', aoEsconder);
+  }, []);
+
   const ligarAudio = () => {
     const pc = sessaoRef.current?.sessionDescriptionHandler?.peerConnection;
     if (!pc || !audioRef.current) return;
@@ -126,11 +142,24 @@ export default function Telefone() {
 
   const ligar = async () => {
     const mod = SIP.current; if (!mod || !uaRef.current) return;
-    const { Inviter, SessionState } = mod;
     const num = comPrefixo(numeroRef.current);
     if (!num) { log('Informe um número.'); return; }
+    ocupadoRef.current = true; // a partir daqui, sair da tela não derruba nada
+    // Garante o microfone ANTES de discar. A 1ª ligação falhava porque o navegador só pedia a
+    // permissão do microfone na hora do INVITE, e a chamada morria antes de completar. Pedindo
+    // aqui (ainda no toque do botão), a permissão é resolvida e o INVITE sai com áudio.
+    try {
+      const s = await navigator.mediaDevices.getUserMedia({ audio: true });
+      s.getTracks().forEach((t) => t.stop());
+    } catch {
+      status('Permita o microfone e toque em Ligar', 'erro');
+      log('Microfone bloqueado — a ligação precisa do microfone.');
+      ocupadoRef.current = false;
+      return;
+    }
+    const { Inviter, SessionState } = mod;
     const alvo = mod.UserAgent.makeURI(`sip:${num}@${uaRef.current.configuration.uri.host}`);
-    if (!alvo) { log('Número inválido.'); return; }
+    if (!alvo) { log('Número inválido.'); ocupadoRef.current = false; return; }
     const sessao = new Inviter(uaRef.current, alvo);
     sessaoRef.current = sessao;
     setEmChamada(true);
@@ -163,8 +192,8 @@ export default function Telefone() {
   };
 
   // encerra TUDO: além da ligação, desconecta o ramal (dá o "unregister" e para o SIP).
-  // Assim, aberto pela câmera ou por um app de leitura de QR, nada fica "ligado" depois:
-  // a tela fica morta e só volta a ligar recarregando (reler o QR / tocar "Ligar de novo").
+  // Depois disso a aplicação se fecha sozinha: para fazer outra ligação, a pessoa precisa
+  // reabrir escaneando o QR Code novamente.
   const finalizar = () => {
     if (encerrada) return;
     pararChamando();
@@ -175,16 +204,25 @@ export default function Telefone() {
     setEncerrada(true);
     status('Desconectado', '');
     try { uaRef.current?.stop?.(); } catch {} // desconecta o ramal do servidor
-    // Não fechamos a aba por script: aberto pela câmera, o navegador proíbe isso e acaba
-    // jogando a pessoa para a última página que ela tinha aberto. Em vez disso, mostramos a
-    // tela "Ligação encerrada" e ficamos parados aqui, sem navegar para lugar nenhum.
+    // Fecha a aplicação sozinha (como nos testes de 26/11 à noite). Se o navegador não deixar
+    // fechar a aba, troca a página por uma em branco (sem voltar no histórico): assim, atualizar
+    // a página NÃO reconecta o ramal — para ligar de novo, só escaneando o QR Code.
+    // Se a ligação acabou com a tela escondida, troca pela página em branco na hora: em segundo
+    // plano o celular pode congelar a aba antes de um temporizador rodar.
+    if (document.visibilityState === 'hidden') { try { window.location.replace('about:blank'); } catch {} return; }
+    setTimeout(() => {
+      try { window.close(); } catch {}
+      setTimeout(() => { try { window.location.replace('about:blank'); } catch {} }, 300);
+    }, 400);
   };
 
   const digitar = (d) => { if (!emChamada) setNumero((v) => v + d); else try { sessaoRef.current?.sessionDescriptionHandler?.sendDtmf(d); } catch {} };
   const apagar = () => { if (!emChamada) setNumero((v) => v.slice(0, -1)); };
-  const recomecar = () => { try { window.location.reload(); } catch {} }; // reconecta o ramal do zero
 
   const corDot = { on: '#16a34a', erro: '#dc2626', chamando: '#f59e0b' }[stat.cor] || '#64748b';
+
+  // Ligação encerrada: ramal desconectado e a aplicação se fechando. Sem mensagem, sem botão.
+  if (encerrada) return <div className="tel-wrap" />;
 
   return (
     <div className="tel-wrap">
@@ -195,13 +233,6 @@ export default function Telefone() {
           <p className="tel-invalido" style={{ color: '#90b2b3' }}>Carregando…</p>
         ) : fase === 'invalido' ? (
           <p className="tel-invalido">Este link não é válido ou expirou.<br />Peça um novo QR Code para fazer ligações.</p>
-        ) : encerrada ? (
-          <div className="tel-fim">
-            <div className="tel-fim-ic">✔</div>
-            <p>Ligação encerrada.</p>
-            <small>Ramal desconectado. Pode fechar esta aba.</small>
-            <button className="tel-btn ligar" onClick={recomecar}>Ligar de novo</button>
-          </div>
         ) : (
           <>
             <div className="tel-status"><span className="tel-dot" style={{ background: corDot }} />{stat.txt}</div>
