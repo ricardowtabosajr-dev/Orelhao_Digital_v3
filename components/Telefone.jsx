@@ -175,7 +175,9 @@ export default function Telefone() {
     setEncerrada(true);
     status('Desconectado', '');
     try { uaRef.current?.stop?.(); } catch {} // desconecta o ramal do servidor
-    setTimeout(() => { try { window.close(); } catch {} }, 400); // na câmera, fecha a aba
+    // Não fechamos a aba por script: aberto pela câmera, o navegador proíbe isso e acaba
+    // jogando a pessoa para a última página que ela tinha aberto. Em vez disso, mostramos a
+    // tela "Ligação encerrada" e ficamos parados aqui, sem navegar para lugar nenhum.
   };
 
   const digitar = (d) => { if (!emChamada) setNumero((v) => v + d); else try { sessaoRef.current?.sessionDescriptionHandler?.sendDtmf(d); } catch {} };
