@@ -162,21 +162,25 @@ export default function Telefone() {
     finalizar();
   };
 
-  // limpa tudo e mostra a tela de "encerrada" (e tenta fechar a aba)
+  // encerra TUDO: além da ligação, desconecta o ramal (dá o "unregister" e para o SIP).
+  // Assim, aberto pela câmera ou por um app de leitura de QR, nada fica "ligado" depois:
+  // a tela fica morta e só volta a ligar recarregando (reler o QR / tocar "Ligar de novo").
   const finalizar = () => {
-    if (!sessaoRef.current && encerrada) return;
+    if (encerrada) return;
     pararChamando();
     sessaoRef.current = null;
     setEmChamada(false);
     if (audioRef.current) audioRef.current.srcObject = null;
+    setRegistrado(false);
     setEncerrada(true);
-    status('Registrado', 'on');
-    setTimeout(() => { try { window.close(); } catch {} }, 400);
+    status('Desconectado', '');
+    try { uaRef.current?.stop?.(); } catch {} // desconecta o ramal do servidor
+    setTimeout(() => { try { window.close(); } catch {} }, 400); // na câmera, fecha a aba
   };
 
   const digitar = (d) => { if (!emChamada) setNumero((v) => v + d); else try { sessaoRef.current?.sessionDescriptionHandler?.sendDtmf(d); } catch {} };
   const apagar = () => { if (!emChamada) setNumero((v) => v.slice(0, -1)); };
-  const recomecar = () => { setEncerrada(false); setNumero(''); };
+  const recomecar = () => { try { window.location.reload(); } catch {} }; // reconecta o ramal do zero
 
   const corDot = { on: '#16a34a', erro: '#dc2626', chamando: '#f59e0b' }[stat.cor] || '#64748b';
 
@@ -193,7 +197,7 @@ export default function Telefone() {
           <div className="tel-fim">
             <div className="tel-fim-ic">✔</div>
             <p>Ligação encerrada.</p>
-            <small>Pode fechar esta aba.</small>
+            <small>Ramal desconectado. Pode fechar esta aba.</small>
             <button className="tel-btn ligar" onClick={recomecar}>Ligar de novo</button>
           </div>
         ) : (
